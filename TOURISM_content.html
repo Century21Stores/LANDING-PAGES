@@ -1,0 +1,845 @@
+<style>
+/* OVERWRITE */
+.view h1:first-child{
+	display: none;
+}
+.jmrv-desktop{
+	display:none;
+}
+
+/* PARTNER IMAGES */
+.jmrv-Image2{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMTkvMTQvMzIvMDkvNjIvSU1HMi5qcGciXV0/IMG2.jpg?sha=d0a0fbf608b08fc5');
+}
+.jmrv-Image3{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTAvMDUvMTgvNjIzL0lNRzMuanBnIl1d/IMG3.jpg?sha=83b7bb6c24f83b5d');
+}
+.jmrv-Image4{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvNTIvMDQvNjY3L0lNRzQuanBnIl1d/IMG4.jpg?sha=8659689cc2fded8c');
+}
+.jmrv-Image5{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMDAvNDYvNzcvSU1HNS5qcGciXV0/IMG5.jpg?sha=44f21239e0ca6e6d');
+}
+.jmrv-Image6{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMDgvMjAvNjU2L0lNRzYuanBnIl1d/IMG6.jpg?sha=e82f055571f22d0f');
+}
+.jmrv-Image7{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMTMvNTIvNTgyL0lNRzcuanBnIl1d/IMG7.jpg?sha=8488d2465d5c6e5d');
+}
+.jmrv-Image8{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMTgvNTMvOTkyL0lNRzguanBnIl1d/IMG8.jpg?sha=58712c8c1cb070c4');
+}
+.jmrv-partners-list{
+	overflow:auto;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;		
+}
+.jmrv-partners-list section{
+	width:50%;
+	float:left;
+	
+}
+.jmrv-partner figure{
+	cursor:pointer;
+	padding-top: calc((794% / 547) * 90);
+    background-repeat: no-repeat;
+    background-size: 100%;
+	width: 90%;
+	margin: 0 auto 9%;
+	box-shadow: 3px 2px 12px #A2A2A2;
+    border-radius: 12px;
+}
+.jmrv-partner-info{
+	display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0%;
+/*     background: rgba(255, 255, 255, 0.93); */
+    background: rgba(255, 255, 255, 1);    
+/*     margin: 5% 0 0 5%; */
+    margin: 0;    	
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;	
+}
+.jmrv_mobileLan,
+.jmrv_mobilePor{
+	display:block;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+    z-index:99;
+/*     width: 81%; */
+    width: 94%;    
+    height: 90%;
+    cursor:pointer;
+/*     padding: 19% 4% 0; */
+    padding: 19% 3% 0;    
+    font-size: 2vw;
+/* 
+    border: solid 1px #E2E2E2;
+    border-radius: 30px;    
+ */
+}
+
+
+
+/* OUR PARTNERS SECTION */
+.jm-list-header h2{
+    text-align: center;
+    margin: 0 0 3.8%;
+    font-size: 7vw;    
+    letter-spacing: 0;
+    font-weight: normal;
+    padding: 3.8% 0 0;
+}
+.jmrv-partner-info h3{
+	font-family: Gotham-medium, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;    
+    font-size: 2.3em;
+    margin: 5% 0 0;  
+}
+.jmrv-partner-info h3:nth-of-type(1){
+	font-size: 2.55em;
+    margin: 0 0 3.3%;
+}
+.jmrv-partner-info h2{
+    font-family: Gotham-light, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: normal;
+	font-size: 2.12em;
+/*     width: 88%; */
+    line-height: 1.3;
+}
+.jmrv-partner-info p{
+    font-family: Gotham-light, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.22em;
+/*     width: 88%; */
+    line-height: 1.4;
+}
+.jmrv-partner-info a{
+    color: black;
+    font-weight: bold;
+}
+.jmrv-partner-info a:hover{
+    color: #939597;
+    font-weight: bold;
+    text-decoration:none;
+}
+.jm-list-header-desktop{
+	display:none;
+}
+
+/* STORE CONTANCT INFORMATION */
+.jmrv-wrap-contactInfo,
+.jm-hours-wrap{
+	overflow:auto;
+}
+.jmrv-wrap-contactInfo{
+    margin-bottom: 7%;
+}
+.jmrv-2-contact{
+	text-align:center;
+}
+.jm-hours-wrap-main{
+    background: #FBF8F8;
+	width: 86%;
+    padding: 6% 7%;
+    margin: 8% 0 3%;
+    font-size: 2vw;
+}
+.jmrv-hours-days{
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+.jmrv-hours-hours{
+    width: 55%;
+    float: left;
+    text-align: left;
+}
+.jmrv-hours-days h3,
+.jmrv-hours-hours h3{
+    font-size: 1.86em;
+    margin: 0;
+    font-weight: lighter;
+    line-height: 1.7;
+}
+.jm-hours-wrap{
+	margin: 7% 0 0;
+}
+.jmrv-hours-days h3{
+    font-weight: normal;
+}
+.jmrv-2-contact-phem{
+    margin: 5.4% 0 7%;
+}
+.jmrv-2-contact-phem h3:nth-of-type(1) span{
+	margin-right: 6%;
+}
+.jmrv-2-contact-phem h3:nth-of-type(2) span{
+	margin-right: 9%
+}
+
+.jmrv-2-contact-phem h3,
+.jmrv-2-contact-address h3{
+    font-size: 2.2em;
+    margin: 0;
+    font-weight: lighter;
+    line-height: 1.4;
+}
+.jmrv-2-contact-phem h3{
+    margin: 0 0 12%;
+}
+.jmrv-2-contact-phem h3 span,
+.jmrv-2-contact-address h3 span{
+    font-weight: bold;
+	font-family: Gotham-medium, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;    
+}
+.jmrv-2-contact-address h3{
+	line-height: 1.4;
+}
+.jmrv-tourism-2{
+	padding: 0 4.5% 4.5%;
+}
+.jmrv-tourism-2 h2{
+    font-family: Gotham-medium, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 2.65em;
+    letter-spacing: 0;
+    font-weight: normal;
+    margin: 0;
+	text-align:center;        
+}
+.jmrv-tourism-2 header h2{
+	text-align: center;
+    padding: 3.8% 0 0;
+    font-size: 5em;
+    line-height: 1.1;    
+}
+.jmrv-tourism-2 header h3{
+	text-align: center;
+    font-size: 2.2em;
+	font-weight: lighter;
+}
+.jmrv-international{
+    overflow: auto;
+    margin: 2% 0 0;    
+}
+
+.jmrv-international-button{
+	text-align: center;
+    margin: 10% 0 0;    
+}
+
+.jmrv-international-info h2{
+    font-family: Gotham-light, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 2.12em;
+    line-height: 1.3;
+}
+.jmrv-tourism-2{
+	font-size: 1.1vw;
+}
+.jmrv-close-icon{
+    position: fixed;
+    bottom: 3%;
+    right: 44%;
+    width: 6%;
+    image-rendering: auto;
+}
+.jmrv-anchor-mob{
+	color:black;
+}
+.jmrv-2-contact{
+    font-size: 1.5vw;
+    margin: 3% 0 12%;
+}
+.jmrv-wrap-contactInfo .jmrv-anchor-mob{
+    padding: 3% 6%;
+    border-radius: 26px;
+    box-shadow: 2px 3px 8px #CECECE;
+    background-image: -webkit-linear-gradient(top, #AB333D, #D02F34);
+    background-image: -moz-linear-gradient(top, #AB333D, #D02F34);
+    background-image: -ms-linear-gradient(top, #AB333D, #D02F34);
+    background-image: -o-linear-gradient(top, #AB333D, #D02F34);
+    background-image: linear-gradient(to bottom, #AB333D, #D02F34);
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+.jmrv-wrap-contactInfo .jmrv-anchor-mob:hover{
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    text-decoration:none;
+}
+.jmrv-2-contact-address .jmrv-anchor-mob,
+.jmrv-2-contact-address .jmrv-anchor-mob:hover{
+	background-image: none;
+   	color:black;
+   	border:none;
+	box-shadow: none;
+}
+.jmrv-map{
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    image-rendering: auto;
+}
+.jmrv-map:hover{
+	content:url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTUvNDUvMDEvNTU3L0ZsdXJyeV9Hb29nbGVfTWFwc0JMQUNLLnBuZyJdXQ/Flurry_Google_MapsBLACK.png?sha=0d2638551ffb3b7d');
+}
+.jmrv-tourism-2 aside{
+    font-size: 1.33vw;
+}
+
+/* .......................... MOBILE LANSCAPE STARTS .......................... */
+@media (min-width:640px) {
+
+.jmrv-Image2{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTAvMzcvNTUvMzA4L0lNRzFfbW9iTC5qcGciXV0/IMG1-mobL.jpg?sha=5bc925de22c6f96b');
+}
+.jmrv-Image3{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvMTQvNDMvNzUxL0lNRzJfbW9iTC5qcGciXV0/IMG2-mobL.jpg?sha=962fff35b711be91');
+}
+.jmrv-Image4{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvNTQvMjUvOTA4L0lNRzNfbW9iTC5qcGciXV0/IMG3-mobL.jpg?sha=3a8736ed0c193c00');
+}
+.jmrv-Image5{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMDIvMjkvNTA5L0lNRzRfbW9iTC5qcGciXV0/IMG4-mobL.jpg?sha=f924fcb31132a1e6');
+}
+.jmrv-Image6{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMTAvMTEvMTgvSU1HNl9tb2JMLmpwZyJdXQ/IMG6-mobL.jpg?sha=52a665f55ba532d1');
+}
+.jmrv-Image7{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMTUvNDYvNDkxL0lNRzdfbW9iTC5qcGciXV0/IMG7-mobL.jpg?sha=41225ae6c0a71022');
+}
+.jmrv-Image8{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMjEvNTkvOTExL0lNRzhfbW9iTC5qcGciXV0/IMG8-mobL.jpg?sha=2a845a1d9fa84f7d');
+}
+
+.jmrv-partner figure{
+	cursor:pointer;
+    padding-top: calc((180% / 545) * 70);
+    width: 70%;
+	margin: 0 auto;	
+}
+.jm-lp-tourism section{
+	position:relative;
+	background: white;
+	margin:3% 0 0;
+}
+.jmrv-partners-list section{
+	width:100%;
+	float:none;
+}
+/* 
+.jmrv-partner-info{
+    position: relative;
+    width: 92%;
+    height: 100%;
+    background: none;
+    margin: 0%;
+    padding: 0%;    	
+}
+ */
+.jmrv-partner-info{
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    background: white;
+    margin: 0% 5%;
+    padding: 8% 0%;
+    text-align: center;
+    font-size: 1vw;
+    top: 0;
+    left:0;
+    border: none;
+}
+.jmrv-close-icon{
+	position:fixed !important;
+}
+.jmrv-partner-info h2,
+.jmrv-partner-info p{
+	width:100%;
+}
+
+}
+
+/* .......................... TABLET STARTS .......................... */
+@media (min-width:700px) {
+.jmrv-mobile{
+	display:none;
+}
+.jm-list-header-desktop{
+	display:block;
+}
+.jm-list-header-mobile{
+	display:none;
+}
+
+.jmrv-wrap-contactInfo .jmrv-anchor-mob{
+	border: none;
+    padding: 0%;
+    border-radius: 0;
+    box-shadow: none;
+    background-image: none;
+    color:black;
+	font-weight: lighter;
+}
+
+.jmrv-Image2{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMTkvMTQvMzIvMDkvNjIvSU1HMi5qcGciXV0/IMG2.jpg?sha=d0a0fbf608b08fc5');
+}
+.jmrv-Image3{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTAvMDUvMTgvNjIzL0lNRzMuanBnIl1d/IMG3.jpg?sha=83b7bb6c24f83b5d');
+}
+.jmrv-Image4{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvNTIvMDQvNjY3L0lNRzQuanBnIl1d/IMG4.jpg?sha=8659689cc2fded8c');
+}
+.jmrv-Image5{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMDAvNDYvNzcvSU1HNS5qcGciXV0/IMG5.jpg?sha=44f21239e0ca6e6d');
+}
+.jmrv-Image6{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMDgvMjAvNjU2L0lNRzYuanBnIl1d/IMG6.jpg?sha=e82f055571f22d0f');
+}
+.jmrv-Image7{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMTMvNTIvNTgyL0lNRzcuanBnIl1d/IMG7.jpg?sha=8488d2465d5c6e5d');
+}
+.jmrv-Image8{
+    background: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTMvMTgvNTMvOTkyL0lNRzguanBnIl1d/IMG8.jpg?sha=58712c8c1cb070c4');
+}
+.jmrv-partner figure{
+	cursor:default;
+	padding-top: calc((794% / 547) * 80);
+	width: 80%;
+	box-shadow: none;
+    border-radius: none;	
+}
+.jmrv-partner{
+    overflow: auto;
+    padding: 3.8% 0;    
+}
+
+.jmrv-partner div{
+    width: 46%;
+    float: left;
+}
+.jmrv-partner article{
+    width: 54%;
+    float: left;
+}
+
+.jmrv-partner-info{
+    width: 100%;
+	display:block;
+    margin: 3% 0 0;	
+}
+/* STORE CONTANCT INFORMATION */
+.jmrv-2-contact,
+.jmrv-hour{
+    width: 50%;
+    float: left;
+}
+.jmrv_mobileLan,
+.jmrv_mobilePor{
+    padding: 3% 4% 0;
+    border:none;
+}
+.jmrv-international-info{
+    width: 74%;    
+    float: right;
+}
+
+.jmrv-international-button{
+    width: 20%;
+    float: left;
+    margin:0;
+}
+.jmrv-2-contact{
+	text-align:left;
+}
+.jmrv-2-contact-phem h3{
+    margin: 0;
+}
+.jmrv-tourism-2 h2{
+	text-align:left;
+}
+.jmrv-2-contact-phem h3 span,
+.jmrv-2-contact-address h3 span{
+    font-weight: normal;
+}
+.jmrv-tourism-2 aside{
+    font-size: 1em;
+}
+/* OUR PARTNERS SECTION */
+.jm-list-header h2{
+    margin: 0;
+    font-size: 4.7em;
+}
+.jmrv-anchor-mob{
+	color:black;
+	pointer-events: none;
+}   
+.jmrv-anchor-mob:hover{
+	text-decoration:none;
+}    
+.jm-hours-wrap-main{
+    width: 73%;
+    margin: 0 0 0 auto;
+	padding: 5% 7% 6%;
+    font-size: 1em;	
+}
+.jmrv-2-contact{
+    font-size: 1em;
+    margin: 0;
+}
+.jmrv-international-button{
+	text-align:left;
+}
+.jmrv-desktop{
+	display:block;
+}
+.jmrv-partner-info h2,
+.jmrv-partner-info p{
+	width:88%;
+}
+.jmrv-partner-info h3{
+	font-weight:normal;
+}
+/* STORE CONTANCT INFORMATION */
+.jmrv-2-contact,
+.jmrv-hour{
+    width: 50%;
+    float: left;
+}
+.jmrv-partner-info {
+	position:relative;
+	padding: 0;	
+	border: none;
+    text-align: left;	
+    font-size:1em;
+}
+.jmrv-partners-list,
+.jmrv-tourism-2{
+    font-size: 0.88vw;
+}
+
+
+}
+
+/* .......................... DESKTOP STARTS .......................... */
+@media (min-width:1280px) {
+
+
+}
+
+/* .......................... DESKTOP BIGGER SCREENS STARTS .......................... */
+@media (min-width:1500px) {
+.jmrv-partners-list,
+.jmrv-tourism-2{
+    font-size: 1em;
+}
+.jmrv-international-info{
+    width: 80%;
+}
+
+}
+</style>
+
+
+<div class="jm-lp-tourism">
+
+
+	<!-- CONTACT INFORMATION -->
+	<section class="jmrv-tourism-2">
+		<header>
+			<h2>WELCOME TO NEW YORK!</h2>
+			<h3>Learn about our tourism programs and offers:</h3>
+		</header>
+		<article class="jmrv-wrap-contactInfo">
+			<div class="jmrv-2-contact">
+				<div class="jmrv-2-contact-phem">
+					<h3><a class="jmrv-anchor-mob" href="mailto:VISITC21@C21STORES.COM"><span>EMAIL</span> VISITC21@C21STORES.COM</a></h3>
+					<h3><a class="jmrv-anchor-mob" href="tel:212-227-9092"><span>CALL</span> 212-227-9092 x2439</a></h3>
+				</div>
+				<div class="jmrv-2-contact-address">
+					<a class="jmrv-anchor-mob" href="https://www.google.com/maps/dir/''/22+Cortlandt+St,+New+York,+NY+10007/@40.7105231,-74.0126214,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c25a19c3260d93:0x152003b188d0f18b!2m2!1d-74.0104327!2d40.7105231">
+					<h3><span>STREET ADDRESS</span></h3>
+					<h3>22 CORTLANDT STREET</h3>
+					<h3>NEW YORK, NY 10007</h3>
+					</a>
+					<a class="jmrv-mobile jmrv-map" href="https://www.google.com/maps/dir/''/22+Cortlandt+St,+New+York,+NY+10007/@40.7105231,-74.0126214,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c25a19c3260d93:0x152003b188d0f18b!2m2!1d-74.0104327!2d40.7105231">					
+						<img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTUvMzUvNDEvMzIvRmx1cnJ5X0dvb2dsZV9NYXBzLnBuZyJdXQ/Flurry_Google_Maps.png?sha=fe876cefee66cd93"/>
+					</a>
+				</div>
+			</div>
+			<div class="jmrv-hour">
+				<div class="jm-hours-wrap-main">
+					<h2>HOURS OF OPERATION</h2>
+					<div class="jm-hours-wrap">
+						<div class="jmrv-hours-days">
+							<h3><span>SUN.</span></h3>
+							<h3><span>MON.-WED.</span></h3>
+							<h3><span>THU.-FRI.</span></h3>
+							<h3><span>SAT.</span></h3>					
+						</div>
+						<div class="jmrv-hours-hours">
+							<h3>11:00AM-8:00PM</h3>
+							<h3>7:45AM-9:00PM</h3>
+							<h3>7:45AM-9:30PM</h3>
+							<h3>10:00AM-9:00PM</h3>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<aside>
+			<h2>INTERNATIONAL SHIPPING</h2>
+			<div class="jmrv-international">
+				<div class="jmrv-international-info">
+					<h2>You can have your <b>C21STORES.com</b> orders shipped to your<br/>international address by using our partner <b>MYUS.com</b></h2>
+				</div>				
+				<div class="jmrv-international-button">
+					<script>document.write(unescape('%3Cscript type="text/javascript" src="' + (("https:" == document.location.protocol) ? "https://" : "http://") + 'account.myus.com/RemoteRegistration/RemoteReg.aspx?id=1003337"%3E%3C/script%3E'));</script>
+				</div>
+			</div>
+		</aside>				
+		
+	</section>
+
+
+	<div class="jmrv-partners-list">
+
+		<header class="jm-list-header jm-list-header-mobile">
+			<h2>OUR PARTNERS</h2>
+<!-- 			<p>Click in each of out partners to see details and promotion</p> -->
+		</header>
+
+		<!-- ONE WORLD OBSERVATORY -->
+		<section>
+			<header class="jm-list-header jm-list-header-desktop">
+				<h2>OUR PARTNERS</h2>
+			</header>
+	
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image2" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>
+					<h3>ONE WORLD OBSERVATORY</h3>
+					<h2>
+						C21 guests can <b>save 20%</b> on regular priced standard admission adult tickets to 
+						One World Observatory for use Mondays 
+						through Fridays.
+					</h2>
+					<h3>ONLINE:</h3>					
+					<h2>
+						Offer redeemable online at <a href="https://oneworldobservatory.com/" target="_blank">oneworldobservatory.com</a>: enter code 
+						<b>C21OWO</b> or present a Century 21 store 
+						receipt with this code during your credit card purchase at the One World 
+						Observatory box office.*
+					</h2>
+					<p>
+						<span>*</span>Offer valid on tickets for admission on any Monday, Tuesday, Wednesday, Thursday or Friday. 
+						Subject to availability. Limit of 4 discounted tickets per order. 
+						Cannot be combined with any other offer and may be subject to standard blackout dates and other restrictions. 
+						Purchase must be made with an accepted credit card.
+					</p>					
+				</article>
+			
+			</div>	
+				
+		</section>
+
+
+		<!-- MADAME TUSSAUDS -->
+		<section>
+
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image3" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>				
+					<h3>MADAME TUSSAUDS</h3>
+					<h2>
+						C21 offers guests an exclusive ticket discount with Madame Tussauds. Guests can <b>save $10</b> on the regular adult admission price, offer redeemable online at:
+						<a class="jmrv-mobile" href="https://www2.madametussauds.com/new-york/en/?promocode=century21" target="_blank">www2.madametussauds.com</a>
+						<a class="jmrv-desktop" href="https://www2.madametussauds.com/new-york/en/?promocode=century21" target="_blank">https://www2.madametussauds.com/new-york/en/?promocode=century21</a>
+						You can also purchase your ticket at the C21 Visitor Center (at the Downtown NYC location only) for the same great offer.								
+					</h2>
+					
+					<p>
+						<span>*</span>Take $10 off the regular adult admission price to Madame Tussauds New York when you purchase your ticket at Century 21. 
+						Ticket offer is valid up to 8 purchases per customer. Ticket will be valid for the date selected upon purchase. 
+						This offer cannot be combined with any other offers or discounts. Madame Tussauds operating hours are subject to change without notice.									
+					</p>					
+				</article>
+			
+			</div>	
+				
+		</section>
+			
+			
+		<!-- THE RIDE -->
+		<section>
+
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image4" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>				
+					<h3>THE RIDE</h3>
+					<h2>
+						C21 offers guests an exclusive ticket discount offer with The Ride. Guests can save $20 on the regular general admission price, 
+						offer redeemable online at <a href="http://theridenyc.com/" target="_blank">www.theridenyc.com</a> using promo code C21.
+					</h2>
+					<h2>
+						You can also purchase your ticket at the C21 Visitor Center (at the Downtown NYC location only) for the same great offer.
+					</h2>					
+					<p>
+						<span>*</span>Take $20 off the regular general admission price to THE RIDE when you purchase your ticket at Century 21.
+						This offer cannot be combined with any other offers or discounts. THE RIDE operating hours are subject to change without notice.																	
+					</p>					
+				</article>
+			
+			</div>	
+				
+		</section>
+
+			
+		<!-- MILLENNIUM HILTON -->
+		<section>
+
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image5" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>				
+					<h3>MILLENNIUM HILTON</h3>
+					<h2>
+						Millenium Hilton places you right in the heart of downtown (right across the street from Century 21's flagship store) 
+						within walking distance of Wall Street and adjacent to the Freedom Tower, Ground Zero and World Trade Center Memorial. 
+						Enjoy some of the largest hotel rooms and suites in Lower Manhattan, spectacular skyline views, and a glass-enclosed pool.														
+					</h2>
+				</article>
+			
+			</div>	
+				
+		</section>		
+
+
+		<!-- BIG BUS -->
+		<section>
+
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image6" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>				
+					<h3>BIG BUS</h3>
+					<h2>
+						Discover one of the most iconic cities in the world with the incredible Big Bus Tour of New York City. 
+						See all of the famous New York attractions, from the Empire State Building to the Statue of Liberty, in the comfort of one of their open-top buses.									
+					</h2>
+				</article>
+			
+			</div>	
+				
+		</section>	
+
+
+		<!-- NEW YORK PASS -->
+		<section>
+
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image7" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>				
+					<h3>NEW YORK PASS</h3>
+					<h2>
+						New York Pass is a tourist card created by real, lifelong New Yorkers to save you time and money on sightseeing in New York City. 
+						With NY Pass visitors get free entry to over 80 attractions and skip ticket lines at many of the busiest places. 
+						With NY Pass you can save up to 70% on gate prices when seeing just 3 attractions a day.									
+					</h2>
+				</article>
+			
+			</div>	
+				
+		</section>	
+
+
+		<!-- CONRAD NEW YORK -->
+		<section>
+
+			<div class="jmrv-partner">
+					
+				<!-- PARTNER IMAGE -->
+				<div>
+					<figure class="jmrv-Image8" onClick="showDetails(this);"></figure>		
+				</div>
+		
+				<!-- PARTNER INFO -->
+				<article class="jmrv-partner-info" onClick="hideInfo(this);">
+					<div class="jmrv-close-icon jmrv-mobile"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjQvMTIvMDYvNTUvNTQ3L2Nsb3NlLnBuZyJdXQ/close.png?sha=87a2f139ef10a5cf"/></div>				
+					<h3>CONRAD NEW YORK</h3>
+					<h2>
+						This luxe all-suite hotel with an atrium lobby overlooks the Hudson River in Battery Park City, 
+						a 9-minute walk from the 9/11 Memorial,  One World Observatory®, the subway and C21!				
+					</h2>
+				</article>
+			
+			</div>	
+				
+		</section>				
+							
+	</div>	
+
+</div>
