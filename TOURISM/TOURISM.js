@@ -1,7 +1,7 @@
 // THIS GOES IN THE "SCRIPT CONTENT AREA" 
- 
- jrios@c21stores.com 
- 05262016
+// jrios@c21stores.com 
+// 05262016
+
 function showDetails(element){
 	var parent = element.parentNode.nextElementSibling;
 // 	console.log(parent);
