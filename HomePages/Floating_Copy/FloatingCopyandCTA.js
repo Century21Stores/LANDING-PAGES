@@ -52,8 +52,8 @@ if ( $(window).width() > 800 && $(window).width() <= 1280  ){
  var posParallax4 = $('.JMparallax4').position().top -150;
  var posParallax5 = $('.JMparallax5').position().top -150;
  var posParallax6 = $('.JMparallax6').position().top -150;
- var posParallax7 = $('.JMparallax7').position().top -150;    
- var posParallax8 = $('.JMparallax8').position().top -150;     
+ // var posParallax7 = $('.JMparallax7').position().top -150;    
+ // var posParallax8 = $('.JMparallax8').position().top -150;     
  
     $('.jm-container1').addClass('jm_Opacity1');
     $(document).scroll(function(){
@@ -72,12 +72,12 @@ if ( $(window).width() > 800 && $(window).width() <= 1280  ){
       if($(this).scrollTop()>= posParallax6){
         $('.jm-container6').addClass('jm_Opacity1');
       }
-      if($(this).scrollTop()>= posParallax7){
-        $('.jm-container7').addClass('jm_Opacity1');
-      }
-      if($(this).scrollTop()>= posParallax8){
-        $('.jm-container8').addClass('jm_Opacity1');
-      }
+      // if($(this).scrollTop()>= posParallax7){
+      //   $('.jm-container7').addClass('jm_Opacity1');
+      // }
+      // if($(this).scrollTop()>= posParallax8){
+      //   $('.jm-container8').addClass('jm_Opacity1');
+      // }
 
   });
 
@@ -103,12 +103,12 @@ if ($(window).width() <= 800) {
       if($(this).scrollTop()>=$('.JMparallax5').position().top){
         $('.jm-container6').addClass('jm_Opacity1');  
       }
-      if($(this).scrollTop()>=$('.JMparallax6').position().top){
-        $('.jm-container7').addClass('jm_Opacity1');  
-      }
-      if($(this).scrollTop()>=$('.JMparallax7').position().top){
-        $('.jm-container8').addClass('jm_Opacity1');  
-      }            
+      // if($(this).scrollTop()>=$('.JMparallax6').position().top){
+      //   $('.jm-container7').addClass('jm_Opacity1');  
+      // }
+      // if($(this).scrollTop()>=$('.JMparallax7').position().top){
+      //   $('.jm-container8').addClass('jm_Opacity1');  
+      // }            
   });      
 }
 
