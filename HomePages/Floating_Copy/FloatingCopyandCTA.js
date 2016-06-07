@@ -60,15 +60,15 @@ if ( $(window).width() > 800 && $(window).width() <= 1280  ){
       if($(this).scrollTop()>= posParallax2){
         $('.jm-container2').addClass('jm_Opacity1');  
       }
-      if($(this).scrollTop()>= posParallax3){
-        $('.jm-container3').addClass('jm_Opacity1');  
-      }
+      // if($(this).scrollTop()>= posParallax3){
+      //   $('.jm-container3').addClass('jm_Opacity1');  
+      // }
       if($(this).scrollTop()>= posParallax4){
         $('.jm-container4').addClass('jm_Opacity1');  
       }
-      if($(this).scrollTop()>= posParallax5){
-        $('.jm-container5').addClass('jm_Opacity1');
-      }
+      // if($(this).scrollTop()>= posParallax5){
+      //   $('.jm-container5').addClass('jm_Opacity1');
+      // }
       if($(this).scrollTop()>= posParallax6){
         $('.jm-container6').addClass('jm_Opacity1');
       }
