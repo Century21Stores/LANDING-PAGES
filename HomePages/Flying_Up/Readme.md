@@ -1,4 +1,4 @@
-## HOME PAGE TEMPLATE - FLOATING COPY AND CTA
+## HOME PAGE TEMPLATE - FLying_Up COPY AND CTA
 
 Live sample:
 https://www.c21stores.com/pages/hp5
