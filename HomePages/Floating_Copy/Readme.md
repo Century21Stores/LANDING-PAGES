@@ -1,12 +1,15 @@
 ## HOME PAGE TEMPLATE - FLOATING COPY AND CTA
 
-Live sammple:
+Live sample:
 https://www.c21stores.com/pages/hp1
 
 
 ## Built With
 
 * JQuery
+* JavaScript
+* HTML
+* CSS
 
 ## Version
 
