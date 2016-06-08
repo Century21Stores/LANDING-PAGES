@@ -17,7 +17,7 @@ https://www.c21stores.com/pages/hp1
 
 ## Developed by:
 
-* **Juan Manuel Rios Villanueva** - * 
+* **Juan Manuel Rios Villanueva** -
 
 <!-- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. -->
 
