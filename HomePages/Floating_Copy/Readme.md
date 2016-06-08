@@ -23,7 +23,8 @@ https://www.c21stores.com/pages/hp1
 
 ## License
 
-This project is licensed under C21stores.com<!--  - see the [LICENSE.md](LICENSE.md) file for details -->
+This project is licensed under C21stores.com
+<!-- see the [LICENSE.md](LICENSE.md) file for details -->
 
 <!-- ## Acknowledgments
 
