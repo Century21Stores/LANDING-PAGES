@@ -146,7 +146,6 @@ function onYouTubePlayerAPIReady() {
 
 function onPlayerReady(event) {
   
-  // bind events
   var playButton = document.getElementById("jm-toVideo");
     playButton.addEventListener("click", function() {
     jmplayer2.playVideo();
@@ -154,7 +153,7 @@ function onPlayerReady(event) {
     
 }
 
-// Inject YouTube API script
+// YouTube API script
 var tag = document.createElement('script');
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
