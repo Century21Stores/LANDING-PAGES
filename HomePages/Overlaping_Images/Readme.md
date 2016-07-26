@@ -1,13 +1,11 @@
-## HOME PAGE TEMPLATE - FLying_Up COPY AND CTA
+## HOME PAGE TEMPLATE - Overlaping Images
 
 Live sample:
-https://www.c21stores.com/pages/hp5
+https://www.c21stores.com/pages/hp3
 
 
 ## Built With
 
-* JQuery
-* JavaScript
 * HTML
 * CSS
 
