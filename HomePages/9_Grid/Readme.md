@@ -1,7 +1,7 @@
-## HOME PAGE TEMPLATE - Overlaping Images
+## HOME PAGE TEMPLATE - 9 Grid Home Page Message Template
 
 Live sample:
-https://www.c21stores.com/pages/hp3
+https://www.c21stores.com/pages/hp7
 
 
 ## Built With
