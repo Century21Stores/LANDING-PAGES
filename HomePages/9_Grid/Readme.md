@@ -8,10 +8,12 @@ https://www.c21stores.com/pages/hp7
 
 * HTML
 * CSS
+* JavaScript
+* AngularJS
 
 ## Version
 
-1.0.0.0
+2.0.0.0
 
 ## Developed by:
 
