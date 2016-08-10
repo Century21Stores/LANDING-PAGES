@@ -1,0 +1,270 @@
+<!-- CONTENT -->
+<script>
+IMAGE1 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMjQvMDQvNzU5LzAxXzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/01_07Week3d_HP_ThreeBlock.jpg?sha=28edfc43bedc0be7';
+SHOW_mobile1 = "0";
+CTA1 = "SHOP NOW1";
+URL1 = "https://www.c21stores.com/"
+SHOW_CTA1 = "YES";
+TYPE_CTA1 = "2";
+
+
+IMAGE2 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMjcvNDMvNDYxLzAyXzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/02_07Week3d_HP_ThreeBlock.jpg?sha=c11b91cd3077e733';
+SHOW_mobile2 = "3";
+CTA2 = "SHOP NOW2";
+URL2 = "#2"
+SHOW_CTA2 = "Yes";
+TYPE_CTA2 = "3";
+
+IMAGE3 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMjUvNDgvNjAzLzAzXzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/03_07Week3d_HP_ThreeBlock.jpg?sha=b9a4a166662a6c6a';
+SHOW_mobile3 = "0";
+CTA3 = "SHOP NOW3";
+URL3 = "#3"
+SHOW_CTA3 = "Yes";
+TYPE_CTA3 = "1";
+
+
+IMAGE4 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMjgvNTEvODg4LzA0XzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/04_07Week3d_HP_ThreeBlock.jpg?sha=648a2f3d875b53a4';
+SHOW_mobile4 = "2";
+CTA4 = "SHOP NOW4";
+URL4 = "#4"
+SHOW_CTA4 = "Yes";
+TYPE_CTA4 = "1";
+
+
+IMAGE5 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMzAvNDgvNzQ2LzA1XzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/05_07Week3d_HP_ThreeBlock.jpg?sha=85be65b66b96b16d';
+SHOW_mobile5 = "0";
+CTA5 = "SHOP NOW5";
+URL5 = "#5"
+SHOW_CTA5 = "No";
+TYPE_CTA5 = "1";
+
+
+IMAGE6 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMjQvMDQvNzU5LzAxXzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/01_07Week3d_HP_ThreeBlock.jpg?sha=28edfc43bedc0be7';
+SHOW_mobile6 = "0";
+CTA6 = "SHOP NOW6";
+URL6 = "#6"
+SHOW_CTA6 = "Yes";
+TYPE_CTA6 = "1";
+
+
+IMAGE7 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMzEvNTIvODMvMDdfMDdXZWVrM2RfSFBfVGhyZWVCbG9jay5qcGciXV0/07_07Week3d_HP_ThreeBlock.jpg?sha=92eb1840869ff8c8';
+SHOW_mobile7 = "0";
+CTA7 = "SHOP NOW7";
+URL7 = "#7"
+SHOW_CTA7 = "YES";
+TYPE_CTA7 = "1";
+
+
+IMAGE8 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMzQvMDEvNzk1LzA4XzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/08_07Week3d_HP_ThreeBlock.jpg?sha=dee0dc5a2b064d8f';
+SHOW_mobile8 = "0";
+CTA8 = "SHOP NOW8";
+URL8 = "#8"
+SHOW_CTA8 = "Yes";
+TYPE_CTA8 = "1";
+
+
+IMAGE9 = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDcvMTEvMDkvMzIvNTMvMzgxLzA5XzA3V2VlazNkX0hQX1RocmVlQmxvY2suanBnIl1d/09_07Week3d_HP_ThreeBlock.jpg?sha=92e1fc29cdacc95b';
+SHOW_mobile9 = "0";
+CTA9 = "SHOP NOW9";
+URL9 = "#9"
+SHOW_CTA9 = "YeS";
+TYPE_CTA9 = "1";
+
+
+</script>
+
+
+<div class="jmrv-hp9" ng-app="jmrv-hp9" ng-controller="HP9controller">
+
+	<div class="jmrv-mobile jmrv-mobileONLY">
+		<figure ng-repeat="data in myDirectiveDataMOB" ng-style="imagesMOB[$index]" ng-class="class[$index]">
+			<figcaption my-directive data="data"></figcaption>
+		</figure>
+	</div>
+
+	<figure ng-repeat="data in myDirectiveData" ng-style="images[$index]" ng-class="class[$index]">
+		<figcaption my-directive data="data"></figcaption>
+	</figure>
+	
+</div>
+
+
+<style>
+
+.jmrv-hp9 figure{
+    padding-top: calc((1254% / 836) * 100);
+	width: 100%;
+    margin: 0 0 6%;
+	position:relative;
+   	background-repeat : no-repeat !important;
+    background-size : contain !important;
+    width:100%;
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;    
+}
+.jmrv-hp9 figcaption{
+    bottom: 5%;
+    padding: 0%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.button--alt-solidWhite{
+    background: white;
+    color: black;
+    border-color: white !important;	
+}
+
+@media (min-width:700px) {
+
+.jmrv-hp9{
+	overflow:auto;
+}
+.jmrv-hp9 figure{
+    padding-top: calc((1254% / 836) * 32);
+	width: 100%;
+	position:relative;
+   	background-repeat : no-repeat !important;
+    background-size : contain !important;
+    width:32%;
+	margin:0 0 1% 1%;
+	float:left;  
+}
+.jmrv-hp9 figcaption{
+    bottom: 5%;
+    padding: 0%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+}
+
+@media (max-width:700px) {
+.jmrv-mobileONLY figure{
+	display:block !important;
+}
+}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script async src ="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDgvMTAvMTIvMzkvMzEvNjA2L0hQOV9hbmd1bGFyLmpzIl1d/HP9_angular.js?sha=0cf1f27d8f894504"></script>
+
+<script type="text/javascript">
+
+(function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDgvMTAvMTIvMzkvMzEvNjA2L0hQOV9hbmd1bGFyLmpzIl1d/HP9_angular.js?sha=0cf1f27d8f894504';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+</script>
+
+<script>
+
+var app = angular.module('jmrv-hp9', [])
+
+    .directive('myDirective', function () {
+        var template = 
+        	'<div class="MyDirective" style="display:{{ data.show }};">' +
+				'<p class="content-block-content__action content-block-content__action--button">' +
+					'<a class="button button--alt{{ data.ctaType }} button--wide button--large" href="{{ data.url }}">{{ data.cta }}</a>'+
+				'</p>'+
+			'</div>';
+        return {
+            template: template,
+            scope: {
+                data: '='
+            },
+            link: function (scope, element, attrs) {
+
+            }
+        };
+    })
+
+    .controller('HP9controller', function ($scope) {
+        show_CTA_arr= [];
+	 	show_CTA_LC = [];
+        show_MOB_arr= [];
+        show_ctaTYPE_arr= [];        
+        for (var i = 1; i <= 9; i++) {
+            show_CTA_arr.push(eval("SHOW_CTA"+i))
+            show_MOB_arr.push(eval("SHOW_mobile"+i))
+            show_ctaTYPE_arr.push(eval("TYPE_CTA"+i))                        
+        }
+		for (var i = 0; i < show_CTA_arr.length; i++) {
+		    show_CTA_LC.push(show_CTA_arr[i].toLowerCase());
+		}
+		for (var i = 0; i < show_CTA_LC.length; i++) {
+			if(show_CTA_LC[i] == "no"){
+				show_CTA_LC[i] = "none";
+			}
+			else{
+				show_CTA_LC[i] = "block";
+			}		
+		}
+		for (var i = 0; i < show_MOB_arr.length; i++) {
+			if(show_MOB_arr[i] == "0"){
+				show_MOB_arr[i] = "jmrv-desktop";
+			}
+			else{
+				show_MOB_arr[i] = show_MOB_arr[i];
+			}	
+		}
+		for (var i = 0; i < show_ctaTYPE_arr.length; i++) {
+			if(show_ctaTYPE_arr[i] == "2"){
+				show_ctaTYPE_arr[i] = "-inverse";
+			}
+			else if(show_ctaTYPE_arr[i] == "3"){
+				show_ctaTYPE_arr[i] = "-solidWhite";
+			}
+			else{
+				show_ctaTYPE_arr[i] = "";
+			}	
+		}
+		console.log(show_CTA_LC);
+		console.log(show_MOB_arr);
+		console.log(show_ctaTYPE_arr);		
+        	
+        $scope.myDirectiveData = [       
+                { ctaType: show_ctaTYPE_arr[0], cta: CTA1, url: URL1, show:show_CTA_LC[0]},
+                { ctaType: show_ctaTYPE_arr[1], cta: CTA2, url: URL2, show:show_CTA_LC[1]},
+                { ctaType: show_ctaTYPE_arr[2], cta: CTA3, url: URL3, show:show_CTA_LC[2]},
+                { ctaType: show_ctaTYPE_arr[3], cta: CTA4, url: URL4, show:show_CTA_LC[3]},
+                { ctaType: show_ctaTYPE_arr[4], cta: CTA5, url: URL5, show:show_CTA_LC[4]},
+                { ctaType: show_ctaTYPE_arr[5], cta: CTA6, url: URL6, show:show_CTA_LC[5]},
+                { ctaType: show_ctaTYPE_arr[6], cta: CTA7, url: URL7, show:show_CTA_LC[6]},
+                { ctaType: show_ctaTYPE_arr[7], cta: CTA8, url: URL8, show:show_CTA_LC[7]},
+                { ctaType: show_ctaTYPE_arr[8], cta: CTA9, url: URL9, show:show_CTA_LC[8]},
+            ];
+        $scope.myDirectiveDataMOB = [       
+                { ctaType: show_ctaTYPE_arr[4], cta: CTA5, url: URL5, show:show_CTA_LC[4]},
+            ]; 
+		$scope.imagesMOB = [
+    		{"background" : "url(" + IMAGE5 + ")",},
+    	];
+    	                       
+		$scope.images = [
+    		{"background" : "url(" + IMAGE1 + ")",},
+    		{"background" : "url(" + IMAGE2 + ")",},
+    		{"background" : "url(" + IMAGE3 + ")",},
+    		{"background" : "url(" + IMAGE4 + ")",},
+    		{"background" : "url(" + IMAGE5 + ")",},
+    		{"background" : "url(" + IMAGE6 + ")",},
+    		{"background" : "url(" + IMAGE7 + ")",},
+    		{"background" : "url(" + IMAGE8 + ")",},
+    		{"background" : "url(" + IMAGE9 + ")",}    		    		    		    		    		    		    		    		
+    	];  
+    	
+	  	$scope.class = [show_MOB_arr[0], show_MOB_arr[1], show_MOB_arr[2], show_MOB_arr[3], show_MOB_arr[4], show_MOB_arr[5], show_MOB_arr[6], show_MOB_arr[7], show_MOB_arr[8]];  
+
+    });
+
+
+</script>
