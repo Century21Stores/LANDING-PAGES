@@ -1,0 +1,682 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+
+<style>
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.page-content__main>h2{
+  display:none;
+}
+
+.jm-flex-cta{
+    max-width: 38% !important;  
+  margin: 0 0 0 3%;
+  display:none;
+}
+.jm-anchor-c21status{
+    color: black;
+    text-decoration: underline;
+}
+.jm-miniUp{
+  vertical-align: super;
+    font-size: 0.6em;
+}
+.jm-W34-C21status section{
+  position:relative;
+}
+.jm-W34-C21status article{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  text-align: center;
+}
+.jm-W34-C21status article div{
+  font-size:0.95vw;
+}
+.jm-W34-C21status .jm-image1 article:before {      /* create a full-height inline block pseudo-element */
+    content: ' ';
+    display: -webkit-inline-box;
+    display: inline-block;
+    vertical-align: middle; /* vertical alignment of the inline element */
+    height: 100%;
+}
+.jm-W34-C21status .jm-image1 article div{
+    display: inline-block;
+    vertical-align: middle; 
+}
+article h1, article h2, article h3{
+  margin:0;
+  line-height: 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 
+.jm-W34-C21status .jm-image1 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTIvMTIvMjgvMTQvNjMyLzAxaW1nLmpwZyJdXQ/01img.jpg?sha=9d0d035258217201');
+    background-repeat: no-repeat;    
+    padding-top: calc((405% / 1440) * 100);    
+    background-size: 100%;
+}
+ */
+
+.jm-image1 h2{
+    font-size: 4.5em;
+    font-weight: lighter;
+    letter-spacing: 0.03em;
+    margin: 0 0 0.6%;  
+}
+.jm-image1 h1{
+  font-size: 6.33em;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+}
+.jm-image1 h3{
+    font-size: 2em;
+    font-weight: normal;
+}
+.jm-image1 article{
+  position:relative;
+}
+.jm-image2 article{
+    width: 100%;
+    left: initial;
+    right: 0;
+    text-align: center;
+    margin: 24% 0 0;
+    top: initial;
+    bottom: 0;
+    height: 30%;
+}
+
+.jm-image2 h2, .jm-image4 h2{
+    font-size: 3.7em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 0 0 3%; 
+}
+
+.jm-image4 h2{
+  color:#d71e24;
+}
+.jm-fine-prints{
+/*  background: #f6f5f5; */
+    padding: 0 3% 3%;
+    text-align: center;
+    font-size: 0.74em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.jm-fine-prints span{
+    vertical-align: super;
+    font-size: 0.7em;
+}
+
+
+.jm-W34-C21status .jm-image2 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTIvMTYvMTQvMTMvNzA1LzAyaW1nTU9CLnBuZyJdXQ/02imgMOB.png?sha=d4dcfabb18286321');
+    background-repeat: no-repeat;    
+    padding-top: calc((725% / 725) * 100);    
+    background-size: 100%;
+}
+.jm-W34-C21status .jm-image4 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTMvMTUvMzUvNTQvOTg3LzA0aW1nTU9CLmpwZyJdXQ/04imgMOB.jpg?sha=ecc1978bb26958cb');
+    background-repeat: no-repeat;    
+    padding-top: calc((585% / 725) * 100);    
+    background-size: 100%;
+}
+
+
+.jmrv-rotate-clock{
+  position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 25%;
+    animation: roll 3s;
+    transform: rotate(5deg); 
+}
+.jm-image2 h3, .jm-image4 h3{
+    font-weight: lighter;
+    font-size: 3.3em;
+    line-height: 1.2;
+    width: 66%;
+    margin: 0 auto;
+}
+article.jm-message3-mob{
+    position: relative;
+    background: #d70021;
+    padding: 7% 0;
+}
+.jm-message3-mob h2,
+.jm-message3-mob h3,
+.jm-message3-mob p{
+  color:white;
+}
+.jm-W34-C21status section{
+    margin: 8% 0 23%;
+}
+
+@media (min-width:700px) {
+.jm-W34-C21status section{
+  margin: 0;
+}
+section.jm-image1{
+  margin: 0 0 3%;
+}
+.jm-image4 article{
+    right: initial;
+    left: 5%;
+}
+/* COPY 2 and 4 */
+.jm-image2 article, .jm-image4 article{
+  width: 48%;
+    text-align: left;
+    margin: 12% 0 12% auto;
+    top:0;   
+}
+.jm-image4 article{
+    margin: 15% 0 0;
+}
+.jm-image2 h3, .jm-image4 h3{
+  font-weight: lighter;
+    font-size: 1.9em;
+    line-height: 1.2;
+    margin: 0 0 8%;
+    width: 100%;
+    letter-spacing: 0.05em;        
+}
+
+.jm-W34-C21status .jm-image2 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTQvMTAvMTkvMjAvMTMvMDJpbWcuanBnIl1d/02img.jpg?sha=24287788c222157e');
+    background-repeat: no-repeat;    
+    padding-top: calc((628% / 1440) * 100);    
+    background-size: 100%;
+}
+.jm-W34-C21status .jm-image3 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTYvMTYvMzMvMjQvODgzLzAwXzA5V0VFSzRfQzIxU1RBVFVTX0xQMl8wMy5qcGciXV0/00_09WEEK4_C21STATUS_LP2_03.jpg?sha=a0e402f8c985fa8f');
+    background-repeat: no-repeat;    
+    padding-top: calc((889% / 1440) * 100);    
+    background-size: 100%;
+}
+.jm-W34-C21status .jm-image4 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTQvMTAvMjEvMTEvNTk1LzA0aW1nLmpwZyJdXQ/04img.jpg?sha=a71ba453958ec753');
+    background-repeat: no-repeat;    
+    padding-top: calc((669% / 1440) * 100);    
+    background-size: 100%;
+}
+.jm-W34-C21status .jm-image5 {
+    background-image: url('https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTQvMTAvNDgvMzUvOTE4LzAwXzA5V0VFSzRfQzIxU1RBVFVTX0xQMl8wNS5qcGciXV0/00_09WEEK4_C21STATUS_LP2_05.jpg?sha=2200e3b5922954c2');
+    background-repeat: no-repeat;    
+    padding-top: calc((883% / 1440) * 100);    
+    background-size: 100%;
+}
+.jm-flex-cta{
+  display:block;
+  margin: 3% 0 0 0;
+  max-width: 80% !important;  
+}
+
+}
+
+@media (min-width:1280px) {
+.jm-flex-cta{
+  display:inline-block;
+  margin: 0% 0 0 3%;
+  max-width: 43% !important;
+}
+
+}
+
+@media (min-width:1500px) {
+
+.jm-W34-C21status article div{
+  font-size:1em;
+}
+
+
+}
+
+
+/* MOBILE ONLY */
+@media (max-width:700px) {
+.jm-doon-doon{
+    background: #d70021;
+    padding: 0.4% 0;
+    margin: 4%;
+}
+.jm-doon-doon h3{
+  color:white;
+    margin: 0;
+    font-weight: lighter;
+}
+.jm-doon-doon h1{
+    color: white;
+    font-weight: bold;
+    font-size: 7em;
+    letter-spacing: 0.1em;
+}
+.jm-doon-doon p{
+    color: white;
+    text-transform: none;
+    margin: 0 auto;
+    font-weight: normal;
+    display: none;
+    height: 100%;
+    padding: 2% 6%;
+    width: 88%;
+    left: 0;
+  font-size: 3em;
+    font-weight: lighter; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;      
+}
+#jm-more-details{
+ -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+  font-size: 3em;
+    line-height: 0.5;
+    font-weight: 100;
+    margin: 0.2em 0 0;
+    cursor: pointer;
+}
+#jm-more-details img{
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+}
+.ArrowRotates{
+ -ms-transform: rotate(180deg) !important; /* IE 9 */
+    -webkit-transform: rotate(180deg) !important; /* Chrome, Safari, Opera */
+    transform: rotate(180deg) !important;
+    line-height: 0.5 !important;
+    margin: 0 0 0.3em !important;
+}
+br{
+  display:block;
+}
+.jm-message3-mob hr{
+    width: 76%;
+}
+.jm-message3-mob h2{
+    background: #d70021;
+    width: 62%;
+    margin: -4.4% auto 7%;
+}
+.jm-W34-C21status section:first-of-type{
+  margin:0;
+}
+article.jm-message3-mob{
+  margin: 8% 0 13%;
+}
+.jm-image4 article{
+  position:relative;
+    margin: -7% 0 0;  
+}
+article.jm-message5-mob {
+    position: relative;
+}
+.jm-W34-C21status .jm-image4{
+    width: 90%;
+    margin: 0 auto;
+}
+.jm-image2 h3,
+.jm-image4 h3{
+    width: 100%;
+}
+.jm-message5-mob h2{
+    font-weight: normal;
+    font-size: 3.6vw;
+    background: #f1f1f1;
+    padding: 7%;
+}
+.jm-circle{
+    width: 10px;
+    height: 10px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto -3%;    
+}
+.jm-circle-gray{
+    background: gray;
+}
+.jm-circle-black{
+    background: black;  
+}
+.jm-circle-white{
+    background: white;  
+}
+.jm-message5-mob table{
+  width:100%;
+}
+.jm-message5-mob{
+    font-size: 2.1vw;
+}
+.jm-message5-mob th{
+    padding: 4% 0%;
+}
+.jm-message5-mob tr{
+    border-bottom: solid #ece8e8 1px;
+}
+.jm-message5-mob th:first-child{
+  text-align: center;
+  padding: 0 3%;
+    width: 40%; 
+}
+/* 
+.jm-message5-mob tr:first-child{
+  font-size: 1.5em;
+}
+ */
+.jm-table-header{
+    background: #f7f7f7;
+}
+.jm-table-header-1{
+    background: #d61e24;
+    color:white;
+}
+.jm-table-header-2{
+    background: #928e8e;
+    color:white;
+}
+.jm-table-header-3{
+    background: #000000;
+    color:white;
+}
+.jm-message5-mob ul{
+  margin:0;
+  list-style: none;
+    overflow: auto;
+    font-size: 3vw; 
+}
+.jm-message5-mob li{
+	/* width: 33.33%; */
+	width: 21%;  
+    float: left;
+    padding: 3% 0;
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s; 
+  	opacity:0;
+    font-size: 2vw;  
+}
+.jm-message5-mob li:nth-child(1){
+    width: 37%;
+    background: #ecf4f6;
+}
+.jm-message5-mob th:nth-child(2){
+
+}
+.jm-message5-mob th:nth-child(3){
+
+}
+.jm-message5-mob th:nth-child(4){
+
+}
+li.jm-appear{
+  opacity:1;
+
+}
+.jm-fine-prints{
+    margin: 12% 0;
+    text-align: justify;
+}
+.jm-miniUp {
+    font-size: 2vw;
+}
+.jm-CTA-mobile a{
+    display: block;
+    max-width: 261px !important;
+    margin: 0 auto;
+}
+li.jm-table-TopHeader1,
+li.jm-table-TopHeader2,
+li.jm-table-TopHeader3{
+	opacity:1;
+}
+li.jm-table-TopHeader1{
+    background: #f1f1f1 ;
+}
+li.jm-table-TopHeader3{
+    width: 41%;
+    border-left: 1px solid #eaeaea;
+}
+
+}
+
+</style>
+
+
+<div class="jm-W34-C21status">
+  
+  <!-- MESSAGE 1 -->
+  <section class="jm-image1">
+    <article>
+    <div>
+      <h2>MEET THE</h2>
+      <h1>C21STATUS REWARDS PROGRAM.</h1>
+      <h3>EARN POINTS EVERY TIME YOU SHOP.<span class="jm-miniUp">1</span></h3>
+    </div>
+    </article>    
+  </section>
+
+  <!-- MESSAGE 2 -->
+  <section class="jm-image2">
+    <article>
+      <div>
+        <h2>REWARD YOURSELF<br/>
+        WITH C21STATUS</h2>
+        <h3>Apply for our <b>C21STATUS Credit Card</b> and<br/> watch the points add up.</h3>
+      </div>
+      <p class="content-block-content__action content-block-content__action--button">
+        <a class="button button--alt button--wide button--large" href="/instant_credit/apply">APPLY NOW</a>
+        <a class="jm-flex-cta button button--alt button--wide button--large" href="/pages/c21status-terms">FAQ/TERMS & CONDITIONS</a>
+      </p>
+      <p class="content-block-content__action content-block-content__action--button jmrv-mobile jm-CTA-mobile">
+        <a class="button button--alt button--wide button--large" href="/pages/c21status-terms">FAQ/TERMS & CONDITIONS</a>
+      </p>
+
+    </article>
+    <img class="jmrv-mobile jmrv-rotate-clock" src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDkvMTIvMTYvMTMvMDkvMTMvMDJpbWdiTU9CLnBuZyJdXQ/02imgbMOB.png?sha=e4a4ad004ec3f5ef"> 
+
+  </section>
+  
+  <!-- MESSAGE 3 -->
+  <section class="jm-image3 jmrv-desktop"></section>
+
+  <article class="jm-message3-mob jmrv-mobile">
+      <hr>
+      <h2>HOW IT WORKS</h2>
+
+    <div>
+          
+      <div class="jm-doon-doon">
+        <h1>EARN IT.</h1>
+        <div id="jm-more-details"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvMDgvMDMvNDE0L2Fycm93LnBuZyJdXQ/arrow.png?sha=db29f10880a0363a"/></div>
+        <p>
+          ANY TIME YOU USE YOUR<br/>
+          CARD IN-STORE OR ONLINE<br/>
+          YOU WILL <b>EARN POINTS.<span class="jm-miniUp">1</span></b>
+          <div></div>
+        </p>
+        
+      </div>
+      <div class="jm-doon-doon">
+        <h1>GET IT.</h1>
+        <div id="jm-more-details"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvMDgvMDMvNDE0L2Fycm93LnBuZyJdXQ/arrow.png?sha=db29f10880a0363a"/></div>
+        <p>
+          PREMIER CREDIT CARD:<br/>
+          <b>2 POINTS / $1</b>
+        </p>
+        <p>
+          ELITE CREDIT CARD:<br/>
+          <b>4 POINTS / $1</b>
+        </p>
+        <p>
+          <b>DEDICATED CHECKOUT IN STORES</b>
+        </p>
+        <p>
+          <b>FREE STANDARD SHIPPING ONLINE</b><br/>
+          PREMIER: $50+ ORDERS<span class="jm-miniUp">3</span><br/>
+          ELITE: ALL ORDERS<span class="jm-miniUp">3</span>         
+        </p>
+        <p>
+          SPEND $1,500 PER YEAR TO<br/>
+          QUALIFY AS AN<br/>
+          ELITE CARDHOLDER
+          <div></div>
+        </p>
+        
+      </div>
+      <div class="jm-doon-doon">
+        <h1>SPEND IT.</h1>
+        <div id="jm-more-details"><img src="https://www.c21stores.com/media/W1siZiIsIjIwMTYvMDUvMjAvMTIvMDgvMDMvNDE0L2Fycm93LnBuZyJdXQ/arrow.png?sha=db29f10880a0363a"/></div>
+        <p>
+          <b>$10 REWARD </b>TO SPEND AT
+          CENTURY 21 WITH EVERY
+          <b>500 POINTS</b> EARNED<span class="jm-miniUp">2</span></b>
+          <div></div>
+        </p>
+      </div>      
+      
+    </div>
+        
+  </article>  
+
+
+  <!-- MESSAGE 4 -->
+  <section class="jm-image4">
+    <article>
+      <div>
+        <h2>EARN POINTS,<br/>
+        ENJOY THE SAVINGS</h2>
+        <h3>You can still participate in our <b>Red</b> tier<br/> rewards program without a <b>C21STATUS<br/> Credit Card</b>—compare benefits below:</h3>
+      </div>
+        <p class="content-block-content__action content-block-content__action--button">
+        	<a class="button button--alt button--wide button--large" href="https://www.c21stores.com/users/account/edit?edit_section=c21status">ENROLL NOW</a>
+	    </p>      
+    </article>  
+
+  </section>  
+  
+  <!-- MESSAGE 5 -->
+  <section class="jm-image5"></section>     
+  <article class="jm-message5-mob jmrv-mobile">
+    <h2><b>C21STATUS</b> REWARDS PROGRAM</h2>   
+    <ul>
+      <li class="jm-table-TopHeader1">&nbsp;</li>
+      <li class="jm-table-TopHeader2">LOYALTY</li>
+      <li class="jm-table-TopHeader3">CREDIT CARD</li>
+    </ul>
+    <ul>
+      <li class="jm-table-header jm-table-header-0"><b>YOUR BENEFITS</b></li>
+      <li class="jm-table-header jm-table-header-1" onclick="jmRed()">RED</li>
+      <li class="jm-table-header jm-table-header-2" onclick="jmPremier()">PREMIER</li>
+      <li class="jm-table-header jm-table-header-3" onclick="jmElite()">ELITE</li>
+    </ul>
+    <table>
+<!-- 
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>       
+      </tr>  
+ --> 
+      <tr>
+        <th>EARN POINTS<span class="jm-miniUp">1</span></th>
+        <th><span class="jm-circle jm-circle-red"></span><br/><span>1 PT / $1</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>2 PT / $1</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>4 PT / $1</span></th>       
+      </tr>
+      <tr>
+        <th>FREE STANDARD SHIPPING ONLINE<span class="jm-miniUp">2</span></th>
+        <th><span class="jm-circle jm-circle-red"></span><br/><span>OVER $75</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>OVER $50</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>ALL ORDERS</span></th>        
+      </tr>
+      <tr>
+        <th>$10 REWARD FOR EVERY 500 POINTS<span class="jm-miniUp">3</span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>FIRST DAY 15% OFF PURCHASE<span class="jm-miniUp">*</span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>20% OFF BIRTHDAY COUPON<span class="jm-miniUp">4</span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>15% OFF UPON RECEIVING YOUR NEW CARD<span class="jm-miniUp"></span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>DEDICATED CHECKOUT<span class="jm-miniUp"></span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>EXCLUSIVE OFFERS & EVENTS<span class="jm-miniUp"></span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-gray"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>LIMITED-EDITION DESIGNER BRAND OFFERS<span class="jm-miniUp"></span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>VIP ACCESS TO SAMPLE SALES<span class="jm-miniUp"></span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>
+      <tr>
+        <th>EARLY ACCESS TO SALES EVENTS<span class="jm-miniUp"></span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-white"></span><br/><span>&nbsp;</span></th>
+        <th><span class="jm-circle jm-circle-black"></span><br/><span>&nbsp;</span></th>        
+      </tr>                                   
+    </table>
+  </article>
+    
+
+  <!-- Fine Print --> 
+  <p class="jm-fine-prints">
+    The C21STATUS Credit Card is issued by Comenity Capital Bank.  *Subject to credit approval. Offer valid with the use of the C21STATUS Credit Card on the day you are approved.
+    The discount does not apply to prior purchases, gift cards, services, M.A.C cosmetics or select licensed or leased departments. Exclusions may vary, see store associate for details.
+    <span>1</span>This rewards program is provided by Century 21 Department Stores, and its terms may change at any time. For Full Rewards Terms and Conditions, please see <a href="/pages/c21status-terms" class="jm-anchor-c21status">WWW.C21STORES.COM/C21STATUS-TERMS</a>. 
+    <span>2</span>C21STATUS Credit Card use is required. Exclusions apply. See WWW.C21STORES.COM for more details.
+    <span>3</span>Reward Dollars are good for in-store & online merchandise only. Reward Dollars have no cash value and may not be redeemed for purchase of gift cards or for select licensed and leased departments. Exclusions apply. 
+	<span>4</span>Account must be in good standing. A valid U.S. email address must be on file to receive this offer. Exclusions apply. 
+  </p>
+</div>
+
+
