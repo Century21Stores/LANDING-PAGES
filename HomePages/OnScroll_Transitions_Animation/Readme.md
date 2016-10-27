@@ -1,4 +1,4 @@
-## HOME PAGE TEMPLATE - 9 Grid Home Page Message Template
+## HOME PAGE TEMPLATE - Transitions and animations trigger onScroll 
 
 Live sample:
 https://www.c21stores.com/pages/hp7
