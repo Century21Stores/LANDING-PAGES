@@ -21,8 +21,8 @@ $(window).scroll(function() {
 
 // THIS WILL HAPPEN
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 380;         
-    var scroll_pos_test2 = 850;                 
+    var scroll_pos_test = 380;
+    var scroll_pos_test2 = 850;
   // set to whatever you want it to be
 
     if((y_scroll_pos > scroll_pos_test) && (y_scroll_pos < scroll_pos_test2)) {
@@ -38,18 +38,18 @@ $(window).scroll(function() {
     $('.jm-table-header:eq(0)').delay(1000).animate({opacity:1},'slow');
     $('.jm-table-header:eq(1)').delay(1500).animate({opacity:1},'slow');
     $('.jm-table-header:eq(2)').delay(2000).animate({opacity:1},'slow');
-    $('.jm-table-header:eq(3)').delay(2000).animate({opacity:1},'slow');    
+    $('.jm-table-header:eq(3)').delay(2000).animate({opacity:1},'slow');
   };secondAnimation();
-  
+
     }
   else
   {
     console.log("MMMrrrr!");
     $('.jm-message3-mob .jm-doon-doon').stop().find("p").slideUp();
     $('.jm-message3-mob .jm-doon-doon').find("#jm-more-details img").stop().removeClass("ArrowRotates");
-    
+
   }
-  
+
 });
 
 
