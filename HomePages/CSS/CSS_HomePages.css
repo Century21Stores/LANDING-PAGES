@@ -1,0 +1,104 @@
+/* CUSTOME HEADER - DIVIDERS */
+.jm-divider{
+  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 11vw;
+  line-height: 1;
+  margin: 12% 0 0;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
+.jm-divider-main-header{
+  font-size: 11vw;
+  line-height: 0.55;
+  margin: 3% 0 0;
+}
+.jm-divider-subcopy{
+  text-align: center;
+  font-size: 3vw;
+  margin: 0 0 1em;
+}
+/* END CUSTOME HEADER - DIVIDERS */
+
+/* HIDE PLCC HEADER */
+/*
+.branded-card-header{
+  opacity:0;
+  height:0;
+  padding: 0 !important;
+}
+*/
+
+/* END HIDE PLCC HEADER */
+
+section.branded-card-header--active{
+display:block !important;
+}
+
+
+@media screen and (min-width: 700px){
+
+.page-content{
+  background:#F6F5F5;
+}
+
+div.hero-content-block .content-block-content--right {
+    left: 50% !important;
+}
+div.hero-content-block .content-block-content--left {
+    right: 50% !important;
+}
+.grid__cell, .grid--2-at-medium>.grid__cell, .grid--2-at-medium>.grid__cell+.grid__cell{
+  margin-bottom: 0 !important;
+}
+.content-block-content--center .content-block-content__container--center .content-block-content__action--button {
+  margin: 2.5% 0 0;
+}
+.jm-special-header-1 a{
+  display:initial !important;
+}
+
+/* CUSTOME HEADER - DIVIDERS */
+.jm-divider{
+    font-size: 6em;
+    margin: 7% 0 0;
+}
+
+.jm-divider-main-header{
+font-size: 10vw;
+    margin: 3% 0 0;
+}
+.jm-divider-subcopy{
+    font-size: 1.7vw;
+}
+/* END CUSTOME HEADER - DIVIDERS */
+
+}
+
+@media screen and (min-width: 1280px){
+/* CUSTOME HEADER - DIVIDERS */
+.jm-divider-main-header{
+font-size: 10em;
+}
+.jm-divider-subcopy{
+    font-size: 1.7em;
+}
+/* END CUSTOME HEADER - DIVIDERS */
+
+}
+
+@media (max-width:700px) {
+.jm-special-header-1{
+    position: absolute;
+    right: 0;
+    background: none !important;
+    width: 81%;
+    z-index: 999;
+}
+.jm-special-header-1 h3{
+font-size: 10px !important;
+}
+
+
+}
