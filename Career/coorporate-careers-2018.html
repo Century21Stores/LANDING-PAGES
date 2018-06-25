@@ -1,0 +1,294 @@
+<!-- Coorporate Career page - 06.04.18 - JMRV -->
+
+<style>
+
+.jm-header {
+  width: 100%;
+  height: 164px;
+  background-color: #e6393f;
+  text-align: center;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  max-width: 1440px;
+}
+.jm-header h3,
+#jm-coorporate-main h2,
+#jm-coorporate-main p,
+section article h3,
+section article p{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.sticky-header-onscroll{
+    position: fixed;
+}
+
+.jm-header h3 {
+  font-size: 2em;
+  color: #fff;
+  line-height: 134px;
+  text-transform: uppercase;
+  font-weight: 100;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.jm-header nav {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.jm-header nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.jm-header nav a:hover {
+
+}
+
+
+#jm-buying figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTQvNDMvNDUvMTc0L0JVWUlORy5qcGciXV0/BUYING.jpg?sha=16b0641f2f8cc04a');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-planning figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTQvNDkvNTYvMzA2L3BsYW5uaW5nLmpwZyJdXQ/planning.jpg?sha=1c2fe056e1ee8ac3');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-finance figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMDkvMDQvNzU2L2ZpbmFuY2UuanBnIl1d/finance.jpg?sha=577bc4302fd54d33');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-ecommerce figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMTMvMzgvNzUxL2Vjb21tLmpwZyJdXQ/ecomm.jpg?sha=7ab624b002711413');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-creative figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMTUvMDUvNy9jcmVhdGl2ZS5qcGciXV0/creative.jpg?sha=e7615a8d350b3d43');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-marketing figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMzIvMTgvMjMxL21hcmtldGluZy5qcGciXV0/marketing.jpg?sha=243a936b184a10e6');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-it figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMzQvMjEvMzc0L0lULmpwZyJdXQ/IT.jpg?sha=b7b5c09cf8ba0258');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+#jm-customerservice figure{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMzUvMzgvNjU5L2N1c3RvbWVyc2VydmljZS5qcGciXV0/customerservice.jpg?sha=eeb5884125a7088b');
+    padding-top: calc((540% / 507) * 50);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+
+@media (min-width:700px) {
+#jm-coorporate-header{
+    background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTQvMzMvMTkvMzMwL2Nvb3Jwb3JhdGVfY2FyZWVyc19hdF9jZW50dXJ5LmpwZyJdXQ/coorporate-careers-at-century.jpg?sha=acb5f609149e861e');
+    padding-top: calc((595% / 1400) * 100);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
+.jm-coorporate-wrapper figure,
+.jm-coorporate-wrapper article{
+    float: left;
+    width: 50%;
+}
+.jm-coorporate-wrapper div{
+    overflow: auto;
+}
+
+}
+
+
+
+/* Sticky Header Style */
+/* ---------------------------------------- */
+body.sticky-header {
+  padding-top: 100px;
+  position: fixed;
+}
+body.sticky-header .jm-header {
+  height: 60px;
+  background-color: rgba(52, 152, 219, 0.9);
+}
+body.sticky-header .jm-header h1 {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+</style>
+
+<figure id="jm-coorporate-header"></figure>    
+
+<article id='jm-coorporate-main'>
+    <h2>CORPORATE CAREERS <br/>AT CENTURY</h2>
+    <p>From buying incredible fashion to merchandising and marketing it, a passion for Century 21 Storess amazing deals and amazing, unique culture shines through—a passion that we hope you share.</p>
+
+    <p>We want you to wake up excited to go to the office. Employees at Century 21 say that working here feels like being with family. That’s why they love coming to work every day—and why you will, too. In fact, the founding Gindi family still runs the day-to-day operations of our privately-owned company, taking great personal pride in making it a continued success. The sons of the original owners, Al and Sonny Gindi, lead the corporate team along with an executive committee made up of chief officers with decades of experience from across the retail industry. You will be inspired by how hands-on higher management is and how you can take an active role in shaping the company’s future—and your own.</p>
+
+    <p>You’ll find our New York corporate offices located in Downtown Manhattan, in the heart of our flagship store at 22 Cortlandt Street. That is where our merchant team sits, with well-connected buyers constantly on the hunt for the latest fashion finds from around the globe for our customers. These designer brands at amazing prices have a wow factor that sets us apart from the off-price retail competition. It’s why you will find working here as one-of-a-kind an experience as our one-of-a-kind merchandise.</p>
+</article>
+
+<article id='jm-coorporate-quote'>
+    <p>“In my over 30 years of experience here, the company has evolved and grown tenfold and we’ve all been part of that growth—it’s a great feeling. What’s also great is that it’s a family-run business and the owners are totally accessible, whereas in other corporations you don’t feel that.”</p>
+</article>
+
+
+<section class="jm-header">
+    <h3>JOB TYPES</h3>
+    <nav>
+      <a href="">BUYING</a>
+      <a href="">PLANNING</a>
+      <a href="">FINANCE</a>
+      <a href="">ECOM</a>
+      <a href="">CREATIVE</a>
+      <a href="">MARKETING</a>
+      <a href="">IT</a>
+      <a href="">CUSTOMER SERVICE</a>
+    </nav>
+</section>
+<section class="jm-coorporate-wrapper">
+    <div id='jm-buying'>
+        <figure></figure>
+        <article>
+            <h3> BUYING</h3>
+            <p>Being a part of our merchant team is at the core of what we have to offer. Our seasoned team is connected and able to source the best designer deals from unexpected places, in innovative ways. Our Fashion Director and Chief Merchandising Officer make sure that our buyers are constantly bringing in great values on cutting-edge names in fashion. They make sure that we appeal to our loyal fan base for the highest-end European fashion, balancing the mix with fresh new names. Whatever your specialty or area of interest, there is a place for you. Just starting out? We have a standout internship program.</p>
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#buying">APPLY NOW</a>
+            </p>                    
+        </article>
+    </div>
+    <div id='jm-planning'>
+        <figure></figure>
+        <article>
+            <h3> PLANNING</h3>
+            <p>If you’re already a planner, we’re sure you have a pretty good idea what your next career move is. But if you haven’t got it all planned out, consider joining our team. Our recently established planning division works hand-in-hand with buying to make sure that we have the right goods, at the right levels, at the right times. There are opportunities to improve logistics and sales across the entire store base, especially in the fast-growing ecommerce division. You will get to work with the latest, industry-standard software to make sure you and your buyers stay on track and hit your plan (or beat it, of course) season after season.</p>            
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#planning">APPLY NOW</a>
+            </p>
+        </article>
+    </div>  
+    <div id='jm-finance'>
+        <figure></figure>
+        <article>
+            <h3> FINANCE</h3>
+            <p>While our privately held company can’t give out numbers, we can tell you that Century 21 has experienced some phenomenal results over the past few years driven by its rapidly-growing website C21Stores.com. Working for a private company has a number of benefits, allowing you to budget and forecast based on growing retail sales organically—instead of focusing on Wall Street expectations. You will have the chance
+            to shape our financial strategy across all areas of the company, including the strategic growth of our successful C21STATUS Credit Card program that launched in 2017. The bottom line? It all adds up to one great career opportunity.</p>            
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#finance">APPLY NOW</a>
+            </p>
+        </article>
+    </div>
+    <div id='jm-ecommerce'>
+        <figure></figure>
+        <article>
+            <h3> ECOMMERCE</h3>
+            <p>Like your career bigger, faster and on the outer cusp of technology? Meet our fastest-growing division C21Stores.com. It is a dramatic success, winning C21’s Store of the Year award two years running. Incredible, explosive sales are a testament to a team of expert site merchandisers that make sure that our best brands and merchandise are always front and center on our site, marketed in partnership with the creative team. Working together, the ecommerce team helps define trends for our customers and constantly improve the shopping experience, maximizing inventory sell-through. Our web production team keeps everything up and running for a smooth online shopping and checkout experience.</p>            
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#ecommerce">APPLY NOW</a>
+            </p>
+        </article>
+    </div>
+    <div id='jm-creative'>
+        <figure></figure>
+        <article>
+            <h3> CREATIVE</h3>
+            <p>Love innovating and creating impactful selling messages? Our omnichannel creative team works together to do it all in house. They produce daily emails and website updates for C21Stores.com, as well as seasonal advertising campaigns across store, print, outdoor and digital advertising. Our talented Creative Director oversees art, copy, photo/video and retouching teams. Stylists and make-up artists can all find a place in our still and on-figure photography studios. Seasoned project managers make everything run like clockwork. If you want to be part of a best-in-class creative team, with the freedom to help define messaging for a constantly changing mix of brands and fashion, this is for you.</p>
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#creative">APPLY NOW</a>
+            </p>
+        </article>
+    </div>
+    <div id='jm-marketing'>
+        <figure></figure>
+        <article>
+            <h3> MARKETING</h3>
+            <p>Customers love our brands and prices—you can help us get the word out. Our marketers stay on top of and come up with key discount events, playing up semi-annual clearance, credit card promotions and sales in partnership with
+            key vendors. Working hand-in-hand with the in-house omnichannel creative team, your role in marketing would help ensure that our core tagline and marketing message, Designer Brands, Amazing Prices, gets out. Market across paid and organic digital advertising, social media on Facebook and Instagram, seasonal store signage, outdoor advertising campaigns, on C21Stores.com and in daily email messaging.</p>
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#marketing">APPLY NOW</a>
+            </p>
+        </article>
+    </div>
+    <div id='jm-it'>
+        <figure></figure>
+        <article>
+            <h3> IT</h3>
+            <p>From working on logistics systems that locate product and get it where it needs to go, to making sure that C21Stores.com remains a state-of-the-art selling vehicle, there are many exciting career opportunities to download. Rapidly changing technology is supporting and driving future innovation and expansion at Century 21, especially for its fast-growing ecommerce division. Our IT team needs to stay as cutting-edge as our fashion. The IT team sits primarily in our Secaucus ADC warehouse, with tech positions in our SDC and support positions in NY and our EDC. There are also critical positions for PC and MAC support specialists to keep the business up and running smoothly across divisions.</p>
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#it">APPLY NOW</a>
+            </p>
+        </article>
+    </div>
+    <div id='jm-customerservice'>
+        <figure></figure>
+        <article>
+            <h3> CUSTOMER SERVICE</h3>
+            <p>How can we help you—with your next career move? Just like our store associates, customer service agents are on the front lines (the phone lines) making sure that our shoppers are fully satisfied. You can also help customers through email and our newly launched Live Chat feature on C21Stores.com. You have the chance to make or break sales in this very important role, managing customer expectations and giving them the right information at the right time.</p>
+            <p class="content-block-content__action content-block-content__action--button">
+                <a class="button button--alt button--wide button--large" href="#jm-customerservice">APPLY NOW</a>
+            </p>
+        </article>
+    </div>    
+</section>
+
+
+
+<script>
+
+$(function(){
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+    if(winTop >= 1000){
+      $(".page-content").addClass("sticky-header");
+      $(".jm-header").addClass("sticky-header-onscroll");
+    }else{
+      $(".page-content").removeClass("sticky-header");
+      $(".jm-header").removeClass("sticky-header-onscroll");
+    }//if-else
+  });//win func.
+});//ready func.
+
+</script>
