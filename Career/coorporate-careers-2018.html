@@ -1,11 +1,68 @@
-<!-- Coorporate Career page - 06.04.18 - JMRV -->
+<!-- Corporate Career page - 08.07.18 - JMRV -->
 
 <style>
 
-.jm-header {
+/* GENERAL */
+.jm-menu-header h3,
+#jm-coorporate-main h2,
+#jm-coorporate-main p,
+section article h3,
+section article p{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.jm-career-header{
+  font-size: 4.3em;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 100;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: #d1333a;
+  letter-spacing: 0;  
+}
+/* END GENERAL */
+
+/* QUOTE LINE */
+#jm-coorporate-quote{
+  background-image: url(https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDYvMTUvMzIvMTkvMTIzL2NvbWlsbGFzLnBuZyJdXQ/comillas.png?sha=cc066fef9aca83a3);
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: 100%;
+  padding: 11% 0;
+  border: solid 1px #c3c3c3;
+  border-right: none;
+  border-left: navajowhite;
+  margin: 3% 0;
+}
+.jm-quote{
+  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin: 0 auto;
+  width: 87%;
+  text-align: left;  
+}
+.jm-author{
+  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  text-transform: uppercase;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 86%;
+  margin: 2% auto 0;
+}
+/* END QUOTE LINE */
+
+/*  MENU STYLING JOB TYPES  */
+.jm-menu-header {
   width: 100%;
-  height: 164px;
-  background-color: #e6393f;
   text-align: center;
   position: relative;
   top: 0;
@@ -16,40 +73,45 @@
   transition: all 0.5s ease;
   max-width: 1440px;
 }
-.jm-header h3,
-#jm-coorporate-main h2,
-#jm-coorporate-main p,
-section article h3,
-section article p{
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
 
 .sticky-header-onscroll{
-    position: fixed;
+  position: fixed;
+  z-index: 99;
+  background: white;
+  margin-top: 2%;
+  padding: 1% 0 0;
+  border-top: solid 20px #ececec;
 }
+.sticky-header-onscroll-down{
+  position: fixed;
+  z-index: 99;
+  background: white;
+  margin-top: 0%;
+  padding: 1% 0 0;
+  border-top: none;
+}
+/* END MENU STYLING JOB TYPES  */
 
-.jm-header h3 {
-  font-size: 2em;
-  color: #fff;
-  line-height: 134px;
-  text-transform: uppercase;
-  font-weight: 100;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+
+.jm-career-header-top{
+  line-height: 0.68;
+  text-align: left;
+  margin: 2% auto;
+  width: 46.5%;  
 }
-.jm-header nav {
-  position: absolute;
+.jm-career-header-l2{
+  display: block;
+  text-align: right;  
+}
+.jm-menu-header nav {
+  /*position: absolute;*/
   bottom: 0;
   height: 60px;
   line-height: 60px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  /*background-color: rgba(0, 0, 0, 0.1);*/
 }
-.jm-header nav a {
-  color: #fff;
+.jm-menu-header nav a {
   display: inline-block;
   padding: 10px 15px;
   line-height: 1;
@@ -57,85 +119,118 @@ section article p{
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  color: black;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
 }
-.jm-header nav a:hover {
+/* END MENU STYLING JOB TYPES  */
 
+
+.jm-coorporate-listing-wrapper div figure{
+    padding-top: calc((540% / 507) * 46);
 }
-
 
 #jm-buying figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTQvNDMvNDUvMTc0L0JVWUlORy5qcGciXV0/BUYING.jpg?sha=16b0641f2f8cc04a');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-planning figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTQvNDkvNTYvMzA2L3BsYW5uaW5nLmpwZyJdXQ/planning.jpg?sha=1c2fe056e1ee8ac3');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-finance figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMDkvMDQvNzU2L2ZpbmFuY2UuanBnIl1d/finance.jpg?sha=577bc4302fd54d33');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-ecommerce figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMTMvMzgvNzUxL2Vjb21tLmpwZyJdXQ/ecomm.jpg?sha=7ab624b002711413');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-creative figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMTUvMDUvNy9jcmVhdGl2ZS5qcGciXV0/creative.jpg?sha=e7615a8d350b3d43');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-marketing figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMzIvMTgvMjMxL21hcmtldGluZy5qcGciXV0/marketing.jpg?sha=243a936b184a10e6');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-it figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMzQvMjEvMzc0L0lULmpwZyJdXQ/IT.jpg?sha=b7b5c09cf8ba0258');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-customerservice figure{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTUvMzUvMzgvNjU5L2N1c3RvbWVyc2VydmljZS5qcGciXV0/customerservice.jpg?sha=eeb5884125a7088b');
-    padding-top: calc((540% / 507) * 50);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 
+
 @media (min-width:700px) {
-#jm-coorporate-header{
+.jm-coorporate-header-image{
     background: url('https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDUvMzEvMTQvMzMvMTkvMzMwL2Nvb3Jwb3JhdGVfY2FyZWVyc19hdF9jZW50dXJ5LmpwZyJdXQ/coorporate-careers-at-century.jpg?sha=acb5f609149e861e');
     padding-top: calc((595% / 1400) * 100);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
-.jm-coorporate-wrapper figure,
-.jm-coorporate-wrapper article{
-    float: left;
-    width: 50%;
+.jm-coorporate-listing-wrapper figure,
+.jm-coorporate-listing-wrapper article{
+  float: left;
+  width: 50%;
 }
-.jm-coorporate-wrapper div{
+.jm-coorporate-listing-wrapper article{
+  padding: 8% 0;
+}
+.jm-coorporate-listing-wrapper article .content-block-content__action{
+  margin-top: 13%;
+}
+.jm-to-the-right figure{
+  float: right;
+  margin-right: 1.9%;  
+}
+
+.jm-coorporate-listing-wrapper div{
     overflow: auto;
 }
+
+/* JOB LISTING STYLING */
+.jm-coorporate-listing-wrapper figure,
+.jm-coorporate-listing-wrapper article{
+  width: 46%;
+}
+
+.jm-coorporate-listing-wrapper article h3{
+  font-size: 1.63em;  
+}
+.jm-coorporate-listing-wrapper article p{
+  
+}
+.jm-line{
+  width: 3%;
+  float: left;
+  border-left: solid 1px #c3c3c3;
+  padding: 26.5% 0;
+  margin-left: 3%;
+}
+/* END JOB LISTING STYLING */
+
+
 
 }
 
@@ -147,11 +242,11 @@ body.sticky-header {
   padding-top: 100px;
   position: fixed;
 }
-body.sticky-header .jm-header {
+body.sticky-header .jm-menu-header {
   height: 60px;
   background-color: rgba(52, 152, 219, 0.9);
 }
-body.sticky-header .jm-header h1 {
+body.sticky-header .jm-menu-header h1 {
   -moz-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   -webkit-transform: scale(0, 0);
@@ -160,38 +255,51 @@ body.sticky-header .jm-header h1 {
 
 </style>
 
-<figure id="jm-coorporate-header"></figure>    
+<!-- MAIN HEADER -->
+<section id="jm-coorporate-header">
 
-<article id='jm-coorporate-main'>
-    <h2>CORPORATE CAREERS <br/>AT CENTURY</h2>
-    <p>From buying incredible fashion to merchandising and marketing it, a passion for Century 21 Storess amazing deals and amazing, unique culture shines through—a passion that we hope you share.</p>
+    <figure class="jm-coorporate-header-image"></figure> 
+    <article id='jm-coorporate-main'>
+        <h2 class="jm-career-header jm-career-header-top">CORPORATE CAREERS <span class="jm-career-header-l2">AT CENTURY</span></h2>
+        <p>From buying incredible fashion to merchandising and marketing it, a passion for Century 21 Storess amazing deals and amazing, unique culture shines through—a passion that we hope you share.</p>
 
-    <p>We want you to wake up excited to go to the office. Employees at Century 21 say that working here feels like being with family. That’s why they love coming to work every day—and why you will, too. In fact, the founding Gindi family still runs the day-to-day operations of our privately-owned company, taking great personal pride in making it a continued success. The sons of the original owners, Al and Sonny Gindi, lead the corporate team along with an executive committee made up of chief officers with decades of experience from across the retail industry. You will be inspired by how hands-on higher management is and how you can take an active role in shaping the company’s future—and your own.</p>
+        <p>We want you to wake up excited to go to the office. Employees at Century 21 say that working here feels like being with family. That’s why they love coming to work every day—and why you will, too. In fact, the founding Gindi family still runs the day-to-day operations of our privately-owned company, taking great personal pride in making it a continued success. The sons of the original owners, Al and Sonny Gindi, lead the corporate team along with an executive committee made up of chief officers with decades of experience from across the retail industry. You will be inspired by how hands-on higher management is and how you can take an active role in shaping the company’s future—and your own.</p>
 
-    <p>You’ll find our New York corporate offices located in Downtown Manhattan, in the heart of our flagship store at 22 Cortlandt Street. That is where our merchant team sits, with well-connected buyers constantly on the hunt for the latest fashion finds from around the globe for our customers. These designer brands at amazing prices have a wow factor that sets us apart from the off-price retail competition. It’s why you will find working here as one-of-a-kind an experience as our one-of-a-kind merchandise.</p>
-</article>
+        <p>You’ll find our New York corporate offices located in Downtown Manhattan, in the heart of our flagship store at 22 Cortlandt Street. That is where our merchant team sits, with well-connected buyers constantly on the hunt for the latest fashion finds from around the globe for our customers. These designer brands at amazing prices have a wow factor that sets us apart from the off-price retail competition. It’s why you will find working here as one-of-a-kind an experience as our one-of-a-kind merchandise.</p>
+    </article>
 
-<article id='jm-coorporate-quote'>
-    <p>“In my over 30 years of experience here, the company has evolved and grown tenfold and we’ve all been part of that growth—it’s a great feeling. What’s also great is that it’s a family-run business and the owners are totally accessible, whereas in other corporations you don’t feel that.”</p>
-</article>
+</section>
 
 
-<section class="jm-header">
-    <h3>JOB TYPES</h3>
+<!-- QUOTE -->
+<aside id='jm-coorporate-quote'>
+    <p class="jm-quote">“In my over 30 years of experience here, the company has evolved and grown tenfold and we’ve all been part of that growth—it’s a great feeling. What’s also great is that it’s a family-run business and the owners are totally accessible, whereas in other corporations you don’t feel that.”</p>
+    <p class="jm-author">Dorinda Yu, VP/DMM, European Division</p>
+</aside>
+
+
+<!-- JOB TYPES STICKY MENU -->
+<section class="jm-menu-header">
+    <h3 class="jm-career-header">JOB TYPES</h3>
     <nav>
-      <a href="">BUYING</a>
-      <a href="">PLANNING</a>
-      <a href="">FINANCE</a>
-      <a href="">ECOM</a>
-      <a href="">CREATIVE</a>
-      <a href="">MARKETING</a>
-      <a href="">IT</a>
-      <a href="">CUSTOMER SERVICE</a>
+      <a id="BUYING" href="#jm-buying">BUYING</a>
+      <a id="PLANNING" href="#jm-planning">PLANNING</a>
+      <a id="FINANCE" href="#jm-finance">FINANCE</a>
+      <a id="ECOMMERCE" href="#jm-ecommerce">ECOM</a>
+      <a id="CREATIVE" href="#jm-creative">CREATIVE</a>
+      <a id="MARKETING" href="#jm-marketing">MARKETING</a>
+      <a id="IT" href="#jm-it">IT</a>
+      <a id="CUSTOMER_SERVICE" href="#jm-customerservice">CUSTOMER SERVICE</a>
     </nav>
 </section>
-<section class="jm-coorporate-wrapper">
+
+
+<!-- LISTING OF JOBS AVAILABLE PER TEAM -->
+<section class="jm-coorporate-listing-wrapper">
+
     <div id='jm-buying'>
         <figure></figure>
+        <span class="jm-line"></span>
         <article>
             <h3> BUYING</h3>
             <p>Being a part of our merchant team is at the core of what we have to offer. Our seasoned team is connected and able to source the best designer deals from unexpected places, in innovative ways. Our Fashion Director and Chief Merchandising Officer make sure that our buyers are constantly bringing in great values on cutting-edge names in fashion. They make sure that we appeal to our loyal fan base for the highest-end European fashion, balancing the mix with fresh new names. Whatever your specialty or area of interest, there is a place for you. Just starting out? We have a standout internship program.</p>
@@ -200,8 +308,9 @@ body.sticky-header .jm-header h1 {
             </p>                    
         </article>
     </div>
-    <div id='jm-planning'>
-        <figure></figure>
+
+    <div id='jm-planning' class="jm-to-the-right">
+        <figure></figure>        
         <article>
             <h3> PLANNING</h3>
             <p>If you’re already a planner, we’re sure you have a pretty good idea what your next career move is. But if you haven’t got it all planned out, consider joining our team. Our recently established planning division works hand-in-hand with buying to make sure that we have the right goods, at the right levels, at the right times. There are opportunities to improve logistics and sales across the entire store base, especially in the fast-growing ecommerce division. You will get to work with the latest, industry-standard software to make sure you and your buyers stay on track and hit your plan (or beat it, of course) season after season.</p>            
@@ -209,9 +318,12 @@ body.sticky-header .jm-header h1 {
                 <a class="button button--alt button--wide button--large" href="#planning">APPLY NOW</a>
             </p>
         </article>
+        <span class="jm-line"></span>        
     </div>  
+
     <div id='jm-finance'>
         <figure></figure>
+        <span class="jm-line"></span>
         <article>
             <h3> FINANCE</h3>
             <p>While our privately held company can’t give out numbers, we can tell you that Century 21 has experienced some phenomenal results over the past few years driven by its rapidly-growing website C21Stores.com. Working for a private company has a number of benefits, allowing you to budget and forecast based on growing retail sales organically—instead of focusing on Wall Street expectations. You will have the chance
@@ -221,7 +333,7 @@ body.sticky-header .jm-header h1 {
             </p>
         </article>
     </div>
-    <div id='jm-ecommerce'>
+    <div id='jm-ecommerce' class="jm-to-the-right">
         <figure></figure>
         <article>
             <h3> ECOMMERCE</h3>
@@ -230,9 +342,11 @@ body.sticky-header .jm-header h1 {
                 <a class="button button--alt button--wide button--large" href="#ecommerce">APPLY NOW</a>
             </p>
         </article>
+        <span class="jm-line"></span>
     </div>
     <div id='jm-creative'>
         <figure></figure>
+        <span class="jm-line"></span>
         <article>
             <h3> CREATIVE</h3>
             <p>Love innovating and creating impactful selling messages? Our omnichannel creative team works together to do it all in house. They produce daily emails and website updates for C21Stores.com, as well as seasonal advertising campaigns across store, print, outdoor and digital advertising. Our talented Creative Director oversees art, copy, photo/video and retouching teams. Stylists and make-up artists can all find a place in our still and on-figure photography studios. Seasoned project managers make everything run like clockwork. If you want to be part of a best-in-class creative team, with the freedom to help define messaging for a constantly changing mix of brands and fashion, this is for you.</p>
@@ -241,7 +355,7 @@ body.sticky-header .jm-header h1 {
             </p>
         </article>
     </div>
-    <div id='jm-marketing'>
+    <div id='jm-marketing' class="jm-to-the-right">
         <figure></figure>
         <article>
             <h3> MARKETING</h3>
@@ -251,9 +365,11 @@ body.sticky-header .jm-header h1 {
                 <a class="button button--alt button--wide button--large" href="#marketing">APPLY NOW</a>
             </p>
         </article>
+        <span class="jm-line"></span>
     </div>
     <div id='jm-it'>
         <figure></figure>
+        <span class="jm-line"></span>
         <article>
             <h3> IT</h3>
             <p>From working on logistics systems that locate product and get it where it needs to go, to making sure that C21Stores.com remains a state-of-the-art selling vehicle, there are many exciting career opportunities to download. Rapidly changing technology is supporting and driving future innovation and expansion at Century 21, especially for its fast-growing ecommerce division. Our IT team needs to stay as cutting-edge as our fashion. The IT team sits primarily in our Secaucus ADC warehouse, with tech positions in our SDC and support positions in NY and our EDC. There are also critical positions for PC and MAC support specialists to keep the business up and running smoothly across divisions.</p>
@@ -262,7 +378,7 @@ body.sticky-header .jm-header h1 {
             </p>
         </article>
     </div>
-    <div id='jm-customerservice'>
+    <div id='jm-customerservice' class="jm-to-the-right">
         <figure></figure>
         <article>
             <h3> CUSTOMER SERVICE</h3>
@@ -271,24 +387,142 @@ body.sticky-header .jm-header h1 {
                 <a class="button button--alt button--wide button--large" href="#jm-customerservice">APPLY NOW</a>
             </p>
         </article>
-    </div>    
+        <span class="jm-line"></span>
+    </div>  
+
 </section>
 
+
+<!-- PERKS and BENEFITS -->
+<section id='jm-coorporate-perks'>
+    <h3 class="jm-career-header">TEN MOST WANTED PERKS</h3>
+    <!--  ICON 1 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Shopping bag Icon symbolizing even more amazing discounts at C21">
+      <figcaption>EMPLOYEE DISCOUNTS <span>Even-More-Amazing Prices</span></figcaption>
+    </figure>
+    <!--  ICON 2 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMjkvMDAvNjk0LzQwMWsucG5nIl1d/401k.png?sha=7b8b216ba3b5161d" alt="Piggy bank Icon symbolizing 401K Plan at C21">
+      <figcaption>401(K) PLAN <span>With Company Matching</span></figcaption>
+    </figure>
+    <!--  ICON 3 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzEvMDkvNTYzL3N1bW1lcmZyaWRheXMucG5nIl1d/summerfridays.png?sha=a861e0c1e9254246" alt="Summer Icon symbolizing summer Friday Schedule at C21">
+      <figcaption>SUMMER FRIDAYS <span>That Everyone Actually Takes</span></figcaption>
+    </figure>
+    <!--  ICON 4 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzgvMzkvMzQ5L3dvcmtfbGlmZS5wbmciXV0/work-life.png?sha=1748d76567d22599" alt="Family Icon symbolizing work/life balance at C21">
+      <figcaption>WORK/LIFE BALANCE <span>Great Hours, Family Friendly</span></figcaption>
+    </figure>
+    <!--  ICON 5 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzkvNTUvMjEvcHRvLnBuZyJdXQ/pto.png?sha=756c096be43a257b" alt="Traveling Icon symbolizing generous PTO policy at C21">
+      <figcaption>GENEROUS PTO <span>Great Extra Days After Only 3 Years</span></figcaption>
+    </figure>
+    <!--  ICON 6 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Train Icon symbolizing commuters benefits at C21">
+      <figcaption>COMMUTER BENEFITS <span>Discount On Transit</span></figcaption>
+    </figure>
+    <!--  ICON 7 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Health Icon symbolizing competitive health benefits at C21">
+      <figcaption>COMPETITIVE BENEFITS <span>Comprehensive Health,<br/>Dental &amp; Medical</span></figcaption>
+    </figure>
+    <!--  ICON 8 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Ice cream Icon symbolizing special perks at C21">
+      <figcaption>SPECIAL PERKS <span>Free Ice Cream Trucks,<br/>Team Outings &amp; More</span></figcaption>
+    </figure>
+    <!--  ICON 9 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Medal Icon symbolizing plum benefits at C21">
+      <figcaption>PLUM BENEFITS <span>Save On Movie Tickets, Hotels, Events &amp; Shows</span></figcaption>
+    </figure>
+    <!--  ICON 10 -->
+    <figure>
+      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Chart Icon symbolizing growth opportunities at C21">
+      <figcaption>GROWTH POTENTIAL <span>Flexibility to Move Up Or <br/>Switch Gears</span></figcaption>
+    </figure>
+</section>
 
 
 <script>
 
+// STICKY HEADER ON SCROLL
 $(function(){
-  $(window).scroll(function(){
-    var winTop = $(window).scrollTop();
-    if(winTop >= 1000){
-      $(".page-content").addClass("sticky-header");
-      $(".jm-header").addClass("sticky-header-onscroll");
-    }else{
-      $(".page-content").removeClass("sticky-header");
-      $(".jm-header").removeClass("sticky-header-onscroll");
-    }//if-else
-  });//win func.
-});//ready func.
+  var position = $(window).scrollTop(); 
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if(scroll > position) {
+          // console.log('scrollDown');
+        if(scroll >= 1400){
+          $(".page-content").addClass("sticky-header");
+          $(".jm-menu-header").addClass("sticky-header-onscroll-down");
+        }else{
+          $(".page-content").removeClass("sticky-header");
+          $(".jm-menu-header").removeClass("sticky-header-onscroll-down");
+        }
+      } else {
+           // console.log('scrollUp');
+         if(scroll >= 1400){
+          $(".page-content").addClass("sticky-header");
+          $(".jm-menu-header").removeClass("sticky-header-onscroll-down");
+          $(".jm-menu-header").addClass("sticky-header-onscroll");
+        }else{
+          $(".page-content").removeClass("sticky-header");
+          $(".jm-menu-header").removeClass("sticky-header-onscroll");
+        }
+      }
+      position = scroll;
+  });
+});
+// END STICKY HEADER ON SCROLL
+
+// GOING FROM MENU TO SECTION
+$("#BUYING").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-buying").offset().top-230
+    }, 1000);
+});
+$("#PLANNING").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-planning").offset().top-230
+    }, 1000);
+});
+$("#FINANCE").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-finance").offset().top-230
+    }, 1000);
+});
+$("#ECOMMERCE").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-ecommerce").offset().top-230
+    }, 1000);
+});
+$("#CREATIVE").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-creative").offset().top-230
+    }, 1000)
+});
+$("#MARKETING").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-marketing").offset().top-230
+    }, 1000);
+});
+$("#IT").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-it").offset().top-230
+    }, 1000);
+});
+$("#CUSTOMER_SERVICE").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#jm-customerservice").offset().top-230
+    }, 1000);
+});
+// END GOING FROM MENU TO SECTION
+
 
 </script>
