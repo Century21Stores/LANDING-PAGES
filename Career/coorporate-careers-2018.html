@@ -1,8 +1,22 @@
-<!-- Corporate Career page - 08.07.18 - JMRV -->
+<!-- Corporate Career page - 08.15.18 - JMRV -->
 
 <style>
 
 /* GENERAL */
+iframe{
+  visibility : hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50em;  
+}
+iframe#jm-edc{
+  visibility : visible;
+}
+.jm-show{
+  visibility : visible;
+}
 .jm-menu-header h3,
 #jm-coorporate-main h2,
 #jm-coorporate-main p,
@@ -26,6 +40,14 @@ section article p{
   letter-spacing: 0;  
 }
 /* END GENERAL */
+
+
+/*  HEADER  */
+#jm-coorporate-header p{
+  width: 96%;
+  margin: 0 auto;
+}
+/*  END HEADER  */
 
 /* QUOTE LINE */
 #jm-coorporate-quote{
@@ -97,7 +119,7 @@ section article p{
   line-height: 0.68;
   text-align: left;
   margin: 2% auto;
-  width: 46.5%;  
+  width: 11.1em;  
 }
 .jm-career-header-l2{
   display: block;
@@ -180,6 +202,44 @@ section article p{
     background-size: 100%;
 }
 
+/* LOCATIONS */
+#jm-coorporate-locations{
+  margin: 0 0 10%;  
+}
+#jm-coorporate-locations .jm-career-header{
+  text-align: center;
+  margin: 9% 0 5%;  
+}
+.jm-coorporate-locations-wrap{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.jm-coorporate-locations-wrap div:nth-of-type(1){
+  padding: 50.9em 6em 0;
+  position: relative;
+  width: 26%;
+  display: inline-block;
+  margin-left: 10%;
+}
+.jm-coorporate-locations-wrap div:nth-of-type(2){
+  display: inline-block;
+  width: 37%;
+  padding: 0 3%;  
+}
+.jm-coorporate-locations-wrap h3{
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin: 0 0 5%;  
+}
+.jm-coorporate-locations-wrap aside h3{
+  margin: 13% 0 5%;  
+}
+/* END LOCATIONS */
 
 @media (min-width:700px) {
 .jm-coorporate-header-image{
@@ -212,7 +272,15 @@ section article p{
 /* JOB LISTING STYLING */
 .jm-coorporate-listing-wrapper figure,
 .jm-coorporate-listing-wrapper article{
-  width: 46%;
+  width: 44%;
+}
+.jm-coorporate-listing-wrapper > div:nth-child(even) article,
+.jm-coorporate-listing-wrapper > div:nth-child(odd) figure{
+    margin-right: 1.9%;
+}
+.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
+.jm-coorporate-listing-wrapper > div:nth-child(even) article{
+    margin-left: 1.9%;
 }
 
 .jm-coorporate-listing-wrapper article h3{
@@ -230,7 +298,54 @@ section article p{
 }
 /* END JOB LISTING STYLING */
 
+/* LIST OF PERKS */
+#jm-coorporate-perks{
+  text-align: center;  
+}
+#jm-coorporate-perks h3{
+  margin: 9% 0 5%;
+}
+#jm-coorporate-perks div{
+  overflow: auto;
+}
+#jm-coorporate-perks figure{
+  width: 33%;
+  float: left;
+  margin: 0 0 5%;
+}
+#jm-coorporate-perks figure.jm-last-one{
+  width: 100%;
+}
+#jm-coorporate-perks figure figcaption{
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1;
+  margin: 3% 0 0;  
+}
+#jm-coorporate-perks figure figcaption span{
+  display: block;
+  font-size: 0.95em;
+  font-weight: normal;  
+}
+/* END LIST OF PERKS */
 
+}
+
+
+@media (min-width:1440px) {
+#jm-coorporate-header p{
+  width: 96%;
+}
+.jm-coorporate-listing-wrapper figure,
+.jm-coorporate-listing-wrapper article{
+  width: 46%;
+}
+.jm-coorporate-listing-wrapper > div:nth-child(even) article,
+.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
+.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
+.jm-coorporate-listing-wrapper > div:nth-child(even) article{
+    margin: 0%;
+}
 
 }
 
@@ -396,6 +511,7 @@ body.sticky-header .jm-menu-header h1 {
 <!-- PERKS and BENEFITS -->
 <section id='jm-coorporate-perks'>
     <h3 class="jm-career-header">TEN MOST WANTED PERKS</h3>
+    <div>
     <!--  ICON 1 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Shopping bag Icon symbolizing even more amazing discounts at C21">
@@ -426,6 +542,8 @@ body.sticky-header .jm-menu-header h1 {
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Train Icon symbolizing commuters benefits at C21">
       <figcaption>COMMUTER BENEFITS <span>Discount On Transit</span></figcaption>
     </figure>
+    </div>
+    <div>
     <!--  ICON 7 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Health Icon symbolizing competitive health benefits at C21">
@@ -442,12 +560,46 @@ body.sticky-header .jm-menu-header h1 {
       <figcaption>PLUM BENEFITS <span>Save On Movie Tickets, Hotels, Events &amp; Shows</span></figcaption>
     </figure>
     <!--  ICON 10 -->
-    <figure>
+    <figure class="jm-last-one">
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Chart Icon symbolizing growth opportunities at C21">
       <figcaption>GROWTH POTENTIAL <span>Flexibility to Move Up Or <br/>Switch Gears</span></figcaption>
     </figure>
+    </div>
 </section>
+<!-- END PERKS and BENEFITS -->
 
+
+<!-- LOCATIONS NEW JERSEY OFFICES -->
+<section id='jm-coorporate-locations'>
+  <h3 class="jm-career-header">LOCATIONS</h3>
+  <div class="jm-coorporate-locations-wrap">  
+    <div>
+      
+      <iframe id="jm-edc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2506792219524!2d-74.06874064872332!3d40.77850277922329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257b04486ab1d%3A0x8d0763592e87cf41!2s700+Secaucus+Rd%2C+Secaucus%2C+NJ+07094!5e0!3m2!1sen!2sus!4v1534340315822" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe id="jm-sdc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.1920119118195!2d-74.07206684872321!3d40.77979267922313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257b1759c7e41%3A0x33d535a71662452c!2sCentury+21+Distribution+Center!5e0!3m2!1sen!2sus!4v1534343204812" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe id="jm-adc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12083.7895504677!2d-74.06404809630246!3d40.78517079511199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257c7897fa019%3A0x1cd037178d9bd922!2s1+Emerson+Ln%2C+Secaucus%2C+NJ+07094!5e0!3m2!1sen!2sus!4v1534343286052" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe id="jm-hdc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12084.78928510249!2d-74.06702392590877!3d40.77967594526913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257b05857712d%3A0xe4f58ad3f7a83891!2s21+Century+Way%2C+Secaucus%2C+NJ+07094!5e0!3m2!1sen!2sus!4v1534346134382" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+    <div>
+      <article>
+        <h3>SECAUCUS: THE 6TH BOROUGH?</h3>
+        <p>We like it in NJ and think that you will, too. In addition to our NY corporate offices, we have corporate employees across our four warehouses in Secaucus, NJ. Our ecommerce, marketing and creative teams sit in our <a onclick="jm_maps_toggle('jm-edc')">EDC at 700 Secaucus Road</a>, right next to our <a onclick="jm_maps_toggle('jm-hdc')">HDC</a>. HR, IT, finance and other key positions are located across our other warehouses, the <a onclick="jm_maps_toggle('jm-adc')">ADC at 1 Emerson Lane</a> and the <a onclick="jm_maps_toggle('jm-sdc')">SDC</a> at Enterprise Road.</p>
+        <p>Secaucus is a quick, 10-minutes-flat train ride from Penn Station in Manhattan on NJ Transit or a short bus trip in as little as 20 minutes from Port Authority. One reason to consider crossing the Hudson River for your next job? You will enjoy significant tax savings working in New Jersey vs. New York. And if you already live in Jersey, how perfect is that?</p>
+      </article>
+      <aside>
+        <h3>corporate shuttle</h3>
+        <p> Our free corporate employee shuttle makes
+            getting to  work between NY and NJ even easier.
+            It runs every few minutes during rush hour
+            between the Secaucus  train station and our four
+            warehouses, the <a onclick="jm_maps_toggle('jm-edc')">EDC</a>, <a onclick="jm_maps_toggle('jm-hdc')">HDC</a>, <a onclick="jm_maps_toggle('jm-sdc')">SDC</a> and <a onclick="jm_maps_toggle('jm-adc')">ADC</a>. 
+        </p>
+      </aside>
+    </div>
+  <div>
+</section>
+<!-- END LOCATIONS NEW JERSEY OFFICES -->
 
 <script>
 
@@ -457,22 +609,24 @@ $(function(){
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
       if(scroll > position) {
-          // console.log('scrollDown');
-        if(scroll >= 1400){
+          // console.log(scroll);
+        if((scroll >= 1500) && (scroll <= 6500)  ){
           $(".page-content").addClass("sticky-header");
           $(".jm-menu-header").addClass("sticky-header-onscroll-down");
         }else{
           $(".page-content").removeClass("sticky-header");
           $(".jm-menu-header").removeClass("sticky-header-onscroll-down");
+          $(".jm-menu-header").removeClass("sticky-header-onscroll");
         }
       } else {
            // console.log('scrollUp');
-         if(scroll >= 1400){
+         if((scroll >= 1500) && (scroll <= 6500)  ){
           $(".page-content").addClass("sticky-header");
           $(".jm-menu-header").removeClass("sticky-header-onscroll-down");
           $(".jm-menu-header").addClass("sticky-header-onscroll");
         }else{
           $(".page-content").removeClass("sticky-header");
+          $(".jm-menu-header").removeClass("sticky-header-onscroll-down");          
           $(".jm-menu-header").removeClass("sticky-header-onscroll");
         }
       }
@@ -524,5 +678,14 @@ $("#CUSTOMER_SERVICE").click(function (){
 });
 // END GOING FROM MENU TO SECTION
 
+
+// MAPS
+function jm_maps_toggle(location){
+  // if(location = 'jm-edc'){
+    $('iframe').removeClass('jm-show');
+    $('#' + location).addClass('jm-show');
+  // }
+  
+}
 
 </script>
