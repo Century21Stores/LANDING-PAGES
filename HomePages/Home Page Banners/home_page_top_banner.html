@@ -1,0 +1,110 @@
+<!-- PLCC 20% W22A Home Page Top Banner - JMRV - 08.22.18 -->
+
+<style>
+.jm_show_important{
+    display: flex !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+}
+.jm-clearance-hero-banner{
+    text-align: center;
+    background-color: #e2271e;
+    margin: 0 0 1%;
+    padding: 3% 0;
+}
+.jm-clearance-hero-banner h3,
+.jm-clearance-hero-banner p{
+    font-family: Gotham-light, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+.jm-clearance-hero-banner .jm-h3-1{
+    font-size: 0.66em;
+    letter-spacing: 0.1em;    
+}
+.jm-clearance-hero-banner .jm-h3-1 span{
+    background-color: white;
+    color: #e2271e;
+    padding: 0.2em 1%;
+}
+.jm-clearance-hero-banner .jm-h3-2{
+    color: white;
+    font-size: 5.8vw;
+    margin: 1% 0;
+    line-height: 1.1;
+}
+.jm-clearance-hero-banner .jm-p-1{
+    color: white;
+    font-size: 0.61em;
+    font-weight: bold;
+}
+.jm_dark_lightBox, .rich-text-content-block{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.jm-clearance-hero-banner .content-block-content__action{
+    margin: 0.5% 0 0;
+}
+.jm-clearance-hero-banner .content-block-content__action a{
+    color: white;
+    border-color: white;
+    margin: 0 2%;
+}
+
+/* .......... BIGGER SCREENS .......... */
+@media screen and (min-width: 700px){
+.jm-clearance-hero-banner .jm-h3-1{
+    font-size: 0.8em;
+}
+.jm-clearance-hero-banner .jm-h3-2{
+    font-size: 3.8em;
+    margin: 0;
+}
+.jm-clearance-hero-banner .jm-p-1{
+    font-size: 1.34em;
+}
+.jm-clearance-hero-banner{
+    padding: 1% 0;
+}
+
+}
+
+
+</style>
+
+<div class="jm-clearance-hero-banner">
+    <h3 class="jm-h3-1"><span><b>ONLINE &amp; IN-STORE | 8/30-9/3 ONLY</b></span></h3>
+    <h3 class="jm-h3-2"><b>SAVE AN EXTRA 20%</b><span class="jm-asterisk">*</span></b></span></h3>
+    <p class="jm-p-1">WITH A NEW C21STATUS CREDIT CARD IF APPROVED TODAY*</p>
+    <p class="content-block-content__action content-block-content__action--light-text">
+        <a target="_blank" class="text" href="https://www.c21stores.com/instant_credit/apply?bga=hp_xtra20_plcc_apply_now_w30d&gal=apply_page_plcc">APPLY NOW</a>
+        <a id="jmlb" class="text" href="#?bga=hp_xtra20_plcc_ligthbox_w30d&gal=info_exclusions_lightbox_plcc">INFO/EXCLUSIONS</a>
+    </p>
+</div>
+
+<script>
+$("#jmlb").click(function() {
+    $(".jm_dark_lightBox, .rich-text-content-block").addClass('jm_show_important');
+    $(".jm_dark_lightBox").click(function() {
+        $(".jm_dark_lightBox").removeClass('jm_show_important');
+    })  
+});
+
+
+//     if (jm_hero_FirstCTA_url.indexOf("#jmlb") > -1){
+//         //console.log('first is hidden');
+//         jm_hero_FirstCTA.addClass('jm_bottom_lightbox').wrapInner( '<div class="jm_lightBox_CTA"></div>');
+//         jm_hero_FirstCTA.addClass('JM_trigger_ligthBox');
+//         //console.log ('coming crispy' + $(this));
+//                 var new_data_lb = $('.jm_bottom_lightbox:first-of-type', this).clone();
+//                 new_data_lb.attr("id", "jm_img_anchor_LB");
+// //                      new_data_lb.removeAttr("class");
+//                 new_data_lb.appendTo(this);
+//         $(this).find('.JM_trigger_ligthBox').hide(100);
+//         //console.log(jm_hero_FirstCTA);
+//     }
+
+</script>    
