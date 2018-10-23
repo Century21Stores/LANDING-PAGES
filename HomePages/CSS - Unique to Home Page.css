@@ -1,9 +1,15 @@
-/*  CURRENTLY DEFAULT  - JuanMa - 10.23.18 */
+/*  CURRENTLY W38D OVERWRITE  - JuanMa - 10.23.18 */
 
-/* WXX OVERWRITE * /
+/* W38D OVERWRITE */
+.large-square-plus-one-content-block__text:before{
+  display: none;
+}
+div.large-square-plus-one-content-block__container--small-image{
+  display: block;
+}
 
+/* END W38D OVERWRITE */
 
-/* END WXX OVERWRITE * /
 
 /* CTA OVERWRITE
 .page-layout div:nth-of-type(5) .button--alt{
