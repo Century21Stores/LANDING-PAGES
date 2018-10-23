@@ -1,68 +1,136 @@
-/* UNIQUE CSS FOR HOME PAGE - 08.15.17 */
+/*  CURRENTLY DEFAULT  - JuanMa - 10.23.18 */
+
+/* WXX OVERWRITE * /
 
 
-/* CUSTOME HEADER - DIVIDERS */
-.jm-divider{
-  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  text-align: center;
-  font-style: italic;
-  font-size: 11vw;
-  line-height: 1;
-  margin: 12% 0 0;
-  font-weight: normal;
-  letter-spacing: 0.03em;
+/* END WXX OVERWRITE * /
+
+/* CTA OVERWRITE
+.page-layout div:nth-of-type(5) .button--alt{
+    background: white;
 }
+.page-layout div:nth-of-type(5) .button--alt:hover{
+    background: black;
+}
+
+END CTA OVERWRITE */
+
+
+/* GLOBAL BANNER
+section.branded-card-header.branded-card-header--active, div.jm-branded-card-header--active-hide, div.branded-card-header--active,
+.jm-split-special-plcc-banner,
+.jm-split-special-plcc-banner-mobile{
+  display:none !important;
+}
+END GLOBAL BANNER */
+
+
+
+section.branded-card-header.branded-card-header--active{
+    position: static;
+    z-index: 1;
+    bottom:initial;
+    opacity:1;
+}
+#ju_Con_289720{
+  display:none!important;
+}
+
+
+section.branded-card-header{
+display:block !important;
+}
+/*W45D Home Page Banner*/
+.jm-divider{
+font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 11vw;
+    line-height: 1;
+    margin: 12% 0 0;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+}
+
 .jm-divider-main-header{
-  font-size: 11vw;
-  line-height: 0.55;
-  margin: 3% 0 0;
+font-size: 11vw;
+    line-height: 0.55;
+    margin: 3% 0 0;
 }
 .jm-divider-subcopy{
-  text-align: center;
-  font-size: 3vw;
-  margin: 0 0 1em;
+    text-align: center;
+font-size: 3vw;
+    margin: 0 0 1em;
 }
-/* END CUSTOME HEADER - DIVIDERS */
-
-/* HIDE PLCC HEADER */
-/*
+ /*HIDE PLCC HEADER 
 .branded-card-header{
   opacity:0;
   height:0;
   padding: 0 !important;
 }
-*/
-
-/* END HIDE PLCC HEADER */
-
 section.branded-card-header--active{
 display:block !important;
 }
+ END HIDE PLCC HEADER */
+
+
+/* HOME PAGE TOP BANNER */
+.jm-home-page-header{
+  background: #000000;
+  text-align: center;
+  padding: 1% 0;
+  position: relative;
+}
+.jm-home-page-header h3{
+  color: white;
+  margin: 0;
+  font-size: 1.7em;
+  letter-spacing: 0.02em;
+  font-weight: lighter;
+}
+.jm-home-page-header h3  > b{
+  font-weight: normal;
+}
+.jm-home-page-header p{
+  color: white;
+  margin: 0;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.jm-home-page-header a{
+  color: white !important;
+  border-color: white !important;
+}
+/* END HOME PAGE TOP BANNER */
 
 
 @media screen and (min-width: 700px){
-
+/*.content-block-content--center {
+    width: 90% !important;
+}*/
 .page-content{
-  background:#F6F5F5;
+background:#F6F5F5;
 }
-
 div.hero-content-block .content-block-content--right {
-    left: 50% !important;
+/*    left: 50% !important; */
+    left: 40% !important;
 }
 div.hero-content-block .content-block-content--left {
-    right: 50% !important;
+/*    right: 50% !important; */
+    right: 40% !important;
 }
 .grid__cell, .grid--2-at-medium>.grid__cell, .grid--2-at-medium>.grid__cell+.grid__cell{
-  margin-bottom: 0 !important;
+margin-bottom: 0 !important;
 }
 .content-block-content--center .content-block-content__container--center .content-block-content__action--button {
-  margin: 2.5% 0 0;
+margin: 2.5% 0 0;
 }
 .jm-special-header-1 a{
-  display:initial !important;
+display:initial !important;
 }
-
-/* CUSTOME HEADER - DIVIDERS */
 .jm-divider{
     font-size: 6em;
     margin: 7% 0 0;
@@ -75,33 +143,49 @@ font-size: 10vw;
 .jm-divider-subcopy{
     font-size: 1.7vw;
 }
-/* END CUSTOME HEADER - DIVIDERS */
+p.jm-HPH-fine-print{
+  position: absolute;
+  bottom: 8%;
+  right: 1%;
+  font-size: 0.9em;
+  letter-spacing: 0;
+}
 
 }
 
 @media screen and (min-width: 1280px){
-/* CUSTOME HEADER - DIVIDERS */
 .jm-divider-main-header{
 font-size: 10em;
 }
 .jm-divider-subcopy{
     font-size: 1.7em;
 }
-/* END CUSTOME HEADER - DIVIDERS */
 
 }
 
 @media (max-width:700px) {
-.jm-special-header-1{
-    position: absolute;
-    right: 0;
-    background: none !important;
-    width: 81%;
-    z-index: 999;
+/* HOME PAGE TOP BANNER */
+.jm-home-page-header{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 79%;
+  font-size: 1.5vw;
+  padding: 0.5vw 0;
+  z-index: 33;
 }
-.jm-special-header-1 h3{
-font-size: 10px !important;
+.jm-home-page-header h3{
+  font-size: 10px;
+  letter-spacing: 0.1em;
 }
+.jm-home-page-header a.jm-mobile-HPheader-cta{
+  font-size: 8px !important;
+}
+.jm-home-page-header p.jm-mobile-HPheader-l1{
+  font-size: 10px;
+}
+/* END HOME PAGE TOP BANNER */
+
 
 
 }
