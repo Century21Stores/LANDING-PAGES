@@ -1,15 +1,15 @@
-// W38D Update  - JuanMa - 12.23.18
+//  Default  - JuanMa - 10.31.18
 
 
-// W38D OVERWRITE
-$.fn.swap = function (elem) {
-    elem = elem.jquery ? elem : $(elem);
-    return this.each(function () {
-        $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
-    });
-};
-$('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
-// END W38D OVERWRITE
+// W38D OVERWRITE SWAP MESSAGES
+//$.fn.swap = function (elem) {
+    //elem = elem.jquery ? elem : $(elem);
+    //return this.each(function () {
+        //$(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
+    //});
+//};
+//$('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
+// END W38D OVERWRITE SWAP MESSAGES
 
 // $(document).ready(function(){
 
