@@ -1,4 +1,4 @@
-/*  CURRENTLY DEFAULT - JuanMa - 11.12.18 */
+/*  CURRENTLY W42 C OVERWRITE - JuanMa - 11.12.18 */
 
 /* W40D OVERWRITE LARGE PLUS 1
 .large-square-plus-one-content-block__text:before{
@@ -10,15 +10,14 @@ div.large-square-plus-one-content-block__container--small-image{
 END W40D OVERWRITE */
 
 
-/* CTA OVERWRITE
-.page-layout div:nth-of-type(5) .button--alt{
-    background: white;
+/* CTA W42 OVERWRITE */
+.page-layout div:nth-of-type(5) .jm-multipleCTA-space2 > a:nth-of-type(2){
+  max-width: 183px;    
 }
-.page-layout div:nth-of-type(5) .button--alt:hover{
-    background: black;
+.page-layout div:nth-of-type(5) .content-block-content--bottom{
+  padding-bottom: 2.5%;
 }
-
-END CTA OVERWRITE */
+/* END CTA W42 OVERWRITE */
 
 
 /* GLOBAL BANNER
@@ -197,5 +196,15 @@ div.large-square-plus-one-content-block__container--large-image{
     padding-bottom: 27%;
 }
  END W40D OVERWRITE LARGE PLUS 1 */
+
+/* CTA W42 OVERWRITE */
+.page-layout div:nth-of-type(5) .jm-multipleCTA-space2 > a{
+  color: white;
+}
+.page-layout div:nth-of-type(5) .content-block-content__container{
+  padding-bottom: 2.5%;
+  background: black;
+}
+/* END CTA W42 OVERWRITE */
 
 }
