@@ -1,4 +1,4 @@
-//  OVERWRITE 40D  - JuanMa - 10.31.18
+//  OVERWRITE 42C - JuanMa - 11.12.18
 
 
 // W40D OVERWRITE SWAP MESSAGES
@@ -11,7 +11,7 @@
 // $('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
 // END W38D OVERWRITE SWAP MESSAGES
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
     // CLONING TO BE REVISED
     //$('.jm-HomePage5 .jm-cloneIt, .jmrv-hp3 .jm-cloneIt').each(function(){
@@ -24,25 +24,24 @@
     //});
     // END CLONING TO BE REVISED
 
-    // W35D LIGHTBBOX MODIFICATION
-    // $('.page-layout div:nth-of-type(5) a').eq(1).click(function(){
-    //     console.log("The paragraph was clicked.");
-    //  $(this).addClass('JM_trigger_ligthBox');
-    //  $(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
-    //  $(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
-    //  $(".jm_dark_lightBox").click(function(){
-    //      $('.jm_displayflex').stop().fadeOut(300);
+    // W42C LIGHTBBOX MODIFICATION
+    $('.page-layout div:nth-of-type(5) a').eq(1).click(function(){
+        console.log("The paragraph was clicked.");
+     $(this).addClass('JM_trigger_ligthBox');
+     $(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
+     $(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
+     $(".jm_dark_lightBox").click(function(){
+         $('.jm_displayflex').stop().fadeOut(300);
 
-    //  });
-    //  $(".jm_X_Hero_lightBox").click(function(){
-    //      $('.jm_displayflex').stop().fadeOut(300);
+     });
+     $(".jm_X_Hero_lightBox").click(function(){
+         $('.jm_displayflex').stop().fadeOut(300);
 
-    //  });
-    // });
-    // END W35D LIGHTBBOX MODIFICATION FOR
+     });
+    });
+    // END W42C LIGHTBBOX MODIFICATION FOR
 
-
-//});
+});
 
 
 
