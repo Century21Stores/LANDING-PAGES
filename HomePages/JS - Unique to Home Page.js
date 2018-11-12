@@ -1,45 +1,45 @@
-//  Default  - JuanMa - 10.31.18
+//  OVERWRITE 40D  - JuanMa - 10.31.18
 
 
-// W38D OVERWRITE SWAP MESSAGES
-//$.fn.swap = function (elem) {
-    //elem = elem.jquery ? elem : $(elem);
-    //return this.each(function () {
-        //$(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
-    //});
-//};
-//$('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
+// W40D OVERWRITE SWAP MESSAGES
+$.fn.swap = function (elem) {
+    elem = elem.jquery ? elem : $(elem);
+    return this.each(function () {
+        $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
+    });
+};
+$('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
 // END W38D OVERWRITE SWAP MESSAGES
 
 // $(document).ready(function(){
 
-	// CLONING TO BE REVISED
-	//$('.jm-HomePage5 .jm-cloneIt, .jmrv-hp3 .jm-cloneIt').each(function(){
-    	//var new_data = $(this).find('*').filter('.jm-toClone').clone();
-		//var new_data= $('a', this).clone(); //ommit this
-		//console.log(new_data);
-    	//new_data.attr("id", "jm_img_anchor");
-     	//new_data.removeAttr("class");
-   		//new_data.appendTo(this);
-	//});
-	// END CLONING TO BE REVISED
+    // CLONING TO BE REVISED
+    //$('.jm-HomePage5 .jm-cloneIt, .jmrv-hp3 .jm-cloneIt').each(function(){
+        //var new_data = $(this).find('*').filter('.jm-toClone').clone();
+        //var new_data= $('a', this).clone(); //ommit this
+        //console.log(new_data);
+        //new_data.attr("id", "jm_img_anchor");
+        //new_data.removeAttr("class");
+        //new_data.appendTo(this);
+    //});
+    // END CLONING TO BE REVISED
 
-	// W35D LIGHTBBOX MODIFICATION
-	// $('.page-layout div:nth-of-type(5) a').eq(1).click(function(){
-	//     console.log("The paragraph was clicked.");
-	// 	$(this).addClass('JM_trigger_ligthBox');
-	// 	$(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
-	// 	$(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
-	// 	$(".jm_dark_lightBox").click(function(){
-	// 	    $('.jm_displayflex').stop().fadeOut(300);
+    // W35D LIGHTBBOX MODIFICATION
+    // $('.page-layout div:nth-of-type(5) a').eq(1).click(function(){
+    //     console.log("The paragraph was clicked.");
+    //  $(this).addClass('JM_trigger_ligthBox');
+    //  $(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
+    //  $(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
+    //  $(".jm_dark_lightBox").click(function(){
+    //      $('.jm_displayflex').stop().fadeOut(300);
 
-	// 	});
-	// 	$(".jm_X_Hero_lightBox").click(function(){
-	// 	    $('.jm_displayflex').stop().fadeOut(300);
+    //  });
+    //  $(".jm_X_Hero_lightBox").click(function(){
+    //      $('.jm_displayflex').stop().fadeOut(300);
 
-	// 	});
-	// });
-	// END W35D LIGHTBBOX MODIFICATION FOR
+    //  });
+    // });
+    // END W35D LIGHTBBOX MODIFICATION FOR
 
 
 //});
@@ -48,12 +48,12 @@
 
 // SPECIAL HEADER 1
 //$('.branded-card-header').after(
-	//	'<section class="jm-home-page-header">'+
-	//	'<p class="jm-mobile-HPheader-l1">Ship gifts in time for Christmas</p>'+
-	//	'<h3><b>Last day 12/20</b> for <b>Next-Day Shipping!<span class="jm-asterisk">*</span></b></h3>'+
-	//	'<p class="content-block-content__action content-block-content__action--dark-text"><a class="text jm-mobile-HPheader-cta" href="https://www.c21stores.com/pages/shipping-information">LEARN MORE</a></p>'+
-	//  '<p class="jm-desktop jm-HPH-fine-print"><span class="jm-asterisk">*</span>Dates vary by location.</span></p>'+
-  	//'</section>'
+    //  '<section class="jm-home-page-header">'+
+    //  '<p class="jm-mobile-HPheader-l1">Ship gifts in time for Christmas</p>'+
+    //  '<h3><b>Last day 12/20</b> for <b>Next-Day Shipping!<span class="jm-asterisk">*</span></b></h3>'+
+    //  '<p class="content-block-content__action content-block-content__action--dark-text"><a class="text jm-mobile-HPheader-cta" href="https://www.c21stores.com/pages/shipping-information">LEARN MORE</a></p>'+
+    //  '<p class="jm-desktop jm-HPH-fine-print"><span class="jm-asterisk">*</span>Dates vary by location.</span></p>'+
+    //'</section>'
 //);
 
 

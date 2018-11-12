@@ -1,14 +1,13 @@
-/*  CURRENTLY DEFAULT - JuanMa - 10.31.18 */
+/*  CURRENTLY OVERWRITE 40D - JuanMa - 10.31.18 */
 
-/* W38D OVERWRITE LARGE PLUS 1
+/* W40D OVERWRITE LARGE PLUS 1 */
 .large-square-plus-one-content-block__text:before{
   display: none;
 }
 div.large-square-plus-one-content-block__container--small-image{
   display: block;
 }
-
-END W38D OVERWRITE */
+/* END W40D OVERWRITE */
 
 
 /* CTA OVERWRITE
@@ -192,10 +191,10 @@ font-size: 10em;
 }
 /* END HOME PAGE TOP BANNER */
 
-/* W38D OVERWRITE LARGE PLUS 1 
+/* W40D OVERWRITE LARGE PLUS 1 
 div.large-square-plus-one-content-block__container--large-image{
     padding-bottom: 27%;
 }
- END W38D OVERWRITE LARGE PLUS 1 */
+ END W40D OVERWRITE LARGE PLUS 1 */
 
 }
