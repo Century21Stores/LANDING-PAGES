@@ -1,13 +1,13 @@
-/*  CURRENTLY OVERWRITE 40D - JuanMa - 10.31.18 */
+/*  CURRENTLY DEFAULT - JuanMa - 11.12.18 */
 
-/* W40D OVERWRITE LARGE PLUS 1 */
+/* W40D OVERWRITE LARGE PLUS 1
 .large-square-plus-one-content-block__text:before{
   display: none;
 }
 div.large-square-plus-one-content-block__container--small-image{
   display: block;
 }
-/* END W40D OVERWRITE */
+END W40D OVERWRITE */
 
 
 /* CTA OVERWRITE
@@ -30,7 +30,6 @@ section.branded-card-header.branded-card-header--active, div.jm-branded-card-hea
 END GLOBAL BANNER */
 
 
-
 section.branded-card-header.branded-card-header--active{
     position: static;
     z-index: 1;
@@ -43,9 +42,9 @@ section.branded-card-header.branded-card-header--active{
 
 
 section.branded-card-header{
-display:block !important;
+  display:block !important;
 }
-/*W45D Home Page Banner*/
+/* W45D Home Page Banner
 .jm-divider{
 font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     text-align: center;
@@ -67,6 +66,8 @@ font-size: 11vw;
 font-size: 3vw;
     margin: 0 0 1em;
 }
+END W45D Home Page Banner*/
+
  /*HIDE PLCC HEADER 
 .branded-card-header{
   opacity:0;

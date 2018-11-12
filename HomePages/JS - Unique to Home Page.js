@@ -2,13 +2,13 @@
 
 
 // W40D OVERWRITE SWAP MESSAGES
-$.fn.swap = function (elem) {
-    elem = elem.jquery ? elem : $(elem);
-    return this.each(function () {
-        $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
-    });
-};
-$('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
+// $.fn.swap = function (elem) {
+//     elem = elem.jquery ? elem : $(elem);
+//     return this.each(function () {
+//         $(document.createTextNode('')).insertBefore(this).before(elem.before(this)).remove();
+//     });
+// };
+// $('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
 // END W38D OVERWRITE SWAP MESSAGES
 
 // $(document).ready(function(){
