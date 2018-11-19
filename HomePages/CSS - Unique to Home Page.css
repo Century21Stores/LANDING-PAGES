@@ -1,4 +1,4 @@
-/*  CURRENTLY W42 C OVERWRITE - JuanMa - 11.14.18 */
+/*  CURRENTLY W42 C OVERWRITE - JuanMa - 11.19.18 */
 
 /* W40D OVERWRITE LARGE PLUS 1
 .large-square-plus-one-content-block__text:before{
@@ -207,12 +207,18 @@ div.large-square-plus-one-content-block__container--large-image{
  END W40D OVERWRITE LARGE PLUS 1 */
 
 /* CTA W42 OVERWRITE */
-.page-layout div:nth-of-type(5) .jm-multipleCTA-space2 > a{
+div.large-square-plus-one-content-block__container--large-image .content-block-content__action--button a{
   color: white;
+}
+div.large-square-plus-one-content-block__container--large-image .content-block-content__action--button a:hover{
+  background:black;
 }
 .page-layout div:nth-of-type(5) .content-block-content__container{
   padding-bottom: 2.5%;
-  background: black;
+  background: #b50024;
+}
+div.large-square-plus-one-content-block__container--large-image{
+   padding-bottom: 18%;
 }
 /* END CTA W42 OVERWRITE */
 
