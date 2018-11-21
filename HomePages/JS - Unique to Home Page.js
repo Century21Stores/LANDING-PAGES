@@ -1,4 +1,4 @@
-//  OVERWRITE 42C - JuanMa - 11.20.18
+//  OVERWRITE 43A CYBER MONDAY - JuanMa - 11.21.18
 
 
 // W40D OVERWRITE SWAP MESSAGES
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     // W42C LIGHTBBOX MODIFICATION
     $('.page-layout div:nth-of-type(6) a').eq(2).click(function(){
-        console.log("The paragraph was clicked.");
+    console.log("The paragraph was clicked.");
      $(this).addClass('JM_trigger_ligthBox');
      $(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
      $(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
