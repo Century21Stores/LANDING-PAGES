@@ -1,4 +1,4 @@
-/*  CURRENTLY W43A CYBER MONDAY OVERWRITE - JuanMa - 11.21.18 */
+/*  CURRENTLY W43B DEFAULT - JuanMa - 11.26.18 */
 
 /* W40D OVERWRITE LARGE PLUS 1
 .large-square-plus-one-content-block__text:before{
@@ -10,23 +10,23 @@ div.large-square-plus-one-content-block__container--small-image{
 END W40D OVERWRITE */
 
 
-/* W42 OVERWRITE DISCLAIMER */
+/* W42 OVERWRITE DISCLAIMER
 div.rich-text-content-block{
   width: 86%;
 }
 div.rich-text-content-block p{
   font-size: 0.5rem;
 }
-/* END W42 OVERWRITE DISCLAIMER */
+END W42 OVERWRITE DISCLAIMER */
 
-/* CTA W42 OVERWRITE */
+/* CTA W42 OVERWRITE
 .page-layout div:nth-of-type(6) .jm-multipleCTA-space2 > a:nth-of-type(2){
   max-width: 183px;    
 }
 .page-layout div:nth-of-type(6) .content-block-content--bottom{
   padding-bottom: 2.5%;
 }
-/* END CTA W42 OVERWRITE */
+END CTA W42 OVERWRITE */
 
 
 /* GLOBAL BANNER
@@ -35,8 +35,6 @@ section.branded-card-header.branded-card-header--active, div.jm-branded-card-hea
 .jm-split-special-plcc-banner-mobile{
   display:none !important;
 }
-END GLOBAL BANNER */
-
 
 section.branded-card-header.branded-card-header--active{
     position: static;
@@ -44,48 +42,11 @@ section.branded-card-header.branded-card-header--active{
     bottom:initial;
     opacity:1;
 }
-#ju_Con_289720{
-  display:none!important;
-}
-
-
 section.branded-card-header{
   display:none !important;
 }
-/* W45D Home Page Banner
-.jm-divider{
-font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    text-align: center;
-    font-style: italic;
-    font-size: 11vw;
-    line-height: 1;
-    margin: 12% 0 0;
-    font-weight: normal;
-    letter-spacing: 0.03em;
-}
+END GLOBAL BANNER */
 
-.jm-divider-main-header{
-font-size: 11vw;
-    line-height: 0.55;
-    margin: 3% 0 0;
-}
-.jm-divider-subcopy{
-    text-align: center;
-font-size: 3vw;
-    margin: 0 0 1em;
-}
-END W45D Home Page Banner*/
-
- /*HIDE PLCC HEADER 
-.branded-card-header{
-  opacity:0;
-  height:0;
-  padding: 0 !important;
-}
-section.branded-card-header--active{
-display:block !important;
-}
- END HIDE PLCC HEADER */
 
 
 /* HOME PAGE TOP BANNER */
@@ -206,7 +167,7 @@ div.large-square-plus-one-content-block__container--large-image{
 }
  END W40D OVERWRITE LARGE PLUS 1 */
 
-/* CTA W42 OVERWRITE */
+/* CTA W42 OVERWRITE
 .page-layout div:nth-of-type(6) .jm-multipleCTA-space2 > a{
   color: white;
 }
@@ -217,14 +178,14 @@ div.large-square-plus-one-content-block__container--large-image{
   padding-bottom: 2.5%;
   background: none;
 }
-/* END CTA W42 OVERWRITE */
+END CTA W42 OVERWRITE */
 
-/* W42 OVERWRITE DISCLAIMER */
+/* W42 OVERWRITE DISCLAIMER
 div.rich-text-content-block{
     max-height: 333px;
     overflow: auto;  
 }
 
-/* END W42 OVERWRITE DISCLAIMER */
+END W42 OVERWRITE DISCLAIMER */
 
 }

@@ -11,7 +11,7 @@
 // $('.large-square-plus-one-content-block__container--large-image').swap('.large-square-plus-one-content-block__container--small-image');
 // END W38D OVERWRITE SWAP MESSAGES
 
-$(document).ready(function(){
+//$(document).ready(function(){
 
     // CLONING TO BE REVISED
     //$('.jm-HomePage5 .jm-cloneIt, .jmrv-hp3 .jm-cloneIt').each(function(){
@@ -25,23 +25,23 @@ $(document).ready(function(){
     // END CLONING TO BE REVISED
 
     // W42C LIGHTBBOX MODIFICATION
-    $('.page-layout div:nth-of-type(6) a').eq(2).click(function(){
-    console.log("The paragraph was clicked.");
-     $(this).addClass('JM_trigger_ligthBox');
-     $(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
-     $(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
-     $(".jm_dark_lightBox").click(function(){
-         $('.jm_displayflex').stop().fadeOut(300);
+    // $('.page-layout div:nth-of-type(6) a').eq(2).click(function(){
+    // console.log("The paragraph was clicked.");
+    //  $(this).addClass('JM_trigger_ligthBox');
+    //  $(this).closest('div.hero-content-block').next().fadeIn(1000).addClass("jm_displayflex");
+    //  $(".jm_dark_lightBox, .rich-text-content-block").fadeIn();
+    //  $(".jm_dark_lightBox").click(function(){
+    //      $('.jm_displayflex').stop().fadeOut(300);
 
-     });
-     $(".jm_X_Hero_lightBox").click(function(){
-         $('.jm_displayflex').stop().fadeOut(300);
+    //  });
+    //  $(".jm_X_Hero_lightBox").click(function(){
+    //      $('.jm_displayflex').stop().fadeOut(300);
 
-     });
-    });
+    //  });
+    // });
     // END W42C LIGHTBBOX MODIFICATION FOR
 
-});
+//});
 
 
 
