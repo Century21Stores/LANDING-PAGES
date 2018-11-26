@@ -1,6 +1,9 @@
-<!-- MIX blocks - ADA 2nd mini Audit JuanMa  11.23.18 -->
+<!-- MIX blocks - ADA 2nd mini Audit JuanMa  11.26.18 -->
 
 <style>
+span.jm-show-block{
+    display: block !important;
+}
 .jm-h1{
     font-size: 1rem;
     text-align: center; 
@@ -84,7 +87,6 @@ span.jm-value-background{
 .jm-one-column-hero article{
     color: #000000;
     text-align: center;
-}    
     top: 45%;
     text-align: center;
 }
@@ -350,7 +352,7 @@ article.jm-hero-right-middle-center{
             <div>            
                 <h2>BIG PLAYERS</h2>
                 <h3>Giuseppe Zanotti <br/>Over 60% OFF</h3>
-                <span role="button" class="btn jm-cta-button">SHOP NOW</span>
+                <span class="btn jm-cta-button">SHOP NOW</span>
             </div>
         </article>      
     </div>
@@ -452,25 +454,28 @@ article.jm-hero-right-middle-center{
 
 
 <!-- GIF AS BACKGROUND HERO -->
-<div id="jm-gif-animation" class="jm-one-column-hero jm-one-column-hero-Wxx2">
-<a href="https://www.c21stores.com/">
+<div id="jm-gif-animation" class="jm-one-column-hero jm-one-column-hero-Wxx2"> 
+<a href="https://www.c21stores.com/">    
     <div class="jm-one-column-hero-restrict-area">
         <figure class="jm-one-column-hero-image" role="presentation">
             <span class="jm-background"></span>
-        </figure>    
+        </figure>
     </div>
-</a>
+    <article class="jm-hero-right-middle-center">
+        <div>
+            <h2>TEST GIF ANIMATION</h2>
+            <h3>Image as a background</h3>
+            <span class="btn jm-cta-button">SHOP NOW</span>
+        </div>
+    </article>
+</a>    
     <div class="jm-gif-ada-controls jm-gif-ada-controls2">
-        <a aria-label="Hold Return Key to Pause animation and release it to resume animation" title="Hold Return Key to Pause animation and release it to resume animation" id="jm-pause-gif2" href="#pause" class="jm-gif-pause"> &#10074;&#10074;</a>
+        <a aria-label="Hold Return Key to Pause animation and release it to resume animation" title="Hold Return Key to Pause animation and release it to resume animation" id="jm-pause-gif2" href="#pause" class="jm-gif-pause"> &#10074;&#10074;
+<!--         <span id="jm-gif-animation-paused" style="display: none">Animation Paused</span>
+        <span style="display: none">Animation Resumed</span> -->
+        </a>
         <!-- <a aria-label="Play Animation" title="Play Animation" id="jm-play-gif2" href="#play" class="jm-gif-play"> &#9658;</a> -->
-    </div>
-        <article class="jm-hero-right-middle-center">
-            <div>
-                <h2>TEST GIF ANIMATION</h2>
-                <h3>Image as a background</h3>
-                <span role="button" class="btn jm-cta-button">SHOP NOW</span>
-            </div>
-        </article>    
+    </div>        
 </div>
 
 
@@ -515,13 +520,14 @@ article.jm-hero-right-middle-center{
 document.getElementById('jm-pause-gif2').addEventListener('keydown', function (e) {
     if (e.keyCode == 13) {
         document.getElementById('jm-gif-animation').classList.add('jm-one-column-hero-Wxx2-paused');
-            console.log('everything is awesome');
+        //document.getElementById('jm-gif-animation-paused').classList.add('jm-show-block');
     }
 }, false);
 
 document.getElementById('jm-pause-gif2').addEventListener('keyup', function (e) {
     if (e.keyCode == 13) {
         document.getElementById('jm-gif-animation').classList.remove('jm-one-column-hero-Wxx2-paused');
+        document.getElementById('jm-gif-animation-paused').classList.remove('jm-show-block');
             console.log('everything is awesome');
     }
 }, false);
