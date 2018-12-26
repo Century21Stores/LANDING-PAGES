@@ -10,8 +10,121 @@
 
 /* END OVERWRITE */
 
+
+/* GENEREAL */
+.jm-content-block{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size:0;
+}
+article{
+    position: absolute;
+    color: #000000;
+    text-align: center;
+}
+
+/* Middle*/
+.jm-content-block-middle-center,
+.jm-content-block-top-center,
+.jm-content-block-bottom-center{
+    width: 45%;
+    margin: 0 auto;    
+}
+.jm-one-column-hero-multiple .jm-content-block-middle-center,
+.jm-one-column-hero-multiple  .jm-content-block-top-center,
+.jm-one-column-hero-multiple  .jm-content-block-bottom-center{
+    width: 90%;
+}
+.jm-content-block-top-center{
+    padding-top: 5%;
+}
+.jm-content-block-bottom-center{
+    padding-bottom: 5%;
+    top: inherit;
+}
+.jm-content-block-middle-center article,
+.jm-content-block-middle-left article,
+.jm-content-block-middle-right article{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;    
+}
+article.jm-textalign-left{
+    position: relative;
+    text-align: left;
+}
+article.jm-textalign-center{
+    position: relative;
+    text-align: center;
+}
+article.jm-textalign-right{
+    position: relative;
+    text-align: right;
+}
+/* End Middle */
+
+
+/* Left */
+.jm-content-block-middle-left,
+.jm-content-block-top-left,
+.jm-content-block-bottom-left{
+    width: 50%;
+}
+.jm-content-block-top-left{
+    padding: 5% 0 0 5%;
+}
+.jm-content-block-bottom-left{
+    padding: 0 0 5% 5%;
+    top: inherit;
+}
+.jm-content-block-middle-left{
+    padding: 0 0 0 5%;
+}
+/* End Left */
+
+/* Right */
+.jm-content-block-middle-right,
+.jm-content-block-top-right,
+.jm-content-block-bottom-right{
+    width: 50%;
+    margin: 0 0 0 auto;
+}
+.jm-content-block-top-right{
+    padding: 5% 5% 0 0;
+}
+.jm-content-block-bottom-right{
+    padding: 0 5% 5% 0;
+    top: inherit;
+}
+.jm-content-block-middle-right{
+    padding: 0 5% 0 0;
+}
+/* End Right */
+
+
+/* Top Center */
+
+
+/* End Top Center */
+
+.jm-content-block-middle-center:before,
+.jm-content-block-middle-left:before,
+.jm-content-block-middle-right:before{
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+/* END GENERAL */
+
 /* CTA */
-.jm-cta-button-light{
+.jm-cta-button-light,
+header ~ .container a.jm-cta-button-light:not(.btn-primary):not(.btn-outline-primary){
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;    
     font-size: 0.93rem;
@@ -25,9 +138,19 @@
     border-color: #ffffff; 
     color: #ffffff;
 }
-.jm-cta-button-light:hover{
+.jm-cta-button-light:hover,
+header ~ .container a.jm-cta-button-light:not(.btn-primary):not(.btn-outline-primary):hover{
     background: #000000;
     border-color: #000000;
+}
+.jm-one-column-hero-multiple article a{
+    margin: 0 0.3em;
+}
+.jm-one-column-hero-multiple article a:first-of-type{
+    margin-left: 0
+}
+.jm-one-column-hero-multiple article a:last-of-type{
+    margin-right: 0
 }
 /* END CTA */
 
@@ -39,13 +162,6 @@
 }
 .jm-one-column-hero{
 	margin:1% 0;
-}
-.jm-content-block{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 .jm-one-column-hero-restrict-area{
 	position: relative;
@@ -60,18 +176,6 @@
 	background: url("https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTYvMDMvMjkvMTMvMzIvMDIvMjEyL0hlcm9fRnVsbEJsZWVkLnBuZyJdXQ/Hero_FullBleed.png?sha=79200445595930ad");
 	background-size: cover;
     background-position: 50% 0;
-}
-
-article{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #000000;
-    font-size: 0;
-    top: 45%;
-    text-align: center;
 }
 .jm-one-column-hero-Wxx2 article{
     left: initial;
@@ -94,8 +198,8 @@ article{
 <a href="https://www.c21stores.com/">
 	<div class="jm-one-column-hero-restrict-area">
 		<div class="jm-one-column-hero-image" role="presentation"></div>
-		<div class="jm-content-block jm-content-block-light">
-            <article>
+		<div class="jm-content-block jm-content-block-light jm-content-block-middle-left">
+            <article class="jm-textalign-center">
     			<h2>BIG PLAYERS</h2>
     			<h3>Giuseppe Zanotti Over 60% OFF</h3>
     	   		<span class="btn jm-cta-button-light">SHOP NOW</span>
@@ -104,3 +208,24 @@ article{
 	</div>
 </a>
 </div>
+
+
+<!-- MULTIPLE CTA HERO -->
+<div class="jm-one-column-hero jm-one-column-hero-multiple jm-one-column-hero-Wxx">
+<a href="#1"></a>
+    <div class="jm-one-column-hero-restrict-area">
+        <div class="jm-one-column-hero-image" role="presentation"></div>
+        <div class="jm-content-block jm-content-block-light jm-content-block-middle-center">
+            <article class="jm-textalign-center">
+                <h2>BIG PLAYERS</h2>
+                <h3>Giuseppe Zanotti Over 60% OFF</h3>
+                <a href="#1" class="btn jm-cta-button-light">SHOP NOW</a>
+                <a href="#2" class="btn jm-cta-button-light">SHOP NOW</a>
+                <a href="#3" class="btn jm-cta-button-light">SHOP NOW</a>
+                <a href="#4" class="btn jm-cta-button-light">SHOP NOW</a>
+                <a href="#5" class="btn jm-cta-button-light">SHOP NOW</a>
+            </article>
+        </div>
+    </div>
+</div>
+
