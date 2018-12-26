@@ -1,10 +1,19 @@
+<!--   About Us - 12.26.18 - JMRV   -->
+
 <style>
 
 /* OVERWRITE */
-.jm-landing-page header{
+.container{
+	max-width: 1440px !important;
+}
+.jm-landing-page-1440{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.jm-landing-page .jm-header{
 	position:initial;
 }
-.jm-landing-page img{
+.jm-landing-page img,{
     width: 100%;	
 }
 .jm-landing-page figure{
@@ -19,17 +28,24 @@
 /* END OVERWRITE */
 
 /* ABOUT US PAGE */
-.jm-lp-about-us > header{
+.jm-lp-about-us > .jm-header{
 	text-align: center;
 	margin: 0 0 6%;	
 }
-.jm-lp-about-us > header h2{
+.jm-lp-about-us > .jm-header h2{
 	font-size: 11vw;
     font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;    
 }
-.jm-lp-about-us > header p{
+.jm-header h3{
+	display: inline-block;
+    letter-spacing: 0.05em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    border-bottom: solid 2px;
+}
+.jm-lp-about-us > .jm-header p{
     margin: 0 auto;
     font-size: 0.9em;
     letter-spacing: 0.05em;
@@ -42,7 +58,7 @@
 }
 .jm-lp-about-us article{
 	overflow: auto;
-    margin: 26% 0;
+    /*margin: 5em 0;*/
     text-align: center;	
 }
 
@@ -50,7 +66,7 @@ article div.jm-aboutus-year{
     text-align: center;
 }
 
-.jm-lp-about-us h4{
+.jm-lp-about-us span{
 	font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-size: 2em;
 	text-rendering: optimizeLegibility;    
@@ -60,32 +76,46 @@ article div.jm-aboutus-year{
     text-rendering: optimizeLegibility;
     font-size: 0.9em;
 }
+.jm-aboutus-mobile-line{
+	border-right: solid 1px;
+    width: 1px;
+    margin: 1em auto;
+    padding: 3em 0;
+}
 /* END ABOUT US PAGE */
 
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width:576px) {
-
-}
-
-
 /* Medium devices (tablets, 768px and up) */
-@media (min-width:768px) {
+@media (min-width:769px) {
+/*  OVERWRITE  */
+.jm-mobile{
+	display: none;
+}
+/*  END OVERWRITE  */
+
+.jm-header h3{
+	padding: 0 5.6% 1%;  
+}	
 /* ABOUT US PAGE */
-.jm-lp-about-us > header h2{
+.jm-lp-about-us > .jm-header h2{
 	font-size: 5em;
 }
-.jm-lp-about-us > header p{
+.jm-lp-about-us > .jm-header p{
     width: 73%;
     font-size: 1.13em;
 }
 .jm-lp-about-us article{
     margin: 0;
+    font-size: 1.3vw;
+ }
+ .jm-lp-about-us article h3{
+     font-size: 3vw;	
  }
 .jm-lp-about-us article p{
-    font-size: 1.13em;
+	font-size: 1.13em;
+ 	padding: 0 5.6% 0;
 }
-.jm-lp-about-us article div,
+.jm-lp-about-us article > div,
 .jm-lp-about-us figure{
 	width:46%;
 }
@@ -94,24 +124,134 @@ article div.jm-aboutus-year{
 }
 .jm-aboutus-right{
 	float: right;
+	text-align: left;
 }
 .jm-aboutus-left{
 	float: left;
+	text-align: right;
 }
 article div.jm-aboutus-year{
     border: solid 2px black;
     border-top: none;
     border-bottom: none;
-    padding: 0 0 15%;	
+    padding: 0 0 25em;	
 }
+figure.jm-aboutus-left{
+    float: right;
+    margin-right: 1%;
+}
+figure.jm-aboutus-right{
+    float: left;
+    margin-left: 1%;    
+}
+
+
+
 /* END ABOUT US PAGE */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width:992px) {
+article div.jm-aboutus-year{
+    padding: 0 0 15em;	
+}
+/*  Customization  */
+.jm-lp-about-us article.jm-2{
+    padding-top: 7%;
+    margin-top: -7%;	
+}
+.jm-lp-about-us article.jm-2 .jm-aboutus-right{
+	margin-top: -7%;
+}
+.jm-lp-about-us article.jm-2 .jm-aboutus-year,
+.jm-lp-about-us article.jm-3 .jm-aboutus-year,
+.jm-lp-about-us article.jm-5 .jm-aboutus-year,
+.jm-lp-about-us article.jm-8 .jm-aboutus-year{
+	padding: 0 0 12em;
+}
+.jm-lp-about-us article.jm-9 .jm-aboutus-year{
+	padding: 0 0 13em;	
+}
+.jm-lp-about-us article.jm-3{
+    padding-top: 3%;	
 
+    margin-top: -3%;}
+.jm-lp-about-us article.jm-3 .jm-aboutus-left{
+	margin-top: -3%;
+}
+.jm-lp-about-us article.jm-5{
+    padding-top: 6%;
+    margin-top: -6%;	
+}
+.jm-lp-about-us article.jm-5 .jm-aboutus-left{
+	margin-top: -6%;
+}
+.jm-lp-about-us article.jm-6{
+    padding-top: 3%;
+    margin-top: -3%;	
+}
+.jm-lp-about-us article.jm-6 .jm-aboutus-right{
+	margin-top: -3%;
+}
+.jm-lp-about-us article.jm-7{
+    padding-top: 3%;
+    margin-top: -3%;	
+}
+.jm-lp-about-us article.jm-7 .jm-aboutus-left{
+	margin-top: -3%;
+}
+.jm-lp-about-us article.jm-8{
+    padding-top: 6%;
+    margin-top: -6%;	
+}
+.jm-lp-about-us article.jm-8 .jm-aboutus-right{
+	margin-top: -6%;
+}
+.jm-lp-about-us article.jm-9{
+    padding-top: 3%;
+    margin-top: -3%;	
+}
+.jm-lp-about-us article.jm-9 .jm-aboutus-left{
+	margin-top: -3%;
+}
+.jm-lp-about-us article.jm-12,
+.jm-lp-about-us article.jm-14,
+.jm-lp-about-us article.jm-16{
+    padding-top: 3%;
+    margin-top: -3%;	
+}
+.jm-lp-about-us article.jm-12 .jm-aboutus-right,
+.jm-lp-about-us article.jm-14 .jm-aboutus-right,
+.jm-lp-about-us article.jm-16 .jm-aboutus-right{
+	margin-top: -3%;
+}
+.jm-lp-about-us article.jm-11,
+.jm-lp-about-us article.jm-13,
+.jm-lp-about-us article.jm-15{
+    padding-top: 3%;
+    margin-top: -3%;	
+}
+.jm-lp-about-us article.jm-11 .jm-aboutus-left,
+.jm-lp-about-us article.jm-13 .jm-aboutus-left,
+.jm-lp-about-us article.jm-15 .jm-aboutus-left{
+	margin-top: -3%;
 }
 
+/*  End Customization  */
+
+
+.jm-lp-about-us article{
+    font-size: 1em;
+}
+.jm-lp-about-us article h3{
+    font-size: 1.75rem;	
+}
+figure.jm-aboutus-left{
+	margin-right: 1%;	
+}
+figure.jm-aboutus-right{
+	margin-left: 1%;	
+}
 /* Extra large devices (large desktops, 1200px and up */
 @media (min-width:1200px) {
 
@@ -119,235 +259,252 @@ article div.jm-aboutus-year{
 
 </style>
 
-<section class="jm-landing-page jm-lp-about-us">
+<section class="jm-landing-page jm-landing-page-1440 jm-lp-about-us">
 
+	
 	<h1>About Us</h1>
-	<header>
+	<div class="jm-header" title="Main Header">
 		<h2>OUR HISTORY</h2>
 		<p>Century 21 Department Store opened its doors in Downtown Manhattan in 1961. It is now a NYC retail icon, known for designer brands, amazing prices. What started 6,000 sq. ft., 3-story store is now 220,000 sq. ft. and 7 floors of fashion, expanding with new locations across the country.</p>
-	</header>
+	</div>
 	
 	<!-- 1961 - 1 -->
-	<article>
+	<article class="jm-1" title="Year 1961">
 		<div class="jm-aboutus-right">
-			<header><h3>THE FIRST CENTURY</h3></header>
+			<div class="jm-header"><h3>THE FIRST CENTURY</h3></div>
 			<p>The owners name the company after a World's Fair exhibit: "Century 21, The World of Tomorrow" (a decade before the real estate firm).</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>1961</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>1961</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="The First Century Store - year 1961" src="Landing-Pages/About-Us/the-first-century-1961.jpg?$staticlink$" title="The First Century Store 1961" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 1961 - 2 -->
-	<article>
+	<article class="jm-2" title="Year 1961 continuation">
 		<div class="jm-aboutus-left">
-			<header><h3>BROOKLYN CALLING</h3></header>
+			<div class="jm-header"><h3>BROOKLYN CALLING</h3></div>
 			<p>Based on demand, a second location opens in Bay Ridge—the hometown of co-founders Al and Sonny Gindi</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>1961</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>1961</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="The First Century Store in Brooklyn - year 1961" src="Landing-Pages/About-Us/brooklyn-first-century-1961.png?$staticlink$" title="The First Century Store in Brooklyn - year 1961" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 1999 -->
-	<article>
+	<article class="jm-3" title="Year 1999">
 		<div class="jm-aboutus-right">
-			<header><h3>EASTWARD BOUND</h3></header>
+			<div class="jm-header"><h3>EASTWARD BOUND</h3></div>
 			<p>Good things come to those who wait! C21 opens its 3rd stores in over 30 years in Long Island, exanding the company's reach with loyal NY fans.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>1999</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>1999</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="C21 First Long Island Store in 1999" src="Landing-Pages/About-Us/the-first-long-island-store-century21-1999.jpg?$staticlink$" title="C21 First Long Island Store in 1999" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2001 -->
-	<article>
+	<article class="jm-4" title="Year 2001">
 		<div class="jm-aboutus-left">
-			<header><h3>NEVER FORGET</h3></header>
+			<div class="jm-header"><h3>NEVER FORGET</h3></div>
 			<p>The downtown flagship is heavily damaged on 9/11. The Gindi family is determined to rebuild and mantain its downtown roots. C21 reopens in the summer of 2002.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2001</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2001</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="Downtown store damaged on September 11" src="Landing-Pages/About-Us/century-21-stores-on-september-11.jpg?$staticlink$" title="Downtown store damaged on September 11" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>	
 
 	<!-- 2002-->
-	<article>
+	<article class="jm-5" title="Year 2002">
 		<div class="jm-aboutus-right">
-			<header><h3>WESTWARD TRAILS</h3></header>
+			<div class="jm-header"><h3>WESTWARD TRAILS</h3></div>
 			<p>Due to sucess in NY, Century crosses the bridge and sets up its first NJ shop in historic Morristown.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>2002</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>2002</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="C21 First New Jersey Store in Morristown - Year 2006" src="Landing-Pages/About-Us/century-21-morristown-new-jersey.jpg?$staticlink$" title="C21 First New Jersey Store in Morristown - Year 2006" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2006 -->
-	<article>
+	<article class="jm-6" title="Year 2006">
 		<div class="jm-aboutus-left">
-			<header><h3>GO JERSEY</h3></header>
+			<div class="jm-header"><h3>GO JERSEY</h3></div>
 			<p>"New York's Bet Kept Secret" comes to Bergen County, NJ as the anchor of the Bergen Town Center mall.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2006</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2006</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="Century 21 Department Store in Bergen County NJ - Year 2006" src="Landing-Pages/About-Us/century-21-store-bergen-county-new-jersey.jpg?$staticlink$" title="Century 21 Department Store in Bergen County NJ - Year 2006" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2010 -->
-	<article>
+	<article class="jm-7" title="Year 2010">
 		<div class="jm-aboutus-right">
-			<header><h3>KING OF QUEENS</h3></header>
+			<div class="jm-header"><h3>KING OF QUEENS</h3></div>
 			<p>C21 opens its 6th store in Rego Park, Queens. The motto at that time is "fashion worth fighting for." But with this opening, <i>Time Out New York</i> calls it "fashion worth travelling for."</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>2010</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>2010</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="C21 First New Jersey Store in Morristown - Year 2006" src="Landing-Pages/About-Us/century-21-store-rego-park-queens-new-york.jpg?$staticlink$" title="C21 First New Jersey Store in Morristown - Year 2006" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2011 -->
-	<article>
+	<article class="jm-8" title="Year 2011">
 		<div class="jm-aboutus-left">
-			<header><h3>DIGITAL AGE</h3></header>
+			<div class="jm-header"><h3>DIGITAL AGE</h3></div>
 			<p>C21Stores.com launches, making designer brancs and amazing prices customers love available 24/7.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2011</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2011</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="C21Stores.com wbesite" src="Landing-Pages/About-Us/century-21-store-online.jpg?$staticlink$" title="C21Stores.com website" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2011 -->
-	<article>
+	<article class="jm-9" title="Year 2011">
 		<div class="jm-aboutus-right">
-			<header><h3>MOVING ON UP</h3></header>
+			<div class="jm-header"><h3>MOVING ON UP</h3></div>
 			<p>C21 celebrates 50 years in business with the opening of its Lincoln Square store, making this store number 7.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>2011</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>2011</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="Century21 store in Lincoln Square, New York" src="Landing-Pages/About-Us/century-21-store-in-lincoln-square-new-york.jpg?$staticlink$" title="Century21 store in Lincoln Square, New York" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2013 -->
-	<article>
+	<article class="jm-10" title="Year 2013">
 		<div class="jm-aboutus-left">
-			<header><h3>GARDEN STATE</h3></header>
+			<div class="jm-header"><h3>GARDEN STATE</h3></div>
 			<p>Customer continue to embrace C21 with a new location in the Jersey Gardens Mall, catering to tourist straight from  Newwark Airport, who are ready to fill up their suitcases.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2013</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2013</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="Century21 store in Jersey Gardens Mall" src="Landing-Pages/About-Us/garden-state-century-21-store-new-jersey.jpg?$staticlink$" title="Century21 store in Jersey Gardens Mall" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>
 
 	<!-- 2014 -->
-	<article>
+	<article class="jm-11" title="Year 2014">
 		<div class="jm-aboutus-right">
-			<header><h3>HELLO PHILLY</h3></header>
+			<div class="jm-header"><h3>HELLO PHILLY</h3></div>
 			<p>The first PA store opens at Market & 8th Street in the heart of Center City, Philadelphia—C21's first venture outside NY and Nj.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>2014</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>2014</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="Century21 First Store in Philadelphia" src="Landing-Pages/About-Us/century-21-philly-store.jpg?$staticlink$" title="Century21 First Store in Philadelphia" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>	
 
 	<!-- 2015 -->
-	<article>
+	<article class="jm-12" title="Year 2015">
 		<div class="jm-aboutus-left">
-			<header><h3>GREEN ACRES</h3></header>
+			<div class="jm-header"><h3>GREEN ACRES</h3></div>
 			<p>This landmark 10th store is the star of the Green Acres Mall, taking on yet another prominent anchor position in a mall.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2015</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2015</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="Century21 store in Green Acress Mall" src="Landing-Pages/About-Us/century-21-green-acress-store.jpg?$staticlink$" title="Century21 store in Green Acress Mall" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>	
 
 	<!-- 2016 - 1 -->
-	<article>
+	<article class="jm-13" title="Year 2016">
 		<div class="jm-aboutus-right">
-			<header><h3>BACK TO BROOKLYN</h3></header>
+			<div class="jm-header"><h3>BACK TO BROOKLYN</h3></div>
 			<p>The City Point Stores opens in one of Brooklyn;s trendiest areas making the first full-line department store to open on Fulton street in more than 50 years.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>2016</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>2016</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="Century21 First Store in Sawgrass Mills Florida" src="Landing-Pages/About-Us/century-21-city-point-brooklyn-stores.jpg?$staticlink$" title="Century21 First Store in Sawgrass Mills Florida" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>	
 
 	<!-- 2016 - 2 -->
-	<article>
+	<article class="jm-14" title="Year 2016 continuation">
 		<div class="jm-aboutus-left">
-			<header><h3>SUNSHINE STATE</h3></header>
+			<div class="jm-header"><h3>SUNSHINE STATE</h3></div>
 			<p>Meet C21's first store in sunny Sawgrass Mills, Fl—an 85,000 sq. ft. anchor in the largest outlet destination in the U.S. It's the furthest C21 has expanded from its NYC roots.</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2016</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2016</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="Century21 store in Green Acress Mall" src="Landing-Pages/About-Us/century-21-sawgrass-mills-florida-store.jpg?$staticlink$" title="Century21 store in Green Acress Mall" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>	
 
 	<!-- 2017 -->
-	<article>
+	<article class="jm-15" title="Year 2017">
 		<div class="jm-aboutus-right">
-			<header><h3>CROSS COUNTY</h3></header>
+			<div class="jm-header"><h3>CROSS COUNTY</h3></div>
 			<p>Marking its first location in Yonkers, New York, C21 expands its footprint to a newly renovated space in The Mall at Cross County</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-right">
-			<h4>2017</h4>
+		<div class="jm-aboutus-year jm-aboutus-right" aria-hidden="true">
+			<span>2017</span>
 		</div>
 		<figure class="jm-aboutus-left">
 			<img alt="Century21 First Store in Yonkes New York" src="Landing-Pages/About-Us/century-21-cross-county-yonkers-store.jpg?$staticlink$" title="Century21 First Store in Yonkes New York" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>	
 
 	<!-- 2018 -->
-	<article>
+	<article class="jm-16" title="Year 2018">
 		<div class="jm-aboutus-left">
-			<header><h3>WATCH US GROW</h3></header>
+			<div class="jm-header"><h3>WATCH US GROW</h3></div>
 			<p>More exciting things are ahead. Stay Tuned!</p>
 		</div>
-		<div class="jm-aboutus-year jm-aboutus-left">
-			<h4>2018</h4>
+		<div class="jm-aboutus-year jm-aboutus-left" aria-hidden="true">
+			<span>2018</span>
 		</div>
 		<figure class="jm-aboutus-right">
 			<img alt="Century21 Stores Downtown New York" src="Landing-Pages/About-Us/watch-century-21-department-stores-grow.jpg?$staticlink$" title="Century21 Stores Downtown New York" />
 		</figure>
+		<div class="jm-mobile jm-aboutus-mobile-line" aria-hidden="true">&nbsp;</div>
 	</article>		
 </section>

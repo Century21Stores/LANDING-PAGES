@@ -1,18 +1,17 @@
 <!-- HERO CONTENT BLOCK -->
 
 <style>
-
-html {
-  --text-color: black;
-  --button-color: red;
+/* OVERWRITE */
+.page > div.container,
+.header-banner .container,
+.header .container{
+    max-width: 1920px !important;
 }
 
-
-/*    padding-top: calc((800% / 2560) * 100);    */
-
+/* END OVERWRITE */
 
 /* CTA */
-.jm-cta-button{
+.jm-cta-button-light{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;    
     font-size: 0.93rem;
@@ -22,17 +21,21 @@ html {
     width: 100%;
     border: solid 2px;
     max-width: 218px;
-    background: var(--button-color); 
-    border-color: var(--button-color); 
-    color: var(--text-color);
+    background: none; 
+    border-color: #ffffff; 
+    color: #ffffff;
+}
+.jm-cta-button-light:hover{
+    background: #000000;
+    border-color: #000000;
 }
 /* END CTA */
 
 
 /*  HERO CONTENT BLOCK  */
-.jm-content-block h3,
-.jm-content-block h2{
-    color: var(--text-color);   
+.jm-content-block-light h3,
+.jm-content-block-light h2{
+    color: #ffffff;
 }
 .jm-one-column-hero{
 	margin:1% 0;
@@ -91,14 +94,13 @@ article{
 <a href="https://www.c21stores.com/">
 	<div class="jm-one-column-hero-restrict-area">
 		<div class="jm-one-column-hero-image" role="presentation"></div>
-		<div class="jm-content-block">
+		<div class="jm-content-block jm-content-block-light">
             <article>
     			<h2>BIG PLAYERS</h2>
     			<h3>Giuseppe Zanotti Over 60% OFF</h3>
-    	   		<span class="btn jm-cta-button">SHOP NOW</span>
+    	   		<span class="btn jm-cta-button-light">SHOP NOW</span>
     		</article>
         </div>
 	</div>
 </a>
 </div>
-
