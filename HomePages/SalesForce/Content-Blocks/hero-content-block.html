@@ -53,18 +53,6 @@ article{
     display: inline-block;
     width: 100%;    
 }
-article.jm-textalign-left{
-    position: relative;
-    text-align: left;
-}
-article.jm-textalign-center{
-    position: relative;
-    text-align: center;
-}
-article.jm-textalign-right{
-    position: relative;
-    text-align: right;
-}
 /* End Middle */
 
 
@@ -144,13 +132,51 @@ header ~ .container a.jm-cta-button-light:not(.btn-primary):not(.btn-outline-pri
     border-color: #000000;
 }
 .jm-one-column-hero-multiple article a{
+    margin: 0.6em 0.3em 0;
+    z-index: 3;
+    position: relative;
+}
+.jm-one-column-hero-multiple .jm-content-block-middle-center article a,
+.jm-one-column-hero-multiple  .jm-content-block-top-center article a,
+.jm-one-column-hero-multiple  .jm-content-block-bottom-center article a{
     margin: 0 0.3em;
 }
-.jm-one-column-hero-multiple article a:first-of-type{
+.jm-one-column-hero-multiple .jm-content-block-middle-center article a:first-of-type,
+.jm-one-column-hero-multiple  .jm-content-block-top-center article a:first-of-type,
+.jm-one-column-hero-multiple  .jm-content-block-bottom-center article a:first-of-type{
     margin-left: 0
 }
-.jm-one-column-hero-multiple article a:last-of-type{
+.jm-one-column-hero-multiple .jm-content-block-middle-center article a:last-of-type,
+.jm-one-column-hero-multiple  .jm-content-block-top-center article a:last-of-type,
+.jm-one-column-hero-multiple  .jm-content-block-bottom-center article a:last-of-type{
     margin-right: 0
+}
+article.jm-textalign-left{
+    position: relative;
+    text-align: left;
+}
+article.jm-textalign-left a:nth-of-type(odd){
+    margin-left: 0;
+}
+article.jm-textalign-center{
+    position: relative;
+    text-align: center;
+}
+article.jm-textalign-right{
+    position: relative;
+    text-align: right;
+}
+article.jm-textalign-right a:nth-of-type(even),
+article.jm-textalign-right a:last-of-type{
+    margin-right: 0;
+}
+.jm-one-column-hero-multiple > a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;    
 }
 /* END CTA */
 
@@ -162,6 +188,7 @@ header ~ .container a.jm-cta-button-light:not(.btn-primary):not(.btn-outline-pri
 }
 .jm-one-column-hero{
 	margin:1% 0;
+    position: relative;
 }
 .jm-one-column-hero-restrict-area{
 	position: relative;
