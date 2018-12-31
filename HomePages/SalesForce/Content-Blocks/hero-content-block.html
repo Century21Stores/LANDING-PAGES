@@ -132,6 +132,7 @@ header ~ .container a.jm-cta-button-light:not(.btn-primary):not(.btn-outline-pri
     color: #ffffff;
 }
 .jm-cta-button-light:hover,
+.jm-cta-button-light:hover,
 header ~ .container a.jm-cta-button-light:not(.btn-primary):not(.btn-outline-primary):hover{
     background: #000000;
     border-color: #000000;
@@ -205,9 +206,10 @@ article.jm-textalign-right a:last-of-type{
 	margin: 0 auto;	
 }
 .jm-one-column-hero-Wxx{
-	background: url("/Transparencies/Hero_FullBleed.png?$staticlink$");
-	background-size: cover;
+	background: url("/Transparencies/Mobile_3.png?$staticlink$");	
+    background-size: cover;
     background-position: 50% 0;
+    padding-top: calc((700% / 640) * 100);
 }
 .jm-one-column-hero-Wxx2 article{
     left: initial;
@@ -226,6 +228,7 @@ article.jm-textalign-right a:last-of-type{
     background: url("/Transparencies/992_Hero.jpg?$staticlink$");
     background-size: cover;
     background-position: 50% 0;
+    padding-top: 0;
 }
 
 }
@@ -244,36 +247,37 @@ article.jm-textalign-right a:last-of-type{
 
 
 <!-- REGULAR HERO -->
-<div class="jm-one-column-hero jm-one-column-hero-Wxx">
-<a href="https://www.c21stores.com/">
+<div class="jm-one-column-hero jm-one-column-hero-Wxx" aria-describedby="messageDescription_1" title="message 1">
+<a href="#1" aria-hidden="true"></a>
 	<div class="jm-one-column-hero-restrict-area">
 		<div class="jm-one-column-hero-image" role="presentation"></div>
 		<div class="jm-content-block jm-content-block-light jm-content-block-middle-left">
             <article class="jm-textalign-center">
-    			<h2>BIG PLAYERS</h2>
+    			<h2 id="messageDescription_1">BIG PLAYERS 1</h2>
     			<h3>Giuseppe Zanotti Over 60% OFF</h3>
-    	   		<span class="btn jm-cta-button-light">SHOP NOW</span>
+    	   		<a href="https://www.c21stores.com/" class="btn jm-cta-button-light">SHOP NOW</a>
     		</article>
         </div>
 	</div>
-</a>
 </div>
 
 
 <!-- MULTIPLE CTA HERO -->
-<div class="jm-one-column-hero jm-one-column-hero-multiple jm-one-column-hero-Wxx">
-<a href="#1"></a>
+<div class="jm-one-column-hero jm-one-column-hero-multiple jm-one-column-hero-Wxx" aria-describedby="messageDescription_2" title="message 2">
+<a href="#1" aria-hidden="true"></a>
     <div class="jm-one-column-hero-restrict-area">
         <div class="jm-one-column-hero-image" role="presentation"></div>
         <div class="jm-content-block jm-content-block-light jm-content-block-middle-center">
             <article class="jm-textalign-center">
-                <h2>BIG PLAYERS</h2>
+                <h2 id="messageDescription_2">BIG PLAYERS 2</h2>
                 <h3>Giuseppe Zanotti Over 60% OFF</h3>
-                <a href="#1" class="btn jm-cta-button-light">SHOP NOW</a>
-                <a href="#2" class="btn jm-cta-button-light">SHOP NOW</a>
-                <a href="#3" class="btn jm-cta-button-light">SHOP NOW</a>
-                <a href="#4" class="btn jm-cta-button-light">SHOP NOW</a>
-                <a href="#5" class="btn jm-cta-button-light">SHOP NOW</a>
+                <span role="list">
+                    <a href="#1" class="btn jm-cta-button-light" role="listitem">SHOP NOW1</a>
+                    <a href="#2" class="btn jm-cta-button-light" role="listitem">SHOP NOW2</a>
+                    <a href="#3" class="btn jm-cta-button-light" role="listitem">SHOP NOW3</a>
+                    <a href="#4" class="btn jm-cta-button-light" role="listitem">SHOP NOW4</a>
+                    <a href="#5" class="btn jm-cta-button-light" role="listitem">SHOP NOW5</a>
+                </span>
             </article>
         </div>
     </div>
