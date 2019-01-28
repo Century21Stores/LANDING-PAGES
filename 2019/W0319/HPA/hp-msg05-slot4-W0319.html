@@ -1,25 +1,28 @@
-<!--   hp-mg5-slot4-W0319 - Column Content Block - JuanMa - 01.25.19   -->
+<!--   hp-mg5-slot4-W0319 - Hero - JuanMa - 01.25.19   -->
 
 <style>
 
-
-/* left image - table & mobile - 700 x 730 */
-.jm-two-column-W0319-msg5 .jm-left figure{
-    background: url("Test/two-columns-example-1267x1321.jpg?$staticlink$");
+/*  left image - all devices - 700x754 */
+.jm-three-column-W0319-msg4 .jm-left figure{
+    background: url("Test/three-columns-example-700x754.jpg?$staticlink$");
 }
-/* right image - table & mobile - 700 x 730 */
-.jm-two-column-W0319-msg5 .jm-right figure{
-    background: url("Test/two-columns-example-1267x1321.jpg?$staticlink$");
+/*  middle image - all devices - 700x754 */
+.jm-three-column-W0319-msg4 .jm-middle figure{
+    background: url("Test/three-columns-example-700x754.jpg?$staticlink$");
+}
+/*  rigth image - all devices - 700x754 */
+.jm-three-column-W0319-msg4 .jm-right figure{
+    background: url("Test/three-columns-example-700x754.jpg?$staticlink$");
 }
 
 /* copy line 1 */
-.jm-two-column article h2{
+.jm-three-column article h2{
     font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 /*	font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;    */
     font-size: 2.3em;
 }
 /* copy line 2 */
-.jm-two-column article h3{
+.jm-three-column article h3{
 /*    font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
     font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
@@ -28,39 +31,27 @@
 
 @media screen and (min-width: 700px){
 
-
 /*  width of content block  */
-.jm-two-column{
+.jm-three-column{
     max-width: 1920px;
 }
 /*  background color content container */
-.jm-two-column article{
+.jm-three-column article{
 	background-color:#ffffff;
 }
 /*  copy color  */
-.jm-two-column article h2,
-.jm-two-column article h3{
+.jm-three-column article h2,
+.jm-three-column article h3{
 	color: #000000;
 }
 
 }
 
-@media screen and (min-width: 1050px){
-/*  desktop 1267x1321 image left  */
-.jm-two-column-W0319-msg5 .jm-left figure{
-    background: url("Test/two-columns-example-1267x1321.jpg?$staticlink$");
-}
-/*  desktop 1267x1321 image right  */
-.jm-two-column-W0319-msg5 .jm-right figure{
-    background: url("Test/two-columns-example-1267x1321.jpg?$staticlink$");
-}
-
-}
 
 </style>
 
-<!-- Copy from Here -->
-<section class="jm-content-block jm-two-column jm-two-column-W0319-msg5">
+
+<section class="jm-content-block jm-three-column jm-three-column-W0319-msg4">
 	<div class="jm-left">
 	<a href="#1" aria-hidden="true"></a>	
 		<figure></figure>
@@ -70,16 +61,23 @@
 	        <a href="#2" class="btn jm-cta-button jm-cta-button-soliddark">SHOP NOW</a>
 		</article>
 	</div>
+	<div class="jm-middle">
+	<a href="#2" aria-hidden="true"></a>	
+		<figure></figure>
+		<article>
+	        <h2 id="messageDescription_1">THREE COLUMNS 2</h2>
+	        <h3>Over <b>60% OFF</b></h3>
+	        <a href="#2" class="btn jm-cta-button jm-cta-button-soliddark">SHOP NOW</a>			
+		</article>
+	</div>
 	<div class="jm-right">
 	<a href="#2" aria-hidden="true"></a>	
 		<figure></figure>
 		<article>
-	        <h2 id="messageDescription_1">TWO COLUMNS 2</h2>
-	        <h3>Desktop Image <b>1267x1321</b></h3>
+	        <h2 id="messageDescription_1">THREE COLUMNS 3</h2>
+	        <h3>Desktop Image <b>700x754</b></h3>
 	        <a href="#2" class="btn jm-cta-button jm-cta-button-soliddark">SHOP NOW</a>			
 		</article>
 	</div>
+
 </section>
-
-<!-- End Copy from Here -->
-
