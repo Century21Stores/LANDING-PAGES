@@ -4,7 +4,7 @@
 }
 .jm-HPheader-globalbannerlike{
     text-align: center;
-    background: black;
+    background: #e21e27;
 }
 .jm-HPheader-globalbannerlike h2,
 .jm-HPheader-globalbannerlike p,
@@ -13,7 +13,7 @@
 }
 .jm-HPheader-globalbannerlike h2{
     margin: 0;
-    font-size: 2.9em;
+    font-size: 3.9em;
     letter-spacing: 0;
     font-weight: lighter;
     text-rendering: optimizeLegibility;
@@ -29,10 +29,13 @@
     width: 21em;
     margin: 0 auto;
     padding: 0.1% 0;
+    color: #e21e27;
 }
-.jm-HPheader-globalbannerlike p{
+.jm-HPheader-globalbannerlike p.jm-sub-line{
     margin: 0;
-    font-weight: lighter;
+    font-weight: normal;
+    font-size: 1.4em;
+    line-height: 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -40,7 +43,7 @@
     margin: 1% 0 0;
 }
 .jm-HPheader-globalbannerlike{
-    font-size: 3vw;
+    font-size: 1.9vw;
     padding: 6% 0 4%;
     margin: 0 0 3%;
 }
@@ -49,7 +52,19 @@
 }
 .jm-HPheader-globalbannerlike .content-block-content__action a{
     font-size: 3vw;
-    margin: 2% 0;
+    margin: 2% 3%;
+}
+.jm-fine-print{
+    font-size: 2.7vw;
+    letter-spacing: 0.05em;
+    width: 79%;
+    margin: 2% auto 0;
+    font-weight: lighter;    
+}
+.jm-fine-print img{
+    width: 20px;
+    margin: 6% auto 3%;
+    display: block;    
 }
 
 @media screen and (min-width: 700px){
@@ -63,7 +78,13 @@
 }
 .jm-HPheader-globalbannerlike .content-block-content__action a{
     font-size: 1em;
-    margin: 0;
+    margin: 0 1%;
+}
+.jm-fine-print{
+    font-size: 0.73em;
+}
+.jm-fine-print img{
+    margin: 1% auto 0%;   
 }
 
 }
@@ -72,8 +93,23 @@
 </style>
 
 <section class="jm-HPheader-globalbannerlike">
-    <h3>ONLINE &amp; IN-STORE | ENDS 4/8 </h3>
-    <h2>SAVE <b>20%</b> TODAY </h2>
-    <p>With a new C21STATUS Credit Card once approved*<p>
-    <p class="content-block-content__action content-block-content__action--dark-text"><a class="text" href="https://www.c21stores.com/instant_credit/apply">APPLY NOW</a></p>       
+    <h3>ONLINE &amp; IN-STORE | 2/14-2/18 </h3>
+    <h2><b>SAVE AN EXTRA 20%</b></h2>
+    <p class="jm-sub-line">WITH A NEW C21STATUS CREDIT CARD IF APPROVED TODAY*<p>
+    <p class="content-block-content__action content-block-content__action--dark-text">
+        <a class="text" href="https://www.c21stores.com/instant_credit/apply">APPLY NOW</a>
+        <a id="jm-toggle-fine-print" class="text" href="#">INFO/EXCLUSIONS</a>
+    </p>
+    <p style="display: none;" class="jm-fine-print">*Online and in-store, 2/14/19-2/18/19. Subject to credit approval. 20% elevated offer valid with the use of the C21STATUS Credit Card if approved during the promotional period. The discount does not apply to prior purchases, gift cards, services, or select licensed or leased departments. Exclusions may vary, visit WWW.C21STORES.COM/C21STATUS-TERMS or see store associate for details. The C21STATUS Credit Card is issued by Comenity Capital Bank.
+    <img alt="closing" src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTkvMDIvMDgvMTMvNTYvNTQvMzQ3L1Zpc3VhbEVkaXRvcl9fX0ljb25fX19DbG9zZV9fX3doaXRlLnN2Zy5wbmciXV0/VisualEditor_-_Icon_-_Close_-_white.svg.png?sha=e48037cdc9b479fd"/>
+    </p>
+
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#jm-toggle-fine-print, .jm-fine-print").click(function(){
+    $(".jm-fine-print").slideToggle();
+  });
+});
+</script>
