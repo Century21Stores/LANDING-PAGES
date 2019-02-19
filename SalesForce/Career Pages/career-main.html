@@ -1,16 +1,17 @@
-<!-- Careers - Hero - JuanMa - 02.04.19   -->
+<!-- Careers - Hero - JuanMa - 02.19.19   -->
 
 <style>
 .jm-one-column-hero-3-career-main-msg01{
   position: relative;
 }
+
 /* MOBILE */
 
 .jm-one-column-hero-3-mobile-career-main-msg01{
   background: url("Landing-Pages/career/main/main_01.jpg?$staticlink$");
   background-size: cover;
   background-position: 50% 0;
-  padding-top: calc((850% / 700) * 100);
+  padding-top: calc((250% / 700) * 100);
 }
 
 /*  COPY  */
@@ -71,6 +72,16 @@ h2.jm-career-header{
   text-align: center;
   display: inline-block;
 }
+.jm-icon-row-1,
+.jm-icon-row-2{
+  overflow: auto;
+  margin: 0 0 5%;
+}
+.jm-icon-row-1 .jm-icon,
+.jm-icon-row-2 .jm-icon{
+  float: left;
+  text-align: center;
+}
 /*  End 3rd Message  */
 
 
@@ -98,7 +109,7 @@ h2.jm-career-header{
 .jm-one-column-hero-3-career-main-msg01 .jm-product-large-content{
     position: absolute;
     top: 0;
-    left: 6%;
+    left: 8%;
     display: -webkit-box;
     display: -moz-box;
     display: -webkit-flex;
@@ -107,12 +118,17 @@ h2.jm-career-header{
     align-items: center;
     justify-content: start;
     text-align: center;
-    width: 100%;
+    width: 92%;
     height: 100%;
 }
 .jm-one-column-hero-3-career-main-msg01 article{
+  font-size: 1.3vw;
   background: white;
-  padding: 5% 4%;
+  padding: 5% 2%;
+  width: 63%;
+}
+.jm-one-column-hero-3-career-main-msg01 article h2.jm-career-header{
+  font-size: 4.3em;
 }
 .jm-one-column-hero-3-career-main-msg01{
     background: url("Landing-Pages/career/main/main_01.jpg?$staticlink$");
@@ -120,51 +136,118 @@ h2.jm-career-header{
     background-position: 50% 0;
     padding-top: calc((710% / 1280) * 100);
 }
+
+/*  2 Message  */
+.jm-three-column-ms02 article h3{
+    font-size: 1.3vw;
+}
+/*  End 2 Message  */
+
 /*  3 Message  */
 .jm-icons-ms03 figcaption{
-  margin: 12% 0 0;  
-}
-
-.jm-icon-row-1,
-.jm-icon-row-2{
-  overflow: auto;
-  margin: 0 0 5%;
+  margin: 12% 0 0;
+  font-size: 1.3vw; 
 }
 .jm-icon-row-1 h3,
 .jm-icon-row-2 h3{
   font-weight: bold;
 }
-.jm-icon-row-1 .jm-icon,
-.jm-icon-row-2 .jm-icon{
-  float: left;
-  text-align: center;
-}
+
 .jm-icon-row-1 .jm-icon{
   width: 25%;
 }
 .jm-icon-row-2 .jm-icon{
   width: 33%;
 }
+.jm-icons-ms03 figcaption h3{
+    font-size: 1.75em;
+}
 /*  End 3 Message  */
 
 }
 
-/* DESKTOP */
+
 @media screen and (min-width: 1300px){
+/*  1 Message  */
+.jm-one-column-hero-3-career-main-msg01 article{
+  font-size: 1em;
+}
 .jm-one-column-hero-3-career-main-msg01{
   background: url("Landing-Pages/career/main/main_01.jpg?$staticlink$");
   background-size: cover;
   background-position: 50% 0;
   padding-top: calc((1420% / 2560) * 100);
 }
+/*  End 1 Message  */
+
+/*  2 Message  */
+.jm-three-column-ms02 article h3{
+    font-size: 1.7em;
+}
+/*  End 2 Message  */
+
+/* 3 Message  */
+.jm-icons-ms03 figcaption{
+  font-size: 1em; 
+}
+/*  End 3 Message  */
+
+}
+
+@media screen and (max-width: 700px){
+
+/*  1 Message  */
+.jm-one-column-hero-3-career-main-msg01 article{
+    text-align: center;
+}
+.jm-three-column-ms02 h2,
+.jm-one-column-hero-3-career-main-msg01 article h2,
+.jm-icons-ms03 h2{
+    font-size: 9.3vw;
+}
+
+.jm-one-column-hero-3-career-main-msg01 article p,
+.jm-three-column-ms02 p,
+.jm-icons-ms03 p{
+    font-size: 5vw;
+}
+.jm-one-column-hero-3-career-main-msg01 article h2{
+    position: absolute;
+    top: 0;
+    width: 66%;
+    background: white;
+    margin: 0;
+    padding: 0.55em 0;
+    line-height: 1;
+}
+.jm-one-column-hero-3-career-main-msg01 article p{
+    padding: 3% 0;
+    margin: 0;    
+}
+.jm-one-column-hero-3-career-main-msg01{
+    margin: 0 0 6%;
+}
+/* End  1 Message  */
+
+/*  3 Message  */
+.jm-icons-ms03 h3{
+    font-size: 5.3vw;
+    margin: 0;   
+}
+.jm-icon-row-1 .jm-icon, .jm-icon-row-2 .jm-icon{
+    width: 49%;
+    margin: 4% 0;
+    float: none;
+    display: inline-block;
+}
+/*  End 3 Message  */
 
 }
 
 
-
 </style>
 
-<div class="jm-landing-page jm-landing-page-career">
+<div class="jm-landing-page jm-landing-page-1440 jm-landing-page-career">
 
 <h1>Careers</h1>
 
@@ -195,7 +278,7 @@ h2.jm-career-header{
     <p>Find out more about how our jobs operate behind the scenes.</p>
 
   <div class="jm-left" title="Corporate Careers">
-  <a href="#1" aria-hidden="true"></a>  
+  <a href="$url('Page-Show','cid','careers-corporate')$" aria-hidden=“true” role=“none” tabindex=“-1”></a>  
     <figure></figure>
     <article>
     <div>
@@ -205,7 +288,7 @@ h2.jm-career-header{
     </article>
   </div>
   <div class="jm-middle" title="Stores Careers">
-  <a href="#2" aria-hidden="true"></a>  
+  <a href="$url('Page-Show','cid','careers-stores')$" aria-hidden=“true” role=“none” tabindex=“-1”></a>  
     <figure></figure>
     <article>
     <div>
@@ -215,7 +298,7 @@ h2.jm-career-header{
     </article>
   </div>
   <div class="jm-right" title="Distribution Center Careers">
-  <a href="#2" aria-hidden="true"></a>  
+  <a href="$url('Page-Show','cid','careers-distro-center')$" aria-hidden=“true” role=“none” tabindex=“-1”></a>  
     <figure></figure>
     <article>
     <div> 
