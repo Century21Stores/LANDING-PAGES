@@ -1,4 +1,4 @@
-<!--  made to measure - JuanMa - 02.24.19   -->
+<!--  made to measure - JuanMa - 02.25.19   -->
 
 <style>
 
@@ -25,15 +25,15 @@
 }
 
 @media screen and (min-width: 700px){
-.jm-two-column{
+/*.jm-two-column{
     display: -webkit-box;
     display: -moz-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-}
-.jm-one-column-hero-3-w0419-msg01 .jm-product-large-content,
-.jm-two-column .jm-copy{
+}*/
+.jm-one-column-hero-3-w0419-msg01 .jm-product-large-content{
+./*jm-two-column .jm-copy{*/
     position: absolute;
     padding: 5%;
     top: 0;
@@ -60,10 +60,16 @@
     text-transform: uppercase;
     line-height: 1;
 }
-.jm-one-column-hero-3-w0419-msg01 article .jm-header-3{
+.jm-one-column-hero-3 article .jm-header-3,
+.jm-two-column article .jm-header-3{
     font-size: 1.3em;
     letter-spacing: 0.05em;
-
+}
+.jm-one-column-hero-3 article .jm-header-2,
+.jm-two-column article .jm-header-2{
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    font-weight: normal;
 }
 .jm-bodoni{
     font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;    
@@ -119,7 +125,7 @@
 <div class="jm-landing-page jm-landing-page-1440 jm-made-to-measure">
 <h1>Custom Suits</h1>
 
-<!-- MULTIPLE CTA HERO -->
+<!-- MESSAGE 1 -->
 <section class="jm-hero-content-block-all jm-one-column-hero-3 jm-one-column-hero-3-multiple jm-one-column-hero-3-w0419-msg01">
     <div class="jm-product-large-content">
         <figure class="jm-mobile jm-one-column-hero-3-mobile-w0419-msg01"></figure>
@@ -134,19 +140,17 @@
     </figure>    
 </section>
 
-
-<section class="jm-content-block jm-two-column jm-two-column-w0419-msg02">
+<!-- MESSAGE 2 -->
+<section class="jm-two-column jm-two-column-w0419-msg02">
     <div class="jm-left">
-        <div class="jm-left jm-copy">
+        <figure></figure>        
+    </div>
+    <div class="jm-right">
         <article>
             <h2 class="jm-header-2" id="jm-header-w0419-msg02-l">FIT:<br/>(HOW IT'S MADE)</h2>
             <hr>
             <p class="jm-header-3">Select your preferred suit or tuxedo cut: classic, slim or extra slim–then tailor it to your fit needs. You can customize details such as lapels, linings and buttons. The precise fit of a custom suit leaves a powerful impression.</p>
-        </article>
-        </div>
-    </div>
-    <div class="jm-right">
-        <figure></figure>
+        </article>        
     </div>
 </section>
 </div>
