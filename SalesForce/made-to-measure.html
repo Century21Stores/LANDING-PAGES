@@ -3,13 +3,19 @@
 <style>
 
 /* ------- HERO FLEXIBLE HEIGHT 3 ------- */
-.jm-one-column-hero-3{
+.jm-one-column-hero-3,
+.jm-two-column{
     position: relative;
-    margin-bottom: 1%;
+    margin-bottom: 6%;
 }
 /* ------- END HERO FLEXIBLE HEIGHT 3 ------- */
 .jm-two-column{
     position: relative;
+}
+.jm-made-to-measure hr{
+    margin: 3% auto 7%;
+    width: 13%;
+    border: solid 1px;
 }
 .jm-one-column-hero-3-mobile-w0419-msg01{
     background: url("/Landing-Pages/made-to-measure/01_suits_mob.jpg?$staticlink$");
@@ -18,7 +24,25 @@
     padding-top: calc((850% / 700) * 100);
 }
 .jm-two-column-w0419-msg02 figure{
-    background: url("/Landing-Pages/made-to-measure/suits-fit-made.jpg?$staticlink$");    
+    background: url("/Landing-Pages/made-to-measure/02_suits.jpg?$staticlink$");    
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((660% / 635) * 100);
+}
+.jm-two-column-w0419-msg03 figure{
+    background: url("/Landing-Pages/made-to-measure/03_suits.jpg?$staticlink$");    
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((660% / 635) * 100);
+}
+.jm-two-column-w0419-msg04 figure{
+    background: url("/Landing-Pages/made-to-measure/04_suits.jpg?$staticlink$");    
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((660% / 635) * 100);
+}
+.jm-two-column-w0419-msg05 figure{
+    background: url("/Landing-Pages/made-to-measure/05_suits.jpg?$staticlink$");    
     background-size: cover;
     background-position: 50% 0;
     padding-top: calc((660% / 635) * 100);
@@ -33,7 +57,6 @@
     display: flex;
 }*/
 .jm-one-column-hero-3-w0419-msg01 .jm-product-large-content{
-./*jm-two-column .jm-copy{*/
     position: absolute;
     padding: 5%;
     top: 0;
@@ -67,9 +90,12 @@
 }
 .jm-one-column-hero-3 article .jm-header-2,
 .jm-two-column article .jm-header-2{
-    font-size: 2em;
-    letter-spacing: 0.05em;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
     font-weight: normal;
+}
+.jm-two-column article .jm-header-2{
+	line-height: 1.3;
 }
 .jm-bodoni{
     font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;    
@@ -95,7 +121,7 @@
 /* ------- END ALL HERO CONTENT BLOCKS ------- */
 
 
-
+}
 /* DESKTOP */
 @media screen and (min-width: 992px){
 .jm-one-column-hero-3-w0419-msg01{
@@ -104,7 +130,10 @@
     background-position: 50% 0;
     padding-top: calc((800% / 1440) * 100);
 }
-
+.jm-two-column-w0419-msg02 .jm-left,
+.jm-two-column-w0419-msg04 .jm-left{
+	float:right;
+}
 
 
 }
@@ -147,10 +176,55 @@
     </div>
     <div class="jm-right">
         <article>
-            <h2 class="jm-header-2" id="jm-header-w0419-msg02-l">FIT:<br/>(HOW IT'S MADE)</h2>
+            <h2 class="jm-header-2">FIT:<br/>(HOW IT'S MADE)</h2>
             <hr>
             <p class="jm-header-3">Select your preferred suit or tuxedo cut: classic, slim or extra slim–then tailor it to your fit needs. You can customize details such as lapels, linings and buttons. The precise fit of a custom suit leaves a powerful impression.</p>
         </article>        
     </div>
 </section>
+
+
+<!-- MESSAGE 3 -->
+<section class="jm-two-column jm-two-column-w0419-msg03">
+    <div class="jm-left">
+        <figure></figure>        
+    </div>
+    <div class="jm-right">
+        <article>
+            <h2 class="jm-header-2">QUALITY:<br/>(TYPES OF FABRIC)</h2>
+            <hr>
+            <p class="jm-header-3">Choose from a wide variety of exceptional fabric, including a selection from world-renowned Italian mills. Select from fine-gauge super 110's to extra-fine, luxurious super 130's and 150's–a broad variety of solids, stripes, plaids and checks.</p>
+        </article>        
+    </div>
+</section>
+
+<!-- MESSAGE 4 -->
+<section class="jm-two-column jm-two-column-w0419-msg04">
+    <div class="jm-left">
+        <figure></figure>        
+    </div>
+    <div class="jm-right">
+        <article>
+            <h2 class="jm-header-2">VALUE:<br/>(WHAT IT COSTS)</h2>
+            <hr>
+            <p class="jm-header-3">This type of custom suiting was once reserved only for the elite. Our suits range from $359.99 to $599.99–compared to $795 to $1,095 for suits of similar quality elsewhere. As William Shakespeare said in <i>Halmet,</i> "clothes make the man"</p>
+        </article>        
+    </div>
+</section>
+
+<!-- MESSAGE 5 -->
+<section class="jm-two-column jm-two-column-w0419-msg05">
+    <div class="jm-left">
+        <figure></figure>        
+    </div>
+    <div class="jm-right">
+        <article>
+            <h2 class="jm-header-2">SERVICE:<br/>(TIME IT TAKES)</h2>
+            <hr>
+            <p class="jm-header-3">Our seasoned tailors work with you to make sure you are pleased with your new suit and will make any necessary final alterations free of charge. From measuring to delivery at the store, the entire process takes only 3-4 weeks. We only use experienced tailors to ensure that your suit is fitted to perfection.</p>
+            <p class="jm-header-3"><i>Call 212-227-9092 ext. 2763 for an appointment–Downtown Manhattan store only,</i> 22 Cortland Street, New York, NY 10007. </p>
+        </article>        
+    </div>
+</section>
+
 </div>
