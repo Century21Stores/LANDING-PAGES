@@ -27,8 +27,32 @@
     font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
 }
-
-
+.jm-three-column-w0419-msg98-threecolumn figure{
+	position: relative;
+}
+.jm-three-column-w0419-msg98-threecolumn figcaption{
+    position: absolute;
+    padding: 5%;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.jm-three-column-w0419-msg98-threecolumn figcaption p{
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+}
 @media screen and (min-width: 700px){
 
 /*  width of content block  */
@@ -44,9 +68,23 @@
 .jm-three-column-w0419-msg98-threecolumn article h3{
 	color: #000000;
 }
+.jm-three-column-w0419-msg98-threecolumn .jm-left,
+.jm-three-column-w0419-msg98-threecolumn .jm-middle,
+.jm-three-column-w0419-msg98-threecolumn .jm-right{
+	font-size: 1.2vw;
+}
 
 }
 
+
+@media screen and (min-width: 1300px){
+.jm-three-column-w0419-msg98-threecolumn .jm-left,
+.jm-three-column-w0419-msg98-threecolumn .jm-middle,
+.jm-three-column-w0419-msg98-threecolumn .jm-right{
+	font-size: 1em;
+}
+
+}
 
 </style>
 
@@ -54,7 +92,9 @@
 <section class="jm-content-block jm-three-column jm-three-column-w0419-msg98-threecolumn">
 	<div class="jm-left">
 	<a href="$url('Page-Show','cid','instant-credit-page')$" aria-hidden="true" role="none" tabindex="-1"></a>	
-		<figure></figure>
+		<figure>
+			<figcaption><p>Shop And Get<br/>Rewarded</p></figcaption>
+		</figure>
 		<article>
 		<div>
 	        <h2 class="jm-header-2" id="jm-header-w0419-msg98-threecolumn-l">C21STATUS REWARDS</h2>
@@ -65,7 +105,9 @@
 	</div>
 	<div class="jm-middle">
 	<a href="$url('Search-Show','cgid','gifts')$" aria-hidden="true" role="none" tabindex="-1"></a>	
-		<figure></figure>
+		<figure>
+			<figcaption><p>Gift Cards</p></figcaption>
+		</figure>
 		<article>
 		<div>
 	        <h2 class="jm-header-2" id="jm-header-w0419-msg98-threecolumn-c">ALWAYS A HIT</h2>
@@ -76,7 +118,9 @@
 	</div>
 	<div class="jm-right">
 	<a href="$url('Page-Show','cid','price-matching-policy')$" aria-hidden="true" role="none" tabindex="-1"></a>	
-		<figure></figure>
+		<figure>
+			<figcaption><p>Amazing Prices,<br/>Guaranteed.</p></figcaption>
+		</figure>
 		<article>
 		<div>	
 	        <h2 class="jm-header-2" id="jm-header-w0419-msg98-threecolumn-r">FOUND IT FOR LESS?</h2>
