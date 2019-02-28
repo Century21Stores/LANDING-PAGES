@@ -1,143 +1,180 @@
-<!--  Image fix, ALT attributes added - JuanMa - 10.10.18  -->
-<div class="instant-credit-landing-page">
+<!-- C21STATUS - ADA fix - JuanMa - 02.27.18  -->
+<style>
+.instant-credit-landing-page .terms-and-conditions > div{
+    margin:0 auto;
+}
+.instant-credit-landing-page .short-text{
+    line-height: 1.6;
+}
+.instant-credit-landing-page{
+    counter-reset: footnotes;    
+}
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+a[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: blue; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+a[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+.terms-and-conditions :target {
+  background: yellow;
+}
+</style>
 
+<div class="instant-credit-landing-page">
     <div class="row d-flex">
         <div class="col-12 col-sm-6">
             <div class="image-wrapper">
-                <img alt="Women with a C21 Stores Shopping bag walking in New York" src="instant-credit.jpg?$staticlink$"/>
+                <img alt="Women with a C21 Stores Shopping bag walking in New York" src="/Landing-Pages/loyalty/LOYALITY_LP_r.jpg?$staticlink$" />
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 d-flex flex-column align-items-start align-self-center">
-            <h1 class="page-title">EARN POINTS,<br />ENJOY THE SAVINGS</h1>
-            <h4 class="page-subtitle">Earn points and discounts with every<br />purchase with <strong>C21</strong>STATUS Rewards</h4>
-        </div>
+    <div class="col-12 col-sm-6 d-flex flex-column align-items-start align-self-center">
+        <h1 class="page-title">EARN POINTS,<br />ENJOY THE SAVINGS</h1>
+        <p class="page-subtitle">Earn points and discounts with every<br />purchase with <strong>C21</strong>STATUS Rewards<a aria-describedby="terms-and-conditions-label" href="#jm-c21status-1" onclick="jm_scroll_a();" onkeypress="jm_scroll_a();"><sup><strong>1</strong></sup></a></p>
     </div>
-
-    <div class="row program-benefits">
-        
-        <!-- Loyalty -->
-        <div class="col-12 col-sm-4">
-            <div class="pb-box">
-                <div class="pb-header">
-                    <div class="pb-image text-center">
-                        <img alt="C21 stores Loyalty Card" src="card-red.png?$staticlink$"/>
-                    </div>
-                    <div class="pb-title text-center">Loyalty</div>
-                </div>
-
-                <div class="pb-content">
-                    <div class="pb-description text-center">
-                        <p>Create a free account online and start earning on every purchase.</p>
-                    </div>
-
-                    <div class="pb-list">
-                        <ul>
-                            <li><i class="icon-check red"></i><span>Earn 1 reward point for every dollar spent.</span></li>
-                            <li><i class="icon-check red"></i><span>Free standard shipping on orders over $75.</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pb-footer">
-                    <a class="btn btn-dark btn-lg" href="$url('Login-Show')$">ENROLL NOW</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Premier -->
-
-        <div class="col-12 col-sm-4">
-            <div class="pb-box">
-                <div class="pb-header">
-                    <div class="pb-image text-center">
-                        <img alt="C21 stores Premier Credit Card" src="card-premier.png?$staticlink$"/>
-                    </div>
-                    <div class="pb-title text-center">Premier</div>
-                </div>
-
-                <div class="pb-content">
-                    <div class="pb-description text-center">
-                        <p>Open a C21Status credit card and earn premier status instantly.</p>
-                    </div>
-
-                    <div class="pb-list">
-                        <ul>
-                            <li><i class="icon-check"></i><span>Earn 1 reward point for every dollar spent.</span></li>
-                            <li><i class="icon-check"></i><span>Free standard shipping on orders over $50.</span></li>
-                            <li><i class="icon-check"></i><span>20% off birthday coupon.</span></li>
-                            <li><i class="icon-check"></i><span>15% off your first purchase.</span></li>
-                            <li><i class="icon-check"></i><span>VIP checkout line in stores.</span></li>
-                            <li><i class="icon-check"></i><span>Exclusive offers &amp; events</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pb-footer">
-                    <a class="btn btn-dark btn-lg" href="$url('InstantCredit-Apply')$">APPLY NOW</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Elite -->
-
-        <div class="col-12 col-sm-4">
-            <div class="pb-box">
-                <div class="pb-header">
-                    <div class="pb-image text-center">
-                        <img alt="C21 stores Elite Credit Card" src="card-premier.png?$staticlink$"/>
-                    </div>
-                    <div class="pb-title text-center">Elite</div>
-                </div>
-
-                <div class="pb-content">
-                    <div class="pb-description text-center">
-                        <p>Spend $1,500 to earn the following VIP perks.</p>
-                    </div>
-
-                    <div class="pb-list">
-                        <ul>
-                            <li><i class="icon-check"></i><span>Earn 4 reward point for every dollar spent.</span></li>
-                            <li><i class="icon-check"></i><span>Free standard shipping on orders on all orders.</span></li>
-                            <li><i class="icon-check"></i><span>20% off birthday coupon.</span></li>
-                            <li><i class="icon-check"></i><span>15% off your first purchase.</span></li>
-                            <li><i class="icon-check"></i><span>VIP checkout line in stores.</span></li>
-                            <li><i class="icon-check"></i><span>Exclusive offers &amp; events</span></li>
-                            <li><i class="icon-check"></i><span>Limited Edition designer brand offers</span></li>
-                            <li><i class="icon-check"></i><span>VIP sample sale access</span></li>
-                            <li><i class="icon-check"></i><span>Early access to sales events</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pb-footer">
-                    <a class="btn btn-outline" href="$url('InstantCredit-Apply')$"><span class="long-text">Elite Status is reserved for our Premier members who spend more than $1,500</span><span class="short-text">Elite Status is reserved for our Premier members who spend more than $1,500<</span></a>
-                </div>
-            </div>
-        </div>
 </div>
 
+<div class="row program-benefits"><!-- Loyalty -->
+<div class="col-12 col-sm-4">
+<div class="pb-box">
+<div class="pb-header">
+<div class="pb-image text-center"><img alt="C21 stores Loyalty Card" src="Footer/card-red.png?$staticlink$" /></div>
+
+<h2 class="pb-title text-center">Loyalty</h2>
+</div>
+
+<div class="pb-content">
+<div class="pb-description text-center">
+<p>Create a free account online and start earning on every purchase.<a aria-describedby="terms-and-conditions-label" href="#jm-c21status-asterisk" onclick="jm_scroll_a();" onkeypress="jm_scroll_a();"><strong> * </strong></a></p>
+</div>
+
+<div class="pb-list">
+<ul>
+  <li><span>Earn 1 reward point for every dollar spent.<a aria-describedby="terms-and-conditions-label" href="#jm-c21status-1" onclick="jm_scroll_1();" onkeypress="jm_scroll_1();"><sup><strong> 1 </strong></sup></a></span></li>
+  <li><span>Free standard shipping on orders over $75.<a aria-describedby="terms-and-conditions-label" href="#jm-c21status-2" onclick="jm_scroll_2();" onkeypress="jm_scroll_2();"><sup><strong> 2 </strong></sup></a></span></li>
+</ul>
+</div>
+</div>
+
+<div class="pb-footer"><a class="btn btn-dark btn-lg" href="$url('Account-JoinLoyaltyProgram')$">ENROLL NOW</a></div>
+</div>
+</div>
+<!-- Premier -->
+
+<div class="col-12 col-sm-4">
+<div class="pb-box">
+<div class="pb-header">
+<div class="pb-image text-center"><img alt="C21 stores Premier Credit Card" src="Footer/card-premier.png?$staticlink$" /></div>
+
+<h2 class="pb-title text-center">Premier</h2>
+</div>
+
+<div class="pb-content">
+<div class="pb-description text-center">
+<p>Open a C21STATUS Credit Card and earn Premier status instantly.<a aria-describedby="terms-and-conditions-label" href="#jm-c21status-asterisk" onclick="jm_scroll_a();" onkeypress="jm_scroll_a();"><strong> * </strong></a></p>
+</div>
+
+<div class="pb-list">
+<ul>
+  <li><span>Earn 2 reward points for every dollar spent.<a id="jm-tc-1" aria-describedby="jm-tc-1 terms-and-conditions-label" href="#jm-c21status-1" onclick="jm_scroll_1();" onkeypress="jm_scroll_1();"><sup><strong> 1 </strong></sup></a></span></li>
+  <li><span>Free standard shipping on orders over $50.<a id="jm-tc-2" aria-describedby="jm-tc-2 terms-and-conditions-label" href="#jm-c21status-2" onclick="jm_scroll_2();" onkeypress="jm_scroll_2();"><sup><strong> 2 </strong></sup></a></span></li>
+  <li><span>20% off birthday coupon.<a id="jm-tc-4" aria-describedby="jm-tc-4 terms-and-conditions-label" href="#jm-c21status-4" onclick="jm_scroll_4();" onkeypress="jm_scroll_4();"><sup><strong> 4 </strong></sup></a></span></li>
+  <li><span>15% off your first purchase.<a id="jm-tc-a" aria-describedby="jm-tc-a terms-and-conditions-label" href="#jm-c21status-asterisk" onclick="jm_scroll_a();" onkeypress="jm_scroll_a();"><strong> * </strong></a></span></li>
+  <li><span>VIP checkout line in stores.</span></li>
+  <li><span>Exclusive offers &amp; events</span></li>
+</ul>
+</div>
+</div>
+
+<div class="pb-footer"><a class="btn btn-dark btn-lg" href="$url('InstantCredit-Apply')$">APPLY NOW</a></div>
+</div>
+</div>
+<!-- Elite -->
+
+<div class="col-12 col-sm-4">
+<div class="pb-box">
+<div class="pb-header">
+<div class="pb-image text-center"><img alt="C21 stores Elite Credit Card" src="Footer/card-premier.png?$staticlink$" /></div>
+
+<h2 class="pb-title text-center">Elite</h2>
+</div>
+
+<div class="pb-content">
+<div class="pb-description text-center">
+<p>Spend $1,500 to earn the following VIP perks.<br/><br/></p>
+</div>
+
+<div class="pb-list">
+<ul>
+  <li><span>Earn 4 reward points for every dollar spent.<a id="jm-tc-1" aria-describedby="jm-tc-1 terms-and-conditions-label" href="#jm-c21status-1" onclick="jm_scroll_1();" onkeypress="jm_scroll_1();"><sup><strong> 1 </strong></sup></a></span></li>
+  <li><span>Free standard shipping on all orders.<a id="jm-tc-2" aria-describedby="jm-tc-2 terms-and-conditions-label" href="#jm-c21status-2" onclick="jm_scroll_2();" onkeypress="jm_scroll_2();"><sup><strong> 2 </strong></sup></a></span></li>
+  <li><span>20% off birthday coupon.<a id="jm-tc-4" aria-describedby="jm-tc-4 terms-and-conditions-label" href="#jm-c21status-4" onclick="jm_scroll_4();" onkeypress="jm_scroll_4();"><sup><strong> 4 </strong></sup></a></span></li>
+  <li><span>15% off your first purchase.<a id="jm-tc-a" aria-describedby="jm-tc-a terms-and-conditions-label" href="#jm-c21status-asterisk" onclick="jm_scroll_a();" onkeypress="jm_scroll_a();"><strong> * </strong></a></span></li>
+  <li><span>VIP checkout line in stores.</span></li>
+  <li><span>Exclusive offers &amp; events</span></li>
+  <li><span>Limited Edition designer brand offers</span></li>
+  <li><span>VIP sample sale access</span></li>
+  <li><span>Early access to sales events</span></li>
+</ul>
+</div>
+</div>
+
+<div class="pb-footer"><a class="btn btn-outline" href="$url('InstantCredit-Apply')$"><span class="long-text">Elite Status is reserved for our Premier members who spend more than $1,500 in a rolling 12 month period</span><span class="short-text">Elite Status is reserved for our Premier members who spend more than $1,500 in a rolling 12 month period</span></a></div>
+</div>
+</div>
+</div>
 
 <!-- Terms and conditions -->
 <div class="row terms-and-conditions">
     <div class="col-12 col-xl-6">
-        <p class="btn-underline-black">FAQ/Terms &amp; Conditions</p>
-
-        <div class="terms-and-conditinons-wrapper">
-            <p>The C21STATUS Credit Card is issued by Comenity Capital Bank.</p>
-
-            <p>*Subject to credit approval. Offer valid with the use of the C21STATUS Credit Card The discount does not apply to prior purchases, gift cards, services, or select licensed or leased departments. Exclusions may vary, visit www.c21stores.com/ c21STATUS-terms or see store associate for details.</p>
-
-            <p>1 This rewards program is provided by Century 21 Department Stores, and its terms may change at any time. For Full Rewards Terms and Conditions, please see www.C21stores.com for more details.</p>
-
-            <p>2 Elite C21STATUS members get free shipping on all orders. Premier C21STATUS members: on orders $50 and over. Red Loyalty members: on orders $75 and over. C21STATUS credit card usage is required for Elite and Premier members. See www.C21stores.com for more details.</p>
-
-            <p>3 Reward dollars are good for in-store &amp; online merchandise only. Reward dollars have no cash value and may not be redeemed for purchase of gift cards or for selet licensed and leased departments. Exclusions apply.</p>
-
-            <p>4 C21STATUS Credit Card usage is required. Account must be in good standing. A valid U.S. email address must be on file to receive this offer. Exclusions apply.</p>
-
-            <p>5 One-time use only each online and in-store. Offesr valid for 60 days from account opening. Subject to credit approval. Account must be in good standing at time of transaction. Offers valid with the use of the C21STATUS Credit Card. The discount does not apply to prior purchases, gift cards, services or select licensed or leased departments. Exclusions may vary, visit www.c21stores.com/C21STATUS-terms or see store associate for details.</p>
-        </div>
+        <p id="terms-and-conditions-label" class="btn-underline-black">FAQ/Terms &amp; Conditions</p>
+            <div class="terms-and-conditinons-wrapper">
+                <p>The C21STATUS Credit Card is issued by Comenity Capital Bank.</p>
+                <p id="jm-c21status-asterisk">* Subject to credit approval. Offer valid with the use of the C21STATUS Credit Card The discount does not apply to prior purchases, gift cards, services, or select licensed or leased departments. Exclusions may vary, visit <a href="$url('Page-Show','cid','C21STATUS-terms')$">www.c21stores.com/ c21STATUS-terms</a> or see store associate for details.</p>
+                <p id="jm-c21status-1"><sup>1</sup> This rewards program is provided by Century 21 Department Stores, and its terms may change at any time. For Full Rewards Terms and Conditions, please see www.C21stores.com for more details.</p>
+                <p id="jm-c21status-2"><sup>2</sup> Elite C21STATUS members get free shipping on all orders. Premier C21STATUS members: on orders $50 and over. Red Loyalty members: on orders $75 and over. C21STATUS credit card usage is required for Elite and Premier members. See www.C21stores.com for more details.</p>
+                <p> Reward dollars are good for in-store &amp; online merchandise only. Reward dollars have no cash value and may not be redeemed for purchase of gift cards or for selet licensed and leased departments. Exclusions apply.</p>
+                <p id="jm-c21status-4"><sup>4</sup> C21STATUS Credit Card usage is required. Account must be in good standing. A valid U.S. email address must be on file to receive this offer. Exclusions apply.</p>
+                <p> One-time use only each online and in-store. Offers valid for 60 days from account opening. Subject to credit approval. Account must be in good standing at time of transaction. Offers valid with the use of the C21STATUS Credit Card. The discount does not apply to prior purchases, gift cards, services or select licensed or leased departments. Exclusions may vary, visit <a href="$url('Page-Show','cid','C21STATUS-terms')$">www.c21stores.com/ c21STATUS-terms</a> or see store associate for details.</p>
+            </div>
     </div>
 </div>
 </div>
+
+
+<script>
+function jm_scroll_a(){
+    $('body, html').animate({
+        scrollTop: $('#jm-c21status-asterisk').offset().top - 200
+    }, 1000);
+}
+function jm_scroll_1(){
+    $('body, html').animate({
+        scrollTop: $('#jm-c21status-1').offset().top - 200
+    }, 1000);
+}
+function jm_scroll_2(){
+    $('body, html').animate({
+        scrollTop: $('#jm-c21status-2').offset().top - 200
+    }, 1000);
+}
+function jm_scroll_4(){
+    $('body, html').animate({
+        scrollTop: $('#jm-c21status-4').offset().top - 200
+    }, 1000);
+}
+</script>
