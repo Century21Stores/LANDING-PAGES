@@ -3,6 +3,9 @@
 <style>
 
 /* GENERAL */
+.jm-coorporate-locations-wrap a{
+  border-bottom: solid 1px;
+}
 iframe{
   visibility : hidden;
   position: absolute;
@@ -19,15 +22,17 @@ iframe#jm-edc{
 }
 .jm-menu-header h3,
 #jm-coorporate-main h2,
+#jm-coorporate-main h1,
 #jm-coorporate-main p,
 section article h3,
 section article p{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.jm-career-header{
-  font-size: 4.3em;
-  margin: 0;
+.jm-career-header,
+.jm-landing-page h1.jm-career-header{
+  font-size: 6vw;
+  margin: 0 auto;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 100;
@@ -149,7 +154,13 @@ section article p{
 .jm-coorporate-listing-wrapper div figure{
     padding-top: calc((540% / 507) * 46);
 }
-
+.jm-coorporate-header-image{
+    background: url('Landing-Pages/career/corporate/coorporate-careers-at-century.jpg?$staticlink$');
+    padding-top: calc((595% / 1400) * 100);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
 #jm-menu-1 figure{
     background: url('Landing-Pages/career/corporate/merchandising.jpg?$staticlink$');
     background-repeat: no-repeat;
@@ -339,6 +350,10 @@ section article p{
 }
 
 @media (min-width:1000px) {
+.jm-career-header,
+.jm-landing-page h1.jm-career-header{
+  font-size: 4.3em;
+}
 .jm-menu-header nav {
   /*position: absolute;*/
   bottom: 0;
@@ -368,6 +383,73 @@ section article p{
 
 }
 
+@media (max-width:700px) {
+.jm-career-header-top,
+.jm-career-header{
+  font-size: 6vw;
+}
+.jm-menu-header h3{
+    font-size: 13vw;
+    margin: 5% 0 6%;  
+}
+.jm-landing-page nav{
+  display: none;
+}
+.jm-landing-page article h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.jm-landing-page article p,
+#jm-coorporate-header p{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.jm-landing-page article p,
+.jm-landing-page article p a,
+.jm-career-header{
+  text-align: center;
+}
+.jm-landing-page article{ 
+  margin: 0 0 12%; 
+}
+.jm-landing-page figure{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    margin: 11% 0 0;
+}
+.jm-landing-page figcaption{
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 5% 0;
+    letter-spacing: 0.05em;
+}
+.jm-coorporate-locations-wrap div:nth-of-type(1){
+    padding: 50.9em 6em 0;
+    width: 100%;
+    display: block;
+    margin-left: 0;  
+}
+.jm-coorporate-locations-wrap{
+  display: block;
+}
+.jm-coorporate-locations-wrap div:nth-of-type(2){
+    display: block;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.jm-coorporate-listing-wrapper div figure{
+    padding-top: calc((540% / 507) * 100);
+    width: 100%;
+}
+
+
+}
+
+
 
 
 /* Sticky Header Style */
@@ -392,14 +474,12 @@ body.sticky-header .jm-menu-header h1 {
 
 <div class="jm-landing-page jm-landing-page-1440 jm-landing-page-corporate-career">
 
-<h1>Corporate Careers</h1>
-
 <!-- MAIN HEADER -->
 <section id="jm-coorporate-header">
 
     <figure class="jm-coorporate-header-image"></figure> 
     <article id='jm-coorporate-main'>
-        <h2 class="jm-career-header jm-career-header-top">CORPORATE CAREERS <span class="jm-career-header-l2">AT CENTURY</span></h2>
+        <h1 class="jm-career-header jm-career-header-top">CORPORATE CAREERS <span class="jm-career-header-l2">AT CENTURY</span></h1>
         <p>Whether you create merchandise displays or business strategies, crunch numbers or compute sales plans, lead projects or write code, we have a place for you. With headquarters in New York City and Secaucus, New Jersey — we’re a growing organization that encourages our people to be creative, innovative and guest–centric.</p>
     </article>
 

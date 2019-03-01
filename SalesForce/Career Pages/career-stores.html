@@ -1,13 +1,9 @@
-<!-- Corporate Career page - 09.27.18 - JMRV -->
+<!-- STORES Career page - 03.01.19 - JMRV -->
 <style>
 
 /* GENERAL */
-.jm-landing-page-corporate-career h1{
-     font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
-     text-align: center;
-     font-size: 4.3em; 
-     font-weight: initial; 
-     margin: 2% auto; 
+.jm-stores-locations-wrap a{
+  border-bottom: solid 1px;
 }
 iframe{
   visibility : hidden;
@@ -24,16 +20,18 @@ iframe#jm-edc{
   visibility : visible;
 }
 .jm-menu-header h3,
-#jm-coorporate-main h2,
-#jm-coorporate-main p,
+#jm-stores-main h2,
+#jm-stores-main h1,
+#jm-stores-main p,
 section article h3,
 section article p{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.jm-career-header{
-  font-size: 4.3em;
-  margin: 0;
+.jm-career-header,
+.jm-landing-page h1.jm-career-header{
+  font-size: 6vw;
+  margin: 0 auto;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 100;
@@ -49,15 +47,15 @@ section article p{
 
 
 /*  HEADER  */
-#jm-coorporate-header p{
+#jm-stores-header p{
   width: 96%;
   margin: 0 auto;
 }
 /*  END HEADER  */
 
 /* QUOTE LINE */
-#jm-coorporate-quote{
-  background: url('Landing-Pages/career/corporate/comillas.png?$staticlink$');
+#jm-stores-quote{
+  background: url('Landing-Pages/career/stores/comillas.png?$staticlink$');
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: 100%;
@@ -152,60 +150,54 @@ section article p{
 /* END MENU STYLING JOB TYPES  */
 
 
-.jm-coorporate-listing-wrapper div figure{
+.jm-stores-listing-wrapper div figure{
     padding-top: calc((540% / 507) * 46);
 }
-
+.jm-stores-header-image{
+    background: url('Landing-Pages/career/stores/00_STORES_HEADER.jpg?$staticlink$');
+    padding-top: calc((595% / 1400) * 100);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
 #jm-menu-1 figure{
-    background: url('Landing-Pages/career/corporate/merchandising.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/00_STORES_HEADER.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-menu-2 figure{
-    background: url('Landing-Pages/career/corporate/planning.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/01_TEAMMEMBERS.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-menu-3 figure{
-    background: url('Landing-Pages/career/corporate/ecomm.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/02_STOREEXECUTIVES.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-menu-4 figure{
-    background: url('Landing-Pages/career/corporate/marketing.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/03_HR.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-menu-5 figure{
-    background: url('Landing-Pages/career/corporate/creative.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/04_MERCAHNDISE.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-menu-6 figure{
-    background: url('Landing-Pages/career/corporate/hr.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/05_BEAUTY.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
 #jm-menu-7 figure{
-    background: url('Landing-Pages/career/corporate/logistics.jpg?$staticlink$');
-    background-repeat: no-repeat;
-    background-position: 0%;
-    background-size: 100%;
-}
-#jm-menu-8 figure{
-    background: url('Landing-Pages/career/corporate/finance.jpg?$staticlink$');
-    background-repeat: no-repeat;
-    background-position: 0%;
-    background-size: 100%;
-}
-#jm-menu-9 figure{
-    background: url('Landing-Pages/career/corporate/it.jpg?$staticlink$');
+    background: url('Landing-Pages/career/stores/06_ASSESTPRTN.jpg?$staticlink$');
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
@@ -213,14 +205,14 @@ section article p{
 
 
 /* LOCATIONS */
-#jm-coorporate-locations{
+#jm-stores-locations{
   margin: 0 0 10%;  
 }
-#jm-coorporate-locations .jm-career-header{
+#jm-stores-locations .jm-career-header{
   text-align: center;
   margin: 9% 0 5%;  
 }
-.jm-coorporate-locations-wrap{
+.jm-stores-locations-wrap{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -229,46 +221,46 @@ section article p{
   -webkit-box-align: center;
   align-items: center;
 }
-.jm-coorporate-locations-wrap div:nth-of-type(1){
+.jm-stores-locations-wrap div:nth-of-type(1){
   padding: 50.9em 6em 0;
   position: relative;
   width: 41%;
   display: inline-block;
   margin-left: 10%;
 }
-.jm-coorporate-locations-wrap div:nth-of-type(2){
+.jm-stores-locations-wrap div:nth-of-type(2){
   display: inline-block;
   width: 37%;
   padding: 0 3%;  
 }
-.jm-coorporate-locations-wrap h3{
+.jm-stores-locations-wrap h3{
   font-size: 1.3em;
   text-transform: uppercase;
   margin: 0 0 5%;  
   font-weight: bold; 
 }
-.jm-coorporate-locations-wrap aside h3{
+.jm-stores-locations-wrap aside h3{
   margin: 13% 0 5%;  
 }
 /* END LOCATIONS */
 
 @media (min-width:700px) {
-.jm-coorporate-header-image{
-    background: url('Landing-Pages/career/corporate/coorporate-careers-at-century.jpg?$staticlink$');
+.jm-stores-header-image{
+    background: url('Landing-Pages/career/stores/00_STORES_HEADER.jpg?$staticlink$');
     padding-top: calc((595% / 1400) * 100);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
-.jm-coorporate-listing-wrapper figure,
-.jm-coorporate-listing-wrapper article{
+.jm-stores-listing-wrapper figure,
+.jm-stores-listing-wrapper article{
   float: left;
   width: 50%;
 }
-.jm-coorporate-listing-wrapper article{
+.jm-stores-listing-wrapper article{
   padding: 8% 0;
 }
-.jm-coorporate-listing-wrapper article .content-block-content__action{
+.jm-stores-listing-wrapper article .content-block-content__action{
   margin-top: 13%;
 }
 .jm-to-the-right figure{
@@ -276,30 +268,30 @@ section article p{
   margin-right: 1.9%;  
 }
 
-.jm-coorporate-listing-wrapper div{
+.jm-stores-listing-wrapper div{
     overflow: auto;
 }
 
 /* JOB LISTING STYLING */
-.jm-coorporate-listing-wrapper figure,
-.jm-coorporate-listing-wrapper article{
+.jm-stores-listing-wrapper figure,
+.jm-stores-listing-wrapper article{
   width: 44%;
 }
-.jm-coorporate-listing-wrapper > div:nth-child(even) article,
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure{
+.jm-stores-listing-wrapper > div:nth-child(even) article,
+.jm-stores-listing-wrapper > div:nth-child(odd) figure{
     margin-right: 1.9%;
 }
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
-.jm-coorporate-listing-wrapper > div:nth-child(even) article{
+.jm-stores-listing-wrapper > div:nth-child(odd) figure,
+.jm-stores-listing-wrapper > div:nth-child(even) article{
     margin-left: 1.9%;
 }
 
-.jm-coorporate-listing-wrapper article h3{
+.jm-stores-listing-wrapper article h3{
     font-size: 1.33em;
     font-weight: bold;
     margin: 0 0 3%;
 }
-.jm-coorporate-listing-wrapper article p{
+.jm-stores-listing-wrapper article p{
   
 }
 .jm-line{
@@ -312,30 +304,30 @@ section article p{
 /* END JOB LISTING STYLING */
 
 /* LIST OF PERKS */
-#jm-coorporate-perks{
+#jm-stores-perks{
   text-align: center;  
 }
-#jm-coorporate-perks h3{
+#jm-stores-perks h3{
   margin: 9% 0 5%;
 }
-#jm-coorporate-perks div{
+#jm-stores-perks div{
   overflow: auto;
 }
-#jm-coorporate-perks figure{
+#jm-stores-perks figure{
   width: 33%;
   float: left;
   margin: 0 0 5%;
 }
-#jm-coorporate-perks figure.jm-last-one{
+#jm-stores-perks figure.jm-last-one{
   width: 100%;
 }
-#jm-coorporate-perks figure figcaption{
+#jm-stores-perks figure figcaption{
   font-weight: bold;
   font-size: 1.3em;
   line-height: 1;
   margin: 3% 0 0;  
 }
-#jm-coorporate-perks figure figcaption span{
+#jm-stores-perks figure figcaption span{
   display: block;
   font-size: 0.95em;
   font-weight: normal;  
@@ -345,6 +337,10 @@ section article p{
 }
 
 @media (min-width:1000px) {
+.jm-career-header,
+.jm-landing-page h1.jm-career-header{
+  font-size: 4.3em;
+}
 .jm-menu-header nav {
   /*position: absolute;*/
   bottom: 0;
@@ -358,19 +354,85 @@ section article p{
 
 
 @media (min-width:1440px) {
-#jm-coorporate-header p{
+#jm-stores-header p{
   width: 96%;
 }
-.jm-coorporate-listing-wrapper figure,
-.jm-coorporate-listing-wrapper article{
+.jm-stores-listing-wrapper figure,
+.jm-stores-listing-wrapper article{
   width: 46%;
 }
-.jm-coorporate-listing-wrapper > div:nth-child(even) article,
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
-.jm-coorporate-listing-wrapper > div:nth-child(even) article{
+.jm-stores-listing-wrapper > div:nth-child(even) article,
+.jm-stores-listing-wrapper > div:nth-child(odd) figure,
+.jm-stores-listing-wrapper > div:nth-child(odd) figure,
+.jm-stores-listing-wrapper > div:nth-child(even) article{
     margin: 0%;
 }
+
+}
+
+@media (max-width:700px) {
+.jm-career-header-top,
+.jm-career-header{
+  font-size: 6vw;
+}
+.jm-menu-header h3{
+    font-size: 13vw;
+    margin: 5% 0 6%;  
+}
+.jm-landing-page nav{
+  display: none;
+}
+.jm-landing-page article h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.jm-landing-page article p,
+#jm-stores-header p{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.jm-landing-page article p,
+.jm-landing-page article p a,
+.jm-career-header{
+  text-align: center;
+}
+.jm-landing-page article{ 
+  margin: 0 0 12%; 
+}
+.jm-landing-page figure{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    margin: 11% 0 0;
+}
+.jm-landing-page figcaption{
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 5% 0;
+    letter-spacing: 0.05em;
+}
+.jm-stores-locations-wrap div:nth-of-type(1){
+    padding: 50.9em 6em 0;
+    width: 100%;
+    display: block;
+    margin-left: 0;  
+}
+.jm-stores-locations-wrap{
+  display: block;
+}
+.jm-stores-locations-wrap div:nth-of-type(2){
+    display: block;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.jm-stores-listing-wrapper div figure{
+    padding-top: calc((540% / 507) * 100);
+    width: 100%;
+}
+
 
 }
 
@@ -400,10 +462,10 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- MAIN HEADER -->
-<section id="jm-coorporate-header">
+<section id="jm-stores-header">
 
-    <figure class="jm-coorporate-header-image"></figure> 
-    <article id='jm-coorporate-main'>
+    <figure class="jm-stores-header-image"></figure> 
+    <article id='jm-stores-main'>
         <h1 class="jm-career-header jm-career-header-top">STORE CAREERS <span class="jm-career-header-l2">AT CENTURY</span></h1>
         <p>We are motivated to provide memorable shopping experiences and luxury designer brands that give guests confidence and pride. Store teams are committed to working together to create a positive and welcoming atmosphere for one another and our guests. You will have the opportunity to interact with people from around the world (and around the corner) which represents what makes C21 special – people!</p>
     </article>
@@ -412,7 +474,7 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- QUOTE -->
-<aside id='jm-coorporate-quote'>
+<aside id='jm-stores-quote'>
     <p class="jm-quote">“I’ve worked at Century 21 for 4 years and it is a great honor to be part of this team. My fellow coworkers are the greatest. They are funny, talented, and hard working. Each one has taught me something that has allowed me to grow not only as an employee but as a person. We have a wonderful working environment and that makes me enjoy coming to work every day.”</p>
     <p class="jm-author">STORES TEAM MEMBER</p>
 </aside>
@@ -433,7 +495,7 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- LISTING OF JOBS AVAILABLE PER TEAM -->
-<section class="jm-coorporate-listing-wrapper">
+<section class="jm-stores-listing-wrapper">
 
     <div id='jm-menu-1'>
         <figure></figure>
@@ -508,7 +570,7 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- PERKS and BENEFITS -->
-<section id='jm-coorporate-perks'>
+<section id='jm-stores-perks'>
     <h3 class="jm-career-header">TEN MOST WANTED PERKS</h3>
     <div>
     <!--  ICON 1 -->
@@ -569,9 +631,9 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- LOCATIONS NEW JERSEY OFFICES -->
-<section id='jm-coorporate-locations'>
+<section id='jm-stores-locations'>
   <h3 class="jm-career-header">LOCATIONS</h3>
-  <div class="jm-coorporate-locations-wrap">  
+  <div class="jm-stores-locations-wrap">  
     <div>
       
       <iframe id="jm-edc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2506792219524!2d-74.06874064872332!3d40.77850277922329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257b04486ab1d%3A0x8d0763592e87cf41!2s700+Secaucus+Rd%2C+Secaucus%2C+NJ+07094!5e0!3m2!1sen!2sus!4v1534340315822" frameborder="0" style="border:0" allowfullscreen></iframe>
