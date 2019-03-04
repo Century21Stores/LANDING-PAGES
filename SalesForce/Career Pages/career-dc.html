@@ -1,12 +1,9 @@
-<!-- DC Career page - 09.27.18 - JMRV -->
+<!-- DC Career page - 03.02.19 - JMRV -->
 <style>
 
 /* GENERAL */
-.jm-landing-page-corporate-career h1{
-     font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
-     font-size: 4.3em; 
-     font-weight: initial; 
-     margin: 2% auto; 
+.jm-dc-locations-wrap a{
+  border-bottom: solid 1px;
 }
 iframe{
   visibility : hidden;
@@ -23,16 +20,18 @@ iframe#jm-edc{
   visibility : visible;
 }
 .jm-menu-header h3,
-#jm-coorporate-main h2,
-#jm-coorporate-main p,
+#jm-dc-main h2,
+#jm-dc-main h1,
+#jm-dc-main p,
 section article h3,
 section article p{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.jm-career-header{
-  font-size: 4.3em;
-  margin: 0;
+.jm-career-header,
+.jm-landing-page h1.jm-career-header{
+  font-size: 6vw;
+  margin: 0 auto;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 100;
@@ -48,14 +47,22 @@ section article p{
 
 
 /*  HEADER  */
-#jm-coorporate-header p{
+#jm-dc-header p{
+  width: 96%;
+  margin: 0 auto;
+}
+/*  END HEADER  */
+
+
+/*  HEADER  */
+#jm-dc-header p{
   width: 96%;
   margin: 0 auto;
 }
 /*  END HEADER  */
 
 /* QUOTE LINE */
-#jm-coorporate-quote{
+#jm-dc-quote{
   background: url('Landing-Pages/career/corporate/comillas.png?$staticlink$');
   background-repeat: no-repeat;
   background-position: 0%;
@@ -151,10 +158,16 @@ section article p{
 /* END MENU STYLING JOB TYPES  */
 
 
-.jm-coorporate-listing-wrapper div figure{
+.jm-dc-listing-wrapper div figure{
     padding-top: calc((540% / 507) * 46);
 }
-
+.jm-dc-header-image{
+    background: url('Landing-Pages/career/dc/dc-careers-at-century.jpg?$staticlink$');
+    padding-top: calc((595% / 1400) * 100);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+}
 #jm-menu-1 figure{
     background: url('Landing-Pages/career/dc/teammember.jpg?$staticlink$');
     background-repeat: no-repeat;
@@ -182,14 +195,14 @@ section article p{
 
 
 /* LOCATIONS */
-#jm-coorporate-locations{
+#jm-dc-locations{
   margin: 0 0 10%;  
 }
-#jm-coorporate-locations .jm-career-header{
+#jm-dc-locations .jm-career-header{
   text-align: center;
   margin: 9% 0 5%;  
 }
-.jm-coorporate-locations-wrap{
+.jm-dc-locations-wrap{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -198,46 +211,46 @@ section article p{
   -webkit-box-align: center;
   align-items: center;
 }
-.jm-coorporate-locations-wrap div:nth-of-type(1){
+.jm-dc-locations-wrap div:nth-of-type(1){
   padding: 50.9em 6em 0;
   position: relative;
   width: 41%;
   display: inline-block;
   margin-left: 10%;
 }
-.jm-coorporate-locations-wrap div:nth-of-type(2){
+.jm-dc-locations-wrap div:nth-of-type(2){
   display: inline-block;
   width: 37%;
   padding: 0 3%;  
 }
-.jm-coorporate-locations-wrap h3{
+.jm-dc-locations-wrap h3{
   font-size: 1.3em;
   text-transform: uppercase;
   margin: 0 0 5%;  
   font-weight: bold; 
 }
-.jm-coorporate-locations-wrap aside h3{
+.jm-dc-locations-wrap aside h3{
   margin: 13% 0 5%;  
 }
 /* END LOCATIONS */
 
 @media (min-width:700px) {
-.jm-coorporate-header-image{
+.jm-dc-header-image{
     background: url('Landing-Pages/career/dc/dc-careers-at-century.jpg?$staticlink$');
     padding-top: calc((595% / 1400) * 100);
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: 100%;
 }
-.jm-coorporate-listing-wrapper figure,
-.jm-coorporate-listing-wrapper article{
+.jm-dc-listing-wrapper figure,
+.jm-dc-listing-wrapper article{
   float: left;
   width: 50%;
 }
-.jm-coorporate-listing-wrapper article{
+.jm-dc-listing-wrapper article{
   padding: 8% 0;
 }
-.jm-coorporate-listing-wrapper article .content-block-content__action{
+.jm-dc-listing-wrapper article .content-block-content__action{
   margin-top: 13%;
 }
 .jm-to-the-right figure{
@@ -245,30 +258,30 @@ section article p{
   margin-right: 1.9%;  
 }
 
-.jm-coorporate-listing-wrapper div{
+.jm-dc-listing-wrapper div{
     overflow: auto;
 }
 
 /* JOB LISTING STYLING */
-.jm-coorporate-listing-wrapper figure,
-.jm-coorporate-listing-wrapper article{
+.jm-dc-listing-wrapper figure,
+.jm-dc-listing-wrapper article{
   width: 44%;
 }
-.jm-coorporate-listing-wrapper > div:nth-child(even) article,
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure{
+.jm-dc-listing-wrapper > div:nth-child(even) article,
+.jm-dc-listing-wrapper > div:nth-child(odd) figure{
     margin-right: 1.9%;
 }
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
-.jm-coorporate-listing-wrapper > div:nth-child(even) article{
+.jm-dc-listing-wrapper > div:nth-child(odd) figure,
+.jm-dc-listing-wrapper > div:nth-child(even) article{
     margin-left: 1.9%;
 }
 
-.jm-coorporate-listing-wrapper article h3{
+.jm-dc-listing-wrapper article h3{
     font-size: 1.33em;
     font-weight: bold;
     margin: 0 0 3%;
 }
-.jm-coorporate-listing-wrapper article p{
+.jm-dc-listing-wrapper article p{
   
 }
 .jm-line{
@@ -281,30 +294,30 @@ section article p{
 /* END JOB LISTING STYLING */
 
 /* LIST OF PERKS */
-#jm-coorporate-perks{
+#jm-dc-perks{
   text-align: center;  
 }
-#jm-coorporate-perks h3{
+#jm-dc-perks h3{
   margin: 9% 0 5%;
 }
-#jm-coorporate-perks div{
+#jm-dc-perks div{
   overflow: auto;
 }
-#jm-coorporate-perks figure{
+#jm-dc-perks figure{
   width: 33%;
   float: left;
   margin: 0 0 5%;
 }
-#jm-coorporate-perks figure.jm-last-one{
+/*#jm-dc-perks figure.jm-last-one{
   width: 100%;
-}
-#jm-coorporate-perks figure figcaption{
+}*/
+#jm-dc-perks figure figcaption{
   font-weight: bold;
   font-size: 1.3em;
   line-height: 1;
   margin: 3% 0 0;  
 }
-#jm-coorporate-perks figure figcaption span{
+#jm-dc-perks figure figcaption span{
   display: block;
   font-size: 0.95em;
   font-weight: normal;  
@@ -314,6 +327,10 @@ section article p{
 }
 
 @media (min-width:1000px) {
+.jm-career-header,
+.jm-landing-page h1.jm-career-header{
+  font-size: 4.3em;
+}
 .jm-menu-header nav {
   /*position: absolute;*/
   bottom: 0;
@@ -327,19 +344,92 @@ section article p{
 
 
 @media (min-width:1440px) {
-#jm-coorporate-header p{
+#jm-dc-header p{
   width: 96%;
 }
-.jm-coorporate-listing-wrapper figure,
-.jm-coorporate-listing-wrapper article{
+.jm-dc-listing-wrapper figure,
+.jm-dc-listing-wrapper article{
   width: 46%;
 }
-.jm-coorporate-listing-wrapper > div:nth-child(even) article,
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
-.jm-coorporate-listing-wrapper > div:nth-child(odd) figure,
-.jm-coorporate-listing-wrapper > div:nth-child(even) article{
+.jm-dc-listing-wrapper > div:nth-child(even) article,
+.jm-dc-listing-wrapper > div:nth-child(odd) figure,
+.jm-dc-listing-wrapper > div:nth-child(odd) figure,
+.jm-dc-listing-wrapper > div:nth-child(even) article{
     margin: 0%;
 }
+
+}
+
+@media (max-width:700px) {
+.jm-career-header-top,
+.jm-career-header{
+  font-size: 6vw;
+}
+.jm-menu-header h3{
+    font-size: 13vw;
+    margin: 5% 0 6%;  
+}
+.jm-landing-page nav{
+  display: none;
+}
+.jm-landing-page article h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.jm-landing-page article p,
+#jm-dc-header p{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.jm-landing-page article p,
+.jm-landing-page article p a,
+.jm-career-header{
+  text-align: center;
+}
+.jm-landing-page article{ 
+  margin: 0 0 12%; 
+}
+.jm-landing-page figure{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    margin: 11% 0 0;
+}
+#jm-dc-header figure{
+  width: 100%;
+}
+.jm-landing-page figcaption{
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 5% 0;
+    letter-spacing: 0.05em;
+}
+.jm-dc-locations-wrap div:nth-of-type(1){
+    padding: 21.9em 6em 0;
+    width: 100%;
+    display: block;
+    margin-left: 0;  
+}
+iframe{
+    height: 20em;  
+}
+
+.jm-dc-locations-wrap{
+  display: block;
+}
+.jm-dc-locations-wrap div:nth-of-type(2){
+    display: block;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.jm-dc-listing-wrapper div figure{
+    padding-top: calc((540% / 507) * 100);
+    width: 100%;
+}
+
 
 }
 
@@ -369,10 +459,10 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- MAIN HEADER -->
-<section id="jm-coorporate-header">
+<section id="jm-dc-header">
 
-    <figure class="jm-coorporate-header-image"></figure> 
-    <article id='jm-coorporate-main'>
+    <figure class="jm-dc-header-image"></figure> 
+    <article id='jm-dc-main'>
         <h1 class="jm-career-header jm-career-header-top">LOGISTICS <span class="jm-career-header-l2">CAREERS AT CENTURY</span></h1>
         <p>Logistics supports the Century 21 supply chain by getting merchandise to our Stores and Guests. The Logistics team takes pride in making sure our Stores are well supplied with the highest quality products delivered quickly and efficiently. Our four Distribution Centers are constantly turning new product but most importantly, they are staffed by energetic and determined C21ers committed to delivering value and the goods…every single day.</p>
     </article>
@@ -381,7 +471,7 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- QUOTE -->
-<aside id='jm-coorporate-quote'>
+<aside id='jm-dc-quote'>
     <p class="jm-quote">“The reason it’s different here than working in other places---and believe me, I’ve been working here since age 16—are all the opportunities I’m getting here to learn things that will help me develop as a person in my profession. It’s an advantage of being in a smaller company. You don’t get bored.”</p>
     <p class="jm-author">SENIOR OPERATIONS MANAGER, LOGISTICS</p>
 </aside>
@@ -400,7 +490,7 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- LISTING OF JOBS AVAILABLE PER TEAM -->
-<section class="jm-coorporate-listing-wrapper">
+<section class="jm-dc-listing-wrapper">
 
     <div id='jm-menu-1'>
         <figure></figure>
@@ -409,7 +499,7 @@ body.sticky-header .jm-menu-header h1 {
             <h3>TEAM MEMBER</h3>
             <p>Logistics Team Members work with pride and get the job done right. It’s not all work though, we take a personal interest in taking the time to recognize and celebrate our team members. It’s a culture that we are proud of! Leads, Clericals, Power Equipment Operators and Stock Clerks are some of our many roles that are critical to the success of our business. If you are looking to work with a strong, talented team and be provided with the opportunity of moving up within a career path, then this position is for you!</p>
             <p class="content-block-content__action content-block-content__action--button">
-                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.StoreJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark">APPLY NOW</a>
+                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.DistributionCenterJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark" target="_blank">APPLY NOW</a>
             </p>                    
         </article>
     </div>
@@ -420,7 +510,7 @@ body.sticky-header .jm-menu-header h1 {
             <h3>SUPPORT</h3>
             <p>Logistics Support teams work behind the scenes to bring our business to life and add value with their daily contributions. Shipping, Receiving, Transportation, and Housekeeping are some examples of the important roles that provide specialized support to our Distribution Centers. Logistics Support is essential Century 21, and we are looking for energetic and motivates individuals to help us thrive and support our continued growth.</p>            
             <p class="content-block-content__action content-block-content__action--button">
-                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.StoreJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark">APPLY NOW</a>
+                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.DistributionCenterJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark" target="_blank">APPLY NOW</a>
             </p>
         </article>
         <span class="jm-line"></span>
@@ -433,7 +523,7 @@ body.sticky-header .jm-menu-header h1 {
             <h3>LOGISTICS EXECUTIVE</h3>
             <p>Our Logistics Executive team provides leadership, direction and daily supervision for the teams in our Distribution Centers. We are looking for ambitious and talented individuals who can think strategically but are also not afraid to roll up their sleeves in an exciting and challenging environment. Most importantly, Logistics Executives lead the way by inspiring our teams to live our Higher Purpose and Core Values every single day.</p>            
             <p class="content-block-content__action content-block-content__action--button">
-                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.StoreJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark">APPLY NOW</a>
+                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.DistributionCenterJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark" target="_blank">APPLY NOW</a>
             </p>
         </article>
     </div>
@@ -443,7 +533,7 @@ body.sticky-header .jm-menu-header h1 {
             <h3>ASSET PROTECTION</h3>
             <p>The mission of Asset Protection is to keep C21ers and C21 assets safe and secure in our Distribution Centers. Whether joining this team in a leadership capacity or as a C21 Asset Protection Specialist, you will have the opportunity to partner with Logistics Executives and Team Members to support company initiatives. This team also has the unique opportunity of interacting with all C21ers with a friendly greeting at our entrances, making them key influencers in the C21 workplace experience. </p>
             <p class="content-block-content__action content-block-content__action--button">
-                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.StoreJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark">APPLY NOW</a>
+                <a href="https://wfa.kronostm.com/index.jsp?SOURCEINFO=JobFamilies.DistributionCenterJobs&locale=en_US&applicationName=Century21NonReqExt&SEQ=positionSearchResults" class="btn jm-cta-button jm-cta-button-dark" target="_blank">APPLY NOW</a>
             </p>
         </article>
         <span class="jm-line"></span>
@@ -453,8 +543,8 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- PERKS and BENEFITS -->
-<section id='jm-coorporate-perks'>
-    <h3 class="jm-career-header">TEN MOST WANTED PERKS</h3>
+<section id='jm-dc-perks'>
+    <h3 class="jm-career-header">MOST WANTED PERKS</h3>
     <div>
     <!--  ICON 1 -->
     <figure>
@@ -463,47 +553,42 @@ body.sticky-header .jm-menu-header h1 {
     </figure>
     <!--  ICON 2 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMjkvMDAvNjk0LzQwMWsucG5nIl1d/401k.png?sha=7b8b216ba3b5161d" alt="Piggy bank Icon symbolizing 401K Plan at C21">
-      <figcaption>401(K) PLAN <span>With Company Matching</span></figcaption>
-    </figure>
-    <!--  ICON 3 -->
-    <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzEvMDkvNTYzL3N1bW1lcmZyaWRheXMucG5nIl1d/summerfridays.png?sha=a861e0c1e9254246" alt="Summer Icon symbolizing summer Friday Schedule at C21">
       <figcaption>SUMMER FRIDAYS <span>That Everyone Actually Takes</span></figcaption>
     </figure>
-    <!--  ICON 4 -->
+    <!--  ICON 3 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzgvMzkvMzQ5L3dvcmtfbGlmZS5wbmciXV0/work-life.png?sha=1748d76567d22599" alt="Family Icon symbolizing work/life balance at C21">
       <figcaption>WORK/LIFE BALANCE <span>Great Hours, Family Friendly</span></figcaption>
     </figure>
-    <!--  ICON 5 -->
+    <!--  ICON 4 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzkvNTUvMjEvcHRvLnBuZyJdXQ/pto.png?sha=756c096be43a257b" alt="Traveling Icon symbolizing generous PTO policy at C21">
       <figcaption>GENEROUS PTO <span>Great Extra Days After Only 3 Years</span></figcaption>
     </figure>
-    <!--  ICON 6 -->
+    <!--  ICON 5 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Train Icon symbolizing commuters benefits at C21">
       <figcaption>COMMUTER BENEFITS <span>Discount On Transit</span></figcaption>
     </figure>
-    </div>
-    <div>
-    <!--  ICON 7 -->
+    <!--  ICON 6 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Health Icon symbolizing competitive health benefits at C21">
       <figcaption>COMPETITIVE BENEFITS <span>Comprehensive Health,<br/>Dental &amp; Medical</span></figcaption>
-    </figure>
-    <!--  ICON 8 -->
+    </figure>    
+    </div>
+    <div>    
+    <!--  ICON 7 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Ice cream Icon symbolizing special perks at C21">
       <figcaption>SPECIAL PERKS <span>Free Ice Cream Trucks,<br/>Team Outings &amp; More</span></figcaption>
     </figure>
-    <!--  ICON 9 -->
+    <!--  ICON 8 -->
     <figure>
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Medal Icon symbolizing plum benefits at C21">
       <figcaption>PLUM BENEFITS <span>Save On Movie Tickets, Hotels, Events &amp; Shows</span></figcaption>
     </figure>
-    <!--  ICON 10 -->
+    <!--  ICON 9 -->
     <figure class="jm-last-one">
       <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Chart Icon symbolizing growth opportunities at C21">
       <figcaption>GROWTH POTENTIAL <span>Flexibility to Move Up Or <br/>Switch Gears</span></figcaption>
@@ -514,9 +599,9 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <!-- LOCATIONS NEW JERSEY OFFICES -->
-<section id='jm-coorporate-locations'>
+<section id='jm-dc-locations'>
   <h3 class="jm-career-header">LOCATIONS</h3>
-  <div class="jm-coorporate-locations-wrap">  
+  <div class="jm-dc-locations-wrap">  
     <div>
       
       <iframe id="jm-edc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2506792219524!2d-74.06874064872332!3d40.77850277922329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257b04486ab1d%3A0x8d0763592e87cf41!2s700+Secaucus+Rd%2C+Secaucus%2C+NJ+07094!5e0!3m2!1sen!2sus!4v1534340315822" frameborder="0" style="border:0" allowfullscreen></iframe>
