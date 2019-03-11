@@ -1,4 +1,4 @@
-<!-- DC Career page - 03.02.19 - JMRV -->
+<!-- DC Career page - 031119 - JMRV -->
 <style>
 
 /* GENERAL */
@@ -31,15 +31,16 @@ section article p{
 .jm-career-header,
 .jm-landing-page h1.jm-career-header{
   font-size: 6vw;
-  margin: 0 auto;
-  line-height: 1;
+  margin: 1% auto;
+  line-height: 0.81;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: bold;
+  font-weight: 500;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  /*font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
   color: #d1333a;
   letter-spacing: 0;  
 }
@@ -63,11 +64,11 @@ section article p{
 
 /* QUOTE LINE */
 #jm-dc-quote{
-  background: url('Landing-Pages/career/corporate/comillas.png?$staticlink$');
+  background: url('Landing-Pages/career/dc/comillas.png?$staticlink$');
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: 100%;
-  padding: 11% 0;
+  padding: 9% 0 7%;
   border: solid 1px #c3c3c3;
   border-right: none;
   border-left: navajowhite;
@@ -90,7 +91,7 @@ section article p{
   font-weight: bold;
   font-size: 1.2em;
   width: 86%;
-  margin: 2% auto 0;
+  margin: 6% auto 0;
 }
 /* END QUOTE LINE */
 
@@ -106,6 +107,7 @@ section article p{
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   max-width: 1440px;
+  margin: 0 0 2%;
 }
 
 .sticky-header-onscroll{
@@ -206,10 +208,10 @@ section article p{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  align-items: flex-start;
 }
 .jm-dc-locations-wrap div:nth-of-type(1){
   padding: 50.9em 6em 0;
@@ -235,6 +237,9 @@ section article p{
 /* END LOCATIONS */
 
 @media (min-width:700px) {
+.jm-disclaimer{
+  text-align: left;
+}  
 .jm-dc-header-image{
     background: url('Landing-Pages/career/dc/dc-careers-at-century.jpg?$staticlink$');
     padding-top: calc((595% / 1400) * 100);
@@ -297,7 +302,7 @@ section article p{
 #jm-dc-perks{
   text-align: center;  
 }
-#jm-dc-perks h3{
+#jm-dc-perks h2{
   margin: 9% 0 5%;
 }
 #jm-dc-perks div{
@@ -308,9 +313,9 @@ section article p{
   float: left;
   margin: 0 0 5%;
 }
-/*#jm-dc-perks figure.jm-last-one{
+#jm-dc-perks figure.jm-last-one{
   width: 100%;
-}*/
+}
 #jm-dc-perks figure figcaption{
   font-weight: bold;
   font-size: 1.3em;
@@ -376,14 +381,18 @@ section article p{
     text-align: center;
     font-weight: bold;
     margin: 4% 0;
+    font-size: 8vw;
 }
 .jm-landing-page article p,
-#jm-dc-header p{
+#jm-stores-header p{
     width: 85%;
-    margin: 0 auto;
+    margin: 6% auto;
+    text-align: left;
 }
-
-.jm-landing-page article p,
+.jm-landing-page article p{
+  text-align: left; 
+}
+.jm-landing-page article p.content-block-content__action,
 .jm-landing-page article p a,
 .jm-career-header{
   text-align: center;
@@ -401,10 +410,11 @@ section article p{
   width: 100%;
 }
 .jm-landing-page figcaption{
-    font-size: 3vw;
+    font-size: 2.3vw;
     font-weight: bold;
-    margin: 5% 0;
+    margin: 5% auto;
     letter-spacing: 0.05em;
+    width: 83%
 }
 .jm-dc-locations-wrap div:nth-of-type(1){
     padding: 21.9em 6em 0;
@@ -428,6 +438,17 @@ iframe{
 .jm-dc-listing-wrapper div figure{
     padding-top: calc((540% / 507) * 100);
     width: 100%;
+}
+.jm-disclaimer{
+ text-align: center;
+   margin: 6% 0 13%;
+   font-size: 0.8em;  
+}
+.jm-quote{
+ font-size: 1.1em;
+}
+.jm-author{
+ font-size: 0.76em;  
 }
 
 
@@ -479,7 +500,7 @@ body.sticky-header .jm-menu-header h1 {
 
 <!-- JOB TYPES STICKY MENU -->
 <section class="jm-menu-header">
-    <h3 class="jm-career-header">JOB TYPES</h3>
+    <h2 class="jm-career-header">JOB TYPES</h2>
     <nav>
       <a id="TEAMMEMBER" href="#jm-menu-1">TEAM MEMBER</a>
       <a id="SUPPORT" href="#jm-menu-2">SUPPORT</a>
@@ -544,63 +565,72 @@ body.sticky-header .jm-menu-header h1 {
 
 <!-- PERKS and BENEFITS -->
 <section id='jm-dc-perks'>
-    <h3 class="jm-career-header">MOST WANTED PERKS</h3>
+    <h2 class="jm-career-header">MOST WANTED PERKS</h2>
     <div>
     <!--  ICON 1 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Shopping bag Icon symbolizing even more amazing discounts at C21">
+      <img src="Landing-Pages/career/dc/employee-discounts.png?$staticlink$" alt="">
       <figcaption>EMPLOYEE DISCOUNTS <span>Even-More-Amazing Prices</span></figcaption>
     </figure>
     <!--  ICON 2 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzEvMDkvNTYzL3N1bW1lcmZyaWRheXMucG5nIl1d/summerfridays.png?sha=a861e0c1e9254246" alt="Summer Icon symbolizing summer Friday Schedule at C21">
-      <figcaption>SUMMER FRIDAYS <span>That Everyone Actually Takes</span></figcaption>
+      <img src="Landing-Pages/career/dc/401k.png?$staticlink$" alt="">
+      <figcaption>401(K) PLAN <span>With Company Matching</span></figcaption>
     </figure>
     <!--  ICON 3 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzgvMzkvMzQ5L3dvcmtfbGlmZS5wbmciXV0/work-life.png?sha=1748d76567d22599" alt="Family Icon symbolizing work/life balance at C21">
-      <figcaption>WORK/LIFE BALANCE <span>Great Hours, Family Friendly</span></figcaption>
+      <img src="Landing-Pages/career/dc/birthday.png?$staticlink$" alt="">
+      <figcaption>BIRTHDAY HOLIDAY <span>Extra Day Off To Celebrate You*</span></figcaption>
     </figure>
     <!--  ICON 4 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzkvNTUvMjEvcHRvLnBuZyJdXQ/pto.png?sha=756c096be43a257b" alt="Traveling Icon symbolizing generous PTO policy at C21">
-      <figcaption>GENEROUS PTO <span>Great Extra Days After Only 3 Years</span></figcaption>
+      <img src="Landing-Pages/career/dc/worklife.png?$staticlink$" alt="">
+      <figcaption>WORK/LIFE BALANCE <span>Great Hours, Family Friendly</span></figcaption>
     </figure>
     <!--  ICON 5 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Train Icon symbolizing commuters benefits at C21">
-      <figcaption>COMMUTER BENEFITS <span>Discount On Transit</span></figcaption>
+      <img src="Landing-Pages/career/dc/pto.png?$staticlink$" alt="">
+      <figcaption>GENEROUS PTO <span>Great Extra Days After Only 3 Years</span></figcaption>
     </figure>
     <!--  ICON 6 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Health Icon symbolizing competitive health benefits at C21">
-      <figcaption>COMPETITIVE BENEFITS <span>Comprehensive Health,<br/>Dental &amp; Medical</span></figcaption>
+      <img src="Landing-Pages/career/dc/commuter.png?$staticlink$" alt="">
+      <figcaption>COMMUTER BENEFITS <span>Discount On Transit</span></figcaption>
     </figure>    
     </div>
     <div>    
     <!--  ICON 7 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Ice cream Icon symbolizing special perks at C21">
-      <figcaption>SPECIAL PERKS <span>Free Ice Cream Trucks,<br/>Team Outings &amp; More</span></figcaption>
+      <img src="Landing-Pages/career/dc/benefits.png?$staticlink$" alt="">
+      <figcaption>COMPETITIVE BENEFITS <span>Comprehensive Health,<br/>Dental &amp; Medical</span></figcaption>
     </figure>
     <!--  ICON 8 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Medal Icon symbolizing plum benefits at C21">
-      <figcaption>PLUM BENEFITS <span>Save On Movie Tickets, Hotels, Events &amp; Shows</span></figcaption>
+      <img src="Landing-Pages/career/dc/perks.png?$staticlink$" alt="">
+      <figcaption>SPECIAL PERKS <span>Free Ice Cream Trucks,<br/>Team Outings &amp; More</span></figcaption>
     </figure>
     <!--  ICON 9 -->
-    <figure class="jm-last-one">
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Chart Icon symbolizing growth opportunities at C21">
-      <figcaption>GROWTH POTENTIAL <span>Flexibility to Move Up Or <br/>Switch Gears</span></figcaption>
+    <figure>
+      <img src="Landing-Pages/career/dc/plum.png?$staticlink$" alt="">
+      <figcaption>PLUM BENEFITS <span>Save On Movie Tickets, Hotels, Events &amp; Shows</span></figcaption>
     </figure>
+    <!--  ICON 10 -->
+    <figure class="jm-last-one">
+      <img src="Landing-Pages/career/dc/growth.png?$staticlink$" alt="">
+      <figcaption>GROWTH POTENTIAL <span>Flexibility to Move Up Or <br/>Switch Gears</span></figcaption>
+    </figure>    
     </div>
+
+    <p class="jm-disclaimer">*After 3 years. All perks vary by position</p>
+
+
 </section>
 <!-- END PERKS and BENEFITS -->
 
 
 <!-- LOCATIONS NEW JERSEY OFFICES -->
 <section id='jm-dc-locations'>
-  <h3 class="jm-career-header">LOCATIONS</h3>
+  <h2 class="jm-career-header">LOCATIONS</h2>
   <div class="jm-dc-locations-wrap">  
     <div>
       
@@ -612,19 +642,15 @@ body.sticky-header .jm-menu-header h1 {
     </div>
     <div>
       <article>
-        <h3>SECAUCUS: THE 6TH BOROUGH?</h3>
-        <p>We like it in NJ and think that you will, too. In addition to our NY corporate offices, we have corporate employees across our four warehouses in Secaucus, NJ. Our ecommerce, marketing and creative teams sit in our <a onclick="jm_maps_toggle('jm-edc')">EDC at 700 Secaucus Road</a>, right next to our <a onclick="jm_maps_toggle('jm-hdc')">HDC</a>. HR, IT, finance and other key positions are located across our other warehouses, the <a onclick="jm_maps_toggle('jm-adc')">ADC at 1 Emerson Lane</a> and the <a onclick="jm_maps_toggle('jm-sdc')">SDC</a> at Enterprise Road.</p>
-        <p>Secaucus is a quick, 10-minutes-flat train ride from Penn Station in Manhattan on NJ Transit or a short bus trip in as little as 20 minutes from Port Authority. One reason to consider crossing the Hudson River for your next job? You will enjoy significant tax savings working in New Jersey vs. New York. And if you already live in Jersey, how perfect is that?</p>
+        <h3>DC OFFICES</h3>
+        <p>We have DCs  located in Secaucus, NJ, a quick train ride from Penn Station  in NY or bus ride from Port Authority or nearby towns, including Union City:<br/>
+          <a onclick="jm_maps_toggle('jm-hdc')">HDC</a> Our Hardgoods Distribution Center is located at <a href="https://www.google.com/maps/dir/40.7798489,-74.0667899/21+Century+Way,+Secaucus,+NJ+07094/@40.7798667,-74.0688444,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c257b05857712d:0xe4f58ad3f7a83891!2m2!1d-74.0664029!2d40.7801574">21 Century Way</a><br/>
+          <a onclick="jm_maps_toggle('jm-sdc')">SDC</a> Our Softgoods Distribution Center is located at <a href="https://www.google.com/maps/dir/40.7798489,-74.0667899/70+Enterprise+Avenue+North,+Secaucus,+NJ/@40.7792934,-74.0695546,18z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c257b17c7e70d9:0x636f2bf76cb27291!2m2!1d-74.0701307!2d40.7798189">70 Enterprise Road</a><br/>
+          <a onclick="jm_maps_toggle('jm-edc')">EDC</a> Our Ecommerce Distribution Center is located at <a href="https://www.google.com/maps/dir/40.7798489,-74.0667899/700+Secaucus+Rd,+Secaucus,+NJ+07094/@40.7788853,-74.068278,18z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c257b04486ab1d:0x8d0763592e87cf41!2m2!1d-74.0665466!2d40.7785028">700 Secaucus Road</a><br/>          
+          <a onclick="jm_maps_toggle('jm-adc')">ADC</a> Our Automated Distribution Center is located at <a href="https://www.google.com/maps/dir/40.7798489,-74.0667899/1+Emerson+Lane,+Secaucus,+NJ/@40.7820552,-74.0717747,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c257c7897fa019:0x1cd037178d9bd922!2m2!1d-74.0634147!2d40.7863999">1 Emerson Lane</a><br/>
+          
       </article>
-      <aside>
-        <h3>corporate shuttle</h3>
-        <p> Our free corporate employee shuttle makes
-            getting to  work between NY and NJ even easier.
-            It runs every few minutes during rush hour
-            between the Secaucus  train station and our four
-            warehouses, the <a onclick="jm_maps_toggle('jm-edc')">EDC</a>, <a onclick="jm_maps_toggle('jm-hdc')">HDC</a>, <a onclick="jm_maps_toggle('jm-sdc')">SDC</a> and <a onclick="jm_maps_toggle('jm-adc')">ADC</a>. 
-        </p>
-      </aside>
+
     </div>
   <div>
 </section>
@@ -636,6 +662,15 @@ body.sticky-header .jm-menu-header h1 {
 
 
 <script>
+// MAPS
+function jm_maps_toggle(location){
+  // if(location = 'jm-edc'){
+    $('iframe').removeClass('jm-show');
+    $('#' + location).addClass('jm-show');
+  // }
+  
+}
+
 document.addEventListener("DOMContentLoaded", function(){
   var mq = window.matchMedia( "(min-width: 1000px)" );
   if (mq.matches) {
@@ -704,14 +739,6 @@ $("#ASSETPROTECTION").click(function (){
 // END GOING FROM MENU TO SECTION
 
 
-// MAPS
-function jm_maps_toggle(location){
-  // if(location = 'jm-edc'){
-    $('iframe').removeClass('jm-show');
-    $('#' + location).addClass('jm-show');
-  // }
-  
-}
 
 }
-  </script>
+</script>

@@ -1,4 +1,4 @@
-<!-- STORES Career page - 03.04.19 - JMRV -->
+<!-- STORES Career page - 031119 - JMRV -->
 <style>
 
 /* GENERAL */
@@ -31,15 +31,16 @@ section article p{
 .jm-career-header,
 .jm-landing-page h1.jm-career-header{
   font-size: 6vw;
-  margin: 0 auto;
-  line-height: 1;
+  margin: 1% auto;
+  line-height: 0.81;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: bold;
+  font-weight: 500;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  /*font-family: BauerBodoniBT, Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
   color: #d1333a;
   letter-spacing: 0;  
 }
@@ -59,7 +60,7 @@ section article p{
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: 100%;
-  padding: 11% 0;
+  padding: 9% 0 7%;
   border: solid 1px #c3c3c3;
   border-right: none;
   border-left: navajowhite;
@@ -82,7 +83,7 @@ section article p{
   font-weight: bold;
   font-size: 1.2em;
   width: 86%;
-  margin: 2% auto 0;
+  margin: 6% auto 0;
 }
 /* END QUOTE LINE */
 
@@ -98,6 +99,7 @@ section article p{
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   max-width: 1440px;
+  margin: 0 0 2%;
 }
 
 .sticky-header-onscroll{
@@ -240,6 +242,9 @@ section article p{
 /* END LOCATIONS */
 
 @media (min-width:700px) {
+.jm-disclaimer{
+  text-align: left;
+}
 .jm-stores-header-image{
     background: url('Landing-Pages/career/stores/00_STORES_HEADER.jpg?$staticlink$');
     padding-top: calc((595% / 1400) * 100);
@@ -302,7 +307,7 @@ section article p{
 #jm-stores-perks{
   text-align: center;  
 }
-#jm-stores-perks h3{
+#jm-stores-perks h2{
   margin: 9% 0 5%;
 }
 #jm-stores-perks div{
@@ -381,18 +386,23 @@ section article p{
     text-align: center;
     font-weight: bold;
     margin: 4% 0;
+    font-size: 8vw;
 }
 .jm-landing-page article p,
 #jm-stores-header p{
     width: 85%;
-    margin: 0 auto;
+    margin: 6% auto;
+    text-align: left;
 }
-
-.jm-landing-page article p,
+.jm-landing-page article p{
+  text-align: left; 
+}
+.jm-landing-page article p.content-block-content__action,
 .jm-landing-page article p a,
 .jm-career-header{
   text-align: center;
 }
+
 .jm-landing-page article{ 
   margin: 0 0 12%; 
 }
@@ -406,10 +416,12 @@ section article p{
   width: 100%;
 }
 .jm-landing-page figcaption{
-    font-size: 3vw;
+  font-size: 2.3vw;
     font-weight: bold;
     margin: 5% 0;
     letter-spacing: 0.05em;
+    width: 83%;
+    margin: 5% auto;
 }
 .jm-stores-locations-wrap div:nth-of-type(1){
     padding: 21.9em 6em 0;
@@ -433,7 +445,17 @@ iframe{
     padding-top: calc((540% / 507) * 100);
     width: 100%;
 }
-
+.jm-disclaimer{
+  text-align: center;
+    margin: 6% 0 13%;
+    font-size: 0.8em;  
+}
+.jm-quote{
+  font-size: 1.1em;
+}
+.jm-author{
+  font-size: 0.76em;  
+}
 
 }
 
@@ -483,7 +505,7 @@ body.sticky-header .jm-menu-header h1 {
 
 <!-- JOB TYPES STICKY MENU -->
 <section class="jm-menu-header">
-    <h3 class="jm-career-header">JOB TYPES</h3>
+    <h2 class="jm-career-header">JOB TYPES</h2>
     <nav>
       <a id="TEAMMEMBERS" href="#jm-menu-1">TEAM MEMBERS</a>
       <a id="STOREEXECUTIVES" href="#jm-menu-2">STORE EXECUTIVES</a>
@@ -572,63 +594,66 @@ body.sticky-header .jm-menu-header h1 {
 
 <!-- PERKS and BENEFITS -->
 <section id='jm-stores-perks'>
-    <h3 class="jm-career-header">MOST WANTED PERKS</h3>
+    <h2 class="jm-career-header">MOST WANTED PERKS</h2>
     <div>
     <!--  ICON 1 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Shopping bag Icon symbolizing even more amazing discounts at C21">
+      <img src="Landing-Pages/career/stores/employee-discounts.png?$staticlink$" alt="">
       <figcaption>EMPLOYEE DISCOUNTS <span>Even-More-Amazing Prices</span></figcaption>
     </figure>
     <!--  ICON 2 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzkvNTUvMjEvcHRvLnBuZyJdXQ/pto.png?sha=756c096be43a257b" alt="Traveling Icon symbolizing generous PTO policy at C21">
+      <img src="Landing-Pages/career/stores/pto.png?$staticlink$" alt="">
       <figcaption>GENEROUS PTO <span>Great Extra Days After Only 3 Years</span></figcaption>
     </figure>
     <!--  ICON 3 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzEvMDkvNTYzL3N1bW1lcmZyaWRheXMucG5nIl1d/summerfridays.png?sha=a861e0c1e9254246" alt="Summer Icon symbolizing summer Friday Schedule at C21">
+      <img src="Landing-Pages/career/stores/birthday.png?$staticlink$" alt="">
       <figcaption>BIRTHDAY HOLIDAY <span>Extra Day Off To Celebrate You*</span></figcaption>
     </figure>
     <!--  ICON 4 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTIvMzgvMzkvMzQ5L3dvcmtfbGlmZS5wbmciXV0/work-life.png?sha=1748d76567d22599" alt="Family Icon symbolizing work/life balance at C21">
+      <img src="Landing-Pages/career/stores/worklife.png?$staticlink$" alt="">
       <figcaption>WORK/LIFE BALANCE <span>Great Hours, Family Friendly</span></figcaption>
     </figure>
     <!--  ICON 5 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Ice cream Icon symbolizing special perks at C21">
+      <img src="Landing-Pages/career/stores/perks.png?$staticlink$" alt="">
       <figcaption>SPECIAL PERKS <span>Free Ice Cream Trucks,<br/>Team Outings &amp; More</span></figcaption>
     </figure>
     <!--  ICON 6 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Train Icon symbolizing commuters benefits at C21">
+      <img src="Landing-Pages/career/stores/commuter.png?$staticlink$" alt="">
       <figcaption>COMMUTER BENEFITS <span>Discount On Transit</span></figcaption>
     </figure>
     </div>
     <div>
     <!--  ICON 7 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Health Icon symbolizing competitive health benefits at C21">
+      <img src="Landing-Pages/career/stores/benefits.png?$staticlink$" alt="">
       <figcaption>COMPETITIVE BENEFITS <span>Comprehensive Health,<br/>Dental &amp; Medical</span></figcaption>
     </figure>
     <!--  ICON 8 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Chart Icon symbolizing growth opportunities at C21">
+      <img src="Landing-Pages/career/stores/growth.png?$staticlink$" alt="">
       <figcaption>GROWTH POTENTIAL <span>Flexibility to Move Up Or <br/>Switch Gears</span></figcaption>
     </figure>
     <!--  ICON 9 -->
     <figure>
-      <img src="https://c21stores-weblinc.netdna-ssl.com/media/W1siZiIsIjIwMTgvMDgvMDcvMTAvMjYvMjIvNjczL2VtcGxveWVlX2Rpc2NvdW50cy5wbmciXV0/employee-discounts.png?sha=6ba8ebf3f27aea8e" alt="Medal Icon symbolizing plum benefits at C21">
+      <img src="Landing-Pages/career/stores/plum.png?$staticlink$" alt="">
       <figcaption>PLUM BENEFITS <span>Save On Movie Tickets, Hotels, Events &amp; Shows</span></figcaption>
     </figure>
     </div>
+
+    <p class="jm-disclaimer">*After 3 years. All perks vary by position</p>
+
 </section>
 <!-- END PERKS and BENEFITS -->
 
 
 <!-- LOCATIONS NEW JERSEY OFFICES -->
 <section id='jm-stores-locations'>
-  <h3 class="jm-career-header">LOCATIONS</h3>
+  <h2 class="jm-career-header">LOCATIONS</h2>
   <div class="jm-stores-locations-wrap">  
     <div>
       <iframe id="jm-edc" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d96753.10839070866!2d-74.09730443451066!3d40.72825989936336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scentury+21+department+store+locations!5e0!3m2!1sen!2sus!4v1551713601289" frameborder="0" style="border:0" allowfullscreen></iframe>
