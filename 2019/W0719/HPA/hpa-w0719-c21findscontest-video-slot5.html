@@ -1,0 +1,162 @@
+<!--  hpa-w0719-c21findscontest-video-slot5 - JuanMa - 031319  -->
+
+<style>
+.jm-video-container{
+  position: relative;
+  padding-bottom: 39.99%; /* 56.25% = 16:9 */
+  text-align: center;
+}
+.jm-video-container > div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.jm-overlay-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.jm-overlay-wrapper > div{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+@media (min-width:1064px) {
+
+
+}
+
+
+</style>
+
+<section class="jm-video-container">
+<div>
+  <div id="player"></div>
+<!--   <div class="jm-overlay-wrapper">
+    <div id="jm-overlay-start">
+      <a href="#play" onclick="playVideo()">play</a>
+    </div>
+  </div> -->
+
+</div>   
+</section>
+<a href="#play" onclick="playVideo()">play</a>
+<a href="#play" onclick="stopVideo()">stop</a>
+<a href="#play" onclick="pauseVideo()">pause</a>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Make sure ?enablejsapi=1 is on URL -->
+<!-- <iframe id="video" src="//www.youtube.com/embed/5kGu_ZTHlzQ?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe> -->
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<script>
+window.onscroll = function() {on_Scroll_PlayVideo()};
+
+function on_Scroll_PlayVideo() {
+   
+   var hT = $('#player').offset().top,
+       hH = $('#player').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    console.log((hT-wH) , wS);
+   if (wS > (hT+hH-wH)){
+     playVideo();
+   }
+   else{
+    pauseVideo();
+   }
+
+}
+
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '71%',
+      videoId: '5kGu_ZTHlzQ',
+      playerVars: {modestbranding:1, rel:0, autoplay:0, controls:1, showinfo:0, disablekb:1, iv_load_policy:3, nologo:1, showsearch:0},
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    event.target.pauseVideo();
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  // var done = false;
+  // function onPlayerStateChange(event) {
+  //   if (event.data == YT.PlayerState.PLAYING && !done) {
+  //     setTimeout(stopVideo, 20000);
+  //     done = true;
+  //   }
+  // }
+
+
+  // 6. Player state
+  var done = false;
+  var myPlayerState;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          // DO THIS
+          // done = true;
+          console.log('video playing');
+        }
+        else{
+          console.log('video paused');      
+        }
+        myPlayerState = event.data;
+        
+      }
+
+  // if (myPlayerState == 0){
+  //   console.log('video paused 2');
+  // }
+
+
+
+
+  function pauseVideo() {
+    player.pauseVideo();
+  }
+  function stopVideo() {
+    player.stopVideo();
+  }
+  function playVideo() {
+    player.playVideo();
+  }
+
+
+
+
+</script>
