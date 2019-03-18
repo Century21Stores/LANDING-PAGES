@@ -1,4 +1,4 @@
-<!--  hpa-w0719-c21findscontest-video-slot5 - JuanMa - 031319  -->
+<!--  hpa-w0719-c21findscontest-video-slot5 - JuanMa - 031819  -->
 
 <style>
 .jm-video-container{
@@ -33,6 +33,13 @@
   justify-content: center;
   text-align: center;  
 }
+.jm-overlay-wrapper{
+  color: white;
+  background: black;
+}
+.jm-overlay-wrapper a{
+  color: white;
+}
 
 @media (min-width:1064px) {
 
@@ -45,14 +52,24 @@
 <section class="jm-video-container">
 <div>
   <div id="player"></div>
-<!--   <div class="jm-overlay-wrapper">
-    <div id="jm-overlay-start">
-      <a href="#play" onclick="playVideo()">play</a>
+  <div class="jm-overlay-wrapper">
+    <div>
+    <div>  
+      <div id="jm-overlay-start">
+        <p>Play Video Header</p>
+        <a href="#play" onclick="playVideo()">play</a>
+      </div>
+      <div id="jm-overlay-replay">
+        <p>Replay Video Header</p>
+        <a href="#play" onclick="playVideo()">Replay</a>
+      </div>
     </div>
-  </div> -->
+    </div>
+  </div>
 
 </div>   
 </section>
+
 <a href="#play" onclick="playVideo()">play</a>
 <a href="#play" onclick="stopVideo()">stop</a>
 <a href="#play" onclick="pauseVideo()">pause</a>
@@ -98,7 +115,7 @@ function on_Scroll_PlayVideo() {
       height: '100%',
       width: '71%',
       videoId: '5kGu_ZTHlzQ',
-      playerVars: {modestbranding:1, rel:0, autoplay:0, controls:1, showinfo:0, disablekb:1, iv_load_policy:3, nologo:1, showsearch:0},
+      playerVars: {enablejsapi:1, modestbranding:1, rel:0, autoplay:0, controls:1, showinfo:0, disablekb:1, iv_load_policy:3, nologo:1, showsearch:0},
       events: {
         'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
@@ -131,9 +148,14 @@ function on_Scroll_PlayVideo() {
           // DO THIS
           // done = true;
           console.log('video playing');
+          $('.jm-overlay-wrapper').fadeOut();
+          $('#jm-overlay-start').fadeOut();
+          $('#jm-overlay-replay').fadeOut();
         }
         else{
-          console.log('video paused');      
+          console.log('video paused');
+          $('.jm-overlay-wrapper').fadeIn(); 
+          $('#jm-overlay-replay').fadeIn();
         }
         myPlayerState = event.data;
         
@@ -153,7 +175,7 @@ function on_Scroll_PlayVideo() {
     player.stopVideo();
   }
   function playVideo() {
-    player.playVideo();
+    player.playVideo();    
   }
 
 
