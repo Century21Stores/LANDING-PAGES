@@ -1,4 +1,4 @@
-<!--   hpd-1-1119-msg00-drop-off-slot1 - CCava - 040819   -->
+<!--   hpd-1-1119-msg00-drop-off-slot1 - JuanMa - 041019   -->
 
 <style>
 .jm-large-plus-one{
@@ -111,11 +111,11 @@ section.jm-large-plus-one-1119-msg00-drop .jm-large-plus-one-s article{
 	    	</figure>
 	        <article>
 	        	<div>
-	            	<h2 class="jm-header-2" id="jm-header-1119-msg00-s-drop">CHRISTIAN<br/>LOUBOUTIN</h2>
+	            	<h2 class="jm-header-2" id="jm-header-mob-1119-msg00-s-drop">CHRISTIAN<br/>LOUBOUTIN</h2>
 	            	<p class="jm-header-3">Over 40% Off</p>
-	            	<!-- <div class="jm-cta-wrapper">
-	                <a href="#4" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1119-msg00-s-drop" aria-labelledby="jm-cta-1119-msg00-s-drop jm-header-1119-msg00-s-drop">SHOP NOW</a>
-	            	</div> -->
+	            	<div class="jm-cta-wrapper">
+	                 <a href="$url('Search-Show','cgid','shoes-drop-christian-louboutin')$" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-mob-1119-msg00-s-drop" aria-labelledby="jm-cta-mob-1119-msg00-s-drop jm-header-mob-1119-msg00-s-drop">SHOP NOW</a>
+	            	</div>
 	            </div>	
 	        </article>
 	    </div>	
@@ -147,9 +147,9 @@ section.jm-large-plus-one-1119-msg00-drop .jm-large-plus-one-s article{
 	        	<div>
 	            	<h2 class="jm-header-2" id="jm-header-1119-msg00-s-drop">CHRISTIAN<br/>LOUBOUTIN</h2>
 	            	<p class="jm-header-3">Over 40% Off</p>
-<!-- 	            	<div class="jm-cta-wrapper">
-	                <a href="#" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1119-msg00-s-drop" aria-labelledby="jm-cta-1119-msg00-s-drop jm-header-1119-msg00-s-drop">SHOP NOW</a>
-	            	</div> -->
+	            	<div class="jm-cta-wrapper">
+						        <a href="$url('Search-Show','cgid','shoes-drop-christian-louboutin')$" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1119-msg00-s-drop" aria-labelledby="jm-cta-1119-msg00-s-drop jm-header-1119-msg00-s-drop">SHOP NOW</a>
+	            	</div>
 	            </div>	
 	        </article>
 	    </div>	
@@ -157,3 +157,48 @@ section.jm-large-plus-one-1119-msg00-drop .jm-large-plus-one-s article{
 
 
 </section>
+
+
+<script>
+count_down_drop();
+
+function count_down_drop(){
+
+// END CLOCK
+window.addEventListener("DOMContentLoaded", function(){
+  var dd = new Date();
+  console.log(dd);
+  var targetDate = "Apr 11 2019";
+  var hh = dd.getHours();
+  var utchh = dd.getUTCHours();
+  console.log(utchh);
+  //console.log(hh);  
+  var mm = dd.getUTCMinutes();
+  var nn = dd.getDay();
+  console.log('Date: '+ dd);
+  console.log(String(dd).indexOf(targetDate));
+  if ((String(dd).indexOf(targetDate) === -1) || ( utchh < 14)) {
+    // countdown();
+    console.log("not 10am yet");
+  }
+  else{
+    console.log("It is 10am!");
+    endCountDown();
+  }
+});
+// END END CLOCK
+
+
+
+
+function endCountDown(){
+  $('.jm-large-plus-one-s a').addClass('jm-available');
+  $('.jm-large-plus-one-s').addClass('jm-opacity-1');
+  // $('.countdownContainer').fadeOut('slow');
+
+}
+
+
+}
+
+</script>
