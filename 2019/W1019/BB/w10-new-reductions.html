@@ -1,0 +1,64 @@
+<script>
+window.addEventListener("DOMContentLoaded", function(){  
+if (window.location.href.indexOf("clearance") > -1) {
+    $('.search-results .product-grid .product-search-wrapper').before(
+        '<div class="jm-clearance-banner">'+
+        '<h2>NEW REDUCTIONS <span>UP TO 70% OFF</span></h2>'+
+        '<div class="jm-cta-wrapper">'+
+            '<a href="/categories/clearance-women" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">WOMEN</a>'+
+            '<a href="/categories/clearance-men" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">MEN</a>'+
+            '<a href="/categories/clearance-shoes" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">SHOES</a>'+
+            '<a href="/categories/clearance-handbags-accessories" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">HANDBAGS & ACCESSORIES</a>'+
+            '<a href="/categories/clearance-kids" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">KIDS</a>'+
+            '<a href="/categories/clearance-home" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">HOME</a>'+
+        '</div>'+
+        '</div>'
+                    
+    );
+
+        jm_breadcrumb = $('.filter-bar')[0].childNodes[3].childNodes[3].innerText.replace(/\s/g,"");
+        jm_breadcrumb_childs = $('.filter-bar')[0].childNodes[3].childElementCount;
+        jm_last_filter = $('.filter-bar')[0].childNodes[3].lastElementChild;
+        console.log(jm_last_filter == "NewReductions");
+        if((jm_breadcrumb == "NewReductions")){
+            $(jm_last_filter).hide();
+            console.log("din din din!");            
+        }
+}
+
+});
+</script>
+<style>
+
+.jm-clearance-banner{
+    text-align: center;
+    color: #d03437;
+    border: solid 2px #d03437;
+    padding: 2% 0;
+    font-size: 1vw;
+}
+.jm-clearance-banner h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 0 0 1%;
+    font-weight: bold;
+}
+.jm-clearance-banner h2 span{
+    font-weight: normal;
+}
+.jm-clearance-banner .jm-cta-wrapper{
+}
+.jm-clearance-banner .jm-cta-wrapper a{
+    margin: 1% 2%;
+    color: #d03437 !important;
+}
+.jm-clearance-banner .jm-cta-wrapper a:hover{
+    color: #ffffff !important;
+}
+
+@media screen and (min-width: 1400px){
+.jm-clearance-banner{
+    font-size: 1em;
+}
+}
+</style>
