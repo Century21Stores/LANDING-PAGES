@@ -128,7 +128,7 @@ section.jm-large-plus-one-1219-msg00-drop .jm-large-plus-one-s article{
 	</div>
 	<!--  Large  -->
 	<div class="jm-large-plus-one-l">
-	<a href="$url('Search-Show','cgid','home-bedding')$" aria-hidden="true" role="none" tabindex="-1"></a>
+	<a href="$url('Search-Show','cgid','home-bedding')$" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
 	    <div class="jm-large-plus-one-content">
 	        <figure class="jm-large-plus-one-l-mobile-1219-msg00-drop"></figure>
 	        <article>
@@ -173,16 +173,16 @@ function count_down_drop(){
 // END CLOCK
 window.addEventListener("DOMContentLoaded", function(){
   var dd = new Date();
-  console.log(dd);
+  //console.log(dd);
   var targetDate = "Apr 25 2019";
   var hh = dd.getHours();
   var utchh = dd.getUTCHours();
-  console.log(utchh);
+  //console.log(utchh);
   //console.log(hh);  
   var mm = dd.getUTCMinutes();
   var nn = dd.getDay();
-  console.log('Date: '+ dd);
-  console.log(String(dd).indexOf(targetDate));
+  //console.log('Date: '+ dd);
+  //console.log(String(dd).indexOf(targetDate));
   if ((String(dd).indexOf(targetDate) === -1) || ( utchh < 14)) {
     // countdown();
     console.log("not 10am yet");
