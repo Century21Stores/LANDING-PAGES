@@ -1,7 +1,18 @@
-<!-- hpd-w1319-msg00-drop-on-slot1 - JuanMa - 04.25.19 -->
+<!-- hpd-w1319-msg00-drop-off-slot1 - JuanMa - 04.25.19 -->
 
 <style>
-  
+.jm-drop-v2{
+    opacity: 0.73;
+}
+.jm-drop-v2 a{
+    display:none;
+}
+a.jm-available{
+    display:inline-block;
+}
+.jm-opacity-1{
+    opacity: 1;
+}
 .jm-drop-v2-w1319-msg00 .jm-right{
     background: url("refresh/refresh-2019/w1319/hpa/WP_reference/01_04Week4A_HP_M.jpg?$staticlink$");
     background-size: cover;
@@ -63,3 +74,48 @@
     </div>
     <div class="jm-right"></div>
 </div>
+
+
+<script>
+count_down_drop();
+
+function count_down_drop(){
+
+// END CLOCK
+window.addEventListener("DOMContentLoaded", function(){
+  var dd = new Date();
+  //console.log(dd);
+  var targetDate = "Apr 26 2019";
+  var hh = dd.getHours();
+  var utchh = dd.getUTCHours();
+  //console.log(utchh);
+  //console.log(hh);  
+  var mm = dd.getUTCMinutes();
+  var nn = dd.getDay();
+  //console.log('Date: '+ dd);
+  //console.log(String(dd).indexOf(targetDate));
+  if ((String(dd).indexOf(targetDate) === -1) || ( utchh < 14)) {
+    // countdown();
+    console.log("not 10am yet");
+  }
+  else{
+    console.log("It is 10am!");
+    endCountDown();
+  }
+});
+// END END CLOCK
+
+
+
+
+function endCountDown(){
+  $('.jm-drop-v2 a').addClass('jm-available');
+  $('.jm-drop-v2').addClass('jm-opacity-1');
+  // $('.countdownContainer').fadeOut('slow');
+
+}
+
+
+}
+
+</script>
