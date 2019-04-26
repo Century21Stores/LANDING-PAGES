@@ -1,0 +1,28 @@
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+    $('.search-results .product-grid .product-search-wrapper').before(
+        '<div class="jm-browse-banner">'+
+            '<h2>Prada</h2>'+
+            '<p>Century 21 Stores is not an authorized retailer of Prada.</p>'+
+        '</div>'    
+    );
+});
+</script>
+<style>
+.jm-browse-banner{
+    text-align: center;
+    color: #000000;
+    border: solid 1px #c7c7c7;
+    padding: 2% 0;
+}
+.jm-browse-banner h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+.jm-browse-banner p{
+    font-size: 2em;    
+}
+
+</style>
