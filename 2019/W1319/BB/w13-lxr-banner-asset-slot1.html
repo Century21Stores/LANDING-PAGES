@@ -1,31 +1,90 @@
 <!-- w13-lxr-banner-asset-slot1 - JuanMa - 042619   -->
 
-
 <script>
 window.addEventListener("DOMContentLoaded", function(){
     $('.search-results .product-grid .product-search-wrapper').before(
-        '<div class="jm-browse-banner">'+
-            '<h2>GUCCI</h2>'+
-            '<p>Century 21 Stores is not an authorized retailer of Gucci.</p>'+
+        '<div class="jm-lxr-browse-banner">'+
+            '<figure><img src="refresh/refresh-2019/w1319/hpa/3x1/LRXandCo.png?$staticlink$" alt="LRXandCo"/></figure>'+
+            '<article>'+
+                '<p class="jm-line-1">ONLINE & IN SELECT STORES | MAY 3-12</p>'+
+                '<h2>MOTHER\'S DAY EVENT</h2>'+
+                '<p class="jm-line-3">Vintage Luxury Finds</p>'+
+                '<p class="jm-line-4">BUY ONE, GET ONE <b>50% OFF*</b></p>'+
+                '<p class="jm-line-5">*Final sale. 50% discount will apply to the lowest-ticketed item in the transaction. Discount applied to pre-tax transaction totals. Discount applied at checkout. Offer is not cumulative and cannot be combined with any other offers or promotions. No price adjustments or rain checks. Only valid on sales made during event dates. Hermès Birkins and Signature Louis Vuitton Monogram, Damier Ebene, Damier Azur and Graphite styles are excluded. Valid online and in-store, excluding Staten Island, Brooklyn City Point and Morristown locations.</p>'+
+            '</article>'+
         '</div>'    
     );
 });
 </script>
 <style>
-.jm-browse-banner{
-    text-align: center;
-    color: #000000;
-    border: solid 1px #c7c7c7;
-    padding: 2% 0;
+.jm-lxr-browse-banner{
+    background: #fbd0db;
+    text-align:center;
+    margin: 0 0 2%;
 }
-.jm-browse-banner h2{
-    text-transform: uppercase;
-    font-size: 3em;
-    margin: 0;
+.jm-lxr-browse-banner figure{
+    background: black;
+}
+.jm-lxr-browse-banner figure img{
+    width: 13%;
+    padding: 0.5% 0;
+}
+.jm-lxr-browse-banner article{
+    padding: 2% 0 1%;
+}
+.jm-lxr-browse-banner article p{
+    letter-spacing: 0.05em;
+}
+.jm-lxr-browse-banner article h2{
+    font-size: 4.8em;
     font-weight: bold;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
 }
-.jm-browse-banner p{
-    font-size: 2em;    
+.jm-lxr-browse-banner article p.jm-line-1{
+    font-size: 1.3em;
+    margin: 0 0 0.5%;
+}
+.jm-lxr-browse-banner article p.jm-line-3{
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    margin: 0.5% 0;
+}
+.jm-lxr-browse-banner article p.jm-line-4{
+    font-size: 1.8em;
+    letter-spacing: none;
+}
+.jm-lxr-browse-banner article p.jm-line-5{
+    font-size: 0.86em;
+    width: 94%;
+    margin: 0 auto;
+    letter-spacing: none;
 }
 
+.jm-lxr-browse-banner article{
+    font-size: 2.3vw;
+}
+
+@media screen and (min-width: 700px){
+.jm-lxr-browse-banner article{
+    font-size: 1.33vw;
+}
+
+}
+
+
+@media screen and (min-width: 992px){
+.jm-lxr-browse-banner article{
+    font-size: 1vw;
+}
+
+}
+
+@media screen and (min-width: 1500px){
+.jm-lxr-browse-banner article{
+    font-size: 1em;
+}
+
+}
 </style>
