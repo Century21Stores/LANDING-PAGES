@@ -1,0 +1,124 @@
+<!-- hpd-w1419-msg00-drop-off-slot1 - CCava - 04.29.19 -->
+
+<style>
+.jm-drop-v2{
+    opacity: 0.73;
+}
+.jm-drop-v2 a{
+    display:none;
+}
+a.jm-available{
+    display:inline-block;
+}
+.jm-opacity-1{
+    opacity: 1;
+}
+.jm-drop-v2-w1419-msg00 .jm-right{
+    background: url("refresh/refresh-2019/W1419/hpa/mobile/01_05Week1A_CONTENT_SLOT_M_02.jpg?$staticlink$");
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((512% / 700) * 93);
+}
+
+@media screen and (min-width: 700px){
+.jm-drop-v2-w1419-msg00 .jm-right{
+    background: url("refresh/refresh-2019/W1419/hpa/00_05Week1_LP_TheCenturyDrop_ChristianLouboutin_01.jpg?$staticlink$");
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((856% / 1085) * 47);
+}
+
+.jm-drop-v2-w1419-msg00 .jm-header-2{
+    font-size: 3.3em;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    text-align: left;
+}
+.jm-drop-v2-w1419-msg00 .jm-header-3{
+    font-size: 1.6em;
+    text-align: left;
+}
+.jm-drop-v2-w1419-msg00 figcaption p{
+    font-size: 2.55em;
+}
+.jm-drop-v2 figure{
+    font-size: 0.78vw;
+}
+
+}
+@media screen and (min-width: 1280px){
+.jm-drop-v2{
+    width: 90%;
+}
+
+}
+
+
+
+</style>
+
+<div class="jm-content-block-all jm-drop-v2 jm-drop-v2-w1419-msg00">
+<a href="$url('Search-Show','cgid','shoes-drop-christian-louboutin')$?imc=thedrop&imccat=w1419_christian_louboutin" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
+    <div class="jm-left">
+    <div>
+        <figure>
+            <img alt="The Century Drop" src="refresh/refresh-2019/w1319/hpa/WP_reference/TheDrop_Logo.png?$staticlink$">
+            <figcaption>
+                <p>STARTS THURSDAY 5/9 | 10AM ET<br/></p>
+            </figcaption>
+        </figure>
+        <article>
+            <h2 class="jm-header-2" id="jm-header-w1419-msg00"><br/>Christian Louboutin</h2>
+            <p class="jm-header-3">UP TO 50% OFF</p>
+            <a href="$url('Search-Show','cgid','shoes-drop-christian-louboutin')$?imc=thedrop&imccat=w1419_christian_louboutin" class="btn jm-cta-button jm-cta-button-light" id="jm-cta-w1419-msg00" aria-labelledby="jm-cta-w1419-msg00 jm-header-w1419-msg00">SHOP NOW</a>
+        </article>
+    </div>
+    </div>
+    <div class="jm-right"></div>
+</div>
+
+
+<script>
+count_down_drop();
+
+function count_down_drop(){
+
+// END CLOCK
+window.addEventListener("DOMContentLoaded", function(){
+  var dd = new Date();
+  //console.log(dd);
+  var targetDate = "May 9 2019";
+  var hh = dd.getHours();
+  var utchh = dd.getUTCHours();
+  //console.log(utchh);
+  //console.log(hh);  
+  var mm = dd.getUTCMinutes();
+  var nn = dd.getDay();
+  //console.log('Date: '+ dd);
+  //console.log(String(dd).indexOf(targetDate));
+  if ((String(dd).indexOf(targetDate) === -1) || ( utchh < 14)) {
+    // countdown();
+    console.log("not 10am yet");
+  }
+  else{
+    console.log("It is 10am!");
+    endCountDown();
+  }
+});
+// END END CLOCK
+
+
+
+
+function endCountDown(){
+  $('.jm-drop-v2 a').addClass('jm-available');
+  $('.jm-drop-v2').addClass('jm-opacity-1');
+  // $('.countdownContainer').fadeOut('slow');
+
+}
+
+
+}
+
+</script>
