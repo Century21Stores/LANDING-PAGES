@@ -1,0 +1,68 @@
+<!-- w15-bb-summer-event19 - JuanMa - 051619 -->
+
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+    $('.search-results .product-grid .product-search-wrapper').before(
+        '<div class="jm-browse-banner">'+
+            '<div>'+
+            '<div>'+
+            '<p>IN-STORE & ONLINE</p>'+
+            '<h2>SUMMER<br/>KICKOFF EVENT</h2>'+
+            '</div>'+
+            '</div>'+
+        '</div>'    
+    );
+});
+</script>
+
+<style>
+.jm-browse-banner{
+    background: url("refresh/refresh-2019/w1519/bb/00_5Week3_Cat_Banner.jpg?$staticlink$");
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((330% / 1410) * 100);
+    position: relative;
+}
+.jm-browse-banner > div{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8vw;
+    padding: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.jm-browse-banner h2{
+    text-transform: uppercase;
+    font-size: 3.6em;
+    margin: 0;
+    font-weight: bold;
+    line-height: 0.9;
+}
+.jm-browse-banner p{
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+}
+@media screen and (min-width: 768px){
+.jm-browse-banner div{
+   /* padding: 5%;*/
+    font-size: 1.2vw;
+}
+
+}
+@media screen and (min-width: 1200px){
+.jm-browse-banner div{
+ /*   padding: 7%;*/
+    font-size: 1em;
+}
+
+}
+</style>
