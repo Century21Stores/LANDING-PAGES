@@ -1,12 +1,37 @@
 <!-- hpb-w1619-msg00-drop-off-slot1 - CCava - 05.13.19 -->
 
 <style>
-  
+.jm-drop-disclaimer{
+    text-align: center;
+    margin: 1% 0 0;
+    letter-spacing: 0.05em;    
+}
+.footer-email-signup:target {
+    outline: 2px solid #51aeff;
+}
+.jm_drop_main:target {
+    outline: 2px solid #51aeff;
+}
+.jm-going-back{
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}  
 .jm-drop-v2-w1619-msg00 .jm-right{
     background: url("refresh/refresh-2019/w1619/hpa/Mobile/01a_05Week3A_CONTENT_SLOT_THE_DROP_M.jpg?$staticlink$");
     background-size: cover;
     background-position: 50% 0;
     padding-top: calc((512% / 700) * 93);
+}
+.jm-header-4{
+    color: white;
+    letter-spacing: 0.1em;    
+}
+.jm-header-2{
+    margin: 0;
+}
+.jm-drop-v2-w1619-msg00{
+    margin: 0 auto 3%;
 }
 
 @media screen and (min-width: 700px){
@@ -39,7 +64,9 @@
 }
 .jm-drop-v2 figure{
     font-size: 0.78vw;
+    margin: 0 0 6%;
 }
+
 }
 
 @media screen and (min-width: 1280px){
@@ -51,11 +78,9 @@
 
 @media screen and (max-width: 700px){
 .jm-drop-v2-w1619-msg00 .jm-header-2{
-
     font-weight: bold;
     font-weight: 600;
 }
-
 .jm-drop-v2-w1619-msg00 .jm-header-3{
     font-weight: normal;
     font-weight: 500;
@@ -69,6 +94,12 @@
     font-weight: normal;
     font-weight: 500;
 }
+.jm-drop-v2 figcaption{
+    font-size: 4.8vw
+}
+.jm-drop-v2 article{
+    padding: 5% 0;
+} 
 
 }
 
@@ -76,7 +107,8 @@
 
 </style>
 
-<div class="jm-content-block-all jm-drop-v2 jm-drop-v2-w1619-msg00">
+<div class="jm-drop-v2-w1619-msg00">
+<div class="jm-content-block-all jm-drop-v2">
 <!-- <a href="$url('Search-Show','cgid','drop-balmain')$?imc=thedrop&imccat=w1619_balmain" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a> -->
     <div class="jm-left">
     <div>
@@ -87,11 +119,42 @@
             </figcaption>
         </figure>
         <article>
-            <h2 class="jm-header-2" id="jm-header-w1619-msg00"><br/><br/>PRADA</h2>
+            <h2 class="jm-header-2" id="jm-header-w1619-msg00">PRADA</h2>
             <p class="jm-header-3">Up to 50% Off<br/></p>
-            <!-- <a href="$url('Search-Show','cgid','drop-balmain')$?imc=thedrop&imccat=w1619_balmain" class="btn jm-cta-button jm-cta-button-light" id="jm-cta-w1619-msg00" aria-labelledby="jm-cta-w1619-msg00 jm-header-w1619-msg00">SHOP NOW</a> -->
+            <p class="jm-header-4">Sign up for our emails and never miss a drop.</p>
+            <a id="jm_drop_main" href="#email_sign_up"  onclick='jm_scroll_emailsu(this.id);' onkeypress='jm_scroll_emailsu(this.id);' class="btn jm-cta-button jm-cta-button-light" id="jm-cta-w1619-msg00" aria-labelledby="jm-cta-w1619-msg00 jm-header-w1619-msg00">SIGN UP NOW</a>
         </article>
     </div>
     </div>
     <div class="jm-right"></div>
 </div>
+<p class="jm-drop-disclaimer">Century 21 Stores in not an authorized retailer of Prada.</p>
+</div>
+
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+    $('.footer-email-signup').attr('id', 'email_sign_up');
+    $('.footer-email-signup').css('position', 'relative');
+});
+
+
+// SCROLLING
+function jm_scroll_emailsu(this_id){
+    console.log(this_id);
+    $('body, html').animate({
+        scrollTop: $('#email_sign_up').offset().top - 333
+    }, 100);
+    // $('.footer-email-signup h2').text('New Copy about signing up for drop');
+    $('.footer-email-signup').append('<a class="jm-going-back" onclick="jm_scroll_email_back(this.id);" onkeypress="jm_scroll_email_back(this.id);" href="#" aria-label="Back to main">↵</a>');
+
+}
+function jm_scroll_email_back(this_class){
+    $('#jm_drop_main').focus();
+    // console.log(this_class);
+    // $('body, html').animate({
+    //     scrollTop: $('#jm_drop_main').offset().top - 600
+
+    // }, 1000);
+}
+
+</script>
