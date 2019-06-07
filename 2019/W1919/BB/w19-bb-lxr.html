@@ -1,0 +1,174 @@
+<!-- w19-lxr-banner-asset-slot1 - JuanMa - 060619 -->
+
+<script>
+// SCROLLING
+function jm_scroll_bb_disclaimer(this_id){
+if ($(window).width() < 700) {
+    jm_offset = 200;
+}
+else{
+    jm_offset = 543;
+}    
+    console.log(this_id);
+    $('body, html').animate({
+        scrollTop: $('#jm-bb-disclaimer').offset().top - jm_offset
+    },1000);
+    // $('.footer-email-signup h2').text('New Copy about signing up for drop');
+
+}
+function jm_scroll_bb_disclaimer_back(this_class){
+    $('#jm_drop_main').focus();
+    // console.log(this_class);
+    // $('body, html').animate({
+    //     scrollTop: $('#jm_drop_main').offset().top - 600
+
+    // }, 1000);
+}
+
+// END SCROLLING
+
+
+// BANNER
+
+window.addEventListener("DOMContentLoaded", function(){
+    $('.search-results .product-grid .product-search-wrapper').before(
+        '<div class="jm-lxr-browse-banner-main-wrap">'+
+            '<div class="jm-lxr-browse-banner">'+
+                '<figure><img src="refresh/refresh-2019/w1319/hpa/3x1/LRXandCo.png?$staticlink$" alt="LRXandCo"/></figure>'+
+                '<article>'+
+                '<div>'+
+                    '<p class="jm-line-1">ONLINE & IN SELECT STORES | 6/11-7/2</p>'+
+                    '<h2>VINTAGE LOUIS VUITTON<br/><span>15% OFF<sup><a id="jm_drop_main" href="#jm-bb-disclaimer"  onclick=\'jm_scroll_bb_disclaimer(this.id);\' onkeypress=\'jm_scroll_bb_disclaimer(this.id);\' id="jm-cta-w1819-msg00">*</a></sup></span></h2>'+
+                '</div>'+
+                '</article>'+
+            '</div>'+
+            '<p id="jm-bb-disclaimer" class="jm-line-5">*Offer valid on Louis Vuitton items only. Final sale. Discount applied to pre-tax transaction totals. Offer is not cumulative and cannot be combined with any other offers or promotions. No price adjustments or rain checks. Only valid on sales made during event dates. Available online and in-store, excluding Morristown, Staten Island and Brooklyn City Point locations. <a class="jm-going-back" onclick="jm_scroll_bb_disclaimer_back(this.id);" onkeypress="jm_scroll_bb_disclaimer_back(this.id);" href="#" aria-label="Back to main">↵</a></p>'+
+        '</div>'
+    );
+
+});
+// END BANNER
+
+</script>
+
+
+<style>
+#jm-bb-disclaimer:target {
+    outline: 2px solid #51aeff;
+}    
+.jm-lxr-browse-banner{
+    background: url("refresh/refresh-2019/W1919/zBROWSE-BANNERS/LXR/02_6Week2_Cat_Banner.jpg?$staticlink$");
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((330% / 1410) * 100);
+    position:relative;
+    text-align:center;
+}
+.jm-lxr-browse-banner-main-wrap{
+    margin: 0 0 2%
+}
+.jm-lxr-browse-banner figure img{
+    width: 100%;
+}
+.jm-lxr-browse-banner article,
+.jm-lxr-browse-banner figure{
+    position: absolute;    
+}
+.jm-lxr-browse-banner article{
+    width: 62%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+.jm-lxr-browse-banner figure{
+    width: 12%;
+    top: 13%;
+    right: 2%;
+}
+.jm-lxr-browse-banner article p{
+    letter-spacing: 0.05em;
+}
+.jm-lxr-browse-banner article h2{
+    font-size: 2.63em;
+    font-weight: bold;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    color: white;
+}
+.jm-lxr-browse-banner article h2 span{
+    font-size: 3.4em;
+    position: relative;
+}
+.jm-lxr-browse-banner article h2 span sup{
+    font-size: 0.2em;
+    position: absolute;
+    top: 26%;
+    right: -2%;
+}
+.jm-lxr-browse-banner article h2 span a{
+    color: white !important;
+}
+.jm-lxr-browse-banner article p.jm-line-1{
+    font-size: 1.2em;
+    background: white;
+    margin: 0 auto 3%;
+    font-weight: bold   
+}
+.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+    font-size: 0.23em;
+    width: 94%;
+    margin: 0 auto;
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.jm-lxr-browse-banner article{
+    font-size: 1.03vw;
+}
+
+@media screen and (min-width: 700px){
+.jm-lxr-browse-banner article{
+    font-size: 0.84vw;
+}
+.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+    font-size: 0.53em;
+}
+.jm-lxr-browse-banner article p.jm-line-1{
+    font-size: 1.1em;
+    width: 81%;   
+    font-weight: normal;
+}
+
+}
+
+
+@media screen and (min-width: 992px){
+.jm-lxr-browse-banner article{
+    font-size: 1vw;
+}
+.jm-lxr-browse-banner article h2 span{
+    letter-spacing: -7px;
+}
+
+}
+
+@media screen and (min-width: 1500px){
+.jm-lxr-browse-banner article{
+    font-size: 1em;
+}
+.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+    font-size: 0.73em;
+}
+
+}
+</style>
