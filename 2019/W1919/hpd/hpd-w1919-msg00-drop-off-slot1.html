@@ -1,7 +1,13 @@
-<!-- hpd-w1919-msg00-drop-off-slot1 - CCava - 05.28.19 -->
+<!-- hpd-w1919-msg00-drop-off-slot1 - CCava - 06.12.19 -->
 
 <style>
-
+#jm_announce{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;  
+}
 .jm-drop-disclaimer{
     text-align: center;
     margin: 1% 0 3%;
@@ -26,11 +32,30 @@ a.jm-available{
     background-position: 50% 0;
     padding-top: calc((513% / 700) * 93);
 }
-
-
 .jm-drop-v2-w1919-msg00{
     margin: 0 auto 3%;
 }
+/* CLOCK */
+.jm_countdownContainer{
+  color: white;  
+}
+.jm_countdownContainer p{
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-weight: 600;
+    line-height: 1;
+}
+.jm_countdownContainer .jm_counter{
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+}
+/* END CLOCK */
 
 @media screen and (min-width: 700px){
 .jm-drop-v2-w1919-msg00 .jm-right{
@@ -54,6 +79,7 @@ a.jm-available{
     text-align: left;
     font-weight: normal;
     font-weight: 500;
+    margin-bottom: 6%;
 }
 .jm-drop-v2-w1919-msg00 figcaption p{
     font-size: 2.55em;
@@ -77,22 +103,21 @@ a.jm-available{
     font-weight: 600;
 }
 
-jm-drop-v2-w1919-msg00 .jm-header-3{
+.jm-drop-v2-w1919-msg00 .jm-header-3{
   font-weight: normal;
     font-weight: 500;
 }
 
 
 .jm-drop-v2-w1919-msg00 article .jm-header-2{
-
     font-weight: bold;
     font-weight: 600;
 }
 
 .jm-drop-v2-w1919-msg00 article .jm-header-3{
-
     font-weight: normal;
     font-weight: 500;
+    margin-bottom: 8%;
 }
 
 }
@@ -112,7 +137,7 @@ jm-drop-v2-w1919-msg00 .jm-header-3{
             </figcaption>
         </figure>
         <article>
-            <h2 class="jm-header-2" id="jm-header-w1919-msg00"><br/><br/>Christian Louboutin</h2>
+            <h2 class="jm-header-2" id="jm-header-w1919-msg00">Christian Louboutin</h2>
             <p class="jm-header-3">Up to 50% Off</p>
             <a href="$url('Search-Show','cgid','shoes-drop-christian-louboutin')$?imc=thedrop&imccat=w1919_hp_christian_louboutin" class="btn jm-cta-button jm-cta-button-light" id="jm-cta-w1919-msg00" aria-labelledby="jm-cta-w1919-msg00 jm-header-w1919-msg00">SHOP NOW</a>
         </article>
@@ -132,6 +157,28 @@ function count_down_drop(){
 
 // END CLOCK
 window.addEventListener("DOMContentLoaded", function(){
+
+// COUNT DOWN
+$('.jm-drop-v2-w1919-msg00 article > a.jm-cta-button ').before(
+'<div class="jm_countdownContainer">'+
+      '<div>'+
+        '<p>AVAILABLE:</p>'+
+      '</div>'+
+      '<div id="dialogheader" class="jm_counter">'+
+        // '<span id="hours">00</span>'+
+        // '<span class="jm-dots">:</span>'+
+        // '<span id="minutes">00</span>'+
+        // '<span class="jm-dots">:</span>'+
+        // '<span id="seconds">00</span>'+
+        '<span id="jm_whole_clock" role="timer">00:00:00</span>'+
+        '<div id="jm_announce" aria-live="assertive"></div>'+
+      //'<span class="jm-dots">:</span>'+
+    '</div>'+
+'</div>'
+)
+// END COUNT DOWN
+
+
   var dd = new Date();
   //console.log(dd);
   var targetDate = "Jun 13 2019";
@@ -144,23 +191,80 @@ window.addEventListener("DOMContentLoaded", function(){
   //console.log('Date: '+ dd);
   //console.log(String(dd).indexOf(targetDate));
   if ((String(dd).indexOf(targetDate) === -1) || ( utchh < 14)) {
-    // countdown();
+    countdown();
     console.log("not 10am yet");
   }
   else{
     console.log("It is 10am!");
     endCountDown();
-  }
-});
+  };
 // END END CLOCK
 
+});
+
+// COUNT DOWN
+
+function countdown() {
+  let now = new Date();
+  let evenDate = new Date(2019, 6, 13);
+  let actualTime = now.getTime();
+  let eventTime = evenDate.getTime();
+  let remTime = eventTime - actualTime;  
+
+  let s = Math.floor(remTime / 1000);
+  let m = Math.floor(s / 60);
+  let h = Math.floor(m / 60)+10;  
+//  let d = Math.floor(h / 24);
+
+  h %= 24;
+  m %= 60;
+  s %= 60;
+
+  h = h < 10 ? '0' + h : h;
+  m = m < 10 ? '0' + m : m;
+  s = s < 10 ? '0' + s : s;
+
+  jm_timer_annoucer = h + " hours" + m + " minutes" + s + " seconds remaining";
+  jm_timer_annoucer_str = String(jm_timer_annoucer)
+//  console.log(jm_timer_annoucer_str);
+
+  //document.querySelector('#days').textContent = d;
+  //document.querySelector('#hours').textContent = h;
+  // document.querySelector('#minutes').textContent = m;
+  // document.querySelector('#seconds').textContent = s;
+  document.querySelector('#jm_whole_clock').textContent = h + ":" + m + ":" + s;
+  // console.log('eventTime: '+ eventTime);
+  // console.log('remTime: '+ remTime);
+  // console.log('actualTime: '+ actualTime);
+  if((s != '00') || (m != '00') || (h != '00')){
+    setTimeout(countdown, 1000);
+    // console.log(m);
+  }
+  else{
+    endCountDown();
+  }
 
 
+};
+
+
+// timer_Announcement_interval(jm_timer_annoucer_str);
+
+function timer_Announcement_interval(jm_timer_annoucer_str){
+  setInterval(function() {timer_Announcement(jm_timer_annoucer_str)}, 10000);
+}
+
+// END COUNT DOWN
+
+function timer_Announcement(jm_timer_annoucer_str){
+  console.log(jm_timer_annoucer_str);
+  document.querySelector('#jm_announce').textContent = jm_timer_annoucer_str;
+}
 
 function endCountDown(){
   $('.jm-drop-v2 a').addClass('jm-available');
   $('.jm-drop-v2').addClass('jm-opacity-1');
-  // $('.countdownContainer').fadeOut('slow');
+  $('.jm_countdownContainer').fadeOut('slow');
 
 }
 
