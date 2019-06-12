@@ -1,37 +1,9 @@
-<!-- w19-clearance-private-banner-slot1- JuanMa - 060619 -->
-
+<!-- w19-clearance-private-banner- JuanMa - 061219 -->
 <script>
-// SCROLLING
-function jm_scroll_bb_disclaimer(this_id){
-if ($(window).width() < 700) {
-    jm_offset = 200;
-}
-else{
-    jm_offset = 543;
-}    
-    console.log(this_id);
-    $('body, html').animate({
-        scrollTop: $('#jm-bb-disclaimer').offset().top - jm_offset
-    },1000);
-    // $('.footer-email-signup h2').text('New Copy about signing up for drop');
-
-}
-function jm_scroll_bb_disclaimer_back(this_class){
-    $('#jm_drop_main').focus();
-    // console.log(this_class);
-    // $('body, html').animate({
-    //     scrollTop: $('#jm_drop_main').offset().top - 600
-
-    // }, 1000);
-}
-
-// END SCROLLING
-
+window.addEventListener("DOMContentLoaded", function(){
 
 // BANNER
-
-window.addEventListener("DOMContentLoaded", function(){
-    $('.search-results .product-grid .product-search-wrapper').before(
+    $('.search-results .product-grid .product-search-wrapper').before(      
         '<div class="jm-lxr-browse-banner-main-wrap">'+
             '<div class="jm-lxr-browse-banner">'+
                 '<article>'+
@@ -52,17 +24,30 @@ window.addEventListener("DOMContentLoaded", function(){
             '<p id="jm-bb-disclaimer" class="jm-line-5">*Offer valid 6/14/19-6/16/19. Online only. Select styles only. One-time use code. Limit one per customer. Discount applied at checkout. <a class="jm-going-back" onclick="jm_scroll_bb_disclaimer_back(this.id);" onkeypress="jm_scroll_bb_disclaimer_back(this.id);" href="#" aria-label="Back to main">↵</a></p>'+
         '</div>'
     );
-
-});
 // END BANNER
 
-</script>
+// BREAD CRUMB FIX
+var jm_how_many_bc = $('.breadcrumb').children().length;
+var jm_how_many_filter = $('.filter-area > div.filter-bar > ul').children().length;
+console.log(jm_how_many_filter);
+if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
+    console.log(jm_how_many_bc);
+    $('.filter-area > div.filter-bar').hide();
+}
+// END BREAD CRUMB FIX
 
+});
+
+</script>
 
 <style>
 .product-search-wrapper .search-banner{
     display: none;
 }
+/*.filter-area > div.filter-bar > ul > li:last-of-type,
+.filter-area > div.filter-bar{
+    display: none;
+}*/
 
 #jm-bb-disclaimer:target {
     outline: 2px solid #51aeff;
