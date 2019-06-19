@@ -1,6 +1,20 @@
-<!-- hpd-w1919-msg00-drop-off-slot1 - CCava - 06.12.19 -->
+<!-- hpd-w1919-msg00-drop-off-slot1 - JuanMa - 06.19.19 -->
 
 <style>
+@-webkit-keyframes jm-background-animation {
+    0%     {background-color:red;}
+    50.0%  {background-color:#ff6666;}
+    100.0%  {background-color:none;}
+}
+.jm-highlight{  
+      -webkit-animation-name: jm-background-animation;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    animation-name: jm-background-animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
 #jm_announce{
     position: absolute;
     height: 1px;
@@ -37,7 +51,7 @@ a.jm-available{
 }
 /* CLOCK */
 .jm_countdownContainer{
-  color: white;  
+  color: white;
 }
 .jm_countdownContainer p{
     margin: 0;
@@ -181,7 +195,7 @@ $('.jm-drop-v2-w1919-msg00 article > a.jm-cta-button ').before(
 
   var dd = new Date();
   //console.log(dd);
-  var targetDate = "Jun 13 2019";
+  var targetDate = "Jun 20 2019";
   var hh = dd.getHours();
   var utchh = dd.getUTCHours();
   //console.log(utchh);
@@ -206,7 +220,7 @@ $('.jm-drop-v2-w1919-msg00 article > a.jm-cta-button ').before(
 
 function countdown() {
   let now = new Date();
-  let evenDate = new Date(2019, 6, 13);
+  let evenDate = new Date(2019, 6, 20);
   let actualTime = now.getTime();
   let eventTime = evenDate.getTime();
   let remTime = eventTime - actualTime;  
@@ -216,6 +230,8 @@ function countdown() {
   let h = Math.floor(m / 60)+10;  
 //  let d = Math.floor(h / 24);
 
+  theCenturyDrop = "The Century Drop: Christian Louboutin: ";
+  
   h %= 24;
   m %= 60;
   s %= 60;
@@ -224,9 +240,17 @@ function countdown() {
   m = m < 10 ? '0' + m : m;
   s = s < 10 ? '0' + s : s;
 
-  jm_timer_annoucer = h + " hours" + m + " minutes" + s + " seconds remaining";
-  jm_timer_annoucer_str = String(jm_timer_annoucer)
-//  console.log(jm_timer_annoucer_str);
+  jm_timer_annoucer_more_1 = theCenturyDrop + h + " hours " + m + " minutes " + s + " seconds remaining";
+  jm_timer_annoucer_str_more_1 = String(jm_timer_annoucer_more_1)
+  
+  jm_timer_annoucer_less_1 = theCenturyDrop + m + " minutes " + s + " seconds remaining";
+  jm_timer_annoucer_str_less_1 = String(jm_timer_annoucer_less_1)
+
+  jm_timer_annoucer_less_1m = theCenturyDrop + s + " seconds remaining";
+  jm_timer_annoucer_str_less_1m = String(jm_timer_annoucer_less_1m)
+  
+  jm_timer_annoucer_less_10s = s + " seconds";
+  jm_timer_annoucer_str_less_10s = String(jm_timer_annoucer_less_10s)  
 
   //document.querySelector('#days').textContent = d;
   //document.querySelector('#hours').textContent = h;
@@ -238,7 +262,56 @@ function countdown() {
   // console.log('actualTime: '+ actualTime);
   if((s != '00') || (m != '00') || (h != '00')){
     setTimeout(countdown, 1000);
-    // console.log(m);
+    
+    if((h == '00') && (m == '00')){
+      //less than a minute
+      console.log("less than 1 minute remaining");
+      
+      if(s > 10){
+      //more than 10 seconds
+        if(s % 10 === 0){
+          console.log(jm_timer_annoucer_str_less_1m);
+          document.querySelector('#jm_announce').textContent = jm_timer_annoucer_str_less_1m;
+          $('.jm_countdownContainer').addClass("jm-highlight");
+        }
+        else{
+          $('.jm_countdownContainer').removeClass("jm-highlight");
+        }
+      }
+      //less than 10 seconds
+      else{
+          console.log(jm_timer_annoucer_str_less_10s);
+          document.querySelector('#jm_announce').textContent = jm_timer_annoucer_str_less_10s;
+          // $('.jm_countdownContainer').addClass("jm-highlight");
+          $('.jm_countdownContainer').addClass("jm-highlight").delay(500).queue(function(){
+              $(this).removeClass("jm-highlight").dequeue();
+          });          
+      }
+    }
+    else if((h == '00') && (m != '00')){
+      //less than an hour
+       console.log("less than 1 hour remaining");
+      if(s % 20 === 0){
+        console.log(jm_timer_annoucer_str_less_1);
+        document.querySelector('#jm_announce').textContent = jm_timer_annoucer_str_less_1;
+        $('.jm_countdownContainer').addClass("jm-highlight");
+      }
+      else{
+        $('.jm_countdownContainer').removeClass("jm-highlight");
+      }
+    }
+    else{
+      //more than an hour
+      if(s % 30 === 0){
+        console.log(jm_timer_annoucer_more_1);
+        document.querySelector('#jm_announce').textContent = jm_timer_annoucer_more_1;
+        $('.jm_countdownContainer').addClass("jm-highlight");
+      }
+      else{
+        $('.jm_countdownContainer').removeClass("jm-highlight");
+      }
+    }
+
   }
   else{
     endCountDown();
@@ -248,18 +321,6 @@ function countdown() {
 };
 
 
-// timer_Announcement_interval(jm_timer_annoucer_str);
-
-function timer_Announcement_interval(jm_timer_annoucer_str){
-  setInterval(function() {timer_Announcement(jm_timer_annoucer_str)}, 10000);
-}
-
-// END COUNT DOWN
-
-function timer_Announcement(jm_timer_annoucer_str){
-  console.log(jm_timer_annoucer_str);
-  document.querySelector('#jm_announce').textContent = jm_timer_annoucer_str;
-}
 
 function endCountDown(){
   $('.jm-drop-v2 a').addClass('jm-available');
