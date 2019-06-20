@@ -70,9 +70,9 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
     height: 100%;
 }
 
-.jm-three-column-w2119-msg98-threecolumn .jm-middle figcaption{
+/*.jm-three-column-w2119-msg98-threecolumn .jm-middle figcaption{
     display: inline-block;
-}
+}*/
 
 .jm-three-column-w2119-msg98-threecolumn article h2.jm-header-2{
     font-size: 2.8em;
@@ -91,24 +91,6 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
     letter-spacing: 0;
 }
 
-.jm-three-column-w2119-msg98-threecolumn .jm-middle figcaption .jm-header-3 .jm-col-2 {
-    font-size: 1.5em;
-    letter-spacing: -0.07em;
-}
-.jm-three-column-w2119-msg98-threecolumn .jm-middle figcaption .jm-header-3 .jm-percentage {
-    font-size: 1em;
-    line-height: 0;
-}
-.jm-three-column-w2119-msg98-threecolumn .jm-middle figcaption .jm-header-3 .jm-upto{
-    font-size: 0.5em;
-    display: block;
-    letter-spacing: -0.07em;
-}
-
-.jm-three-column-w2119-msg98-threecolumn .jm-middle figcaption .jm-header-3 .jm-col-1 .jm-upto{
-    display: table;
-    margin: 8% 3%;
-}
 
 .jm-three-column-w2119-msg98-threecolumn .jm-left figcaption p,
 .jm-three-column-w2119-msg98-threecolumn .jm-right figcaption p{
@@ -118,6 +100,45 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
     align-items: center;
 }
 
+
+/* CLEARANCE */
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-2{
+    color: white;
+    font-size: 3.3em;
+    line-height: 1;
+    font-weight: bold;
+    font-weight: 600;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-3{
+    font-size: 3.66em;
+    color: white;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-3 .jm-col{
+    display: inline-block;
+    line-height: 1;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-3 .jm-col-2{
+    font-size: 3.3em;
+    letter-spacing: -0.07em;
+    line-height: 0.6;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-3 .jm-percentage{
+    font-size: 2em;
+    line-height: 0;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-3 .jm-upto{
+    font-size: 0.9em;
+    display: block;
+    letter-spacing: -0.07em;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-middle .jm-clearance .jm-header-3 .jm-col-1 .jm-upto{
+    display: table;
+    margin: 21% 8%;
+}
+.jm-three-column-w2119-msg98-threecolumn .jm-clearance{
+    font-size: 2.8vw;
+}
+/* END CLEARANCE */
   
 @media screen and (min-width: 700px){
 
@@ -140,18 +161,14 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
     font-size: 1.2vw;
     font-weight: bold;
 }
-
+.jm-three-column-w2119-msg98-threecolumn .jm-clearance{
+    font-size: 1vw;
+}
 
 
 }
 
 
-@media screen and (min-width: 1300px){
-.jm-three-column-w2119-msg98-threecolumn .jm-left,
-.jm-three-column-w2119-msg98-threecolumn .jm-middle,
-.jm-three-column-w2119-msg98-threecolumn .jm-right{
-    font-size: 1em;
-}
 @media screen and (min-width: 992px){
 
 
@@ -163,7 +180,24 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
     font-weight: bold;
     font-color: white;
 }
+
 }
+
+@media screen and (min-width: 1300px){
+.jm-three-column-w2119-msg98-threecolumn .jm-left,
+.jm-three-column-w2119-msg98-threecolumn .jm-middle,
+.jm-three-column-w2119-msg98-threecolumn .jm-right{
+    font-size: 1em;
+}
+
+}
+
+@media screen and (min-width: 1600px){
+.jm-three-column-w2119-msg98-threecolumn .jm-clearance{
+    font-size: 1em;
+}
+}
+
 
 </style>
 
@@ -177,29 +211,32 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
         <article>
         <div>
             <!-- <h2 class="jm-header-2" id="jm-header-w0919-msg98-threecolumn-l">Luxe Shoes</h2> -->
-            <p>Get spotted in designer pairs that take<br/>your collection up a level.</p>
+            <p id="jm-header-w0919-msg98-threecolumn-l">Get spotted in designer pairs that take<br/>your collection up a level.</p>
             <a href="$url('Search-Show','cgid','shoes-luxury-designer')$?imc=hp_m98-a_cta&imccat=w21-19-a_shoes-boutiques-luxury-designer" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-w2119-msg98-threecolumn-l" aria-labelledby="jm-cta-w2119-msg98-threecolumn-l jm-header-w2119-msg98-threecolumn-l">SHOP NOW</a>
         </div>    
         </article>
     </div>
 
-     <div class="jm-middle">
-    <div><img class="jm-top-center" src="refresh/refresh-2019/w1319/hpa/3x1/LRXandCo.png?$staticlink$" alt="Semi-Annual Clearance Event up to 75% off"/></div>
+    <div class="jm-middle">
+    <!-- <div><img class="jm-top-center" src="refresh/refresh-2019/w1319/hpa/3x1/LRXandCo.png?$staticlink$" alt="Semi-Annual Clearance Event up to 75% off"/></div> -->
     <a href="/clearance?imc=hp_m98-b_img&imccat=w21-19-a_clearance" aria-hidden="true" role="none" tabindex="-1"></a>  
         <figure class="jm-main-img">
-            <!-- <figcaption><p>Alexander<br/>McQueen</p></figcaption> -->
-        </figure>
-            <figcaption>
-            <h2 class="jm-header-2" id="jm-header-w1919-msg01">SEMI-ANNUAL<br/>CLEARANCE EVENT</h2>
-            <p class="jm-header-3">
-                <span class="jm-col jm-col-1"><span class="jm-upto">UP<br/>TO</span></span> 
-                <span class="jm-col jm-col-2">75</span> 
-                <span class="jm-col jm-col-3"><span class="jm-percentage">%</span><br/><span class="jm-upto">OFF</span></span></p>
+            <!-- <figcaption><p>Alexander<br/>McQueen</p></figcaption> -->        
+            <figcaption class="jm-clearance">
+            <div>
+                <p class="jm-header-2" id="jm-header-w2119-msg01">SEMI-ANNUAL<br/>CLEARANCE EVENT</p>
+                <p class="jm-header-3">
+                    <span class="jm-col jm-col-1"><span class="jm-upto">UP<br/>TO</span></span> 
+                    <span class="jm-col jm-col-2">75</span> 
+                    <span class="jm-col jm-col-3"><span class="jm-percentage">%</span><br/><span class="jm-upto">OFF</span></span>
+                </p>
+            </div>
             </figcaption>
+        </figure>    
         <article>
         <div>
             <!--<h2 class="jm-header-2" id="jm-header-w1319-msg98-threecolumn-c">Alexander McQueen</h2> -->
-            <p>Shop the Semi-Annual Clearance Event<br/>and save up to 75% off on top designers.</p>
+            <p id="jm-header-w1319-msg98-threecolumn-c">Shop the Semi-Annual Clearance Event<br/>and save up to 75% off on top designers.</p>
             <a href="/clearance?imc=hp_m98-b_cta&imccat=w21-19-a_clearance" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-w2119-msg98-threecolumn-c" aria-labelledby="jm-cta-w2119-msg98-threecolumn-c jm-header-w2119-msg98-threecolumn-c">SHOP NOW</a>
         </div>    
         </article>
@@ -213,7 +250,7 @@ it <!--   hpb-w2119-msg98-threecolumn-slot6 - CCava - 06.2.19   -->
         <article>
         <div>   
             <!--<h2 class="jm-header-2" id="jm-header-w0919-msg98-threecolumn-r">Luxe Bags</h2>-->
-            <p>Incite major bag envy with our latest<br/>legends in luxury.</p>
+            <p id="jm-header-w0919-msg98-threecolumn-r">Incite major bag envy with our latest<br/>legends in luxury.</p>
             <a href="$url('Search-Show','cgid','handbags-accessories-luxury-designer')$?imc=hp_m98-c_cta&imccat=w21-19-a_handbags-accessories-boutiques-luxury-designer" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-w2119-msg98-threecolumn-r" aria-labelledby="jm-cta-w2119-msg98-threecolumn-r jm-header-w2119-msg98-threecolumn-r">SHOP NOW</a>
         </div>    
         </article>
