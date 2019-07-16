@@ -1,4 +1,4 @@
-<!--  hpa-w2519-msg01-slot1 - Hero - CCava - 07.15.19   -->
+<!--  hpa-w2519-msg01-slot1 - Hero - CCava - 07.16.19   -->
 
 <style>
 
@@ -7,15 +7,16 @@
     background: url("refresh/refresh-2019/w2519/hpa/mobile/01a_07Week2A_CONTENT_SLOT_HERO_M.jpg?$staticlink$");
     background-size: cover;
     background-position: 50% 0;
-    padding-top: calc((850% / 700) * 100);
+    /*padding-top: calc((850% / 700) * 100);*/
+    padding-top: 33%;
 }
 .jm-one-column-hero-4-w2519-msg01 figure{
     position: relative;
 }
 .jm-one-column-hero-4-w2519-msg01 .jm-product-large-content{
     position: absolute;
-    top: 0;
-    right: 0;
+/*    top: 0;
+    right: 0;*/
     display: -webkit-box;
     display: -moz-box;
     display: -webkit-flex;
@@ -24,27 +25,31 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 86%;
+    height: 84%;
+    background: #ececea;
+    left: 12%;
+    bottom: 9%;
+    padding: 6% 0;
+    font-size: 1vw;
 } 
 
 
 /* ------- COPY ------- */
 .jm-one-column-hero-4-w2519-msg01 h2.jm-header-2{
-    background: white;
-    padding: 3% 0,
-    font-size: 8em;
+    font-size: 9em;
     font-weight: bold;
     font-weight: 600;
+    line-height: 1;
 }
-.jm-one-column-hero-4-w2519-msg01 article .jm-header-3{
-    background: white;
-    font-size: 1.6em;
-    padding: 1% 15%;
-    font-size: 3.3em;
+.jm-one-column-hero-4-w2519-msg01 h2.jm-header-2 span{
+    display: block;
+}
+.jm-one-column-hero-4-w2519-msg01 .jm-header-3{
+    font-size: 2.8em;
     font-weight: normal;
     font-weight: 500;
-
+    margin: 0;
 }
 /* ------- END COPY ------- */
 
@@ -53,34 +58,48 @@
 
 .jm-one-column-hero-4-w2519-msg01 figure{
     background: url("refresh/refresh-2019/w2519/hpa/tablet/01_07Week1A_HP_TABLET.jpg?$staticlink$");
-    background-size: cover;
-    background-position: 50% 0;
-    padding-top: calc((291% / 1153) * 100);
+    background-size: 62%;
+    background-position: 0% 100%;
+    padding-top: 33%;
+    /*padding-top: calc((581% / 2305) * 100);*/
+    background-repeat: no-repeat;
 }
-.jm-one-column-hero-4-w2519-msg01 figcaption{
-    font-size: 0.8em;
+.jm-one-column-hero-4-w2519-msg01 .jm-product-large-content{
+    font-size: 0.8vw;
 }
-
+.jm-one-column-hero-4-w2519-msg01 .jm-product-large-content > div{
+    width: 100%;
+}
 .jm-one-column-hero-4-w2519-msg01{
     margin: 0 auto 3%;
 }
+.jm-one-column-hero-4-w2519-msg01 h2.jm-header-2{
+    margin-right: auto;
+    width: 79%;
+}
+.jm-one-column-hero-4-w2519-msg01 h2.jm-header-2 span{
+    margin-left: 61%;    
+}
 
 }
+
 
 /* DESKTOP */
 @media screen and (min-width: 992px){
 .jm-one-column-hero-4-w2519-msg01 figure{
     background: url("refresh/refresh-2019/w2519/hpa/01_07Week1A_HP.jpg?$staticlink$");
-    background-size: cover;
-    background-position: 50% 0;
+    background-size: 62%;
+    background-position: 0% 100%;
     padding-top: calc((581% / 2305) * 100);
+    background-repeat: no-repeat;
 }
+
 
 }
 
 @media screen and (min-width: 1920px){
-.jm-one-column-hero-4-w2519-msg01 figcaption{
-    font-size: 1em
+.jm-one-column-hero-4-w2519-msg01 .jm-product-large-content{
+    font-size: 0.78em;
 }
 
 }
@@ -99,6 +118,11 @@
     font-weight: normal;
     font-weight: 500;
 }
+.jm-one-column-hero-4-w2519-msg01 .jm-product-large-content{
+    left: 6%;
+    bottom: 7%;
+    height: 82%;
+}
 
 }
 
@@ -108,11 +132,12 @@
 
 <!-- MULTIPLE CTA HERO -->
 <div class="jm-content-block-all jm-hero-content-block-all jm-one-column-hero-4 jm-one-column-hero-4-multiple jm-one-column-hero-4-w2519-msg01">
-<a href="$url('Search-Show','cgid','women-dresses-by-occasion-day-casual')$?imc=hp_m1_img&imccat=w25-19-a_women-dresses-by-occasion-day-casual" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
         <figure>
             <figcaption class="jm-product-large-content" id="jm-header-w2519-msg01">
-                <h2 class="jm-header-2">Tripping on<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSunshine</h2>
-                <p class="jm-header-3">It&rsquo;s peak season for warm-weather essentials.</p>
+                <div>
+                    <h2 class="jm-header-2">Tripping on<span>Sunshine</span></h2>
+                    <p class="jm-header-3">It&rsquo;s peak season for warm-weather essentials.</p>
+                </div>
             </figcaption> 
         </figure>
 </div>
