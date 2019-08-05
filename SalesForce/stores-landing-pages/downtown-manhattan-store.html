@@ -1,4 +1,4 @@
-<!-- store-10-downtown-manhattan - JuanMa -  -->
+<!-- downtown-manhattan-store - Store 10 - JuanMa -  -->
 
 <style>
 .jm-store-landing{
@@ -7,7 +7,8 @@
 .jm-store-landing ul{
 	list-style: none;
     padding: 0;
-    margin: 0;	
+    margin: 0;
+    overflow: auto;
 }
 .jm-store-landing > section,
 .jm-store-landing h1{
@@ -17,7 +18,8 @@
 .jm-store-landing .jm-icon{
 	margin-right: 0.4rem; 
 }
-.jm-store-landing h1{
+.jm-store-landing h1,
+.jm-store-landing h2{
     font-size: 1.35em;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
@@ -48,12 +50,51 @@
 	margin: 0 0 3%;	
 }
 .jm-floors{
-
+    background: #ececec;
+    padding: 1% 9%;
+    margin: 1%;
+    min-height: 333px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
 }
-
+.jm-hours{
+    width: 84%;
+    margin: 0 auto;	
+}
+.jm-gen-info,
+.jm-hours{
+    margin: 0 auto 9%;
+}
+.jm-store-landing section div:nth-of-type(2){
+	font-size: 4.5vw;
+}
+.jm-important-info{
+    margin: 10% auto;
+    font-size: 0.8em;
+    width: 90%;
+}
+.jm-important-info p{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+}
 @media (min-width:700px) {
+.jm-store-landing section div:nth-of-type(2){
+	font-size: 1em;
+}
+.jm-floors{
+    width: 48%;
+    float: left;
+}	
 .jm-store-landing section > div:nth-of-type(2){
-	padding: 9% 0; 
+	padding: 1% 0; 
 }
 .jm-2-col-float{
 	overflow: auto;
@@ -77,6 +118,20 @@
 }
 .jm-store-landing .jm-hours{
 	width: 20em;
+}
+.jm-gen-info,
+.jm-hours{
+	margin: 0;
+}
+
+}
+
+@media (min-width:1100px) {
+.jm-store-landing section > div:nth-of-type(2){
+	padding: 9% 0; 
+}
+.jm-important-info{
+    margin: 10% 0;
 }
 
 }
@@ -117,6 +172,11 @@
 						<div><span>THU – FRI</span> <span>7:45AM – 9:30PM</span></div>
 						<div><span>SAT</span> <span>10:00AM – 9:00PM</span></div>
 			</div>
+
+			<div class="jm-important-info">
+				<p><strong class="jm-red-alert">Score tax-free shopping in the Big Apple! Clothing and shoe items under $110 are exempt from New York state sales tax.</strong></p>
+			</div>
+
 		</div>
 	</section>
 
@@ -126,16 +186,19 @@
 		<h2>AT THIS LOCATION</h2>
 		<ul>
 		    <li class="jm-floors">
-		        LOWER LEVEL
+		    <span>
+		        <strong>LOWER LEVEL</strong>
 		        <ul>
 		            <li>Home: Bath Shop, Bedding, Sheets, Candy, Food, Decorative Home, Home Organization, Housewares, Toys</li>
 		            <li>Luggage</li>
 		            <li>Tech</li>
 		            <li>ATM</li>
 		        </ul>
+			</span>		        
 		    </li>
 		    <li class="jm-floors">
-		        LEVEL 1
+		    <span>
+		        <strong>LEVEL 1</strong>
 		        <ul>
 		            <li>Next Century</li>
 		            <li>Accessories: Fine Jewelry, Leather Goods</li>
@@ -148,48 +211,58 @@
 		            <li>Men: Contemporary, Denim, European Designers, Shoes</li>
 		            <li>Women’s Shoes</li>
 		        </ul>
+		    </span>
 		    </li>
 		    <li class="jm-floors">
-		        LEVEL 2
+		    <span>
+		        <strong>LEVEL 2</strong>
 		        <ul>
 		            <li>Men: Activewear, Denim, Dress Shirts & Ties, Fragrances, Leather Accessories, Outerwear, Swimwear, Sportswear, Socks & Underwear, Suits, Made-To-Measure Custom Suits</li>
 		            <li>Alterations</li>
 		            <li>Next Century</li>
 		        </ul>
+		    </span>
 		    </li>
 		    <li class="jm-floors">
-		        LEVEL 3
+		   	<span>
+		        <strong>LEVEL 3</strong>
 		        <ul>
 		            <li>Women: Accessories, Contemporary, Denim, European Designers, Fragrances</li>
 		        </ul>
+		    </span>
 		    </li>
 		    <li class="jm-floors">
-		        LEVEL 4
+		    <span>
+		        <strong>LEVEL 4</strong>
 		        <ul>
 		            <li>Women: Denim, Dresses, Knitwear, Petite, Sportswear, Young Contemporary</li>
 		            <li>Visitor’s Center</li>
 		            <li>ATM</li>
 		        </ul>
+		    </span>
 		    </li>
 		    <li class="jm-floors">
-		        LEVEL 5
+		    <span>
+		        <strong>LEVEL 5</strong>
 		        <ul>
 		            <li>Women: Activewear, Hosiery & Socks, Intimates, Outerwear, Swimwear</li>
 		            <li>Visitor’s Center</li>
 		            <li>Amazon Lockers</li>
 		        </ul>
+		    </span>
 		    </li>
 		    <li class="jm-floors">
-		        LEVEL 6
+		    <span>
+		        <strong>LEVEL 6</strong>
 		        <ul>
 		            <li>Children: Clothing, Shoes</li>
 		            <li>Guest Services & Refunds</li>
 		            <li>ATM</li>
 		        </ul>
+		    </span>
 		    </li>		    
 		</ul>		
-
-		<p><strong class="jm-red-alert">Score tax-free shopping in the Big Apple! Clothing and shoe items under $110 are exempt from New York state sales tax.</strong></p>
+		
 
 	</section>
 
