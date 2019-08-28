@@ -1,10 +1,10 @@
-<!--  hpa-w3119-msg05-slot1 - Hero - CCava - 08.26.19   -->
+<!--  hpa-w3119-msg05-slot1 - Half Hero Max Height 1043 - JuanMa - 08.28.19   -->
 
 <style>
 
 /* MOBILE */
 
-.jm-half-hero-3-w3119-msg05 figure{
+.jmr-half-hero-1-w3119-msg05 figure{
     background: url("refresh/refresh-2019/w3119/hpa/mobile/05_09Week1A_CONTENT_SLOT_HERO_M.jpg?$staticlink$");
     background-size: cover;
     background-position: 50% 0;
@@ -13,43 +13,47 @@
 
 
 @media screen and (min-width: 700px){
-
+.jm-half-hero-content-block article > div{
+    width: 100%;    
+}
+.jm-half-hero-content-block figure{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /* ------- COPY ------- */
-.jm-half-hero-3-w3119-msg05 article h2.jm-header-2{
-    font-size: 3.3em;
+.jmr-half-hero-1-w3119-msg05 article .jmr-header-2{
+    /*font-size: 3em;*/
     font-weight: bold;
-    line-height: 1;
+    font-weight: 700;
     letter-spacing: 0em;
 }
-.jm-half-hero-3-w3119-msg05 article .jm-header-3{
-    font-size: 1.6em;
-    font-weight: normal;
-    font-weight: 500;
+.jmr-half-hero-1-w3119-msg05 article .jm-header-3{
+    /*font-size: 1.6em;*/
+    /*font-weight: normal;
+    font-weight: 500;*/
 }
 /* ------- END COPY ------- */
 
 
-.jm-half-hero-3-w3119-msg05 figure{
-    background: url("refresh/refresh-2019/w3119/hpa/05_09Week1A_HP.jpg?$staticlink$");
-    background-size: contain;
+.jmr-half-hero-1-w3119-msg05 figure{
+    background: url("refresh/refresh-2019/w3119/hpa/05_09Week1A_HP.jpg?$staticlink$");    
     background-position: 80% 0%;
     padding-top: calc((940% / 1142) * 50);
     width: 50%;
     float: right;
-    background-repeat: no-repeat;
     margin-right: 5%;
 }
-.jm-half-hero-3-w3119-msg05 article{
+.jmr-half-hero-1-w3119-msg05 article{
     align-items: center;
     justify-content: center;
-    text-align: right;
+    text-align: left;
     color: black;
-    left: 5%;
+    width: 45%;
+    padding-left: 9%;
 }
-
-.jm-half-hero-3-w3119-msg05{
-    margin: 0% 2% 3%;
+.jmr-half-hero-1-w3119-msg05{
+    margin: 0% 0% 3%;
 }
 
 
@@ -57,14 +61,6 @@
 
 @media screen and (max-width: 700px){
 
-.jm-half-hero-3-w3119-msg05 article h2.jm-header-2{
-    font-weight: bold;
-    letter-spacing: 0em;
-}
-.jm-half-hero-3-w3119-msg05 article .jm-header-3{
-    font-weight: normal;
-    font-weight: 500;
-}
 
 }
 
@@ -72,20 +68,22 @@
 </style>
 
 
-<div class="jm-content-block-all jm-half-hero-content-block jm-half-hero-3-w3119-msg05">
+<div class="jmr-half-hero-1-w3119-msg05 jm-half-hero-content-block jmr-hero-cb jmr-all-cb">
 <a href="$url('Search-Show','cgid','handbags-accessories-wallets-accessories-womens-sunglasses')$?imc=hp_m5-a_img&imccat=w31-19-a_accessories-sunglasses" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
     <div>
         <figure class="jm-right-or-left"></figure>
         <article>
-            <div>
-            <h2 class="jm-header-2" id="jm-header-w3119-msg05">DIOR</h2>
-            <p class="jm-header-3">Luxe sunnies for your selfie <b>over 50% off.</b></p>
-            <span>
-                <a href="$url('Search-Show','cgid','handbags-accessories-wallets-accessories-womens-sunglasses')$?imc=hp_m5-a_cta&imccat=w31-19-a_accessories-sunglasses" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-a-w3119-msg05" aria-labelledby="jm-cta-a-w3119-msg05 jm-header-w3119-msg05">WOMEN</a>
-
-                <a href="$url('Search-Show','cgid','men-accessories-sunglasses')$?imc=hp_m5-b_cta&imccat=w31-19-a_men-accessories-sunglasses" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-b-w3119-msg05" aria-labelledby="jm-cta-b-w3119-msg05 jm-header-w3119-msg05">MEN</a>
+        <div>
+            <h2 class="jmr-header-2" id="jmr-header-w3119-msg05">DIOR</h2>
+            <p class="jmr-header-3">Luxe sunnies for your selfie <b>over 50% off.</b></p>
+            
+            <!-- Use role="list" & role="listitem" for multiple CTAs -->
+            <span class="jmr-ctas" role="list">
+                <a role="listitem" href="$url('Search-Show','cgid','handbags-accessories-wallets-accessories-womens-sunglasses')$?imc=hp_m5-a_cta&imccat=w31-19-a_accessories-sunglasses" class="jmr-cta-button-dark jmr-cta-button btn" id="jmr-cta-a-w3119-msg05" aria-labelledby="jmr-cta-a-w3119-msg05 jmr-header-w3119-msg05">WOMEN</a>
+                <a role="listitem" href="$url('Search-Show','cgid','men-accessories-sunglasses')$?imc=hp_m5-b_cta&imccat=w31-19-a_men-accessories-sunglasses" class="jmr-cta-button-dark jmr-cta-button btn" id="jmr-cta-b-w3119-msg05" aria-labelledby="jmr-cta-b-w3119-msg05 jmr-header-w3119-msg05">MEN</a>
             </span>
-            </div>
+        
+        </div>
         </article>
     </div>
 </div>
