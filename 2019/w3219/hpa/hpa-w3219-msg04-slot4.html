@@ -1,43 +1,41 @@
-<!--   hpa-w3219-msg04-slot4 - CCava - 09.4.19   -->
+<!--  hpa-w3219-msg04-slot4 - New Large Product - JuanMa - 9.6.19   -->
 
 <style>
-.jm-product-large-container{
+.jmr-product-large-container{
     position: relative;
 }
 
-.jm-product-large-w3219-msg04 article{
-    padding: 5%;
-    color: #black;
-}
 
-.jm-product-large-w3219-msg04 article h2{
-    font-size: 3.3em;
+.jmr-product-large-w3219-msg04 article .jmr-header-2{
+    font-size: 3em;
     font-weight: bold;
-    line-height: 1;
-        
+    font-weight: 700;        
 }
-.jm-product-large-w3219-msg04 article .jm-header-3{
+.jmr-product-large-w3219-msg04 article .jmr-header-3{
     font-size: 1.3em;
     letter-spacing: 0.05em;
     
 }
-.jm-product-large-mobile-w3219-msg04{
-    background: url("refresh/refresh-2019/w3219/hpa/mobile/04_09Week2A_LARGE_CAROUSEL_M.jpg?$staticlink$");
+.jmr-product-large-w3219-msg04 figure{
+    background: url("refresh/refresh-2019/w3219/hpa/msg04.jpg?$staticlink$");
     background-size: cover;
     background-position: 50% 0;
-    padding-top: calc((765% / 700) * 100);
+    background-repeat: no-repeat;
+    padding-top: calc((1368% / 1232) * 100);
 }
 
 @media screen and (min-width: 700px){
-.jm-product-large-w3219-msg04{
-    background: url("refresh/refresh-2019/w3219/hpa/04_09Week2A_HP.jpg?$staticlink$");
-    background-size: cover;
+.jmr-product-large-w3219-msg04 figure{
+    background: url("refresh/refresh-2019/w3219/hpa/msg04.jpg?$staticlink$");
+    background-size: 100%;
     background-position: 50% 0;
-    padding-top: calc((1101% / 941) * 100);
+    padding-top: calc((1232% / 1368) * 100);
+    background-repeat: no-repeat;
+    margin: 0 0 3%;
 }
 
-.jm-product-large-w3219-msg04 .jm-product-large-content{
-    position: absolute;
+.jmr-product-large-w3219-msg04 .jm-product-large-content{
+/*    position: absolute;
     padding: 5%;
     top: 0;
     right: 0;
@@ -50,9 +48,23 @@
     justify-content: flex-start;
     text-align: left;
     width: 100%;
-    height: 100%;
+    height: 100%;*/
 }
+
+
+@media screen and (min-width: 700px){
+.jmr-product-large-w3219-msg04 article{
+    color: black;
+    text-align: left;
 }
+
+}
+
+@media screen and (min-width: 1300px){
+
+
+}
+
 @media screen and (max-width: 700px){
 .carousel-product-tiles .row{
     margin: 0;
@@ -62,16 +74,18 @@
 }
 </style>
 
-<div class="jm-content-block-all jm-hero-content-block-all jm-product-large-container jm-product-large-w3219-msg04">
+<div class="jmr-product-large-w3219-msg04 jmr-product-large-container jmr-all-cb">
     <a href="$url('Search-Show','cgid','men-clothing-jeans')$?imc=hp_m4_img&imccat=w32-19-a_men-jeans" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
-    <div class="jm-product-large-content">
-        <figure class="jmr-mobile jm-product-large-mobile-w3219-msg04"></figure>
+    <div>
+        <figure></figure>
         <article>
-            <h2 id="jm-header-w3219-msg04" class="jm-header-2">Easy Denim</h2>
-            <p class="jm-header-3">You need it, we have it <b>over 60% off.</b></p>
-            <div class="jm-cta-wrapper">
-                <a class="btn jm-cta-button jm-cta-button-soliddark" href="$url('Search-Show','cgid','men-clothing-jeans')$?imc=hp_m4_cta&imccat=w32-19-a_men-jeans" id="jm-cta-w3219-msg04" aria-labelledby="jm-cta-w3219-msg04 jm-header-w3219-msg04">MEN</a>
-            </div>
+        <div>
+            <h2 class="jmr-header-2" id="jm-header-w3219-msg04">Easy Denim</h2>
+            <p class="jmr-header-3">You need it, we have it <b>over 60% off.</b></p>
+            <span class="jmr-ctas">
+                <a href="$url('Search-Show','cgid','men-clothing-jeans')$?imc=hp_m4_cta&imccat=w32-19-a_men-jeans" class="jmr-cta-button-soliddark jmr-cta-button btn" id="jmr-cta-w3219-msg01" aria-labelledby="jmr-cta-w3219-msg01 jmr-header-w3219-msg01">MEN</a>
+            </span>
+        </div>
         </article>
     </div>
 </div>
