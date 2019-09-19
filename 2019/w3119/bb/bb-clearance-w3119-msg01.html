@@ -5,7 +5,9 @@
 .jm-bb-w2919-msg01 .jmr-bb-wrapper{
     background-color: white;
     border-style: solid;
-    border: solid 0.4em #D03437;
+    border-width: .4em;
+    border-color: #D03437;
+
 }
 
 .jm-bb-w2919-msg01 .jmr-bb-wrapper article h2{
@@ -15,9 +17,6 @@
     color: #D03437;
     letter-spacing: 0;
     text-align: center;
-}
-.jm-bb-w2919-msg01 .jmr-bb-wrapper sup a{
-    color: #D03437 !important;
 }
 /*.jm-bb-w2919-msg01 .jmr-bb-wrapper article .jmr-bb-subheader{
     font-size: 1.9em;
@@ -40,7 +39,13 @@
     margin: 0.5% 1%;
 }
 .jmr-bb-wrapper{
-    padding-top: calc((240em / 1410) * 100);
+    padding-top: calc((680vw / 1410) * 100);
+}
+
+@media screen and (min-width: 700px){
+.jmr-bb-wrapper{
+    padding-top: calc((190em / 1410) * 100);
+}
 }
 
 
@@ -71,7 +76,7 @@
                 <!-- <p class="jmr-bb-subheader">
                     <span>NOW EXTENDED!</span>
                 </p> -->
-                <h2 class="jmr-bb-header" id="jm-bb-header-w2919-msg01">FINAL MARKDOWNS<sup><a id="jm_drop_main" href="#jm-bb-disclaimer" class="jm-cta-light" onclick="jm_scroll_bb_disclaimer(this.id); onkeypress=jm_scroll_bb_disclaimer(this.id);"  aria-label="See Info & Exclussions">*</a></sup></h2>                
+                <h2 class="jmr-bb-header" id="jm-bb-header-w2919-msg01">FINAL MARKDOWNS</h2>                
                 <span class="jmr-bb-ctas" role="list">
                     <a role="listitem" href="/categories/clearance-women?imc=bb_cta&imccat=w22-19-c_clearance-womenn" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-1-w2919-msg01" aria-labelledby="jm-cta-1-w2919-msg01 jm-bb-header-w2919-msg01">WOMEN</a>
                     <a role="listitem" href="/categories/clearance-men?imc=bb_cta&imccat=w22-19-c_clearance-men" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-2-w2919-msg01" aria-labelledby="jm-cta-2-w2919-msg02 jm-bb-header-w2919-msg01">MEN</a>
@@ -84,11 +89,10 @@
         </article>
         <figure></figure>
     </div>
-
+<!--
         <p id="jm-bb-disclaimer" class="jm-bb-disclaimer">
-            <!-- *Online and in-store 9/3/19-9/?/19, while supplies last. Discount only valid on clearance, red-tagged items. Discount applied at checkout. Exclusions may apply. -->
-            *Online and in-store, while supplies last. Discount only valid on clearance, red-tagged items. Discount applied at checkout. Exclusions may apply.
+            *Online and in-store 9/3/19-9/?/19, while supplies last. Discount only valid on clearance, red-tagged items. Discount applied at checkout. Exclusions may apply.
             <a class="jm-going-back" onclick="jm_scroll_bb_disclaimer_back(this.id);" onkeypress="jm_scroll_bb_disclaimer_back(this.id);" href="#" aria-label="Back to main">↵</a>
         </p>    
-    
+   -->
 </aside>
