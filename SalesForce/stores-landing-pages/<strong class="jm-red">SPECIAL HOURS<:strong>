@@ -1,0 +1,29 @@
+<strong class="jm-red">SPECIAL HOURS</strong>
+    <div class="jm-red">
+    <table class="jm-red">
+  <tr>
+    <td>SUN</td>
+    <td>NOV 24</td>
+    <td>10:00AM – 9:00PM</td>
+  </tr>
+  <tr>
+    <td>MON-WED</td>
+    <td>NOV 25-27</td>
+    <td>9:00AM – 10:00PM</td>
+  </tr>
+  <tr>
+    <td>THUR</td>
+    <td>NOV 28</td>
+    <td>10:00AM – 7:00PM</td>
+  </tr>
+   <tr>
+    <td>FRI-SAT</td>
+    <td>NOV 29-NOV 30</td>
+    <td>9:00AM – 10:00PM</td>
+  </tr>
+</table>
+    </div>
+<br/>
+<strong>REGULAR HOURS</strong>
+<div><span>SUN</span> <span>10:00AM – 8:00PM</span></div>
+<div><span>MON – SAT</span> <span>10:00AM – 9:00PM</span></div>
