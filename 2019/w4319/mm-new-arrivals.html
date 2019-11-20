@@ -1,0 +1,121 @@
+<!-- new-arrivals-mm-w43 - JuanMa - 11.19.19 --> 
+
+<div class="jm-megamenu">
+    <div class="jm-mm-single">
+        <a href="$url('Search-Show','cgid','beauty-skincare')$?imc=mm_lg1&imccat=w41-19-a_beauty-categories-skincare">
+            <img alt="" src="refresh/refresh-2019/w4119/mm/beauty/01_11Week2_MM_BEAUTY.jpg?$staticlink$">
+            <span class="">Skincare</span>
+        </a>
+    </div>
+</div>
+
+
+<!-- keyH38HWwy8q1XyAd -->
+<script>
+const api_mega_menu = "https://api.airtable.com/v0/appEfplPm0mhnfonz/new-arrivals-mm?&api_key=keyjtf3IfzEJEha5M"
+
+fetch(api_mega_menu)
+  .then(res => res.json())
+  .then(data => {
+    // console.log(data);
+    printData2(data.records);
+    callDropData2(data.records);
+  })
+
+// console.log(data.fields.designer_id);
+
+
+const printData2 = (data) => {
+  data.map( (data, i) => {
+    const message = 
+      // "Designer #" + i + " : " + 
+      data.fields.name + " - " + 
+      data.fields.notes + " - " + 
+      data.fields.drop + " - "
+  })
+}
+
+
+const callDropData2 = (data) => {
+// console.log("DROP LIST :");
+  data.map( (data, i) => {
+    // DROP
+    if(data.fields.drop == "y"){
+      if(window.location.href.indexOf("/search?q=") > -1){      
+        designer_name_byword = data.fields.designer_name.match(/\w+|[^\s\w]+/g);
+        theDropBanner(i,data.fields.designer_name,designer_name_byword,data.fields.disclaimer_drop);
+      };
+    }
+    // NO DROP
+    else if(data.fields.drop == "n"){
+      // SUPPRESED
+      if((window.location.href.indexOf("/search?q=") > -1) && (data.fields.on_site_search == "y")){
+        designer_name_byword = data.fields.designer_name.match(/\w+|[^\s\w]+/g);
+        theSuppresionBanner(i,data.fields.designer_name,designer_name_byword,data.fields.on_site_search);
+      };     
+    };
+  })
+}
+
+function theDropBanner(i,designer_name,designer_name_clean,disclaimer_drop){
+  console.log(i + " this is part of the drop : " + designer_name);
+  // var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/ /g,'');
+  var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/^\s+/g, '').replace(/\s+$/g, '');
+  var data_low = designer_name.toLowerCase();
+  if(data_low.indexOf(search_word) > -1){
+    jm_build_drop_banner(designer_name,disclaimer_drop);
+  };
+}
+
+
+function theSuppresionBanner(i,designer_name,designer_name_clean){
+  console.log(i + " this is brand is suppressed : " + designer_name );
+  var search_word = $('.search-keywords').text().toLowerCase().replace(/'/g,'').replace(/(\r\n|\n|\r)/gm,"").replace(/^\s+/g, '').replace(/\s+$/g, '');
+  var data_low = designer_name.toLowerCase();
+  if(data_low.indexOf(search_word) > -1){
+    jm_build_suppressed_banner(designer_name);
+  };
+}
+
+// SEARCH DROP BANNER
+function jm_build_drop_banner(designer_name,disclaimer_drop){
+  console.log('you are looking for: ' + designer_name + '!');  
+    $('.search-results .product-grid .product-search-wrapper').before(      
+        '<div class="jm-browse-banner jm-search-drop-banner">'+
+                '<article>'+
+                '<a id="drop_signup_bb_img" href="#" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>'+
+                '<div>'+
+                    '<figure>'+
+                      '<img alt="The Drop" src="refresh/refresh-2019/w2219/drop-lp/the-drop-logo-white-v2.png?$staticlink$"/>'+
+                    '</figure>'+
+                    '<p id="drop_signup_bb-header">Get limited-quantity pieces from <b>'+ designer_name +'</b> and more designer names.<br/>Sign up for our emails and never miss a drop.</p>'+
+                    '<div class="jm-cta-wrapper">'+
+                        '<a href="#" class="btn jm-cta-button jm-cta-button-light" id="drop_signup_bb_cta" aria-labelledby="drop_signup_bb_cta drop_signup_bb-header">SIGN UP NOW</a>'+
+
+                    '</div>'+
+                '</div>'+
+                '</article>'+
+        '</div>'
+    );
+  if(disclaimer_drop == "y"){
+    console.log('disclaimer on!');
+    $('.jm-search-drop-banner article').after(
+      '<p class="jm-disclaimer">Century 21 Stores is not an authorized retailer of '+ designer_name +'</p>'
+      );
+
+  }
+}
+// END SEARCH DROP BANNER
+
+
+// SEARCH DROP BANNER
+function jm_build_suppressed_banner(designer_name){
+  $('.search-tips .content-asset .toggle-search-again').text('Please check out the designer filters or browse to find the names you\'ve been looking for (just a little shopping secret we wanted to share)');
+  $('.search-tips .content-asset .toggle-search-again').prepend(
+    '<span class="jmr-suppressed-header">LOOKING FOR \''+designer_name+'\'?</span>'
+  );
+  $('.search-results .plp-page-title').hide();
+  $('.search-results .jmr-suppressed-header').parent().css('margin','0 auto 2.25em');
+}
+
+</script>
