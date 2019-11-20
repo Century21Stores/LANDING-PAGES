@@ -1,17 +1,18 @@
 <!-- new-arrivals-mm-w43 - JuanMa - 11.19.19 --> 
 
-<div class="jm-megamenu">
+<div id="jmr-mm-new-arrivals" class="jm-megamenu">
     <div class="jm-mm-single">
-        <a href="$url('Search-Show','cgid','beauty-skincare')$?imc=mm_lg1&imccat=w41-19-a_beauty-categories-skincare">
+    <!--     <a href="$url('Search-Show','cgid','beauty-skincare')$?imc=mm_lg1&imccat=w41-19-a_beauty-categories-skincare">
             <img alt="" src="refresh/refresh-2019/w4119/mm/beauty/01_11Week2_MM_BEAUTY.jpg?$staticlink$">
             <span class="">Skincare</span>
-        </a>
+        </a> -->
     </div>
 </div>
 
 
 <!-- keyH38HWwy8q1XyAd -->
 <script>
+window.addEventListener("DOMContentLoaded", function(){
 const api_mega_menu = "https://api.airtable.com/v0/appEfplPm0mhnfonz/new-arrivals-mm?&api_key=keyjtf3IfzEJEha5M"
 
 fetch(api_mega_menu)
@@ -22,40 +23,45 @@ fetch(api_mega_menu)
     callDropData2(data.records);
   })
 
-// console.log(data.fields.designer_id);
 
 
 const printData2 = (data) => {
   data.map( (data, i) => {
     const message = 
       // "Designer #" + i + " : " + 
-      data.fields.name + " - " + 
-      data.fields.notes + " - " + 
-      data.fields.drop + " - "
+      data.fields.mm_id + " - " + 
+      data.fields.category + " - " + 
+      data.fields.image + " - " + 
+      data.fields.date + " - " + 
+      data.fields.soldout + " - "
   })
 }
 
 
 const callDropData2 = (data) => {
-// console.log("DROP LIST :");
+var now = new Date();
+var UTCyear = now.getUTCFullYear();
+var UTCmonth = now.getUTCMonth()+1;
+var UTCdate = now.getUTCDate()
+var UTCfulldate = UTCyear+'-'+UTCmonth+'-'+UTCdate;
+console.log(UTCfulldate);
+
   data.map( (data, i) => {
+    console.log(data)
     // DROP
-    if(data.fields.drop == "y"){
-      if(window.location.href.indexOf("/search?q=") > -1){      
-        designer_name_byword = data.fields.designer_name.match(/\w+|[^\s\w]+/g);
-        theDropBanner(i,data.fields.designer_name,designer_name_byword,data.fields.disclaimer_drop);
-      };
+    if(data.fields.date == UTCfulldate){
+        console.log('this one!');
+        jm_build_megamenu(data.fields.category,data.fields.image);
     }
     // NO DROP
-    else if(data.fields.drop == "n"){
-      // SUPPRESED
-      if((window.location.href.indexOf("/search?q=") > -1) && (data.fields.on_site_search == "y")){
-        designer_name_byword = data.fields.designer_name.match(/\w+|[^\s\w]+/g);
-        theSuppresionBanner(i,data.fields.designer_name,designer_name_byword,data.fields.on_site_search);
-      };     
+    else{
+        console.log('not this one!');
     };
   })
 }
+
+
+});
 
 function theDropBanner(i,designer_name,designer_name_clean,disclaimer_drop){
   console.log(i + " this is part of the drop : " + designer_name);
@@ -78,44 +84,23 @@ function theSuppresionBanner(i,designer_name,designer_name_clean){
 }
 
 // SEARCH DROP BANNER
-function jm_build_drop_banner(designer_name,disclaimer_drop){
-  console.log('you are looking for: ' + designer_name + '!');  
-    $('.search-results .product-grid .product-search-wrapper').before(      
+function jm_build_megamenu(category,image){
+  console.log('you are looking for category: ' + category + 'and image' + image);  
+     $('#jmr-mm-new-arrivals').prepend(
         '<div class="jm-browse-banner jm-search-drop-banner">'+
-                '<article>'+
-                '<a id="drop_signup_bb_img" href="#" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>'+
-                '<div>'+
-                    '<figure>'+
-                      '<img alt="The Drop" src="refresh/refresh-2019/w2219/drop-lp/the-drop-logo-white-v2.png?$staticlink$"/>'+
-                    '</figure>'+
-                    '<p id="drop_signup_bb-header">Get limited-quantity pieces from <b>'+ designer_name +'</b> and more designer names.<br/>Sign up for our emails and never miss a drop.</p>'+
-                    '<div class="jm-cta-wrapper">'+
-                        '<a href="#" class="btn jm-cta-button jm-cta-button-light" id="drop_signup_bb_cta" aria-labelledby="drop_signup_bb_cta drop_signup_bb-header">SIGN UP NOW</a>'+
-
-                    '</div>'+
-                '</div>'+
-                '</article>'+
+            'test'+
         '</div>'
     );
-  if(disclaimer_drop == "y"){
-    console.log('disclaimer on!');
-    $('.jm-search-drop-banner article').after(
-      '<p class="jm-disclaimer">Century 21 Stores is not an authorized retailer of '+ designer_name +'</p>'
-      );
+  // if(disclaimer_drop == "y"){
+  //   console.log('disclaimer on!');
+  //   $('.jm-search-drop-banner article').after(
+  //     '<p class="jm-disclaimer">Century 21 Stores is not an authorized retailer of '+ designer_name +'</p>'
+  //     );
 
-  }
+  // }
 }
 // END SEARCH DROP BANNER
 
 
-// SEARCH DROP BANNER
-function jm_build_suppressed_banner(designer_name){
-  $('.search-tips .content-asset .toggle-search-again').text('Please check out the designer filters or browse to find the names you\'ve been looking for (just a little shopping secret we wanted to share)');
-  $('.search-tips .content-asset .toggle-search-again').prepend(
-    '<span class="jmr-suppressed-header">LOOKING FOR \''+designer_name+'\'?</span>'
-  );
-  $('.search-results .plp-page-title').hide();
-  $('.search-results .jmr-suppressed-header').parent().css('margin','0 auto 2.25em');
-}
 
 </script>
