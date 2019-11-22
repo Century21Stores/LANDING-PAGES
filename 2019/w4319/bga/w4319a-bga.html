@@ -2,6 +2,10 @@
 
 <style>
 
+.jm-bga-14-gbga_1_w43-19-a .jm-bga-cta-wrap p{
+    color: white;
+    margin: 0 0 36%;
+}
 .jm-bga-14-gbga_1_w41-19-a{
   padding: 17% 5%;
 }
@@ -61,37 +65,56 @@ console.log('bgas');
 
 //BGAs DATA
 
-//GBGA_1 GIFT CARDS 11/11 - continuous
+
+//GBGA_1 Daily Deals 11/25 - 12/8
 gbga_1_position = "15";
 gbga_1_type = "1";
-gbga_1_key = "gbga_1_w41-19-a";
+gbga_1_key = "gbga_1_w43-19-a";
 // gbga_1_line_1 = "<p class='jm-bga-line1'>ONLINE & IN-STORE</p>";
-gbga_1_h2 = "<span>GIFT CARDS</span>";
-gbga_1_aligment = "flex-start";
-gbga_1_url = "/categories/gift-card?imc=bga_p1_giftcards&imccat=w40-19-a_gift-card";
+gbga_1_h2 = "<span>All The Best</span>";
+gbga_1_aligment = "center";
+gbga_1_url = "/categories/our-best-deals-of-the-day?imc=bga_p1&imccat=w43-19-a_our-best-deals-of-the-day";
 gbga_1_cta = "SHOP NOW";
 gbga_1_cta_type = "solidlight";
-gbga_1_text_top_cta = "<p>Always a crowd-pleaser</p>";
-gbga_1_img = "refresh/refresh-2019/w4119/bga/01_11Week2BGA_Gift-Cards.jpg?$staticlink$";
+gbga_1_text_top_cta = "<p>Big Deals Live Here<br/><b>Up To 75% Off</b></p>";
+gbga_1_img = "refresh/refresh-2019/w4319/bga/01_11Week4_CyberSpecials_BGA.jpg?$staticlink$";
 gbga_1_cat1 = "women,men,shoes,kids,handbags&accessories,home&tech";
 // gbga_1_cat3_exceptions = "handbags&accessories > boutiques > luxurydesigner";
 gbga_1_cat3_exceptions = "none";
 
-//GBGA_2 E-GIFT CARDS 11/11 - continuous
+
+//GBGA_2 GIFT CARDS 11/11 - 12/15
 gbga_2_position = "28";
 gbga_2_type = "1";
 gbga_2_key = "gbga_1_w41-19-a";
-// gbga_1_line_1 = "<p class='jm-bga-line1'>ONLINE & IN-STORE</p>";
-gbga_2_h2 = "<span>E-GIFT CARDS</span>";
+// gbga__line_1 = "<p class='jm-bga-line1'>ONLINE & IN-STORE</p>";
+gbga_2_h2 = "<span>GIFT CARDS</span>";
 gbga_2_aligment = "flex-start";
-gbga_2_url = "/categories/e-gift-cards?imc=bga_p1_egiftcards&imccat=w40-19-a_e-gift-cards";
+gbga_2_url = "/categories/gift-card?imc=bga_p2_giftcards&imccat=w40-19-a_gift-card";
 gbga_2_cta = "SHOP NOW";
 gbga_2_cta_type = "solidlight";
 gbga_2_text_top_cta = "<p>Always a crowd-pleaser</p>";
 gbga_2_img = "refresh/refresh-2019/w4119/bga/01_11Week2BGA_Gift-Cards.jpg?$staticlink$";
 gbga_2_cat1 = "women,men,shoes,kids,handbags&accessories,home&tech";
-// gbga_1_cat3_exceptions = "handbags&accessories > boutiques > luxurydesigner";
+// gbga_2_cat3_exceptions = "handbags&accessories > boutiques > luxurydesigner";
 gbga_2_cat3_exceptions = "none";
+
+//GBGA_3 E-GIFT CARDS 11/11 - 12/15
+gbga_3_position = "41";
+gbga_3_type = "1";
+gbga_3_key = "gbga_1_w41-19-a";
+// gbga_3_line_1 = "<p class='jm-bga-line1'>ONLINE & IN-STORE</p>";
+gbga_3_h2 = "<span>E-GIFT CARDS</span>";
+gbga_3_aligment = "flex-start";
+gbga_3_url = "/categories/e-gift-cards?imc=bga_p3_egiftcards&imccat=w40-19-a_e-gift-cards";
+gbga_3_cta = "SHOP NOW";
+gbga_3_cta_type = "solidlight";
+gbga_3_text_top_cta = "<p>Always a crowd-pleaser</p>";
+gbga_3_img = "refresh/refresh-2019/w4119/bga/01_11Week2BGA_Gift-Cards.jpg?$staticlink$";
+gbga_3_cat1 = "women,men,shoes,kids,handbags&accessories,home&tech";
+// gbga_3_cat3_exceptions = "handbags&accessories > boutiques > luxurydesigner";
+gbga_3_cat3_exceptions = "none";
+
 
 
 // // DENIM MEN PROMO 9/12 only
@@ -170,7 +193,25 @@ bga_cat_list_global = '{"gbgas":['+
   '   "gbga_text_top_cta":"'  + gbga_2_text_top_cta + '",'+
   '   "gbga_cta_type":"'  + gbga_2_cta_type + '",'+
   '   "gbga_cta_text":"'  + gbga_2_cta + '"'+            
-  '}'+
+  '},'+
+
+  // BGA_1 DAILY DEALS 11/25 - 12/9
+  '{  "gposition": "' + gbga_3_position +'",     '+ 
+  '   "gtype": "' + gbga_3_type +'",     '+ 
+  '   "gkey": "' + gbga_3_key +'",     '+ 
+  '   "gcategories1": "' + gbga_3_cat1 +'",     '+ 
+  '   "gcategories2": "todo",    '+
+  '   "gcategories3": "todo",     '+
+  '   "gcategories3_exception": "' + gbga_3_cat3_exceptions +'",     '+ 
+  '   "gbga_aligment": "' + gbga_3_aligment +'",     '+ 
+  '   "gbga_bg_image": "' + gbga_3_img +'",     '+ 
+  '   "gbga_url": "' + gbga_3_url +'",     '+ 
+  // '   "gbga_line_1":"'  + gbga_1_line_1 + '",'+
+  '   "gbga_h2":"'  + gbga_3_h2 + '",'+
+  '   "gbga_text_top_cta":"'  + gbga_3_text_top_cta + '",'+
+  '   "gbga_cta_type":"'  + gbga_3_cta_type + '",'+
+  '   "gbga_cta_text":"'  + gbga_3_cta + '"'+            
+  '}'+  
 
 
 ']}';
