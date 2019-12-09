@@ -156,17 +156,17 @@
 					</p>
 				</div>	
 			</div>
-<!-- 		<section class="cpc-hours">
+		<section class="cpc-hours">
 			<div class="jm-hours">
+			<div id="special_hours"></div>
 			<div class="jm-red">
-					<strong><span class="jm-icon fa fa-clock-o" aria-hidden="true"></span>Thanksgiving Store Hours</strong></div>
-						<div class="jm-red"><span>NOV 28-29</span></div>
-						<div class="jm-red"><span>THUR</span> <span>10:00AM – 6:00PM</span></div>
-						<div class="jm-red"><span>FRI</span>  <span>9:00AM – 10:00PM</span></div>
-						<div class="jm-red"><span>SAT</span>  <span>9:00AM – 10:00PM</span></div>
+					<strong><span class="jm-icon fa fa-clock-o" aria-hidden="true"></span>Holiday Hours</strong></div>
+						<div class="jm-red"><span>MON - FRI DEC 9-13</span> <span>10:00AM – 9:30PM</span></div>
+						<div class="jm-red"><span>SAT DEC 14</span>  <span>9:00AM – 10:00PM</span></div>
+						<div class="jm-red"><span>SUN DEC 15</span>  <span>10:00AM – 9:00PM</span></div>
 			
 			</div>
-		</section> -->
+		</section>
 
 			<div class="jm-hours">
 				<!-- <strong class="jm-red"><span class="jm-icon fa fa-clock-o" aria-hidden="true"></span>SPECIAL HOURS</strong>
@@ -261,3 +261,9 @@
 	</section>
 
 </div>
+
+<script>
+window.addEventListener("DOMContentLoaded", function(){	
+	$('#special_hours').load('/s/C21/stores #jmr-special-hours-20');
+});
+</script>
