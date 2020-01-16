@@ -1,132 +1,67 @@
-<!-- bb-drop-w5119-msg01 - Prada - JuanMa - 1.14.19 -->
-
-<script>
-window.addEventListener("DOMContentLoaded", function(){
-
-// BANNER
-    $('.search-results .product-grid .product-search-wrapper').before(
-        '<div class="jm-lxr-browse-banner-main-wrap">'+
-            '<div class="jm-lxr-browse-banner">'+
-                '<article>'+
-                '<div>'+
-                    '<div class="bb-wraper-header">'+
-                        '<p class="jm-line-1">ONLINE & IN LINCOLN SQUARE | NOW THROUGH FEBRUARY 17</p>'+
-                        '<h2>SPRING DESIGNER EVENT</h2>'+
-                         '<p class="jm-line-3">Up to 65% Off<sup><a id="jm_drop_main" href="#jm-bb-disclaimer" class="jm-cta-light" onclick="jm_scroll_bb_disclaimer(this.id); onkeypress=jm_scroll_bb_disclaimer(this.id);"s id="jm-cta-w2819-msg01" aria-label="See Info & Exclussions">*</a></sup></p>'+
-                    '</div>'+
-                    '<div class="jm-cta-wrapper">'+
-                        '<a href="/categories/clearance-women?imc=bb_cta&imccat=w50-19-a_clearance-women" class="jmr-text-cta-light jmr-text-cta" id="ig-cta-w50-clearance-extra-20" aria-labelledby="ig-cta-w50-clearance-extra-20 jm-header-1019-msg00-s-drop">WOMEN</a>'+
-                        '<a href="/categories/clearance-men?imc=bb_cta&imccat=w50-19-a_clearance-men" class="jmr-text-cta-light jmr-text-cta" id="ig-cta-w50-clearance-extra-20" aria-labelledby="ig-cta-w50-clearance-extra-20 jm-header-1019-msg00-s-drop">MEN</a>'+
-                        '<a href="/categories/clearance-shoes?imc=bb_cta&imccat=w50-19-a_clearance-shoes" class="jmr-text-cta-light jmr-text-cta" id="ig-cta-w50-clearance-extra-20" aria-labelledby="ig-cta-w50-clearance-extra-20 jm-header-1019-msg00-s-drop">SHOES</a>'+                        
-                    '</div>'+
-                '</div>'+
-                '</article>'+
-            '</div>'+
-             '<p id="jm-bb-disclaimer" class="jm-line-5">*Online and in Lincoln Square store only. Brand and merchandise are subject to sell through, while supplies last.<a class="jm-going-back" onclick="jm_scroll_bb_disclaimer_back(this.id);" onkeypress="jm_scroll_bb_disclaimer_back(this.id);" href="#" aria-label="Back to main">↵</a></p>'+
-        '</div>'
-    );
-// END BANNER
-
-// BREAD CRUMB FIX
-var jm_how_many_bc = $('.breadcrumb').children().length;
-var jm_how_many_filter = $('.filter-area > div.filter-bar > ul').children().length;
-console.log(jm_how_many_filter);
-if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
-    console.log(jm_how_many_bc);
-    $('.filter-area > div.filter-bar').hide();
-}
-// END BREAD CRUMB FIX
-
-});
-
-</script>
+<!-- bb-drop-w5119-msg01 - Prada - JuanMa - 1.15.19 -->
 
 <style>
-.jm-lxr-browse-banner-main-wrap a{
-    color: white !important;
-}    
-.product-search-wrapper .search-banner{
-    display: none;
-}
-/*.filter-area > div.filter-bar > ul > li:last-of-type,
-.filter-area > div.filter-bar{
-    display: none;
-}*/
 
-#jm-bb-disclaimer:target {
-    outline: 2px solid #51aeff;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper{
+    background-color: black;
+    padding: 0;
 }
-.jm-lxr-browse-banner{
-    background: url("refresh/refresh-2019/W1919/zBROWSE-BANNERS/LOYALTY/01_06week2_OM19_CLEARANCE_BB_LOYALTY.jpg?$staticlink$");
-    /*background: #000000;*/
-    background:#71768a;
-    background-size: cover;
-    background-position: 50% 0;
-    padding-top: calc((973% / 1410) * 100);
-    position:relative;
-}
-.jm-lxr-browse-banner-main-wrap{
-    margin: 0 0 2%
-}
-.jm-lxr-browse-banner article{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.jm-lxr-browse-banner article > div{
-    width: 100%;
-    padding: 5%;
-}
-.jm-lxr-browse-banner article p{    
-    font-size: 2.3em;
-    color: white;
+
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article h2{
+    font-size: 2em;
     font-weight: bold;
     font-weight: 600;
-    margin: 0.5% 0 0;
+    color: white;
     letter-spacing: 0;
+    text-align: center;
+    margin: 1% 0;
 }
-.jm-lxr-browse-banner article h2{
-    font-size: 3.63em;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article .jmr-header-3{
+    font-size: 1em;
     font-weight: bold;
     font-weight: 600;
     color: white;
-    margin: 0;
-    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top:1%;
 }
-.jm-lxr-browse-banner article h2 span sup{
-    font-size: 0.4em;
-    position: absolute;
-    top: 1em;
-    right: -6%;
-}
-.jm-lxr-browse-banner article h2 a{
-    color: white !important;
-}
-.jm-lxr-browse-banner article p.jm-line-1{
-    font-size: 1.1em;
-    color: white;
-    letter-spacing: 0.1em;
-    font-weight: regular;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article .jmr-bb-subheader{
+    font-size: 1em;
+    font-weight: normal;
     font-weight: 500;
+    color: white;
+}
+
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article{
+    position: relative;
+    padding: 0 0 1%;
+}
+.jm-bb-w5119-msg01 .jmr-bb-wrapper figure img{
+    width: 53%;
+}
+.jm-bb-w5119-msg01 .jmr-bb-wrapper figcaption p{
+    color: white;
+}
+.jmr-bb-ctas{
+    margin: 1% 0% 0;
+}
+.jmr-bb-ctas a{
+    margin: 0.5% 1%;
+    min-width: 200px;
+}
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article .jmr-header-3{
     margin: 0;
 }
-.jm-lxr-browse-banner article p.jm-line-1-code{
-    font-size: 1.4em;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article .jmr-header-3 strong{
     font-weight: bold;
-    font-weight: 600;
-    margin: 0 0 1%;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 1.3em;    
 }
-.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article p:first-of-type{
+    margin-bottom: 0.4%;    
+}
+.jm-bb-w5119-msg01 p.jm-line-5{
     font-size: 0.23em;
     width: 90%;
     margin: 0 auto;
@@ -135,122 +70,72 @@ if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
     text-align: center;
 }
 
-.jm-lxr-browse-banner article{
-    font-size: 1.03vw;
-}
-.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a{
-    margin: 0 1.5%;
-}
-.jm-lxr-browse-banner article h2 > span{
-    position: relative;
-}
-.bb-wraper-header{
-    margin: 0 0 3%;
-}
-.bb-wraper-header > div:nth-of-type(1) h2{
-    margin: 0;
-    line-height: 1;
-}
-
-.bb-wraper-header > div:nth-of-type(2) p{
-    margin: 0;
-    line-height: 1;
-    font-size: 3.63em;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 0;
-    margin: 0 0 0 2em;
-}
-#ig_disclaimer_extra20{
-  color: #ffffff;
-    font-size: .8vw;
-    padding-left: 1%;
-    top: -.5em;
-    position: relative;
-}
-
-
 @media screen and (min-width: 700px){
-.jm-lxr-browse-banner article{
-    font-size: 0.84vw;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper figure {
+    width: 33%;
+    padding: 1% 0 0;
 }
-.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+.jm-bb-w5119-msg01 .jmr-bb-wrapper{
+    max-height: 250px;
+}
+.jm-bb-w5119-msg01 p.jm-line-5{
     font-size: 0.53em;
 }
-.jm-lxr-browse-banner a.jm-cta-button-light{
-    margin: 1% 2%;
-}
-.jm-lxr-browse-banner a.jm-cta-button-light{
-    font-size: 0.8vw;
-    width: 27%;
-}
-.jm-lxr-browse-banner{
-    padding-top: calc((320% / 1410) * 100);
-}
-#ig-cta-w50-clearance-extra-20{
-  font-weight: 300;
-      font-size: .8em;
-          padding-bottom: .05%;
-}
-}
-
-
-@media screen and (min-width: 992px){
-.jm-lxr-browse-banner article{
-    font-size: 1vw;
-}
-.jm-lxr-browse-banner{
-    padding-top: calc((300% / 1410) * 100);
-}
 
 }
 
-@media screen and (min-width: 1300px){
-.jm-lxr-browse-banner a.jm-cta-button-light{
-    font-size: initial;
-    width: initial;
-}
-
-}
 @media screen and (min-width: 1500px){
-.jm-lxr-browse-banner article{
-    font-size: 1em;
-}
-.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+.jm-bb-w5119-msg01 p.jm-line-5{
     font-size: 0.73em;
 }
 
 }
 
-
 @media screen and (max-width: 700px){
-.jm-lxr-browse-banner a.jm-cta-button-light{
-    margin: 1% 2%;
-    width: 46%;
-    min-width: 100px;
-    font-size: 2.8vw;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper{
+    padding: 5% 0;    
 }
-.jm-lxr-browse-banner article p.jm-line-1{
-    font-size: 3.3vw;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper article h2{
+    font-size: 4.5vw;
+    margin: 4% 0;    
 }
-.jm-lxr-browse-banner article h2{
-    font-size: 5vw;
-    margin: 2% 0 2%;
-}
-.jm-lxr-browse-banner article p{
-    font-size: 4.3vw;
-    letter-spacing: 0.05em;
-}
-.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a{
-    font-size: 2.5vw;
-    width: 45%;
-    /*display: inline-block;*/
-    margin: 0 5%;
-    padding: 1% 0;
-}
-.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a:nth-child(odd){
-    margin: 0;
+.jm-bb-w5119-msg01 .jmr-bb-wrapper figcaption p{
+    font-size: 3vw;
 }
 
 }
+
+
 </style>
+
+<aside class="jm-bb-w5119-msg01 jmr-all-cb jmr-bb">
+
+    <div class="jmr-all-wrapper jmr-bb-wrapper">
+        <figure>
+            <img alt="The Drop" src="special/drop/The_Drop_Logo.png?$staticlink$">
+            <!-- <figcaption>
+                <p>BLACK FRIDAY EDITION</p>
+            </figcaption>  -->
+        </figure>
+
+        <article>
+            <div>
+                <h2 class="jmr-bb-header" id="jm-bb-header-w5119-msg01">Prada | <span>Starting at 40% Off</span></h2>
+                <p class="jmr-header-3"><strong>Also in Select Stores!</strong></p>
+               <!-- <span class="jmr-bb-ctas">
+                    <a href="/categories/drop-christian-louboutin-saint-laurent-gucci?prefn1=brand&prefv1=Saint%20Laurent&imccat=w43-19-d_drop-christian-louboutin-saint-laurent-gucci_saint-laurent" class="btn jm-cta-button jm-cta-button-solidlight" id="jm-cta-1-w5119-msg01" aria-labelledby="jm-cta-1-w5119-msg01 jm-bb-header-w5119-msg01">SAINT LAURENT</a>
+
+                    <a href="/categories/drop-christian-louboutin-saint-laurent-gucci?prefn1=brand&prefv1=Christian%20Louboutin&imc=bb_cta&imccat=w43-19-d_drop-christian-louboutin-saint-laurent-gucci_christian-louboutin" class="btn jm-cta-button jm-cta-button-solidlight" id="jm-cta-3-w5119-msg01" aria-labelledby="jm-cta-3-w4319-msg03 jm-bb-header-w5119-msg01">CHRISTIAN LOUBOUTIN</a>
+                    
+                    <a href="/categories/drop-christian-louboutin-saint-laurent-gucci?prefn1=brand&prefv1=Gucci&imccat=w43-19-d_drop-christian-louboutin-saint-laurent-gucci_gucci" class="btn jm-cta-button jm-cta-button-solidlight" id="jm-cta-2-w5119-msg01" aria-labelledby="jm-cta-2-w5119-msg01 jm-bb-header-w5119-msg01">GUCCI</a>  
+                    
+                </span>  -->
+
+                <p class="jmr-header-3">Downtown Manhattan | Rego Park | Lincoln Square | Brooklyn 86th Street | Westbury </p>
+            </div>    
+
+        </article>
+    </div>
+    <p id="jm-bb-disclaimer" class="jm-line-5">C21 guaranteed authentic. Not affiliated or authorized retailer of Prada.</p>
+    
+</aside>
