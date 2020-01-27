@@ -4,71 +4,120 @@
     padding: 2%;
     text-align: center;
     display: grid;
-    }
-.cta-section-template .jmr-ctas .jmr-text-cta{
-bottom: 23%;
-margin-right: 1%;
-}
-.ig-line-1{
-  font-size: 3.7em;
-  font-weight: bold;
-  font-weight: 300;
-  letter-spacing: 4px;
-}
-  .ig-line-2{
+  }
+
+  .cta-section-template .jmr-ctas .jmr-text-cta {
+    bottom: 23%;
+    margin-right: 1%;
+  }
+
+  .ig-line-1 {
+    font-size: 3.7em;
+    font-weight: bold;
+    font-weight: 300;
+    letter-spacing: 4px;
+  }
+
+  .ig-line-2 {
     font-size: 1.5em;
     font-weight: bold;
     font-weight: 300;
   }
-  .cta-section-template article{
-    padding-bottom:2%;
+
+  .cta-section-template article {
+    padding-bottom: 2%;
+  }
+  .collapsedCtaText{
+    text-align: left;
+    margin: 0 28% 0 34%;
   }
 
-/* modal popup code */
-/* The Modal (background) */
-.ig-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 5; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* modal popup code */
+
+  /* The Modal (background) */
+
+  .ig-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+
+  .ig-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+
+  /* The closeButtonModal Button */
+
+  .closeButtonModal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .closeButtonModal:hover,
+  .closeButtonModal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal copy color code */
+
+  .ig-ctaTemplate-red {
+    color: red;
+  }
+
+  a.up-arrow {
+	display: inline-block;
+	position: relative;
+	background: #1f1f1f;
+	color: #ffffff !important;
+	text-decoration: none;
+	padding: 10px;
+  border-radius: 5Px;
+  font-size: .8em;
 }
 
-/* Modal Content */
-.ig-modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
+a.up-arrow:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 43%;
+	bottom: 95%;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid #1f1f1f;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
 }
+#igUpArrowButton{
 
-/* The closeButtonModal Button */
-.closeButtonModal {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: 300;
 }
-
-.closeButtonModal:hover,
-.closeButtonModal:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Modal copy color code */
-.ig-red{
-  color:red;
-}
-
 
 </style>
 
@@ -78,49 +127,70 @@ margin-right: 1%;
     <article>
         <div>
             <h2 class="jmr-header-2 ig-line-1">
-                  CTA and Buttons
+            CTA and Buttons
             </h2>
-            <p class="jmr-font-2 ig-line-2">click for code.</p>
+            <!-- <p class="jmr-font-2 ig-line-2">click for code.</p> -->
         </div>
     </article>
-    <div class="ig-left">
 
-                <!-- Copy light text cta | BEGIN -->
-                    <span class="jmr-ctas">
-                        <a href="#" class="jmr-text-cta-light jmr-text-cta" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r" button id="ctaText">light text</a>
-                    </span>
-                <!-- Copy light text cta | END -->
-                <!-- Copy light button cta | BEGIN -->
-                    <span class="jmr-ctas">
-                        <a href="/categories/returns.html?imc=hp_msg##_cta&imccat=w4919-b_returns" class="jmr-cta-button-light jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">light button</a>
-                </span>
-                <!-- Copy light button cta | END -->
-              <!-- Copy solidlight button cta | BEGIN -->
-                  <span class="jmr-ctas">
-                      <a href="/categories/returns.html?imc=hp_msg##_cta&imccat=w4919-b_returns" class="jmr-cta-button-solidlight jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">solidlight button</a>
-                  </span>
-              <!-- Copy solidlight button cta | END -->
+
+    <div>
+        <!-- Copy light text cta | BEGIN -->
+        <span class="jmr-ctas">
+            <a href="#" class="jmr-text-cta-light jmr-text-cta" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r" button id="ctaText">light text</a>
+        </span>
+        <!-- Copy light text cta | END -->
+        <!-- Copy light button cta | BEGIN -->
+        <span class="jmr-ctas">
+            <a href="#" class="jmr-cta-button-light jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">light button</a>
+        </span>
+        <!-- Copy light button cta | END -->
+        <!-- Copy solidlight button cta | BEGIN -->
+        <span class="jmr-ctas">
+            <a href="#" class="jmr-cta-button-solidlight jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">solidlight button</a>
+        </span>
+        <!-- Copy solidlight button cta | END -->
+    </div>
+    <div>
+    <!-- Copy dark text cta | BEGIN -->
+        <span class="jmr-ctas">
+            <a href="#demo" class="jmr-text-cta-dark jmr-text-cta" data-toggle="collapse" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r" >dark text</a>
+
+        </span>
+        <!-- Copy dark text cta | END -->
+        <!-- Copy dark button cta | BEGIN -->
+        <span class="jmr-ctas">
+            <a href="#" class="jmr-cta-button-dark jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">dark button</a>
+        </span>
+        <!-- Copy dark button cta | END -->
+        <!-- Copy soliddark button cta | BEGIN -->
+        <span class="jmr-ctas">
+            <a href="#" class="jmr-cta-button-soliddark jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">soliddark button</a>
+        </span>
+    <!-- Copy soliddark button cta | END -->
 
     </div>
-    <div class="ig-right">
-      <!-- Copy dark text cta | BEGIN -->
-          <span class="jmr-ctas">
-              <a href="/categories/returns.html?imc=hp_msg##_cta&imccat=w4919-b_returns" class="jmr-text-cta-dark jmr-text-cta" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">dark text</a>
-          </span>
-      <!-- Copy dark text cta | END -->
-      <!-- Copy dark button cta | BEGIN -->
-          <span class="jmr-ctas">
-              <a href="/categories/returns.html?imc=hp_msg##_cta&imccat=w4919-b_returns" class="jmr-cta-button-dark jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">dark button</a>
-          </span>
-      <!-- Copy dark button cta | END -->
-      <!-- Copy soliddark button cta | BEGIN -->
-          <span class="jmr-ctas">
-              <a href="/categories/returns.html?imc=hp_msg##_cta&imccat=w4919-b_returns" class="jmr-cta-button-soliddark jmr-cta-button btn" aria-labelledby="jmr-cta-w4919-msg98-threecolumn-r jmr-header-w4919-msg98-threecolumn-r">soliddark button</a>
-          </span>
-      <!-- Copy soliddark button cta | END -->
+    <article>
+      <div id="demo" class="collapse collapsedCtaText"><p>
+        <strong>Things to change:</strong>
+        <br><span class="ig-ctaTemplate-red">link, message number, site location, link, description</span>
+        <br><br> &lt;span class="jmr-ctas"&gt;<br> &lt;a href="<span class="ig-ctaTemplate-red">link</span>?imc=<span class="ig-ctaTemplate-red">hp_msg##_cta</span>&imccat=<span class="ig-ctaTemplate-red">w##yy-b_returns</span>" <br> class="jmr-text-cta-<strong>dark/light</strong> jmr-text-cta" aria-labelledby="
+        <span class="ig-ctaTemplate-red">jmr-cta-w##yy-msg##-description jmr-header-w##yy-msg##-description</span>"&gt;dark text&lt;/a&gt;
+        <br>&lt;/span&gt;
+        <br><br>
+        <strong>NOTE:</strong><br>
+        For black text cta and light backgrounds use : class="jmr-text-cta-<strong>dark</strong> jmr-text-cta"
+        <br>For white text cta and dark backgrounds use : class="jmr-text-cta-<strong>light</strong> jmr-text-cta"
+      </p>
+</div>
+    </article>
+    <!-- arrow up insta tag -->
+    <article>
+    <a href="#" class="up-arrow" id="igUpArrowButton">@thenotoriousskia</a>
+    </article>
 
-    </div>
 </section>
+  <!-- arrow up insta tag -->
 <!-- The Modal -->
 <div id="ctaTextModal" class="ig-modal">
 
@@ -128,49 +198,46 @@ margin-right: 1%;
   <div class="ig-modal-content">
     <span class="closeButtonModal">&times;</span>
     <p>
-<strong>Things to change:</strong> <span class="ig-red">link, message number, site location, link, description</span>
-<br><br>
-      &lt;span class="jmr-ctas"&gt;<br>
-        &lt;a href="<span class="ig-red">link</span>?imc=<span class="ig-red">hp_msg##_cta</span>&imccat=<span class="ig-red">w##yy-b_returns</span>" <br>
-        class="jmr-text-cta-<strong>dark/light</strong> jmr-text-cta"
-        aria-labelledby="<span class="ig-red">jmr-cta-w##yy-msg##-description jmr-header-w##yy-msg##-description</span>"&gt;dark text&lt;/a&gt;
-    <br>&lt;/span&gt;
-<br><br>
-<strong>NOTE:</strong><br>
-class="jmr-text-cta-<strong>dark</strong> jmr-text-cta" is for black text cta and light backgrounds<br>
-class="jmr-text-cta-<strong>light</strong> jmr-text-cta" is for white text cta and dark backgrounds
-  </p>
+      <strong>Things to change:</strong>
+      <br><span class="ig-ctaTemplate-red">link, message number, site location, link, description</span>
+      <br><br> &lt;span class="jmr-ctas"&gt;<br> &lt;a href="<span class="ig-ctaTemplate-red">link</span>?imc=<span class="ig-ctaTemplate-red">hp_msg##_cta</span>&imccat=<span class="ig-ctaTemplate-red">w##yy-b_returns</span>" <br> class="jmr-text-cta-<strong>dark/light</strong> jmr-text-cta" aria-labelledby="
+      <span class="ig-ctaTemplate-red">jmr-cta-w##yy-msg##-description jmr-header-w##yy-msg##-description</span>"&gt;dark text&lt;/a&gt;
+      <br>&lt;/span&gt;
+      <br><br>
+      <strong>NOTE:</strong><br>
+      For black text cta and light backgrounds use : class="jmr-text-cta-<strong>dark</strong> jmr-text-cta"
+      <br>For white text cta and dark backgrounds use : class="jmr-text-cta-<strong>light</strong> jmr-text-cta"
+    </p>
   </div>
-
 </div>
 
 
 
 
 <script>
-// Get the modal
-var modal = document.getElementById("ctaTextModal");
+  // Get the modal
+  var modal = document.getElementById("ctaTextModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("ctaText");
+  // Get the button that opens the modal
+  var btn = document.getElementById("ctaText");
 
-// Get the <span> element that closeButtonModals the modal
-var span = document.getElementsByClassName("closeButtonModal")[0];
+  // Get the <span> element that closeButtonModals the modal
+  var span = document.getElementsByClassName("closeButtonModal")[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
 
-// When the user clicks on <span> (x), closeButtonModal the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, closeButtonModal it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), closeButtonModal the modal
+  span.onclick = function() {
     modal.style.display = "none";
   }
-}
+
+  // When the user clicks anywhere outside of the modal, closeButtonModal it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 </script>
