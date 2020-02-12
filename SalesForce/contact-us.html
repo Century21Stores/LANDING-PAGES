@@ -1,28 +1,59 @@
+<!-- contactUs-banner - New Form - JuanMa - 2.12.20 -->
+
 <style>
+span.jmr-validation-field{
+  font-weight: 500;
+  font-size: 0.4em;
+}
+.container > .row > .mb-5{
+  max-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+}
+.contact-form-container{
+  display:none !important;
+}
+.jmr-success-message{
+  text-align: center;
+  color: green;
+  padding: 3% 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
 .jm-contact-page{
-	text-align: center;
+    text-align: center;
+    overflow: auto;
 }
 .jm-contact-page p{
-	margin: 0;
+    margin: 0;
 }
 .jm-contact-page .jm-right img{
-	width: 68%;	
+    width: 68%;
 }
 .jm-contact-page section h2{
     font-size: 1.6em;
     font-weight: 600;
 }
 .jm-contact-page .jm-section{
-	margin: 0 0 3%;
+    margin: 0 0 3%;
     border-bottom: solid 1px #e6e6e6;
-    padding: 9% 0;	
+    padding: 9% 0;
 }
 .jm-contact-page .jm-left{
-	width: 80%;
-	margin: 0 auto 2%;
+    width: 80%;
+    margin: 0 auto 2%;
 }
 .jm-contact-page .jm-float-wrap{
-	margin: 0 0 6%;
+    margin: 0 0 6%;
+}
+
+.jm-color-red{
+  color:#e21f26;
+}
+.jm-color-red br{
+  display:block !important;
 }
 
 @media screen and (min-width: 700px){
@@ -30,26 +61,35 @@
     padding: 3% 0;
 }
 .jm-contact-page{
-	text-align: left;
+    text-align: left;
 }
 .jm-contact-page .jm-float-wrap{
-	overflow: auto;
-	margin: 0;
+    overflow: auto;
+    margin: 0;
 }
 .jm-contact-page .jm-left{
-	float: left;
-	width: 60%;
+    float: left;
+    width: 60%;
 }
 .jm-contact-page .jm-right{
-	float: right;
-	width: 40%;	
+    float: right;
+    width: 40%;
+}
+.jm-contact-page .jmr-left{
+    float: left;
+    width: 50%;
+    padding:0 2%;
+}
+.jm-contact-page .jmr-right{
+    float: right;
+    width: 50%;
 }
 
 }
 
 @media screen and (max-width: 700px){
 .jm-mobile-cta-dark{
-	background: black;
+    background: black;
     margin: 4% auto;
     display: block;
     width: 81%;
@@ -58,7 +98,14 @@
     box-shadow: 4px 4px 6px #a9a7a7;
 }
 .jm-mobile-cta-dark:focus{
-	box-shadow: none;
+    box-shadow: none;
+}
+.jm-contact-page .jmr-left{
+    width: 90%;
+    margin: 2% auto;
+}
+.form-group{
+  text-align:left;
 }
 
 }
@@ -66,47 +113,141 @@
 
 <div class="jm-contact-page">
 
-	<section>
-		<h2>BY PHONE:</h2>
-		<div class="jm-float-wrap jm-section">
-			<div class="jm-left">Customer Service:</div>
-			<div class="jm-right">
-				<p class="jm-desktop"><a aria-label="Call Customer Service" href="tel:+1-877-350-2121">877-350-2121</a></p>
-				<em><small>(8am-6pm/Mon-Fri)</small></em><br/>
-				<em><small>(9am-5pm/Sat)</small></em><br/>
-				<p class="jm-mobile"><a class="jm-mobile-cta-dark" aria-label="Call Customer Service" href="tel:+1-877-350-2121">877-350-2121</a></p>
-			</div>
-		</div>
-		
-		<div class="jm-section">			
-			<div class="jm-float-wrap">
-				<div class="jm-left">Relay Friendly Business, TTY New Jersey:</div>
-				<div class="jm-right"><a aria-label="Call TTY Customer Service New Jersey" href="tel:+1-877-350-2121">855-580-2121</a></div>
-			</div>
-			<div class="jm-float-wrap">
-				<div class="jm-left">TTY New York:</div>
-				<div class="jm-right">				
-					<a aria-label="Dial New York Relay Service 711" href="tel:+711">711</a>
-				</div>
-			</div>
-		</div>
+<div class="jmr-left">
 
-		<div class="jm-float-wrap jm-section">
-			<div class="jm-left">Gift Card Balance</div>
-			<div class="jm-right"><a class="jm-mobile-cta-dark" aria-label="Find Out your Gift Card Balance" href="tel:+1-877-350-2121">855-490-2121</a></div>
-		</div>			
-			
-	</section>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-	<section>
-		<div class="jm-section">
-			<h2>BY MAIL:</h2>
-			<p>
-				<em>E-Commerce Return Center</em><br/>
-				<em>1 Emerson Lane</em><br/>
-				<em>Secaucus, NJ 07094</em>
-			</p>
-		</div>
-	</section>
+    <input type=hidden name="orgid" value="00D3i000000G5WU">
+    <input type=hidden name="retURL" value="https://www.c21stores.com/contact-us-confirmation.html">
+    <!-- <input type=hidden name="retURL" value="https://staging-na01-century21.demandware.net/s/C21/contact-us-confirmation.html"> -->
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="agoldis@c21stores.com">   -->
+    <!--  ----------------------------------------------------------------------  -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group required">
+          <label class="form-control-label" for="contactFirstName">
+            First Name
+          </label>
+          <input class="form-control" required id="00N3i00000CeF7X" maxlength="35" name="00N3i00000CeF7X" size="20" type="text" />
+          <div id="firstname-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group required">
+          <label class="form-control-label" for="contactLastName">
+            Last Name
+          </label>
+          <input class="form-control" required id="00N3i00000CeF7Y" maxlength="35" name="00N3i00000CeF7Y" size="20" type="text" />
+          <div id="lastname-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group required">
+        <label class="form-control-label" for="contactEmail">Contact Email</label>
+        <input class="form-control" required id="email" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" name="email" type="text" />
+        <div id="email-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+    </div>
+    <div class="form-group required">
+        <label class="form-control-label" for="phone">Contact Phone <span class="jmr-validation-field"></span></label>
+        <!-- <label class="form-control-label" for="contactEmail">Email</label> -->
+        <!-- <input class="form-control" required id="email" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" name="email" type="text" /> -->
+        <input class="form-control" required id="phone" maxlength="40" pattern="^([+]?1[\s]?)?((?:[(](?:[2-9]1[02-9]|[2-9][02-8][0-9])[)][\s]?)|(?:(?:[2-9]1[02-9]|[2-9][02-8][0-9])[\s.-]?)){1}([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2}[\s.-]?){1}([0-9]{4}){1}$" name="phone" size="20" type="text" />
+        <div id="phone-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-control-label" for="subject">Topic</label>
+        <select class="form-control custom-select" id="00N3i00000CeF7b" name="00N3i00000CeF7b" title="Topic"><option value="">--None--</option>
+          <option value="Choose a topic" selected>Choose a topic</option>
+          <option value="C21 Credit Card">C21STATUS Credit Card</option>
+          <option value="Cancel or Modify Order">Cancel or Modify Order</option>
+          <option value="Loyalty">Loyalty</option>
+          <option value="Product Info">Product Info</option>
+          <option value="Returns / Refunds">Returns/Refunds</option>
+          <option value="Track Existing Order">Track Existing Order</option>
+        </select>
+        <div id="subject-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-control-label" for="contactMessage">Short Description</label>
+        <textarea rows="5" cols="50" type="text" class="form-control" name="00N3i00000Cf3Hg" id="00N3i00000Cf3Hg" aria-required="true" aria-invalid="false" aria-describedby="message-invalidfeedback" maxlength="2147483647"></textarea>
+        <div id="message-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label" for="contactOrderNumber">Order Number</label>
+        <input class="form-control" id="00N3i00000CeF7Z" maxlength="8" name="00N3i00000CeF7Z" size="20" type="text" /><br>
+        <div id="ordernumber-invalidfeedback" class="invalid-feedback" aria-atomic="true"></div>
+    </div>
+
+    <div class="form-actions">
+      <button name="submit" type="submit" class="btn btn-lg btn-dark">Send</button>
+      <!-- <input type="submit" name="submit"> -->
+    </div>
+    <!-- <input type="submit" name="submit"> -->
+
+</form>
+
+</div>
+
+<div class="jmr-right">
+
+    <section>
+        <h2>BY PHONE:</h2>
+        <!-- Special Hours Notice | BEGIN -->
+        <p class="jm-color-red">
+         <b>Our Call Center will be closed on Monday 02/17/20 in observance of President’s Day.</b>
+        </p>
+         <!-- Special Hours Notice | END -->
+        <div class="jm-float-wrap jm-section">
+            <div class="jm-left">Customer Service:</div>
+            <div class="jm-right">
+                <p class="jm-desktop"><a aria-label="Call Customer Service" href="tel:+1-877-350-2121">877-350-2121</a></p>
+                <!-- <em><small>(8am-6pm/Mon-Fri)</small></em><br/> regular hours-->
+                <small>Call Center Hours:</small><br/>
+                <em><small>(8am-6pm/Mon-Fri)</small></em><br/>
+                <em><small>(9am-5pm/Sat)</small></em><br/>
+                <p class="jm-mobile"><a class="jm-mobile-cta-dark" aria-label="Call Customer Service" href="tel:+1-877-350-2121">877-350-2121</a></p>
+            </div>
+        </div>
+
+        <div class="jm-section">
+            <div class="jm-float-wrap">
+                <div class="jm-left">Relay Friendly Business, TTY New Jersey:</div>
+                <div class="jm-right"><a aria-label="Call TTY Customer Service New Jersey" href="tel:+1-877-350-2121">855-580-2121</a></div>
+            </div>
+            <div class="jm-float-wrap">
+                <div class="jm-left">TTY New York:</div>
+                <div class="jm-right">
+                    <a aria-label="Dial New York Relay Service 711" href="tel:+711">711</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="jm-float-wrap jm-section">
+            <div class="jm-left">Gift Card Balance</div>
+            <div class="jm-right"><a class="jm-mobile-cta-dark" aria-label="Find Out your Gift Card Balance" href="tel:+1-877-350-2121">855-490-2121</a></div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="jm-section">
+            <h2>BY MAIL:</h2>
+            <p>
+                <em>E-Commerce Return Center</em><br/>
+                <em>1 Emerson Lane</em><br/>
+                <em>Secaucus, NJ 07094</em>
+            </p>
+        </div>
+    </section>
+
+</div>
 
 </div>
