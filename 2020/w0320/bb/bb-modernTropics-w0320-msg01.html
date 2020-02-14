@@ -1,0 +1,268 @@
+<!-- bb-modernTropics-w0320-msg01 - irving - 2.13.20 -->
+
+
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+
+// BANNER
+    $('.search-results .product-grid .product-search-wrapper').before(
+        '<div class="jm-lxr-browse-banner-main-wrap">'+
+            '<div class="jm-lxr-browse-banner">'+
+                '<article>'+
+                '<div>'+
+                    '<div class="bb-wraper-header">'+
+                        '<div>'+
+                            // '<p class="jm-line-1 jmr-font-2">Early Access Online Only! Ends 12/25</p>'+
+                            '<h2>Modern Tropics</h2>'+
+                            '<p class="jm-line-2">Create a tropical oasis at home with island-influenced accents.</p>'+
+                            '<p class="jm-line-3">Up to 65% Off</p>'+
+                            '<figure class="jmr-mobile"></figure>'+
+                        '</div>'+
+                    '</div>'+
+                    // '<div class="jm-cta-wrapper">'+
+                    //     '<a href="/categories/clearance-women?imc=bb_cta&imccat=w47-19-a_clearance-women" class="jmr-text-cta-light jmr-text-cta" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">WOMEN</a>'+
+                    //     '<a href="/categories/clearance-men?imc=bb_cta&imccat=w47-19-a_clearance-men" class="jmr-text-cta-light jmr-text-cta" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">MEN</a>'+
+                    //     '<a href="/categories/clearance-shoes?imc=bb_cta&imccat=w47-19-a_clearance-shoes" class="jmr-text-cta-light jmr-text-cta" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">SHOES</a>'+
+                    //     '<a href="/categories/clearance-handbags-accessories?imc=bb_cta&imccat=w47-19-a_clearance-handbags-accessories" class="jmr-text-cta-light jmr-text-cta" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">BAGS & ACCESSORIES</a>'+
+                    //     '<a href="/categories/clearance-kids?imc=bb_cta&imccat=w47-19-a_clearance-kids" class="jmr-text-cta-light jmr-text-cta" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">KIDS</a>'+
+                    //     '<a href="/categories/clearance-home?imc=bb_cta&imccat=w47-19-a_clearance-home" class="jmr-text-cta-light jmr-text-cta" id="jm-cta-1019-msg00-s-drop" aria-labelledby="jm-cta-1019-msg00-s-drop jm-header-1019-msg00-s-drop">HOME</a>'+
+                    // '</div>'+
+                '</div>'+
+                '</article>'+
+            '</div>'+
+            // '<p id="jm-bb-disclaimer" class="jm-line-5">*Now through 12/22/19. Online only. Select styles only. One-time use code. Limit one per customer. Discount applied at checkout. <a class="jm-going-back" onclick="jm_scroll_bb_disclaimer_back(this.id);" onkeypress="jm_scroll_bb_disclaimer_back(this.id);" href="#" aria-label="Back to main">↵</a></p>'+
+        '</div>'
+    );
+// END BANNER
+
+// BREAD CRUMB FIX
+var jm_how_many_bc = $('.breadcrumb').children().length;
+var jm_how_many_filter = $('.filter-area > div.filter-bar > ul').children().length;
+console.log(jm_how_many_filter);
+if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
+    console.log(jm_how_many_bc);
+    $('.filter-area > div.filter-bar').hide();
+}
+// END BREAD CRUMB FIX
+
+});
+
+</script>
+
+<style>
+.product-search-wrapper .search-banner{
+    display: none;
+}
+/*.filter-area > div.filter-bar > ul > li:last-of-type,
+.filter-area > div.filter-bar{
+    display: none;
+}*/
+
+#jm-bb-disclaimer:target {
+    outline: 2px solid #51aeff;
+}
+.jm-lxr-browse-banner-main-wrap{
+    margin: 0 0 2%
+}
+.jm-lxr-browse-banner article > div{
+    width: 100%;
+    padding: 5%;
+}
+.jm-lxr-browse-banner article p{
+    letter-spacing: 0.05em;
+    color: white;
+font-size: 2em;
+font-weight: 600;
+}
+.jm-lxr-browse-banner article h2{
+    font-size: 3.63em;
+    font-weight: bold;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+.jm-lxr-browse-banner article h2 span sup{
+    font-size: 0.4em;
+    position: absolute;
+    top: 1em;
+    right: -6%;
+}
+.jm-lxr-browse-banner article h2 a{
+    color: white !important;
+}
+.jm-lxr-browse-banner article p.jm-line-1{
+    font-size: 1.66em;
+    color: white;
+    letter-spacing: 0;
+    font-weight: regular;
+    font-weight: 500;
+    margin: 0;
+}
+.jm-lxr-browse-banner article p.jm-line-1-code{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-weight: 600;
+    margin: 0 0 1%;
+}
+.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+    font-size: 0.23em;
+    width: 90%;
+    margin: 0 auto;
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.jm-lxr-browse-banner article{
+    text-align: center;
+    font-size: 2vw;
+}
+.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a{
+    margin: 0 1.5%;
+}
+.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a:first-of-type{
+    margin: 0;
+}
+.jm-lxr-browse-banner article h2 > span{
+    position: relative;
+}
+.bb-wraper-header{
+    margin: 0 0;
+}
+.bb-wraper-header > div:nth-of-type(1) h2{
+    margin: 0 0 2% 0;
+    line-height: 1;
+}
+.bb-wraper-header > div:nth-of-type(2){
+    width: 40%;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.bb-wraper-header > div:nth-of-type(2) p{
+    margin: 0;
+    line-height: 1;
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 0 2em;
+}
+.bb-wraper-header .jm-line-2{
+    font-size: 1.7em;
+    font-weight: bold;
+    font-weight: 400;
+        color: white;
+}
+
+@media screen and (min-width: 700px){
+.bb-wraper-header > div:nth-of-type(1){
+    width: 70%;
+    display: table-cell;
+}
+.jm-lxr-browse-banner{
+    background: url("refresh/refresh-2020/w0320/Revised_Browse_Banners/03_02Week3_BrowseBanner_ModernTropics/03_02Week3_BrowseBanner_ModernTropics.jpg?$staticlink$");
+    /*background: #000000;*/
+    /*background:#e51e25;*/
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((334% / 1410) * 100);
+    position:relative;
+}
+.jm-lxr-browse-banner article{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.jm-lxr-browse-banner article{
+    font-size: 0.84vw;
+}
+.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+    font-size: 0.53em;
+}
+.jm-lxr-browse-banner a.jm-cta-button-light{
+    margin: 1% 2%;
+}
+.jm-lxr-browse-banner a.jm-cta-button-light{
+    font-size: 0.8vw;
+    width: 27%;
+}
+
+
+}
+
+
+@media screen and (min-width: 992px){
+.jm-lxr-browse-banner article{
+    font-size: 0.8vw;
+}
+.jm-lxr-browse-banner{
+    padding-top: calc((330% / 1410) * 100);
+}
+
+}
+
+@media screen and (min-width: 1300px){
+.jm-lxr-browse-banner a.jm-cta-button-light{
+    font-size: initial;
+    width: initial;
+}
+
+}
+@media screen and (min-width: 1700px){
+.jm-lxr-browse-banner article{
+    font-size: 1em;
+}
+.jm-lxr-browse-banner-main-wrap p.jm-line-5{
+    font-size: 0.73em;
+}
+
+}
+
+
+@media screen and (max-width: 700px){
+.jm-lxr-browse-banner a.jm-cta-button-light{
+    margin: 1% 2%;
+    width: 46%;
+    min-width: 100px;
+    font-size: 2.8vw;
+}
+.jm-lxr-browse-banner article p.jm-line-1{
+    font-size: 4.2vw;
+    width: 75%;
+}
+.jm-lxr-browse-banner article h2{
+    margin: 2% 0 2%;
+}
+.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a{
+    font-size: 2.5vw;
+    width: 45%;
+    display: inline-block;
+    margin: 0 5%;
+    padding: 1% 0;
+}
+.jm-lxr-browse-banner-main-wrap .jm-cta-wrapper a:nth-child(odd){
+    margin: 0;
+}
+.jm-lxr-browse-banner .bb-wraper-header figure{
+    background: url("refresh/refresh-2020/w0220/HOMEPAGES/MONDAY/z3x1/02Week2A_HP_3x1.jpg?$staticlink$");
+    /*background: #000000;*/
+    /*background:#e51e25;*/
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: calc((754% / 700) * 100);
+    position:relative;
+}
+
+}
+</style>
