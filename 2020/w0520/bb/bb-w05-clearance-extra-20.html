@@ -1,4 +1,4 @@
-<!-- bb-w05-clearance-extra-20 - juanma - 2.20.19 -->
+<!-- bb-w05-clearance-extra-20 - juanma - 2.21.19 -->
 <!-- bb-clearance (live asset) -->
 
 <script>
@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
 // BANNER
     $('.search-results .product-grid .product-search-wrapper').before(
-        '<div class="jm-lxr-browse-banner-main-wrap">'+
+        '<div class="jm-lxr-browse-banner-main-wrap jmr-all-cb">'+
             '<div class="jm-lxr-browse-banner">'+
                 '<article>'+
                 '<div>'+
@@ -102,7 +102,7 @@ if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
     letter-spacing: 0.05em;
 }
 .jm-lxr-browse-banner article h2{
-    font-size: 3.63em;
+    font-size: 3.1em;
     font-weight: bold;
     font-weight: 600;
     color: white;
@@ -173,7 +173,7 @@ if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
 .bb-wraper-header > div:nth-of-type(2) p{
     margin: 0;
     line-height: 1;
-    font-size: 3.63em;
+    font-size: 3.1em;
     color: white;
     font-weight: 600;
     letter-spacing: 0;
@@ -231,15 +231,20 @@ if((jm_how_many_bc = 1) && (jm_how_many_filter = 2)){
 
 }
 @media screen and (min-width: 1500px){
-.jm-lxr-browse-banner article{
-    font-size: 1em;
-}
 .jm-lxr-browse-banner-main-wrap p.jm-line-5{
     font-size: 0.73em;
 }
 
 }
 
+@media screen and (min-width: 1600px){
+.jm-lxr-browse-banner{
+    padding-top: calc((300% / 1410) * 100);
+}
+.jm-lxr-browse-banner article{
+    font-size: 1em;
+}
+}
 
 @media screen and (max-width: 700px){
 .jm-lxr-browse-banner a.jm-cta-button-light{
