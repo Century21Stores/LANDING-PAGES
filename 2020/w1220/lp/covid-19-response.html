@@ -1,10 +1,17 @@
-<!-- covid-19-response - COVID-19 LANDING PAGE  - JuanMa - 4.20.20   -->
+<!-- covid-19-response - COVID-19 LANDING PAGE  - JuanMa - 4.23.20   -->
 
 <style>
 .jmr-1920 article h2{
     font-weight: bold;
-    font-weight: 600;        
+    font-weight: 600;
+    text-align: left;
+    line-height: 1;
+    margin: 0 0 0.3em;        
 }
+.jmr-hero-1-w1220-msg00 .jmr-header-2{
+    text-align: center;
+}
+
 .jmr-hero-1-mobile-w1220-msg00{
     background: url("refresh/refresh-2020/w1220/HP/hpmob.jpg?$staticlink$");    
     background-size: cover;
@@ -12,7 +19,7 @@
     padding-top: calc((552% / 700) * 100);
 }
 .jmr-hero-1-w1220-msg02{
-    background: url("refresh/refresh-2020/w1220/HP/Mobile/2020-04-17.jpg?$staticlink$");
+    background: url("refresh/refresh-2020/w1220/HP/Mobile/01_3Week4A_CONTENT_SLOT_HERO_Mv2.jpg?$staticlink$");
     background-size: cover;
     background-position: 100% 0;
     padding-top: calc((850% / 700) * 100);
@@ -43,6 +50,14 @@
 }
 .jmr-message-8 figure{
     background: url("refresh/refresh-2020/w1220/HP/covid_4.jpg?$staticlink$");
+    background-size: 100%;
+    background-position: 0% 0%;
+    padding-top: calc((780% / 915) * 50);
+    width: 50%;
+    background-repeat: no-repeat;
+}
+.jmr-message-9 figure{
+    background: url("refresh/refresh-2020/w1220/lp/covid_9.jpg?$staticlink$");
     background-size: 100%;
     background-position: 0% 0%;
     padding-top: calc((780% / 915) * 50);
@@ -200,15 +215,15 @@ div.jmr-hero-1-w1220-msg00 article{
     background-repeat: no-repeat;
 }
 .jmr-hero-1-w1220-msg02{
-    background: url("refresh/refresh-2020/w1220/HP/03_OM20_Covid-19Response_LP.jpg?$staticlink$");
+    background: url("refresh/refresh-2020/w1220/HP/03_OM20_Covid-19Response_LPv3.jpg?$staticlink$");
     background-size: 100%;
     background-position: 0% 0%;
     padding-top: calc((780% / 1920) * 100);
     width: 100%;
     background-repeat: no-repeat;
 }
-.jmr-hero-1-w1220-msg00 .jmr-ctas{
-    /*margin: 3em 0 0;*/
+.jmr-hero-1-w1220-msg00 .jmr-ctas a{
+    margin: 0;
 }
 .jmr-message-2 article,
 .jmr-message-4 article{    
@@ -223,7 +238,7 @@ div.jmr-hero-1-w1220-msg00 article{
 .jmr-message-4 article > div{
     width: 50%;
     float: left;
-    padding: 2% 3% 3%;    
+    padding: 0% 3% 3%;    
 }
 .jmr-message-2,
 .jmr-message-4{
@@ -240,18 +255,20 @@ div.jmr-hero-1-w1220-msg00 article{
     float: left;
 }
 .jmr-message-5 figure,
-.jmr-message-7 figure{
+.jmr-message-7 figure,
+.jmr-message-9 figure{
     float: right;
 }
 
 .jmr-message-5 article,
-.jmr-message-7 article{
-    padding: 8% 8% 0 5%;
+.jmr-message-7 article,
+.jmr-message-9 article{
+    padding: 8% 3% 5% 0;
     text-align: justify;
 }
 .jmr-message-6 article,
 .jmr-message-8 article{
-    padding: 8% 5% 0 8%;
+    padding: 8% 0 5% 3%;
     text-align: justify;
 }
 
@@ -269,6 +286,20 @@ div.jmr-hero-1-w1220-msg00 article{
 }
 
 }
+
+@media screen and (min-width: 1100px){
+.jmr-message-5 article,
+.jmr-message-7 article,
+.jmr-message-9 article{
+    padding: 8% 8% 0 5%;
+}
+.jmr-message-6 article,
+.jmr-message-8 article{
+    padding: 8% 5% 0 8%;
+}
+
+}
+
 
 @media screen and (max-width: 700px){
 
@@ -336,7 +367,7 @@ div.jmr-hero-1-w1220-msg00 article{
 
 <div class="jmr-hero-1-w1220-msg00 jmr-hero-1-cb jmr-hero-cb jmr-all-cb">
 <!-- <p class="jmr-brand-tag jmr-header-3">MICHAEL Michael Kors</p> -->
-<a href="/products/nyc-health-%2B-hospitals/donate-now/9899-4913000.html?imc=hp_msg00_img&imccat=w1220-a_donate now" class="jmr-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>
+<a href="#" class="jmr-clickable-image" aria-hidden="true" role="none" tabindex="-1" onclick="Donations_All_Dialog()"></a>
     <div class="jmr-hero-content">
         <figure class="jmr-hero-1-mobile-w1220-msg00 jmr-mobile">
         </figure>
@@ -355,7 +386,7 @@ div.jmr-hero-1-w1220-msg00 article{
             <!-- <p class="jmr-header-4">Join our efforts to help flatten the curve and support <span class="jmr-break-on-desktop"> our heroes on the front lines.</span></p> -->
             
             <span class="jmr-ctas">
-                <a href="/products/nyc-health-%2B-hospitals/donate-now/9899-4913000.html?imc=hp_msg00_cta-a&imccat=w1220-a_donate now" class="jmr-cta-button-solidlight-blue jmr-cta-button btn" id="jmr-cta-a-w1220-msg00" aria-labelledby="jmr-cta-a-w1220-msg00 jmr-header-w1220-msg00">Donate Now</a>            
+                <a href="#" class="jmr-cta-button-solidlight-blue jmr-cta-button btn" id="jmr-cta-a-w1220-msg00" aria-labelledby="jmr-cta-a-w1220-msg00 jmr-header-w1220-msg00" onclick="Donations_All_Dialog()">Donate Now</a>            
             </span>
         </article>
     </div>
@@ -390,7 +421,7 @@ div.jmr-hero-1-w1220-msg00 article{
     </article>
 </div>
 
-<div class="jmr-message-5 jmr-90">
+<div class="jmr-message-5 jmr-90 jmr-all-cb">
     <figure></figure>
     <article>
         <h2>NYC Health + Hospitals</h2>
@@ -401,7 +432,7 @@ div.jmr-hero-1-w1220-msg00 article{
     </article>
 </div>
 
-<div class="jmr-message-6 jmr-90">
+<div class="jmr-message-6 jmr-90 jmr-all-cb">
     <figure></figure>
     <article>
         <h2>City Harvest</h2>
@@ -412,7 +443,7 @@ div.jmr-hero-1-w1220-msg00 article{
     </article>
 </div>
 
-<div class="jmr-message-7 jmr-90">
+<div class="jmr-message-7 jmr-90 jmr-all-cb">
     <figure></figure>
     <article>
         <h2>Secaucus Town Support</h2>
@@ -423,11 +454,22 @@ div.jmr-hero-1-w1220-msg00 article{
     </article>
 </div>
 
-<div class="jmr-message-8 jmr-90">
+<div class="jmr-message-8 jmr-90 jmr-all-cb">
     <figure></figure>
     <article>
         <h2>NYCEDC</h2>
         <p>New York City Economic Development Corporation is a nonprofit that encourages economic growth and shared prosperity for all New Yorkers. Recently, they worked with retail tech platform, CONSORTIUM, to create a facility for the production of medical face shields. We’ve donated the use of our trucks and drivers to help these groups move plastic sheeting and face shields to medical facilities in need and have repurposed our warehouses to help store shields, ventilators and other personal protective equipment.</p>
+        <!-- <span class="jmr-ctas">
+            <a href="/covid-19-response.html?imc=hp_msg00_cta-a&imccat=w1220-a_covid-19-response" class="jmr-text-cta-dark jmr-text-cta" id="jmr-cta-a-w1220-msg00" aria-labelledby="jmr-cta-a-w1220-msg00 jmr-header-w1220-msg00">Donate Now</a>            
+        </span> -->
+    </article>
+</div>
+
+<div class="jmr-message-9 jmr-90 jmr-all-cb">
+    <figure></figure>
+    <article>
+        <h2>FROM FASHION, WITH LOVE</h2>
+        <p>We’ve partnered with not-for-profit organization FROM FASHION, WITH LOVE to say thank you to nurses selflessly taking care of their communities during the COVID-19 crisis. We, along with our vendors, are donating fashion items to nurses temporarily housed in New York City hotels so they have clean, comfortable clothing and footwear to change into after long, arduous shifts at the hospital.</p>
         <!-- <span class="jmr-ctas">
             <a href="/covid-19-response.html?imc=hp_msg00_cta-a&imccat=w1220-a_covid-19-response" class="jmr-text-cta-dark jmr-text-cta" id="jmr-cta-a-w1220-msg00" aria-labelledby="jmr-cta-a-w1220-msg00 jmr-header-w1220-msg00">Donate Now</a>            
         </span> -->
