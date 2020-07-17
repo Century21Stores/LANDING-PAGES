@@ -1,0 +1,508 @@
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Change your page's background color or background image here */
+
+
+/* The form element is the main container for the entire page and is centered on the page by default. This width is dynamically calculated based on the maximum width of the rows within it. */
+
+form.jmr-bronto-form {
+    width:65%;
+    max-width: 100%;
+    min-width: 240px !important;
+    height: auto;
+    background: #ffffff;
+    /* border: 1px solid #000001; */
+    padding: 0px;
+    margin: 3% auto !important;
+    overflow-wrap: break-word;
+}
+
+/* This is the style for each individual row. */
+
+form.jmr-bronto-form .section {
+clear: both;
+width: 100%;
+max-width: 100%;
+}
+
+/* This is the style for each column within a row. */
+
+form.jmr-bronto-form .section .container {
+width: 100%;
+max-width: 100%;
+float: left;
+}
+
+/* This surrounds every field and caption area. */
+
+.field_block {
+display: block;
+padding: 0 0 8px 0;
+margin: 0;
+}
+
+/* A field's caption normally surrounds its label element. */
+
+.field_block .caption {
+display: block;
+font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
+color: #999;
+padding: 0;
+margin: 0 0 8px 0;
+}
+
+/* The following styles control the design and appearance of checkbox fields */
+
+form.jmr-bronto-form input[type="checkbox"] {
+outline: none;
+cursor: pointer;
+position: relative;
+-webkit-appearance: none;
+-o-appearance: none;
+appearance: none;
+top: 8px;
+height: 20px;
+width: 20px;
+text-align: center;
+border: 1px solid #cccccc;
+-webkit-border-radius: 0px;
+-o-border-radius: 0px;
+border-radius: 0px;
+background-color: #f3f3f3;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:hover {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:checked {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:after {
+content: "";
+text-align: center;
+font: bold 1.2em "Roboto", "Arial", "Helvetica", sans-serif;
+color: #ffffff;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:checked:after {
+position: absolute;
+content: "\02143";
+transform: rotate(40deg);
+margin-left: -4px !important;
+}
+
+/* The following styles control the design and appearance of radio fields */
+
+form.jmr-bronto-form input[type="radio"] {
+outline: none;
+cursor: pointer;
+position: relative;
+top: 4px;
+display: inline-block !important;
+-webkit-appearance: none;
+-o-appearance: none;
+appearance: none;
+height: 20px !important;
+width: 20px !important;
+text-align: center;
+border: 1px solid #cccccc;
+-webkit-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+background-color: #f3f3f3;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+}
+
+form.jmr-bronto-form input[type="radio"]:hover {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="radio"]:checked {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="radio"]:after {
+content: "";
+text-align: center;
+font: bold 1.5em "Roboto", "Arial", "Helvetica", sans-serif;
+color: #ffffff;
+}
+
+form.jmr-bronto-form input[type="radio"]:checked:after {
+position: absolute;
+content: "\2022";
+}
+
+/* The following styles control the layout of checkbox and radio fields */
+
+.field_block .checkbox .caption {
+display: inline;
+margin: 0;
+}
+
+.field_block div.radio span {
+display: block;
+margin: 8px 0;
+padding: 0;
+}
+
+.field_block div.radio span input.radio {
+display: inline;
+padding-right: 5px;
+}
+
+.field_block div.radio span label {
+font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
+color: #333;
+}
+
+/* This is the individual field input. */
+
+.field_block .field {
+padding: 0;
+margin: 0;
+}
+
+/* The style for field-level errors */
+
+.field_block .field .field_error {
+display: block;
+padding-top: 3px;
+padding-bottom: 5px;
+font-size: 1em;
+color: #f00;
+font-weight: 300;
+}
+
+/* The styles for individual field types */
+
+.field_block .field input.text,
+.field_block .field input.float,
+.field_block .field input.password,
+.field_block .field input.integer,
+.field_block .field input.currency,
+.field_block .field input.date {
+outline: none;
+cursor: pointer;
+border: 1px solid #000001;
+font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
+color: #333;
+padding: 8px 5px;
+margin: 0;
+}
+
+.field_block .field input.date {
+font-size: 1em;
+width: 200px;
+}
+
+.field_block .field input.phone {
+width: 200px;
+font-size: 1em;
+padding: 3px 12px 3px 44px;
+}
+
+/* The styles for textareas are slightly larger than by default with no CSS */
+
+.field_block .field textarea {
+width: 90%;
+height: 150px;
+}
+
+/* This can be applied to any field element to make it wider than the default above */
+
+.field_block .field input.wide {
+width: 300px;
+}
+
+/* This can be applied to any field element to make it narrower than the default above */
+
+.field_block .field input.narrow {
+width: 100px;
+}
+
+/* The following styles are for dropdown menus and date pickers for date-based fields such as birthday or anniversary. */
+
+form.jmr-bronto-form select {
+border: 1px solid #cccccc;
+font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
+color: #808080;
+width: 300px;
+max-width: 100%;
+margin-left: 5px;
+outline: none;
+padding: 8px 5px !important;
+background: #ffffff
+url("/static/static/img/jqui/drop_down_arrow_down-24px.svg")
+no-repeat right;
+background-position: 99% 50%;
+-webkit-appearance: none;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+-moz-appearance: none;
+}
+
+.field_block .field span.ui-datepicker-wrap {
+position: relative;
+display: block;
+}
+
+.field_block .field span.ui-datepicker-wrap img.ui-datepicker-trigger {
+position: absolute;
+top: 3px;
+left: 101px;
+margin: 0;
+float: none;
+}
+
+.field_block .field span.ui-datepicker-wrap input.date {
+border: 1px solid #ccc;
+border-top-color: #444;
+border-left-color: #444;
+font: normal 11px "Roboto", "Arial", "Helvetica", sans-serif;
+color: #333;
+padding: 3px;
+margin: 0;
+width: 90px;
+}
+
+.ui-widget-header {
+border: 1px solid #888888;
+background: #eeeeee;
+color: #333;
+font-weight: bold;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+border: 1px solid #eee;
+background: #ffffff;
+font-weight: normal;
+color: #616265;
+}
+
+img.ui-datepicker-trigger {
+content: url(/static/static/img/jqui/Calendar-24px.svg) !important;
+width: 16px;
+height: 16px;
+}
+
+.ui-datepicker-trigger {
+margin: 10px 0 0 -24px;
+position: absolute;
+}
+
+/* Required fields are red and bold by default. */
+
+form.jmr-bronto-form .required {
+color: #f00;
+font-weight: 300;
+}
+
+/* Change the appearance of the submit button */
+
+form.jmr-bronto-form input[type="submit"] {
+font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+border: 1px solid #000001;
+color: #fff;
+font-size: 1em;
+font-weight: 300;
+background-color: #000001;
+padding: 10px;
+width: auto;
+min-width: 200px;
+max-width: 100%;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-decoration: none;
+text-align: center;
+margin: 10px auto !important;
+}
+
+/* Change the hover appearance of the submit button */
+
+form.jmr-bronto-form input[type="submit"]:hover {
+background-color: #fff;
+border-color: #000001;
+color: #000001;
+-webkit-transition: all 0.25s ease-in-out;
+-moz-transition: all 0.25s ease-in-out;
+-o-transition: all 0.25s ease-in-out;
+transition: all 0.25s ease-in-out;
+}
+
+form.jmr-bronto-form div.field_block {padding: 0px 15px;}
+
+/* Media query for mobile devices starts here.*/
+
+@media screen and (max-width: 747px) {
+/* This is where mobile-specific styles for the form element should go. */
+
+form.jmr-bronto-form  {
+width: 85%;
+max-width: 85%;
+}
+
+/* This is where mobile-specific styles for each column within a row should go. */
+
+form.jmr-bronto-form  .section .container {
+width: 100% !important;
+max-width: 100%;
+margin: auto !important;
+float: none !important;
+clear: both;
+}
+
+/* This is where mobile-specific styles for field types should go. */
+
+.field_block .field input.text,
+.field_block .field input.float,
+.field_block .field input.password,
+.field_block .field input.integer,
+.field_block .field input.currency,
+.field_block .field input.date {
+width: 95% !important;
+max-width: 95%;
+margin-right: auto;
+margin-left: auto;
+}
+
+.field_block .field input.date {
+width: 97% !important;
+max-width: 97%;
+padding: 8px 0 8px 5px !important;
+margin-right: auto;
+margin-left: auto;
+}
+
+/* Change the appearance of the submit button on mobile devices. */
+
+form.jmr-bronto-form input[type="submit"] {
+width: 95% !important;
+max-width: 95%;
+min-width: 200px;
+margin-left: -40px;
+}
+
+/* Change the appearance of dropdown menus within a field on mobile devices. */
+
+.field_block .field select,
+.field_block .field select option {
+width: 100% !important;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+}
+} 
+</style>
+<form class="jmr-bronto-form" action="https://email.c21stores.com/public/webform/process/" method="post">
+<input type="hidden" name="fid" value="a9azhzwk0urk3e7010itpxm61du7d" />
+<input type="hidden" name="sid" value="6630ec235ef6f8159a9d1f543ffef174" />
+<input type="hidden" name="delid" value="" />
+<input type="hidden" name="subid" value="" />
+<input type="hidden" name="td" value="" />
+<input type="hidden" name="formtype" value="addcontact" />
+<script type="text/javascript">
+var fieldMaps = {};
+</script>
+
+<div class="section" id="row_40391">
+<div class="container" id="column_50814" style="text-align: left; width: 672px;">
+<table bgcolor="#000001" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding: 0px 0px 20px 0px;"><a href="https://www.c21stores.com/" target="_blank"><img src="https://hosting-source.bm23.com/41767/public/template/header_logo_grey.png" alt="Century 21 Stores" width="180" title="Century 21 Stores" border="0" style="display:block; max-width:100%; height:auto; border-style:none; margin:auto;"></a></td>
+</tr>
+</tbody>
+</table><div style="text-align: center; padding: 40px 0px 20px 0px;"><span style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24pt; text-align: center;" xml="lang"><strong>Send me C21 exclusives&nbsp;&amp; discounts</strong></span></div></div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+<div class="section" id="row_40389">
+<div class="container" id="column_50811" style="text-align: left; width: 336px;">
+<div class="field_block" field_id="628248">
+<div id="caption_628248" class="caption">
+first name </div>
+<div class="field">
+<span>
+<input type="text" id="field_628248" class="text field" size="35" name="111337[628248]" value="" />
+</span>
+<div class="field_error">
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="column_50812" style="text-align: left; width: 336px;">
+<div class="field_block" field_id="628250">
+<div id="caption_628250" class="caption">
+last name </div>
+<div class="field">
+<span>
+<input type="text" id="field_628250" class="text field" size="35" name="111339[628250]" value="" />
+</span>
+<div class="field_error">
+</div>
+</div>
+</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+<div class="section" id="row_40402">
+<div class="container" id="column_50827" style="text-align: left; width: 336px;">
+<div class="email field_block">
+<div class="caption">email address <span class="required">*</span></div>
+<div class="field">
+<span>
+<input type="text" class="text field fb-email" size="35" name="111359" value="" />
+</span>
+<div class="field_error">
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="column_50828" style="text-align: left; width: 336px;">
+<div class="field_block" field_id="628348">
+<div id="caption_628348" class="caption">
+zip code <span class="required">*</span> </div>
+<div class="field">
+<span>
+<input type="text" id="field_628348" class="text field" size="35" name="111360[628348]" value="" />
+</span>
+<div class="field_error">
+</div>
+</div>
+</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+<div class="section" id="row_40387">
+<div class="container" id="column_50809" style="text-align: left; width: 672px;">
+<input type="hidden" name="111340[3548211]" value="true" />
+<input type="hidden" name="111341[3610143]" value="true" />
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+<div class="section" id="row_40421">
+<div class="container" id="column_50847" style="text-align: center; width: 672px;">
+<div class="field_block">
+<div class="field">
+<span>
+<input type="submit" value="SIGN UP" />
+</span>
+</div>
+</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+</form>
