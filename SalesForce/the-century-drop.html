@@ -1,90 +1,697 @@
-<!-- the-century-drop-lp-w0519 - JuanMa - 030619 -->
-
+<!-- the-century-drop-lp-w2219 - JuanMa - 07.20.20 -->
 <style type="text/css">
-.jm-the-drop-header img,
-.jm-the-drop-1 img,
-.jm-the-drop-2 img{
-	display: block;
-	max-width: 100%;
+
+/* The form element is the main container for the entire page and is centered on the page by default. This width is dynamically calculated based on the maximum width of the rows within it. */
+
+form.jmr-bronto-form .container{
+	padding: 0;
 }
-.jm-header{
+
+form.jmr-bronto-form {
+    width:65%;
+    max-width: 100%;
+    min-width: 240px !important;
+    height: auto;
+    background: #ffffff;
+    /* border: 1px solid #000001; */
+    padding: 0px;
+    margin: 3% auto !important;
+    overflow-wrap: break-word;
+}
+
+/* This is the style for each individual row. */
+
+form.jmr-bronto-form .section {
+	clear: both;
+	width: 100%;
+	max-width: 100%; 	
+}
+
+/* This is the style for each column within a row. */
+
+form.jmr-bronto-form .section .container {
+	width: 100%;
+	max-width: 100%;
+	float: left;
+}
+
+/* This surrounds every field and caption area. */
+
+.field_block {
+display: block;
+padding: 0 0 8px 0;
+margin: 0;
+}
+
+/* A field's caption normally surrounds its label element. */
+
+.field_block .caption {
+	display: block;
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+/* The following styles control the design and appearance of checkbox fields */
+
+form.jmr-bronto-form input[type="checkbox"] {
+outline: none;
+cursor: pointer;
+position: relative;
+-webkit-appearance: none;
+-o-appearance: none;
+appearance: none;
+top: 8px;
+height: 20px;
+width: 20px;
+text-align: center;
+border: 1px solid #cccccc;
+-webkit-border-radius: 0px;
+-o-border-radius: 0px;
+border-radius: 0px;
+background-color: #f3f3f3;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:hover {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:checked {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:after {
+content: "";
+text-align: center;
+color: #ffffff;
+}
+
+form.jmr-bronto-form input[type="checkbox"]:checked:after {
+position: absolute;
+content: "\02143";
+transform: rotate(40deg);
+margin-left: -4px !important;
+}
+
+/* The following styles control the design and appearance of radio fields */
+
+form.jmr-bronto-form input[type="radio"] {
+outline: none;
+cursor: pointer;
+position: relative;
+top: 4px;
+display: inline-block !important;
+-webkit-appearance: none;
+-o-appearance: none;
+appearance: none;
+height: 20px !important;
+width: 20px !important;
+text-align: center;
+border: 1px solid #cccccc;
+-webkit-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+background-color: #f3f3f3;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+}
+
+form.jmr-bronto-form input[type="radio"]:hover {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="radio"]:checked {
+background: #cccccc;
+}
+
+form.jmr-bronto-form input[type="radio"]:after {
+content: "";
+text-align: center;
+color: #ffffff;
+}
+
+form.jmr-bronto-form input[type="radio"]:checked:after {
+position: absolute;
+content: "\2022";
+}
+
+/* The following styles control the layout of checkbox and radio fields */
+
+.field_block .checkbox .caption {
+display: inline;
+margin: 0;
+}
+
+.field_block div.radio span {
+display: block;
+margin: 8px 0;
+padding: 0;
+}
+
+.field_block div.radio span input.radio {
+display: inline;
+padding-right: 5px;
+}
+
+.field_block div.radio span label {
+	/*color: #333;*/
+}
+
+/* This is the individual field input. */
+
+.field_block .field {
+padding: 0;
+margin: 0;
+}
+
+/* The style for field-level errors */
+
+.field_block .field .field_error {
+display: block;
+padding-top: 3px;
+padding-bottom: 5px;
+font-size: 1em;
+color: #f00;
+font-weight: 300;
+}
+
+/* The styles for individual field types */
+
+.field_block .field input.text,
+.field_block .field input.float,
+.field_block .field input.password,
+.field_block .field input.integer,
+.field_block .field input.currency,
+.field_block .field input.date {
+outline: none;
+cursor: pointer;
+border: 1px solid #000001;
+color: #333;
+padding: 8px 5px;
+margin: 0;
+}
+
+.field_block .field input.date {
+font-size: 1em;
+width: 200px;
+}
+
+.field_block .field input.phone {
+width: 200px;
+font-size: 1em;
+padding: 3px 12px 3px 44px;
+}
+
+/* The styles for textareas are slightly larger than by default with no CSS */
+
+.field_block .field textarea {
+width: 90%;
+height: 150px;
+}
+
+/* This can be applied to any field element to make it wider than the default above */
+
+.field_block .field input.wide {
+width: 300px;
+}
+
+/* This can be applied to any field element to make it narrower than the default above */
+
+.field_block .field input.narrow {
+width: 100px;
+}
+
+/* The following styles are for dropdown menus and date pickers for date-based fields such as birthday or anniversary. */
+
+form.jmr-bronto-form select {
+border: 1px solid #cccccc;
+color: #808080;
+width: 300px;
+max-width: 100%;
+margin-left: 5px;
+outline: none;
+padding: 8px 5px !important;
+background: #ffffff
+url("/static/static/img/jqui/drop_down_arrow_down-24px.svg")
+no-repeat right;
+background-position: 99% 50%;
+-webkit-appearance: none;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+-moz-appearance: none;
+}
+
+.field_block .field span.ui-datepicker-wrap {
+position: relative;
+display: block;
+}
+
+.field_block .field span.ui-datepicker-wrap img.ui-datepicker-trigger {
+position: absolute;
+top: 3px;
+left: 101px;
+margin: 0;
+float: none;
+}
+
+.field_block .field span.ui-datepicker-wrap input.date {
+border: 1px solid #ccc;
+border-top-color: #444;
+border-left-color: #444;
+color: #333;
+padding: 3px;
+margin: 0;
+width: 90px;
+}
+
+.ui-widget-header {
+border: 1px solid #888888;
+background: #eeeeee;
+color: #333;
+font-weight: bold;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+border: 1px solid #eee;
+background: #ffffff;
+font-weight: normal;
+color: #616265;
+}
+
+img.ui-datepicker-trigger {
+content: url(/static/static/img/jqui/Calendar-24px.svg) !important;
+width: 16px;
+height: 16px;
+}
+
+.ui-datepicker-trigger {
+margin: 10px 0 0 -24px;
+position: absolute;
+}
+
+/* Required fields are red and bold by default. */
+
+form.jmr-bronto-form .required {
+color: #f00;
+font-weight: 300;
+}
+
+/* Change the appearance of the submit button */
+
+form.jmr-bronto-form input[type="submit"] {
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+border: 1px solid #000001;
+color: #fff;
+font-size: 1em;
+font-weight: 300;
+background-color: #000001;
+padding: 10px;
+width: auto;
+min-width: 200px;
+max-width: 100%;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-decoration: none;
+text-align: center;
+margin: 10px auto !important;
+}
+
+/* Change the hover appearance of the submit button */
+
+form.jmr-bronto-form input[type="submit"]:hover {
+	background-color: #fff;
+	border-color: #000001;
+	color: #000001;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+/* Media query for mobile devices starts here.*/
+
+@media screen and (min-width: 700px) {
+form.jmr-bronto-form .section {
+ 	display: flex;
+}
+}
+
+
+@media screen and (max-width: 747px) {
+/* This is where mobile-specific styles for the form element should go. */
+
+form.jmr-bronto-form  {
+width: 85%;
+max-width: 85%;
+}
+
+/* This is where mobile-specific styles for each column within a row should go. */
+
+form.jmr-bronto-form  .section .container {
+width: 100% !important;
+max-width: 100%;
+margin: auto !important;
+float: none !important;
+clear: both;
+}
+
+/* This is where mobile-specific styles for field types should go. */
+
+.field_block .field input.text,
+.field_block .field input.float,
+.field_block .field input.password,
+.field_block .field input.integer,
+.field_block .field input.currency,
+.field_block .field input.date {
+width: 95% !important;
+max-width: 95%;
+margin-right: auto;
+margin-left: auto;
+}
+
+.field_block .field input.date {
+width: 97% !important;
+max-width: 97%;
+padding: 8px 0 8px 5px !important;
+margin-right: auto;
+margin-left: auto;
+}
+
+/* Change the appearance of the submit button on mobile devices. */
+
+form.jmr-bronto-form input[type="submit"] {
+width: 95% !important;
+max-width: 95%;
+min-width: 200px;
+margin-left: -40px;
+}
+
+/* Change the appearance of dropdown menus within a field on mobile devices. */
+
+.field_block .field select,
+.field_block .field select option {
+width: 100% !important;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
+}
+} 
+</style>
+<style>
+.jm-the-drop-header h1{
+    background: url("refresh/refresh-2019/w2219/drop-lp/the-drop-logo-white-v2.png?$staticlink$");
+    background-size: 100%;
+    background-position: 50% 0;
+    padding-top: calc((224% / 1303) * 100);
+    color: transparent;
+    background-repeat: no-repeat;  
+}
+.jm-landing-page-the-drop .jm-header{
 	background: black;
 	color: white;
 	text-align: center;
-	padding: 2% 0 3%;
-	font-size: 1.6vw;
-	margin: 0 0 6%;
+    padding: 7% 0;
+}
+.jm-the-drop-header{
+    width: 53%;
+    margin: 0 auto;
 }
 .jm-the-drop-header img{
 	width: 83%;
 	margin: 0% auto 6%;
 }
-.jm-header p{
-    font-size: 2.8em;	
+.jm-landing-page-the-drop  .jm-header-3{
+    font-size: 1.4em;
+    font-weight: normal;
+    font-weight: 500;	
 }
-.jm-header figcaption{
-	font-size: 2.5em;
-	letter-spacing: 0.05em;
+.jm-landing-page-the-drop article{
+    text-align: center;
 }
-.jm-body{
-	text-align: center;
-	font-size: 2vw;
-}
-.jm-body h2{
-	font-size: 6em;
-    font-weight: bold;
-    line-height: 1;
-}
-.jm-body p{
-	font-size: 3.5em;
-	line-height: 1;
-	margin: 0 0 8%;
+.jm-landing-page-the-drop .jm-cta-button{
+    margin:0 auto;
 }
 
+/* left image - table & mobile - 700 x 730 */
+section.jm-two-column-w2219-msg01 .jm-left figure{
+    background: url("refresh/refresh-2019/w2219/drop-lp/mobile/02_06Week1A_CONTENT_SLOT_SideBySide_M.jpg?$staticlink$");
+    padding-top: calc((992% / 891) * 100) !important;
+}
+/* right image - table & mobile - 700 x 730 */
+section.jm-two-column-w2219-msg01 .jm-right figure{
+    background: url("refresh/refresh-2019/w2219/drop-lp/mobile/03_06Week1A_CONTENT_SLOT_SideBySide_M.jpg?$staticlink$");
+    padding-top: calc((992% / 891) * 100) !important;
+}
+
+.jm-div-2,
+.jm-div-3,
+.jm-div-5{
+    margin: 6% 0;
+}
+
+.jm-div-3 .jm-header-2{
+    font-size: 4em;
+    letter-spacing: 0;
+    font-weight: bold;
+    line-height: 1;    
+}
+.jm-landing-page-the-drop{
+    font-size: 0.73em;
+}
 @media (min-width:700px){
-.jm-header{
+.jm-landing-page-the-drop  .jm-header,
+.jm-landing-page-the-drop article{
 	font-size: 1em;
 	margin: 0 0 3%;
 }
 .jm-the-drop-header img{
 	margin: 2% auto 1%;
 }
-.jm-header figcaption{
-	font-size: 2em;
-}
+
 .jm-body{
 	font-size: 1em;
 }
 .jm-body p{
 	margin: 0 0 5%;	
 }
+
 .jm-the-drop-1{
-	width: 67%;
-    margin: 0 0 7% 7%;
+	width: 77%;
+    /*margin: 0 0 7% 7%;*/
+    margin: 0 auto 7%;
 }
-.jm-the-drop-2{
-    width: 67%;
-    margin: 0 7% 7% auto;
+
+/* copy line 1 */
+section.jm-two-column-w2219-msg01 article h2.jm-header-2{
+    font-size: 3.5em;
+    font-weight: bold;
 }
+/*copy line 2 */
+section.jm-two-column-w2219-msg01 article .jm-header-3,
+.jm-landing-page-the-drop article .jm-header-3{
+    font-size: 1.4em;
+    font-weight: normal;
+    font-weight: 500;
+}
+
+
+section.jm-two-column-w2219-msg01 article h2.jm-header-2{
+    font-weight: bold;
+}
+
+section.jm-two-column-w2219-msg01 article .jm-header-3,
+.jm-landing-page-the-drop article .jm-header-3{
+    font-weight: normal;
+    font-weight: 500;
+} 
+section.jm-two-column-w2219-msg01 .jm-left{
+    padding: 3%;
+}
+section.jm-two-column-w2219-msg01 .jm-right{
+    padding: 3%;
+}
+
+}
+
+
+
+@media screen and (min-width: 1050px){
+
+/*  desktop 1267x1321 image left  */
+section.jm-two-column-w2219-msg01 .jm-left figure{
+    background: url("refresh/refresh-2019/w2219/drop-lp/03_06Week5_TheDrop_LP.jpg?$staticlink$");
+}
+/*  desktop 1267x1321 image right  */
+section.jm-two-column-w2219-msg01 .jm-right figure{
+    background: url("refresh/refresh-2019/w2219/drop-lp/04_06Week5_TheDrop_LP.jpg?$staticlink$");
+}
+.jm-landing-page-the-drop{
+    font-size: 1em;
+}
+}
+
+
+
+@media screen and (max-width: 700px){
+
+section.jm-two-column-w2219-msg01 article h2.jm-header-2{
+    font-weight: bold;
+}
+
+section.jm-two-column-w2219-msg01 article .jm-header-3,
+.jm-landing-page-the-drop article .jm-header-3
+{
+    font-weight: normal;
+    font-weight: 500;
+} 
 
 }
 
 </style>
 
+<!-- Copy from Here -->
+
 <div class="jm-landing-page jm-landing-page-1440 jm-landing-page-the-drop">
-<h1>The Century Drop</h1>
-	<div class="jm-header">
-		<p>STARTS THURSDAY 3/7 | 10AM ET</p>		
+
+    <div id="irv-drop-test" class="jm-header">	
 		<figure class="jm-the-drop-header">
-			<img src="Landing-Pages/the-century-drop/the-century-drop.png?$staticlink$" alt="the century drop"/>
-			<figcaption>Ultimate names, limited quantities.</figcaption>
+                <h1>The Drop</h1>
 		</figure>
+		<p class="jm-header-3">A curated assortment of limited-quantity pieces, available exclusively online.<br/>Gucci, Prada, Christian Louboutin—get the drop on fashion’s most-wanted names.</p>
 	</div>
-	<div class="jm-body">
-		<h2>GUCCI</h2>
-		<p>OVER <b>40% OFF</b></p>
-	
-		<figure class="jm-the-drop-1"><img src="Landing-Pages/the-century-drop/the-century-drop-1.jpg?$staticlink$" alt="Gucci shoes for women and men"/></figure>
-		<figure class="jm-the-drop-2"><img src="Landing-Pages/the-century-drop/the-century-drop-2.jpg?$staticlink$" alt="Gucci handbags and shoes"/></figure>
-	</div>
+
+	<!-- FORM -->
+	<div class="jm-div-2">
+
+		<article>
+            <p class="jm-header-3">Sign up for our emails and never miss a drop.</p>
+        </article>
+
+		<form class="jmr-bronto-form" action="https://email.c21stores.com/public/webform/process/" method="post">
+
+			<input type="hidden" name="fid" value="a9azhzwk0urk3e7010itpxm61du7d" />
+			<input type="hidden" name="sid" value="6630ec235ef6f8159a9d1f543ffef174" />
+			<input type="hidden" name="delid" value="" />
+			<input type="hidden" name="subid" value="" />
+			<input type="hidden" name="td" value="" />
+			<input type="hidden" name="formtype" value="addcontact" />
+			<script type="text/javascript">
+				var fieldMaps = {};
+			</script>
+
+
+			<div class="section" id="row_40389">
+				<div class="container" id="column_50811" style="text-align: left; width: 336px;">
+					<div class="field_block" field_id="628248">
+						<div id="caption_628248" class="caption">first name </div>
+						<div class="field">
+							<span><input type="text" id="field_628248" class="text field" size="35" name="111337[628248]" value="" /></span>
+							<div class="field_error"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container" id="column_50812" style="text-align: left; width: 336px;">
+					<div class="field_block" field_id="628250">
+						<div id="caption_628250" class="caption">last name </div>
+						<div class="field">
+							<span><input type="text" id="field_628250" class="text field" size="35" name="111339[628250]" value="" /></span>
+							<div class="field_error"></div>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+
+			<div class="section" id="row_40402">
+				<div class="container" id="column_50827" style="text-align: left; width: 336px;">
+					<div class="email field_block">
+						<div class="caption">email address <span class="required">*</span></div>
+						<div class="field">
+							<span><input type="text" class="text field fb-email" size="35" name="111359" value="" /></span>
+							<div class="field_error"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container" id="column_50828" style="text-align: left; width: 336px;">
+					<div class="field_block" field_id="628348">
+						<div id="caption_628348" class="caption">zip code <span class="required">*</span> </div>
+						<div class="field">
+							<span><input type="text" id="field_628348" class="text field" size="35" name="111360[628348]" value="" /></span>
+							<div class="field_error"></div>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+
+			<div class="section" id="row_40387">
+				<div class="container" id="column_50809" style="text-align: left; width: 672px;">
+					<input type="hidden" name="111340[3548211]" value="true" />
+					<input type="hidden" name="111341[3610143]" value="true" />
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+
+			<div class="section" id="row_40421">
+				<div class="container" id="column_50847" style="text-align: center; width: 672px;">
+					<div class="field_block">
+						<div class="field">
+							<span><input type="submit" value="SIGN UP" /></span>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+
+		</form>		
+
+    </div>
+	<!-- END FORM -->
+
+
+    <div class="jm-div-3">
+        <article>
+            <h2 class="jm-header-2" id="jm-header-w2219-msg01">Can&rsquo;t Wait To Shop?</h2>
+            <p class="jm-header-3">See what high-style designs are out now.</p>
+        </article>
+    </div>
+
+    
+    <section class="jm-two-column jm-content-block-all jm-content-block jm-two-column jm-two-column-w2219-msg01">
+
+
+        <div class="jm-left">
+        <a href="$url('Search-Show','cgid','shoes-luxury-designer')$" class="jm-clickable-image" aria-hidden="true" role="none" tabindex="-1"></a>    
+            <figure></figure>
+            <article>
+                <a href="$url('Search-Show','cgid','shoes-luxury-designer')$" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-w2219-msg01-l" aria-labelledby="jm-cta-w2219-msg01-l jm-header-w2219-msg01-l">LUXE SHOES</a>
+            </article>
+        </div>
+        <div class="jm-right">
+        <a href="$url('Search-Show','cgid','handbags-accessories-luxury-designer')$" aria-hidden="true" role="none" tabindex="-1"></a>    
+            <figure></figure>
+           
+            <article>
+                <a href="$url('Search-Show','cgid','handbags-accessories-luxury-designer')$" class="btn jm-cta-button jm-cta-button-dark" id="jm-cta-w2219-msg01-r" aria-labelledby="jm-cta-w2219-msg01-r jm-header-w2219-msg01-r">LUXE BAGS</a>
+            </article>
+        </div>
+
+    </section>
+
+    <div class="jm-div-5">
+        <article>
+            <p class="jm-header-3">Century 21 Stores is not an authorized retailer of Gucci or Prada.</p>
+        </article>
+    </div>
+
+
 </div>

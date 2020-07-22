@@ -1,10 +1,14 @@
-<style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+<!-- bronto-form-test - JuanMa - 07.20.20     -->
 
+<style type="text/css">
 /* Change your page's background color or background image here */
 
 
 /* The form element is the main container for the entire page and is centered on the page by default. This width is dynamically calculated based on the maximum width of the rows within it. */
+
+form.jmr-bronto-form .container{
+	padding: 0;
+}
 
 form.jmr-bronto-form {
     width:65%;
@@ -21,17 +25,17 @@ form.jmr-bronto-form {
 /* This is the style for each individual row. */
 
 form.jmr-bronto-form .section {
-clear: both;
-width: 100%;
-max-width: 100%;
+	clear: both;
+	width: 100%;
+	max-width: 100%; 	
 }
 
 /* This is the style for each column within a row. */
 
 form.jmr-bronto-form .section .container {
-width: 100%;
-max-width: 100%;
-float: left;
+	width: 100%;
+	max-width: 100%;
+	float: left;
 }
 
 /* This surrounds every field and caption area. */
@@ -46,7 +50,6 @@ margin: 0;
 
 .field_block .caption {
 display: block;
-font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
 color: #999;
 padding: 0;
 margin: 0 0 8px 0;
@@ -86,7 +89,6 @@ background: #cccccc;
 form.jmr-bronto-form input[type="checkbox"]:after {
 content: "";
 text-align: center;
-font: bold 1.2em "Roboto", "Arial", "Helvetica", sans-serif;
 color: #ffffff;
 }
 
@@ -132,7 +134,6 @@ background: #cccccc;
 form.jmr-bronto-form input[type="radio"]:after {
 content: "";
 text-align: center;
-font: bold 1.5em "Roboto", "Arial", "Helvetica", sans-serif;
 color: #ffffff;
 }
 
@@ -160,8 +161,7 @@ padding-right: 5px;
 }
 
 .field_block div.radio span label {
-font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
-color: #333;
+	/*color: #333;*/
 }
 
 /* This is the individual field input. */
@@ -193,7 +193,6 @@ font-weight: 300;
 outline: none;
 cursor: pointer;
 border: 1px solid #000001;
-font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
 color: #333;
 padding: 8px 5px;
 margin: 0;
@@ -233,7 +232,6 @@ width: 100px;
 
 form.jmr-bronto-form select {
 border: 1px solid #cccccc;
-font: normal 1em "Roboto", "Arial", "Helvetica", sans-serif;
 color: #808080;
 width: 300px;
 max-width: 100%;
@@ -267,7 +265,6 @@ float: none;
 border: 1px solid #ccc;
 border-top-color: #444;
 border-left-color: #444;
-font: normal 11px "Roboto", "Arial", "Helvetica", sans-serif;
 color: #333;
 padding: 3px;
 margin: 0;
@@ -311,7 +308,6 @@ font-weight: 300;
 /* Change the appearance of the submit button */
 
 form.jmr-bronto-form input[type="submit"] {
-font-family: "Roboto", "Arial", "Helvetica", sans-serif;
 -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
 border-radius: 0px;
@@ -334,18 +330,23 @@ margin: 10px auto !important;
 /* Change the hover appearance of the submit button */
 
 form.jmr-bronto-form input[type="submit"]:hover {
-background-color: #fff;
-border-color: #000001;
-color: #000001;
--webkit-transition: all 0.25s ease-in-out;
--moz-transition: all 0.25s ease-in-out;
--o-transition: all 0.25s ease-in-out;
-transition: all 0.25s ease-in-out;
+	background-color: #fff;
+	border-color: #000001;
+	color: #000001;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 
-form.jmr-bronto-form div.field_block {padding: 0px 15px;}
-
 /* Media query for mobile devices starts here.*/
+
+@media screen and (min-width: 700px) {
+form.jmr-bronto-form .section {
+ 	display: flex;
+}
+}
+
 
 @media screen and (max-width: 747px) {
 /* This is where mobile-specific styles for the form element should go. */
@@ -407,102 +408,83 @@ margin-left: auto;
 }
 } 
 </style>
-<form class="jmr-bronto-form" action="https://email.c21stores.com/public/webform/process/" method="post">
-<input type="hidden" name="fid" value="a9azhzwk0urk3e7010itpxm61du7d" />
-<input type="hidden" name="sid" value="6630ec235ef6f8159a9d1f543ffef174" />
-<input type="hidden" name="delid" value="" />
-<input type="hidden" name="subid" value="" />
-<input type="hidden" name="td" value="" />
-<input type="hidden" name="formtype" value="addcontact" />
-<script type="text/javascript">
-var fieldMaps = {};
-</script>
 
-<div class="section" id="row_40391">
-<div class="container" id="column_50814" style="text-align: left; width: 672px;">
-<table bgcolor="#000001" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
-<tbody>
-<tr>
-<td style="padding: 0px 0px 20px 0px;"><a href="https://www.c21stores.com/" target="_blank"><img src="https://hosting-source.bm23.com/41767/public/template/header_logo_grey.png" alt="Century 21 Stores" width="180" title="Century 21 Stores" border="0" style="display:block; max-width:100%; height:auto; border-style:none; margin:auto;"></a></td>
-</tr>
-</tbody>
-</table><div style="text-align: center; padding: 40px 0px 20px 0px;"><span style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24pt; text-align: center;" xml="lang"><strong>Send me C21 exclusives&nbsp;&amp; discounts</strong></span></div></div>
-<div style="clear: both;">&nbsp;</div>
-</div>
-<div class="section" id="row_40389">
-<div class="container" id="column_50811" style="text-align: left; width: 336px;">
-<div class="field_block" field_id="628248">
-<div id="caption_628248" class="caption">
-first name </div>
-<div class="field">
-<span>
-<input type="text" id="field_628248" class="text field" size="35" name="111337[628248]" value="" />
-</span>
-<div class="field_error">
-</div>
-</div>
-</div>
-</div>
-<div class="container" id="column_50812" style="text-align: left; width: 336px;">
-<div class="field_block" field_id="628250">
-<div id="caption_628250" class="caption">
-last name </div>
-<div class="field">
-<span>
-<input type="text" id="field_628250" class="text field" size="35" name="111339[628250]" value="" />
-</span>
-<div class="field_error">
-</div>
-</div>
-</div>
-</div>
-<div style="clear: both;">&nbsp;</div>
-</div>
-<div class="section" id="row_40402">
-<div class="container" id="column_50827" style="text-align: left; width: 336px;">
-<div class="email field_block">
-<div class="caption">email address <span class="required">*</span></div>
-<div class="field">
-<span>
-<input type="text" class="text field fb-email" size="35" name="111359" value="" />
-</span>
-<div class="field_error">
-</div>
-</div>
-</div>
-</div>
-<div class="container" id="column_50828" style="text-align: left; width: 336px;">
-<div class="field_block" field_id="628348">
-<div id="caption_628348" class="caption">
-zip code <span class="required">*</span> </div>
-<div class="field">
-<span>
-<input type="text" id="field_628348" class="text field" size="35" name="111360[628348]" value="" />
-</span>
-<div class="field_error">
-</div>
-</div>
-</div>
-</div>
-<div style="clear: both;">&nbsp;</div>
-</div>
-<div class="section" id="row_40387">
-<div class="container" id="column_50809" style="text-align: left; width: 672px;">
-<input type="hidden" name="111340[3548211]" value="true" />
-<input type="hidden" name="111341[3610143]" value="true" />
-</div>
-<div style="clear: both;">&nbsp;</div>
-</div>
-<div class="section" id="row_40421">
-<div class="container" id="column_50847" style="text-align: center; width: 672px;">
-<div class="field_block">
-<div class="field">
-<span>
-<input type="submit" value="SIGN UP" />
-</span>
-</div>
-</div>
-</div>
-<div style="clear: both;">&nbsp;</div>
-</div>
+<form class="jmr-bronto-form" action="https://email.c21stores.com/public/webform/process/" method="post">
+
+	<input type="hidden" name="fid" value="a9azhzwk0urk3e7010itpxm61du7d" />
+	<input type="hidden" name="sid" value="6630ec235ef6f8159a9d1f543ffef174" />
+	<input type="hidden" name="delid" value="" />
+	<input type="hidden" name="subid" value="" />
+	<input type="hidden" name="td" value="" />
+	<input type="hidden" name="formtype" value="addcontact" />
+	<script type="text/javascript">
+		var fieldMaps = {};
+	</script>
+
+
+	<div class="section" id="row_40389">
+		<div class="container" id="column_50811" style="text-align: left; width: 336px;">
+			<div class="field_block" field_id="628248">
+				<div id="caption_628248" class="caption">first name </div>
+				<div class="field">
+					<span><input type="text" id="field_628248" class="text field" size="35" name="111337[628248]" value="" /></span>
+					<div class="field_error"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="column_50812" style="text-align: left; width: 336px;">
+			<div class="field_block" field_id="628250">
+				<div id="caption_628250" class="caption">last name </div>
+				<div class="field">
+					<span><input type="text" id="field_628250" class="text field" size="35" name="111339[628250]" value="" /></span>
+					<div class="field_error"></div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+
+	<div class="section" id="row_40402">
+		<div class="container" id="column_50827" style="text-align: left; width: 336px;">
+			<div class="email field_block">
+				<div class="caption">email address <span class="required">*</span></div>
+				<div class="field">
+					<span><input type="text" class="text field fb-email" size="35" name="111359" value="" /></span>
+					<div class="field_error"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="column_50828" style="text-align: left; width: 336px;">
+			<div class="field_block" field_id="628348">
+				<div id="caption_628348" class="caption">zip code <span class="required">*</span> </div>
+				<div class="field">
+					<span><input type="text" id="field_628348" class="text field" size="35" name="111360[628348]" value="" /></span>
+					<div class="field_error"></div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+
+	<div class="section" id="row_40387">
+		<div class="container" id="column_50809" style="text-align: left; width: 672px;">
+			<input type="hidden" name="111340[3548211]" value="true" />
+			<input type="hidden" name="111341[3610143]" value="true" />
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+
+	<div class="section" id="row_40421">
+		<div class="container" id="column_50847" style="text-align: center; width: 672px;">
+			<div class="field_block">
+				<div class="field">
+					<span><input type="submit" value="SIGN UP" /></span>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+
 </form>
