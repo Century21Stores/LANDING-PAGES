@@ -1,4 +1,4 @@
-<!-- tourism - TOP IMAGE UPDATE - JuanMa - 8.3.20  -->
+<!-- tourism - TOP IMAGE UPDATE - JuanMa - 9.4.20  -->
 <style>
 
 
@@ -7,11 +7,11 @@
     position: initial;   
 }
 .jm-lp-tourism img{
-	width: 100%;
+    width: 100%;
 }
 .jm-lp-tourism{
-	max-width: 1440px;
-	margin: 0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .jmrv-Image1{
     background: url('Landing-Pages/tourism/01tourism-mobile.jpg?$staticlink$');
@@ -275,7 +275,7 @@
 
 .jmrv-international-button{
     text-align: center;
-	margin: 10% auto 0;
+    margin: 10% auto 0;
     width: 54%;
 }
 
@@ -444,7 +444,7 @@
 }
 .jmrv-tourism-1 h3{
     font-size: 6vw;
-}	
+}   
 .jmrv-mobile{
     display:none;
 }
@@ -635,7 +635,7 @@ padding-top: calc((740% / 2560) * 100);
 
 @media (max-width:700px) {
 /*header ~ .container a:not(.btn-primary):not(.jmrv-wrap-contactInfo){
-	color:white;
+    color:white;
 }*/
 
 }
@@ -680,10 +680,12 @@ padding-top: calc((740% / 2560) * 100);
                     <h2>TEMPORARY HOURS</h2>
                     <div class="jm-hours-wrap">
                         <div class="jmrv-hours-days">                            
-                            <h3><span>SUN.- SAT.</span></h3>                            
+                            <h3><span>MON.- SAT.</span></h3>
+                            <h3><span>SUN.</span></h3>
                         </div>
                         <div class="jmrv-hours-hours">
-                            <h3>11:00AM-5:00PM</h3>
+                            <h3>11:00AM-7:00PM</h3>
+                            <h3>11:00AM-6:00PM</h3>
                         </div>
                         <!-- <div class="jmrv-hours-days">
                             <h3><span>SUN.</span></h3>
@@ -942,19 +944,19 @@ padding-top: calc((740% / 2560) * 100);
 <script>
 
 function showDetails(element){
-	var parent = element.parentNode.nextElementSibling;
-// 	console.log(parent);
-	if (($(window).width() > 641) && ($(window).width() < 701)) {
-   		parent.classList.toggle("jmrv_mobileLan");
-	}
-	else if ($(window).width() < 640){
-   		parent.classList.toggle("jmrv_mobilePor");
-	}
-	else{
-	console.log(parent);
-	}
+    var parent = element.parentNode.nextElementSibling;
+//  console.log(parent);
+    if (($(window).width() > 641) && ($(window).width() < 701)) {
+        parent.classList.toggle("jmrv_mobileLan");
+    }
+    else if ($(window).width() < 640){
+        parent.classList.toggle("jmrv_mobilePor");
+    }
+    else{
+    console.log(parent);
+    }
 }
 function hideInfo(e){
-	e.classList.remove("jmrv_mobilePor");
+    e.classList.remove("jmrv_mobilePor");
 }
 </script>
